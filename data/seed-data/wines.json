@@ -1,0 +1,442 @@
+[
+  {
+    "uuid": "22222222-2222-2222-2222-222222222201",
+    "producer_name": "Chateau Rouge",
+    "product_name": "Elegant Reserve",
+    "varietals": ["Cabernet Sauvignon"],
+    "region": {
+      "country": "France",
+      "major_region": "Bordeaux",
+      "sub_region": "Medoc",
+      "sub_appellation": "Pauillac"
+    },
+    "vintage": 2015,
+    "category": "red",
+    "is_filtered": false,
+    "has_residual_sugar": false,
+    "style": {
+      "wine_style_id": "00008",
+      "name": "powerful red",
+      "body_rank": 4
+    },
+    "image_url": "https://via.placeholder.com/200"
+  },
+  {
+    "uuid": "22222222-2222-2222-2222-222222222202",
+    "producer_name": "Sunrise Vineyards",
+    "product_name": "Crisp Delight",
+    "varietals": ["Chardonnay"],
+    "region": {
+      "country": "USA",
+      "major_region": "California",
+      "sub_region": "Napa Valley",
+      "sub_appellation": "Oakville"
+    },
+    "vintage": 2018,
+    "category": "white",
+    "is_filtered": false,
+    "has_residual_sugar": false,
+    "style": {
+      "wine_style_id": "00002",
+      "name": "minerally white",
+      "body_rank": 2
+    },
+    "image_url": "https://via.placeholder.com/200"
+  },
+  {
+    "uuid": "22222222-2222-2222-2222-222222222203",
+    "producer_name": "Rosé All Day",
+    "product_name": "Blush Edition",
+    "varietals": ["Grenache"],
+    "region": {
+      "country": "Spain",
+      "major_region": "Catalonia",
+      "sub_region": "Empordà",
+      "sub_appellation": "Empordà"
+    },
+    "vintage": 2020,
+    "category": "rose",
+    "is_filtered": false,
+    "has_residual_sugar": false,
+    "style": {
+      "wine_style_id": "00009",
+      "name": "blush rose",
+      "body_rank": 1
+    },
+    "image_url": "https://via.placeholder.com/200"
+  },
+  {
+    "uuid": "22222222-2222-2222-2222-222222222204",
+    "producer_name": "Sparkle House",
+    "product_name": "Festive Fizz",
+    "varietals": ["Pinot Noir", "Chardonnay"],
+    "region": {
+      "country": "Italy",
+      "major_region": "Prosecco",
+      "sub_region": "Valdobbiadene",
+      "sub_appellation": "Conegliano-Valdobbiadene"
+    },
+    "vintage": 2019,
+    "category": "sparkling",
+    "is_filtered": false,
+    "has_residual_sugar": false,
+    "style": {
+      "wine_style_id": "00011",
+      "name": "fruit driven sparkling",
+      "body_rank": 2
+    },
+    "image_url": "https://via.placeholder.com/200"
+  },
+  {
+    "uuid": "22222222-2222-2222-2222-222222222205",
+    "producer_name": "Orange Horizon",
+    "product_name": "Sunset Blend",
+    "varietals": ["Gewürztraminer"],
+    "region": {
+      "country": "Italy",
+      "major_region": "Sicily",
+      "sub_region": "Etna",
+      "sub_appellation": "Etna DOC"
+    },
+    "vintage": 2017,
+    "category": "orange",
+    "is_filtered": false,
+    "has_residual_sugar": false,
+    "style": {
+      "wine_style_id": "00014",
+      "name": "fruity orange",
+      "body_rank": 2
+    },
+    "image_url": "https://via.placeholder.com/200"
+  },
+  {
+    "uuid": "22222222-2222-2222-2222-222222222206",
+    "producer_name": "Sweet Moments",
+    "product_name": "Dessert Dream",
+    "varietals": ["Muscat"],
+    "region": {
+      "country": "Portugal",
+      "major_region": "Douro",
+      "sub_region": "Douro Valley",
+      "sub_appellation": "Douro DOC"
+    },
+    "vintage": 2016,
+    "category": "dessert",
+    "is_filtered": false,
+    "has_residual_sugar": true,
+    "style": {
+      "wine_style_id": "00018",
+      "name": "rich, fruity dessert",
+      "body_rank": 3
+    },
+    "image_url": "https://via.placeholder.com/200"
+  },
+  {
+    "uuid": "22222222-2222-2222-2222-222222222207",
+    "producer_name": "Chateau Noir",
+    "product_name": "Velvet Red",
+    "varietals": ["Merlot"],
+    "region": {
+      "country": "France",
+      "major_region": "Burgundy",
+      "sub_region": "Côte d'Or",
+      "sub_appellation": "Beaujolais"
+    },
+    "vintage": 2014,
+    "category": "red",
+    "is_filtered": false,
+    "has_residual_sugar": false,
+    "style": {
+      "wine_style_id": "00007",
+      "name": "fresh, spicy red",
+      "body_rank": 3
+    },
+    "image_url": "https://via.placeholder.com/200"
+  },
+  {
+    "uuid": "22222222-2222-2222-2222-222222222208",
+    "producer_name": "Golden Harvest",
+    "product_name": "Sunlit White",
+    "varietals": ["Sauvignon Blanc"],
+    "region": {
+      "country": "New Zealand",
+      "major_region": "Marlborough",
+      "sub_region": "Wairau Valley",
+      "sub_appellation": "Not applicable"
+    },
+    "vintage": 2019,
+    "category": "white",
+    "is_filtered": false,
+    "has_residual_sugar": false,
+    "style": {
+      "wine_style_id": "00003",
+      "name": "aromatic white",
+      "body_rank": 2
+    },
+    "image_url": "https://via.placeholder.com/200"
+  },
+  {
+    "uuid": "22222222-2222-2222-2222-222222222209",
+    "producer_name": "Pink Horizon",
+    "product_name": "Sunset Rosé",
+    "varietals": ["Syrah"],
+    "region": {
+      "country": "France",
+      "major_region": "Provence",
+      "sub_region": "Côtes de Provence",
+      "sub_appellation": "Bandol"
+    },
+    "vintage": 2021,
+    "category": "rose",
+    "is_filtered": false,
+    "has_residual_sugar": false,
+    "style": {
+      "wine_style_id": "00010",
+      "name": "dry rose",
+      "body_rank": 1
+    },
+    "image_url": "https://via.placeholder.com/200"
+  },
+  {
+    "uuid": "22222222-2222-2222-2222-222222222210",
+    "producer_name": "Bubble Bliss",
+    "product_name": "Eternal Sparkle",
+    "varietals": ["Chardonnay", "Pinot Noir"],
+    "region": {
+      "country": "Italy",
+      "major_region": "Prosecco",
+      "sub_region": "Conegliano",
+      "sub_appellation": "Prosecco DOC"
+    },
+    "vintage": 2020,
+    "category": "sparkling",
+    "is_filtered": false,
+    "has_residual_sugar": false,
+    "style": {
+      "wine_style_id": "00012",
+      "name": "complex sparkling",
+      "body_rank": 3
+    },
+    "image_url": "https://via.placeholder.com/200"
+  },
+  {
+    "uuid": "22222222-2222-2222-2222-222222222211",
+    "producer_name": "Amber Fields",
+    "product_name": "Rustic Orange",
+    "varietals": ["Ribolla Gialla"],
+    "region": {
+      "country": "Italy",
+      "major_region": "Friuli",
+      "sub_region": "Colli Orientali del Friuli",
+      "sub_appellation": "Friuli Colli Orientali DOC"
+    },
+    "vintage": 2018,
+    "category": "orange",
+    "is_filtered": false,
+    "has_residual_sugar": false,
+    "style": {
+      "wine_style_id": "00013",
+      "name": "aromatic orange",
+      "body_rank": 2
+    },
+    "image_url": "https://via.placeholder.com/200"
+  },
+  {
+    "uuid": "22222222-2222-2222-2222-222222222212",
+    "producer_name": "Honey Gold",
+    "product_name": "Sweet Symphony",
+    "varietals": ["Moscato"],
+    "region": {
+      "country": "Italy",
+      "major_region": "Piedmont",
+      "sub_region": "Ast",
+      "sub_appellation": "Asti DOCG"
+    },
+    "vintage": 2015,
+    "category": "dessert",
+    "is_filtered": false,
+    "has_residual_sugar": true,
+    "style": {
+      "wine_style_id": "00016",
+      "name": "sparkling dessert",
+      "body_rank": 1
+    },
+    "image_url": "https://via.placeholder.com/200"
+  },
+  {
+    "uuid": "22222222-2222-2222-2222-222222222213",
+    "producer_name": "Crimson Valley",
+    "product_name": "Bold Legacy",
+    "varietals": ["Syrah"],
+    "region": {
+      "country": "Australia",
+      "major_region": "Barossa Valley",
+      "sub_region": "Barossa",
+      "sub_appellation": "Barossa Valley"
+    },
+    "vintage": 2013,
+    "category": "red",
+    "is_filtered": false,
+    "has_residual_sugar": false,
+    "style": {
+      "wine_style_id": "00006",
+      "name": "soft, fruity red",
+      "body_rank": 2
+    },
+    "image_url": "https://via.placeholder.com/200"
+  },
+  {
+    "uuid": "22222222-2222-2222-2222-222222222214",
+    "producer_name": "Crystal Vine",
+    "product_name": "Luminous Blanc",
+    "varietals": ["Riesling"],
+    "region": {
+      "country": "Germany",
+      "major_region": "Mosel",
+      "sub_region": "Bernkastel",
+      "sub_appellation": "Mosel-Saar"
+    },
+    "vintage": 2020,
+    "category": "white",
+    "is_filtered": false,
+    "has_residual_sugar": false,
+    "style": {
+      "wine_style_id": "00001",
+      "name": "fresh, unoaked white",
+      "body_rank": 1
+    },
+    "image_url": "https://via.placeholder.com/200"
+  },
+  {
+    "uuid": "22222222-2222-2222-2222-222222222215",
+    "producer_name": "Blush Vineyards",
+    "product_name": "Pink Whisper",
+    "varietals": ["Pinot Noir"],
+    "region": {
+      "country": "USA",
+      "major_region": "Oregon",
+      "sub_region": "Willamette Valley",
+      "sub_appellation": "Willamette Valley AVA"
+    },
+    "vintage": 2021,
+    "category": "rose",
+    "is_filtered": false,
+    "has_residual_sugar": false,
+    "style": {
+      "wine_style_id": "00009",
+      "name": "blush rose",
+      "body_rank": 1
+    },
+    "image_url": "https://via.placeholder.com/200"
+  },
+  {
+    "uuid": "22222222-2222-2222-2222-222222222216",
+    "producer_name": "Celestial Bubbles",
+    "product_name": "Starry Night",
+    "varietals": ["Chardonnay"],
+    "region": {
+      "country": "USA",
+      "major_region": "California",
+      "sub_region": "Sonoma",
+      "sub_appellation": "Sonoma County"
+    },
+    "vintage": 2018,
+    "category": "sparkling",
+    "is_filtered": false,
+    "has_residual_sugar": false,
+    "style": {
+      "wine_style_id": "00012",
+      "name": "complex sparkling",
+      "body_rank": 3
+    },
+    "image_url": "https://via.placeholder.com/200"
+  },
+  {
+    "uuid": "22222222-2222-2222-2222-222222222217",
+    "producer_name": "Sunset Orchard",
+    "product_name": "Tangerine Twist",
+    "varietals": ["Verdeca"],
+    "region": {
+      "country": "Italy",
+      "major_region": "Sardinia",
+      "sub_region": "Sardinia",
+      "sub_appellation": "Sardinian DOC"
+    },
+    "vintage": 2017,
+    "category": "orange",
+    "is_filtered": false,
+    "has_residual_sugar": false,
+    "style": {
+      "wine_style_id": "00015",
+      "name": "rich orange",
+      "body_rank": 3
+    },
+    "image_url": "https://via.placeholder.com/200"
+  },
+  {
+    "uuid": "22222222-2222-2222-2222-222222222218",
+    "producer_name": "Velvet Sweets",
+    "product_name": "Decadence",
+    "varietals": ["Port"],
+    "region": {
+      "country": "Portugal",
+      "major_region": "Douro",
+      "sub_region": "Douro",
+      "sub_appellation": "Douro DOC"
+    },
+    "vintage": 2014,
+    "category": "dessert",
+    "is_filtered": false,
+    "has_residual_sugar": true,
+    "style": {
+      "wine_style_id": "00017",
+      "name": "subtle, aromatic dessert",
+      "body_rank": 2
+    },
+    "image_url": "https://via.placeholder.com/200"
+  },
+  {
+    "uuid": "22222222-2222-2222-2222-222222222219",
+    "producer_name": "Ruby Crest",
+    "product_name": "Inferno",
+    "varietals": ["Zinfandel"],
+    "region": {
+      "country": "USA",
+      "major_region": "California",
+      "sub_region": "Paso Robles",
+      "sub_appellation": "Paso Robles AVA"
+    },
+    "vintage": 2016,
+    "category": "red",
+    "is_filtered": false,
+    "has_residual_sugar": false,
+    "style": {
+      "wine_style_id": "00005",
+      "name": "mild, mannered red",
+      "body_rank": 1
+    },
+    "image_url": "https://via.placeholder.com/200"
+  },
+  {
+    "uuid": "22222222-2222-2222-2222-222222222220",
+    "producer_name": "Silver Stream",
+    "product_name": "Crystal Clear",
+    "varietals": ["Pinot Grigio"],
+    "region": {
+      "country": "Italy",
+      "major_region": "Veneto",
+      "sub_region": "Valdadige",
+      "sub_appellation": "Valdadige DOC"
+    },
+    "vintage": 2019,
+    "category": "white",
+    "is_filtered": false,
+    "has_residual_sugar": false,
+    "style": {
+      "wine_style_id": "00004",
+      "name": "rich, oaky white",
+      "body_rank": 3
+    },
+    "image_url": "https://via.placeholder.com/200"
+  }
+]

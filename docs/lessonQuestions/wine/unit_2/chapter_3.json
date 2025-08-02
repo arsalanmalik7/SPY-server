@@ -1,0 +1,74 @@
+{
+  "unit": 2,
+  "unit_name": "wine Advanced",
+  "chapter": 3,
+  "chapter_name": "repeat Varietals BTG/BTB by Price",
+  "category": "wine",
+  "difficulty": "intermediate",
+  "questions": [
+    {
+      "question_text": "You have {number} wines on your menu with {wine_varietal} as the main grape. Choose the one priced BTG at {wine_price}.",
+      "question_type": "single_select",
+      "options_variable": "link_to_restaurant.current_wines.filter(wine => wine.varietals.includes('{wine_varietal}') && wine.offering.by_the_glass).map(wine => `${wine.producer_name}, ${wine.product_name} (${wine.image_url})`).slice(0, 3).concat(link_to_restaurant.current_wines.find(wine => wine.varietals.includes('{wine_varietal}') && wine.offering.by_the_glass && wine.offering.glass_price === {wine_price}))",
+      "correct_answer_variable": "link_to_restaurant.current_wines.find(wine => wine.varietals.includes('{wine_varietal}') && wine.offering.by_the_glass && wine.offering.glass_price === {wine_price})",
+      "placeholders": {
+        "wine_varietal": "link_to_restaurant.current_wines.flatMap(wine => wine.varietals).filter((varietal, index, array) => array.indexOf(varietal) === index)",
+        "wine_price": "link_to_restaurant.current_wines.filter(wine => wine.varietals.includes('{wine_varietal}') && wine.offering.by_the_glass).map(wine => wine.offering.glass_price)",
+        "number": "link_to_restaurant.current_wines.filter(wine => wine.varietals.includes('{wine_varietal}') && wine.offering.by_the_glass).length"
+      },
+      "repeat_for": {
+        "source": "link_to_restaurant.current_wines.flatMap(wine => wine.varietals).filter((varietal, index, array) => array.indexOf(varietal) === index)",
+        "key_variable": "wine_varietal"
+      },
+      "difficulty": "medium",
+      "hint": "Check the wine menu for the price of {wine_varietal} wines by the glass."
+    },
+    {
+      "question_text": "You have {number} wines on your menu with {wine_varietal} as the main grape. Choose the one priced BTB at {wine_price}.",
+      "question_type": "single_select",
+      "options_variable": "link_to_restaurant.current_wines.filter(wine => wine.varietals.includes('{wine_varietal}') && wine.offering.by_the_bottle).map(wine => `${wine.producer_name}, ${wine.product_name} (${wine.image_url})`).slice(0, 3).concat(link_to_restaurant.current_wines.find(wine => wine.varietals.includes('{wine_varietal}') && wine.offering.by_the_bottle && wine.offering.bottle_price === {wine_price}))",
+      "correct_answer_variable": "link_to_restaurant.current_wines.find(wine => wine.varietals.includes('{wine_varietal}') && wine.offering.by_the_bottle && wine.offering.bottle_price === {wine_price})",
+      "placeholders": {
+        "wine_varietal": "link_to_restaurant.current_wines.flatMap(wine => wine.varietals).filter((varietal, index, array) => array.indexOf(varietal) === index)",
+        "wine_price": "link_to_restaurant.current_wines.filter(wine => wine.varietals.includes('{wine_varietal}') && wine.offering.by_the_bottle).map(wine => wine.offering.bottle_price)",
+        "number": "link_to_restaurant.current_wines.filter(wine => wine.varietals.includes('{wine_varietal}') && wine.offering.by_the_bottle).length"
+      },
+      "repeat_for": {
+        "source": "link_to_restaurant.current_wines.flatMap(wine => wine.varietals).filter((varietal, index, array) => array.indexOf(varietal) === index)",
+        "key_variable": "wine_varietal"
+      },
+      "difficulty": "medium",
+      "hint": "Check the wine menu for the price of {wine_varietal} wines by the bottle."
+    },
+    {
+      "question_text": "How many wines do you have BTG that have {wine_varietal} as the main grape?",
+      "question_type": "single_select",
+      "options_variable": "link_to_restaurant.current_wines.filter(wine => wine.varietals.includes('{wine_varietal}') && wine.offering.by_the_glass).length + [Math.max(0, link_to_restaurant.current_wines.filter(wine => wine.varietals.includes('{wine_varietal}') && wine.offering.by_the_glass).length - 2), link_to_restaurant.current_wines.filter(wine => wine.varietals.includes('{wine_varietal}') && wine.offering.by_the_glass).length + 2, link_to_restaurant.current_wines.filter(wine => wine.varietals.includes('{wine_varietal}') && wine.offering.by_the_glass).length + 3].slice(0, 3)",
+      "correct_answer_variable": "link_to_restaurant.current_wines.filter(wine => wine.varietals.includes('{wine_varietal}') && wine.offering.by_the_glass).length",
+      "placeholders": {
+        "wine_varietal": "link_to_restaurant.current_wines.flatMap(wine => wine.varietals).filter((varietal, index, array) => array.indexOf(varietal) === index)"
+      },
+      "repeat_for": {
+        "source": "link_to_restaurant.current_wines.flatMap(wine => wine.varietals).filter((varietal, index, array) => array.indexOf(varietal) === index)",
+        "key_variable": "wine_varietal"
+      },
+      "difficulty": "medium",
+      "hint": "Look at your wine list and count how many wines BTG feature {wine_varietal}."
+    },
+    {
+      "question_text": "How many wines do you have BTB that have {wine_varietal} as the main grape?",
+      "question_type": "single_select",
+      "options_variable": "link_to_restaurant.current_wines.filter(wine => wine.varietals.includes('{wine_varietal}') && wine.offering.by_the_bottle).length + [Math.max(0, link_to_restaurant.current_wines.filter(wine => wine.varietals.includes('{wine_varietal}') && wine.offering.by_the_bottle).length - 2), link_to_restaurant.current_wines.filter(wine => wine.varietals.includes('{wine_varietal}') && wine.offering.by_the_bottle).length + 2, link_to_restaurant.current_wines.filter(wine => wine.varietals.includes('{wine_varietal}') && wine.offering.by_the_bottle).length + 3].slice(0, 3)",
+      "correct_answer_variable": "link_to_restaurant.current_wines.filter(wine => wine.varietals.includes('{wine_varietal}') && wine.offering.by_the_bottle).length",
+      "placeholders": {
+        "wine_varietal": "link_to_restaurant.current_wines.flatMap(wine => wine.varietals).filter((varietal, index, array) => array.indexOf(varietal) === index)"
+      },
+      "repeat_for": {
+        "source": "link_to_restaurant.current_wines.flatMap(wine => wine.varietals).filter((varietal, index, array) => array.indexOf(varietal) === index)",
+        "key_variable": "wine_varietal"
+      },
+      "difficulty": "medium",
+      "hint": "Look at your wine list and count how many wines BTB feature {wine_varietal}."
+    }
+  ]
+}

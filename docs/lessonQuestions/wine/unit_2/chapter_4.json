@@ -1,0 +1,60 @@
+{
+  "unit": 2,
+  "unit_name": "wine Advanced",
+  "chapter": 4,
+  "chapter_name": "wine Major Regions",
+  "category": "wine",
+  "difficulty": "intermediate",
+  "questions": [
+    {
+      "question_text": "{wine_variable} and {wine_label} is from {wine_country}. Which major wine region within {wine_country} is it from?",
+      "question_type": "single_select",
+      "options_variable": "link_to_restaurant.current_wines.filter(wine => wine.region.country === '{wine_country}').map(wine => wine.region.major_region).filter((region, index, array) => array.indexOf(region) === index).slice(0, 3).concat(link_to_restaurant.current_wines.find(wine => wine.region.country === '{wine_country}' && wine.region.major_region === '{correct_answer}').region.major_region)",
+      "correct_answer_variable": "link_to_restaurant.current_wines[{wine_id}].region.major_region",
+      "placeholders": {
+        "wine_variable": "`${link_to_restaurant.current_wines[{wine_id}].producer_name}, ${link_to_restaurant.current_wines[{wine_id}].product_name}`",
+        "wine_label": "link_to_restaurant.current_wines[{wine_id}].image_url",
+        "wine_country": "link_to_restaurant.current_wines[{wine_id}].region.country"
+      },
+      "repeat_for": {
+        "source": "link_to_restaurant.current_wines",
+        "key_variable": "wine_id"
+      },
+      "difficulty": "medium",
+      "hint": "Check the wine list to find the major wine region for {wine_variable}."
+    },
+    {
+      "question_text": "How many wines do you offer from {wine_major_region}, {wine_country}?",
+      "question_type": "single_select",
+      "options_variable": "[Math.max(0, correct_answer - 2), correct_answer, correct_answer + 2, correct_answer + 3]",
+      "correct_answer_variable": "link_to_restaurant.current_wines.filter(wine => wine.region.major_region === '{wine_major_region}' && wine.region.country === '{wine_country}').length",
+      "placeholders": {
+        "wine_major_region": "link_to_restaurant.current_wines.map(wine => wine.region.major_region).filter((region, index, array) => array.indexOf(region) === index)",
+        "wine_country": "link_to_restaurant.current_wines.map(wine => wine.region.country).filter((country, index, array) => array.indexOf(country) === index)"
+      },
+      "repeat_for": {
+        "source": "link_to_restaurant.current_wines.map(wine => ({ country: wine.region.country, major_region: wine.region.major_region })).filter((region, index, array) => array.findIndex(item => item.country === region.country && item.major_region === region.major_region) === index)",
+        "key_variable": "{wine_country}, {wine_major_region}"
+      },
+      "difficulty": "medium",
+      "hint": "Count how many wines on your menu come from {wine_major_region} in {wine_country}."
+    },
+    {
+      "question_text": "How many {wine_type} wines do you offer from {wine_major_region}, {wine_country}?",
+      "question_type": "single_select",
+      "options_variable": "[Math.max(0, correct_answer - 2), correct_answer, correct_answer + 2, correct_answer + 3]",
+      "correct_answer_variable": "link_to_restaurant.current_wines.filter(wine => wine.category === '{wine_type}' && wine.region.major_region === '{wine_major_region}' && wine.region.country === '{wine_country}').length",
+      "placeholders": {
+        "wine_type": "['red', 'white', 'rose', 'sparkling', 'orange', 'dessert']",
+        "wine_major_region": "link_to_restaurant.current_wines.map(wine => wine.region.major_region).filter((region, index, array) => array.indexOf(region) === index)",
+        "wine_country": "link_to_restaurant.current_wines.map(wine => wine.region.country).filter((country, index, array) => array.indexOf(country) === index)"
+      },
+      "repeat_for": {
+        "source": "link_to_restaurant.current_wines.map(wine => ({ country: wine.region.country, major_region: wine.region.major_region, type: wine.category })).filter((region, index, array) => array.findIndex(item => item.country === region.country && item.major_region === region.major_region && item.type === region.type) === index)",
+        "key_variable": "{wine_country}, {wine_major_region}, {wine_type}"
+      },
+      "difficulty": "medium",
+      "hint": "Check how many {wine_type} wines are available from {wine_major_region} in {wine_country}."
+    }
+  ]
+}

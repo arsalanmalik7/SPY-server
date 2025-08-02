@@ -1,0 +1,37 @@
+{
+  "_id": "unique_user_id",
+  "first_name": "John",
+  "last_name": "Doe",
+  "email": "john.doe@email.com",
+  "password": "hashed_password",
+  "image_url": "https://example.com/profile.jpg",
+  "role": "manager",
+  "assigned_restaurants": [
+    "restaurant_id_1",
+    "restaurant_id_2"
+  ],
+  "permissions": [
+    "edit_menu",
+    "assign_lessons"
+  ],
+  "lesson_settings": {
+    "participate_in_lessons": true,
+    "can_toggle_lessons": true,
+    "toggle_lesson_for_roles": [
+      "employee",
+      "manager"
+    ],
+    "custom_lesson_interval_days": 7,
+    "next_due_date": "2025-04-15"
+  },
+  "lesson_progress": [
+    {
+      "unit": 1,
+      "chapter": 2,
+      "status": "completed",
+      "last_completed": "2025-04-10",
+      "next_due_date": "2025-04-17",
+      "lessons_taken": 3
+    }
+  ]
+}

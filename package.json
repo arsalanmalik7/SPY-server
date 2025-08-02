@@ -1,0 +1,45 @@
+{
+  "name": "speakmenu",
+  "version": "1.0.0",
+  "description": "A restaurant training platform",
+  "main": "src/app.mjs",
+  "type": "module",
+  "scripts": {
+    "start": "node src/app.mjs",
+    "dev": "nodemon src/app.mjs",
+    "test": "./node_modules/.bin/mocha src/tests/**/*.test.mjs",
+    "test:watch": "./node_modules/.bin/mocha --watch src/tests/**/*.test.mjs",
+    "test:auth": "./node_modules/.bin/mocha src/tests/auth.test.mjs",
+    "test:users": "./node_modules/.bin/mocha src/tests/users.test.mjs",
+    "test:dishes": "./node_modules/.bin/mocha src/tests/dishes.test.mjs",
+    "test:wines": "./node_modules/.bin/mocha src/tests/wines.test.mjs",
+    "test:restaurants": "./node_modules/.bin/mocha src/tests/restaurants.test.mjs",
+    "test:lessons": "./node_modules/.bin/mocha src/tests/lessons.test.mjs",
+    "test:badges": "./node_modules/.bin/mocha src/tests/badge.test.mjs",
+    "check-badges": "node src/scripts/checkAllUserBadges.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "csv-parse": "^5.5.3",
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.1.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.10.1",
+    "stripe": "^18.3.0",
+    "uuid": "^9.0.1",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "axios": "^1.6.7",
+    "chai": "^4.3.10",
+    "mocha": "^10.3.0",
+    "nodemon": "^3.0.3"
+  }
+}

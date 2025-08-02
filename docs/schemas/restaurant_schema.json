@@ -1,0 +1,243 @@
+{
+  "type": "object",
+  "properties": {
+    "_id": {
+      "type": "string",
+      "description": "Unique identifier for the restaurant"
+    },
+    "name": { "type": "string", "description": "Name of the restaurant" },
+    "address": {
+      "type": "object",
+      "properties": {
+        "street": { "type": "string" },
+        "city": { "type": "string" },
+        "state": { "type": "string" },
+        "zip": { "type": "string" }
+      }
+    },
+    "account_owner": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "description": "User ID(s) of account owner(s)"
+      }
+    },
+    "directors": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "description": "User ID(s) of directors overseeing this restaurant"
+      }
+    },
+    "managers": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "description": "User ID(s) of managers assigned to this restaurant"
+      }
+    },
+    "employees": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "description": "User ID(s) of employees working in this restaurant"
+      }
+    },
+    "food_type": {
+      "type": "array",
+      "items": { "type": "string", "description": "Types of cuisine served" }
+    },
+
+    "current_wines": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "global_id": {
+            "type": "string",
+            "description": "Reference to global wine ID"
+          },
+          "source": {
+            "type": "string",
+            "enum": ["franchise", "restaurant"],
+            "description": "Indicates if the wine is shared across franchise or specific to this restaurant"
+          },
+          "customized_from_franchise": {
+            "type": "boolean",
+            "description": "If true, this is a modified version of a franchise-assigned wine."
+          },
+          "custom_version": {
+            "type": "object",
+            "properties": {
+              "style": {
+                "type": "object",
+                "properties": {
+                  "wine_style_id": {
+                    "type": "string",
+                    "enum": [
+                      "00001",
+                      "00002",
+                      "00003",
+                      "00004",
+                      "00005",
+                      "00006",
+                      "00007",
+                      "00008",
+                      "00009",
+                      "00010",
+                      "00011",
+                      "00012",
+                      "00013",
+                      "00014",
+                      "00015",
+                      "00016",
+                      "00017",
+                      "00018"
+                    ],
+                    "description": "Custom wine style ID selected by restaurant"
+                  }
+                }
+              },
+              "offering": {
+                "type": "object",
+                "properties": {
+                  "bottle_price": {
+                    "type": "number",
+                    "description": "Restaurant's bottle price"
+                  },
+                  "glass_price": {
+                    "type": "number",
+                    "description": "Restaurant's glass price"
+                  }
+                }
+              },
+              "notes": {
+                "type": "object",
+                "properties": {
+                  "manager_comments": {
+                    "type": "string",
+                    "description": "Custom manager comments"
+                  },
+                  "tasting_notes": {
+                    "type": "string",
+                    "description": "Restaurant's tasting notes"
+                  }
+                }
+              }
+            }
+          },
+          "allow_manager_modifications": {
+            "type": "boolean",
+            "description": "If true, managers at this location can modify this wine."
+          }
+        }
+      }
+    },
+
+    "previous_wines": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "global_id": {
+            "type": "string",
+            "description": "Reference to global wine ID"
+          },
+          "added_date": {
+            "type": "string",
+            "format": "date",
+            "description": "Date the wine was added to the menu"
+          },
+          "removed_date": {
+            "type": "string",
+            "format": "date",
+            "description": "Date the wine was removed from the menu"
+          }
+        }
+      }
+    },
+
+    "current_dishes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "dish_id": {
+            "type": "string",
+            "description": "Reference to dish ID"
+          },
+          "source": {
+            "type": "string",
+            "enum": ["franchise", "restaurant"],
+            "description": "Indicates if the dish is shared across franchise or specific to this restaurant"
+          },
+          "customized_from_franchise": {
+            "type": "boolean",
+            "description": "If true, this is a modified version of a franchise-assigned dish."
+          },
+          "allow_manager_modifications": {
+            "type": "boolean",
+            "description": "If true, managers at this location can modify this dish."
+          }
+        }
+      }
+    },
+
+    "previous_dishes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "dish_id": {
+            "type": "string",
+            "description": "Reference to dish ID"
+          },
+          "added_date": {
+            "type": "string",
+            "format": "date",
+            "description": "Date the dish was added to the menu"
+          },
+          "removed_date": {
+            "type": "string",
+            "format": "date",
+            "description": "Date the dish was removed from the menu"
+          }
+        }
+      }
+    },
+
+    "subscription_status": {
+      "type": "string",
+      "enum": ["active", "canceled", "trial", "expired"],
+      "description": "Current subscription status of the restaurant"
+    },
+    "subscription_plan": {
+      "type": "string",
+      "enum": ["Single", "Multiple", "Enterprise"],
+      "description": "Current subscription plan"
+    },
+    "subscription_history": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "plan": {
+            "type": "string",
+            "enum": ["Single", "Multiple", "Enterprise"],
+            "description": "The plan at the time of the update"
+          },
+          "start_date": {
+            "type": "string",
+            "format": "date",
+            "description": "Date when this subscription started"
+          },
+          "end_date": {
+            "type": "string",
+            "format": "date",
+            "description": "Date when this subscription ended (if applicable)"
+          }
+        }
+      }
+    }
+  }
+}

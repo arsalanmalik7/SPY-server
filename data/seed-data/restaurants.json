@@ -1,0 +1,457 @@
+[
+  {
+    "uuid": "44444444-4444-4444-4444-444444444401",
+    "name": "Solo Bistro",
+    "address": {
+      "street": "123 Main St",
+      "city": "Anytown",
+      "state": "CA",
+      "zip": "90210"
+    },
+    "menu": "66666666-6666-6666-6666-666666666601",
+    "account_owner": "33333333-3333-3333-3333-333333333301",
+    "directors": [],
+    "managers": [
+      "33333333-3333-3333-3333-333333333301"
+    ],
+    "employees": [
+      "33333333-3333-3333-3333-333333333302",
+      "33333333-3333-3333-3333-333333333303",
+      "33333333-3333-3333-3333-333333333304",
+      "33333333-3333-3333-3333-333333333305",
+      "33333333-3333-3333-3333-333333333306"
+    ],
+    "food_type": [
+      "Italian",
+      "Modern"
+    ],
+    "allow_manager_modifications": false,
+    "current_wines": [
+      {
+        "global_id": "22222222-2222-2222-2222-222222222201",
+        "source": "restaurant",
+        "customized_from_shared_menu": false,
+        "customized_from_franchise": false
+      },
+      {
+        "global_id": "22222222-2222-2222-2222-222222222206",
+        "source": "restaurant",
+        "customized_from_shared_menu": false,
+        "customized_from_franchise": false
+      }
+    ],
+    "previous_wines": [],
+    "current_dishes": [
+      {
+        "dish_id": "11111111-1111-1111-1111-111111111111",
+        "source": "restaurant",
+        "customized_from_franchise": false
+      },
+      {
+        "dish_id": "11111111-1111-1111-1111-111111111112",
+        "source": "restaurant",
+        "customized_from_franchise": false
+      }
+    ],
+    "previous_dishes": [],
+    "subscription_status": "active",
+    "subscription_plan": "Single",
+    "subscription_history": [
+      {
+        "plan": "Single",
+        "start_date": "2023-01-01T00:00:00Z",
+        "end_date": "2024-01-01T00:00:00Z"
+      }
+    ]
+  },
+  {
+    "uuid": "55555555-5555-5555-5555-555555555501",
+    "name": "Franchise One",
+    "address": {
+      "street": "10 Enterprise Way",
+      "city": "Business City",
+      "state": "NY",
+      "zip": "10001"
+    },
+    "menu": "77777777-7777-7777-7777-777777777701",
+    "account_owner": "33333333-3333-3333-3333-333333333311",
+    "directors": [
+      "33333333-3333-3333-3333-333333333311"
+    ],
+    "managers": [
+      "33333333-3333-3333-3333-333333333312"
+    ],
+    "employees": [
+      "33333333-3333-3333-3333-333333333313",
+      "33333333-3333-3333-3333-333333333314",
+      "33333333-3333-3333-3333-333333333315"
+    ],
+    "food_type": [
+      "Fusion",
+      "Contemporary"
+    ],
+    "allow_manager_modifications": true,
+    "current_wines": [
+      {
+        "global_id": "22222222-2222-2222-2222-222222222202",
+        "source": "shared",
+        "customized_from_shared_menu": false,
+        "customized_from_franchise": false
+      },
+      {
+        "global_id": "22222222-2222-2222-2222-222222222203",
+        "source": "shared",
+        "customized_from_shared_menu": false,
+        "customized_from_franchise": true
+      }
+    ],
+    "previous_wines": [],
+    "current_dishes": [
+      {
+        "dish_id": "11111111-1111-1111-1111-111111111112",
+        "source": "shared",
+        "customized_from_franchise": false
+      },
+      {
+        "dish_id": "11111111-1111-1111-1111-111111111113",
+        "source": "shared",
+        "customized_from_franchise": true
+      }
+    ],
+    "previous_dishes": [],
+    "subscription_status": "active",
+    "subscription_plan": "Enterprise",
+    "subscription_history": [
+      {
+        "plan": "Enterprise",
+        "start_date": "2023-02-01T00:00:00Z",
+        "end_date": "2024-02-01T00:00:00Z"
+      }
+    ]
+  },
+  {
+    "uuid": "55555555-5555-5555-5555-555555555502",
+    "name": "Franchise Two",
+    "address": {
+      "street": "20 Commerce Blvd",
+      "city": "Trade Town",
+      "state": "NJ",
+      "zip": "07001"
+    },
+    "menu": "77777777-7777-7777-7777-777777777701",
+    "account_owner": "33333333-3333-3333-3333-333333333311",
+    "directors": [
+      "33333333-3333-3333-3333-333333333311"
+    ],
+    "managers": [
+      "33333333-3333-3333-3333-333333333316"
+    ],
+    "employees": [
+      "33333333-3333-3333-3333-333333333317",
+      "33333333-3333-3333-3333-333333333318",
+      "33333333-3333-3333-3333-333333333319"
+    ],
+    "food_type": [
+      "Fusion",
+      "Contemporary"
+    ],
+    "allow_manager_modifications": true,
+    "current_wines": [
+      {
+        "global_id": "22222222-2222-2222-2222-222222222204",
+        "source": "shared",
+        "customized_from_shared_menu": false,
+        "customized_from_franchise": false
+      },
+      {
+        "global_id": "22222222-2222-2222-2222-222222222205",
+        "source": "shared",
+        "customized_from_shared_menu": false,
+        "customized_from_franchise": false
+      }
+    ],
+    "previous_wines": [],
+    "current_dishes": [
+      {
+        "dish_id": "11111111-1111-1111-1111-111111111114",
+        "source": "shared",
+        "customized_from_franchise": false
+      },
+      {
+        "dish_id": "11111111-1111-1111-1111-111111111115",
+        "source": "shared",
+        "customized_from_franchise": false
+      }
+    ],
+    "previous_dishes": [],
+    "subscription_status": "active",
+    "subscription_plan": "Enterprise",
+    "subscription_history": [
+      {
+        "plan": "Enterprise",
+        "start_date": "2023-02-01T00:00:00Z",
+        "end_date": "2024-02-01T00:00:00Z"
+      }
+    ]
+  },
+  {
+    "uuid": "55555555-5555-5555-5555-555555555503",
+    "name": "Franchise Three",
+    "address": {
+      "street": "30 Market Ave",
+      "city": "Commerce City",
+      "state": "IL",
+      "zip": "60601"
+    },
+    "menu": "77777777-7777-7777-7777-777777777701",
+    "account_owner": "33333333-3333-3333-3333-333333333311",
+    "directors": [
+      "33333333-3333-3333-3333-333333333311"
+    ],
+    "managers": [
+      "33333333-3333-3333-3333-333333333320"
+    ],
+    "employees": [
+      "33333333-3333-3333-3333-333333333321",
+      "33333333-3333-3333-3333-333333333322",
+      "33333333-3333-3333-3333-333333333323"
+    ],
+    "food_type": [
+      "Fusion",
+      "Contemporary"
+    ],
+    "allow_manager_modifications": true,
+    "current_wines": [
+      {
+        "global_id": "22222222-2222-2222-2222-222222222202",
+        "source": "shared",
+        "customized_from_shared_menu": false,
+        "customized_from_franchise": false
+      },
+      {
+        "global_id": "22222222-2222-2222-2222-222222222204",
+        "source": "shared",
+        "customized_from_shared_menu": false,
+        "customized_from_franchise": false
+      }
+    ],
+    "previous_wines": [],
+    "current_dishes": [
+      {
+        "dish_id": "11111111-1111-1111-1111-111111111112",
+        "source": "shared",
+        "customized_from_franchise": false
+      },
+      {
+        "dish_id": "11111111-1111-1111-1111-111111111115",
+        "source": "shared",
+        "customized_from_franchise": false
+      }
+    ],
+    "previous_dishes": [],
+    "subscription_status": "active",
+    "subscription_plan": "Enterprise",
+    "subscription_history": [
+      {
+        "plan": "Enterprise",
+        "start_date": "2023-02-01T00:00:00Z",
+        "end_date": "2024-02-01T00:00:00Z"
+      }
+    ]
+  },
+  {
+    "uuid": "55555555-5555-5555-5555-555555555504",
+    "name": "Franchise Four",
+    "address": {
+      "street": "40 Innovation Rd",
+      "city": "Techville",
+      "state": "TX",
+      "zip": "73301"
+    },
+    "menu": "77777777-7777-7777-7777-777777777701",
+    "account_owner": "33333333-3333-3333-3333-333333333311",
+    "directors": [
+      "33333333-3333-3333-3333-333333333311"
+    ],
+    "managers": [
+      "33333333-3333-3333-3333-333333333324"
+    ],
+    "employees": [
+      "33333333-3333-3333-3333-333333333325",
+      "33333333-3333-3333-3333-333333333326",
+      "33333333-3333-3333-3333-333333333327"
+    ],
+    "food_type": [
+      "Fusion",
+      "Contemporary"
+    ],
+    "allow_manager_modifications": true,
+    "current_wines": [
+      {
+        "global_id": "22222222-2222-2222-2222-222222222203",
+        "source": "shared",
+        "customized_from_shared_menu": false,
+        "customized_from_franchise": true
+      },
+      {
+        "global_id": "22222222-2222-2222-2222-222222222205",
+        "source": "shared",
+        "customized_from_shared_menu": false,
+        "customized_from_franchise": true
+      }
+    ],
+    "previous_wines": [],
+    "current_dishes": [
+      {
+        "dish_id": "11111111-1111-1111-1111-111111111113",
+        "source": "shared",
+        "customized_from_franchise": true
+      },
+      {
+        "dish_id": "11111111-1111-1111-1111-111111111114",
+        "source": "shared",
+        "customized_from_franchise": true
+      }
+    ],
+    "previous_dishes": [],
+    "subscription_status": "active",
+    "subscription_plan": "Enterprise",
+    "subscription_history": [
+      {
+        "plan": "Enterprise",
+        "start_date": "2023-02-01T00:00:00Z",
+        "end_date": "2024-02-01T00:00:00Z"
+      }
+    ]
+  },
+  {
+    "uuid": "55555555-5555-5555-5555-555555555505",
+    "name": "Franchise Five",
+    "address": {
+      "street": "50 Downtown St",
+      "city": "Metro City",
+      "state": "FL",
+      "zip": "33101"
+    },
+    "menu": "77777777-7777-7777-7777-777777777701",
+    "account_owner": "33333333-3333-3333-3333-333333333311",
+    "directors": [
+      "33333333-3333-3333-3333-333333333311"
+    ],
+    "managers": [
+      "33333333-3333-3333-3333-333333333328"
+    ],
+    "employees": [
+      "33333333-3333-3333-3333-333333333329",
+      "33333333-3333-3333-3333-333333333330",
+      "33333333-3333-3333-3333-333333333331"
+    ],
+    "food_type": [
+      "Fusion",
+      "Contemporary"
+    ],
+    "allow_manager_modifications": true,
+    "current_wines": [
+      {
+        "global_id": "22222222-2222-2222-2222-222222222202",
+        "source": "shared",
+        "customized_from_shared_menu": false,
+        "customized_from_franchise": false
+      },
+      {
+        "global_id": "22222222-2222-2222-2222-222222222204",
+        "source": "shared",
+        "customized_from_shared_menu": false,
+        "customized_from_franchise": false
+      }
+    ],
+    "previous_wines": [],
+    "current_dishes": [
+      {
+        "dish_id": "11111111-1111-1111-1111-111111111115",
+        "source": "shared",
+        "customized_from_franchise": false
+      },
+      {
+        "dish_id": "11111111-1111-1111-1111-111111111112",
+        "source": "shared",
+        "customized_from_franchise": false
+      }
+    ],
+    "previous_dishes": [],
+    "subscription_status": "active",
+    "subscription_plan": "Enterprise",
+    "subscription_history": [
+      {
+        "plan": "Enterprise",
+        "start_date": "2023-02-01T00:00:00Z",
+        "end_date": "2024-02-01T00:00:00Z"
+      }
+    ]
+  },
+  {
+    "uuid": "55555555-5555-5555-5555-555555555506",
+    "name": "Franchise Six",
+    "address": {
+      "street": "60 Innovation Dr",
+      "city": "Startup City",
+      "state": "WA",
+      "zip": "98101"
+    },
+    "menu": "77777777-7777-7777-7777-777777777701",
+    "account_owner": "33333333-3333-3333-3333-333333333311",
+    "directors": [
+      "33333333-3333-3333-3333-333333333311"
+    ],
+    "managers": [
+      "33333333-3333-3333-3333-333333333332"
+    ],
+    "employees": [
+      "33333333-3333-3333-3333-333333333333",
+      "33333333-3333-3333-3333-333333333334",
+      "33333333-3333-3333-3333-333333333335"
+    ],
+    "food_type": [
+      "Fusion",
+      "Contemporary"
+    ],
+    "allow_manager_modifications": true,
+    "current_wines": [
+      {
+        "global_id": "22222222-2222-2222-2222-222222222203",
+        "source": "shared",
+        "customized_from_shared_menu": false,
+        "customized_from_franchise": true
+      },
+      {
+        "global_id": "22222222-2222-2222-2222-222222222205",
+        "source": "shared",
+        "customized_from_shared_menu": false,
+        "customized_from_franchise": true
+      }
+    ],
+    "previous_wines": [],
+    "current_dishes": [
+      {
+        "dish_id": "11111111-1111-1111-1111-111111111114",
+        "source": "shared",
+        "customized_from_franchise": true
+      },
+      {
+        "dish_id": "11111111-1111-1111-1111-111111111113",
+        "source": "shared",
+        "customized_from_franchise": true
+      }
+    ],
+    "previous_dishes": [],
+    "subscription_status": "active",
+    "subscription_plan": "Enterprise",
+    "subscription_history": [
+      {
+        "plan": "Enterprise",
+        "start_date": "2023-02-01T00:00:00Z",
+        "end_date": "2024-02-01T00:00:00Z"
+      }
+    ]
+  }
+]

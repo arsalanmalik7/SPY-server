@@ -1,0 +1,53 @@
+{
+  "unit": 1,
+  "unit_name": "wine Basics",
+  "chapter": 4,
+  "chapter_name": "wine Countries",
+  "category":"wine",
+  "difficulty": "intermediate",
+  "questions": [
+    {
+      "question_text": "Which country is {wine_variable} and {wine_label} from?",
+      "question_type": "single_select",
+      "options_variable": "link_to_restaurant.current_wines.map(wine => wine.region.country).filter((value, index, self) => self.indexOf(value) === index).filter(country => country !== link_to_restaurant.current_wines[{wine_id}].region.country).slice(0, 3).concat(link_to_restaurant.current_wines[{wine_id}].region.country)",
+      "correct_answer_variable": "link_to_restaurant.current_wines[{wine_id}].region.country",
+      "placeholders": {
+        "wine_variable": "${link_to_restaurant.current_wines[{wine_id}].producer_name}, ${link_to_restaurant.current_wines[{wine_id}].product_name}",
+        "wine_label": "link_to_restaurant.current_wines[{wine_id}].image_url"
+      },
+      "repeat_for": {
+        "source": "link_to_restaurant.current_wines",
+        "key_variable": "wine_id"
+      },
+      "conditional": {
+        "if": "link_to_restaurant.current_wines.every(wine => wine.region.country === link_to_restaurant.current_wines[0].region.country)",
+        "then_skip_to_question": "u1_c4_q2"
+      },
+      "difficulty": "medium",
+      "hint": "Look at the wine's label and region details in your menu to determine its country of origin."
+    },
+    {
+      "question_text": "Which country are all your wines from?",
+      "question_type": "single_select",
+      "options_variable": "link_to_restaurant.current_wines.map(wine => wine.region.country).filter((value, index, self) => self.indexOf(value) === index)",
+      "correct_answer_variable": "link_to_restaurant.current_wines[0].region.country",
+      "placeholders": {},
+      "difficulty": "easy",
+      "hint": "If all wines on the menu are from the same country, choose that country."
+    },
+    {
+      "question_text": "How many wines do you offer from {wine_country}?",
+      "question_type": "single_select",
+      "options_variable": "link_to_restaurant.current_wines.filter(wine => wine.region.country === '{wine_country}').length",
+      "correct_answer_variable": "link_to_restaurant.current_wines.filter(wine => wine.region.country === '{wine_country}').length",
+      "placeholders": {
+        "wine_country": "link_to_restaurant.current_wines.map(wine => wine.region.country).filter((value, index, self) => self.indexOf(value) === index)"
+      },
+      "repeat_for": {
+        "source": "link_to_restaurant.current_wines.map(wine => wine.region.country).filter((value, index, self) => self.indexOf(value) === index)"
+      },
+      "difficulty": "medium",
+      "hint": "Check your wine list and count how many wines are listed under this country."
+    }
+  ]
+}

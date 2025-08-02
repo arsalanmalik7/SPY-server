@@ -1,0 +1,40 @@
+{
+  "unit": 2,
+  "unit_name": "wine Advanced",
+  "chapter": 2,
+  "chapter_name": "wine BTG/BTB per Country",
+  "category":"wine",
+  "difficulty": "intermediate",
+  "questions": [
+    {
+      "question_text": "How many wines BTG do you have from {wine_country}?",
+      "question_type": "single_select",
+      "options_variable": "link_to_restaurant.current_wines.filter(wine => wine.offering.by_the_glass && wine.region.country === '{wine_country}').length + [Math.max(0, link_to_restaurant.current_wines.filter(wine => wine.offering.by_the_glass && wine.region.country === '{wine_country}').length - 3), link_to_restaurant.current_wines.filter(wine => wine.offering.by_the_glass && wine.region.country === '{wine_country}').length + 3, link_to_restaurant.current_wines.filter(wine => wine.offering.by_the_glass && wine.region.country === '{wine_country}').length + 5].slice(0, 3)",
+      "correct_answer_variable": "link_to_restaurant.current_wines.filter(wine => wine.offering.by_the_glass && wine.region.country === '{wine_country}').length",
+      "placeholders": {
+        "wine_country": "link_to_restaurant.current_wines.map(wine => wine.region.country).filter((country, index, array) => array.indexOf(country) === index)"
+      },
+      "repeat_for": {
+        "source": "link_to_restaurant.current_wines.map(wine => wine.region.country).filter((country, index, array) => array.indexOf(country) === index)",
+        "key_variable": "wine_country"
+      },
+      "difficulty": "medium",
+      "hint": "Check your wine list and count how many wines are offered by the glass from {wine_country}."
+    },
+    {
+      "question_text": "How many wines BTB do you have from {wine_country}?",
+      "question_type": "single_select",
+      "options_variable": "link_to_restaurant.current_wines.filter(wine => wine.offering.by_the_bottle && wine.region.country === '{wine_country}').length + [Math.max(0, link_to_restaurant.current_wines.filter(wine => wine.offering.by_the_bottle && wine.region.country === '{wine_country}').length - 3), link_to_restaurant.current_wines.filter(wine => wine.offering.by_the_bottle && wine.region.country === '{wine_country}').length + 3, link_to_restaurant.current_wines.filter(wine => wine.offering.by_the_bottle && wine.region.country === '{wine_country}').length + 5].slice(0, 3)",
+      "correct_answer_variable": "link_to_restaurant.current_wines.filter(wine => wine.offering.by_the_bottle && wine.region.country === '{wine_country}').length",
+      "placeholders": {
+        "wine_country": "link_to_restaurant.current_wines.map(wine => wine.region.country).filter((country, index, array) => array.indexOf(country) === index)"
+      },
+      "repeat_for": {
+        "source": "link_to_restaurant.current_wines.map(wine => wine.region.country).filter((country, index, array) => array.indexOf(country) === index)",
+        "key_variable": "wine_country"
+      },
+      "difficulty": "medium",
+      "hint": "Check your wine list and count how many wines are offered by the bottle from {wine_country}."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "type": "object",
+  "properties": {
+    "_id": { "type": "string", "description": "Unique identifier for the global wine" },
+    "producer_name": { "type": "string", "description": "Producer of the wine" },
+    "product_name": { "type": "string", "description": "Name of the wine" },
+    "varietals": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Grapes used in the wine"
+    },
+    "region": {
+      "type": "object",
+      "properties": {
+        "country": { "type": "string" },
+        "major_region": { "type": "string" },
+        "sub_region": { "type": "string" },
+        "sub_appellation": { "type": "string" }
+      }
+    },
+    "vintage": { "type": "integer", "description": "Vintage year" },
+    "category": { "type": "string", "description": "Wine category (e.g., red, white, sparkling)" },
+    "is_filtered": { "type": "boolean", "description": "Indicates if the wine is filtered" },
+    "has_residual_sugar": { "type": "boolean", "description": "Indicates if the wine has residual sugar" },
+    "style": {
+      "type": "object",
+      "properties": {
+        "wine_style_id": { "type": "string", "description": "Reference to a global wine style" },
+        "name": { "type": "string", "description": "Suggested wine style name" },
+        "body_rank": { "type": "integer", "description": "Suggested body ranking" }
+      },
+      "description": "Suggested wine style from the global database"
+    },
+    "image_url": { "type": "string", "format": "uri", "description": "Wine bottle image URL" }
+  }
+}

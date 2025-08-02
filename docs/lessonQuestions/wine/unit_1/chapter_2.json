@@ -1,0 +1,84 @@
+{
+  "unit": 1,
+  "unit_name": "wine Basics",
+  "chapter": 2,
+  "chapter_name": "BTG/BTB",
+  "category":"wine",
+  "difficulty": "intermediate",
+  "questions": [
+    {
+      "question_text": "How many wines do you have by the glass?",
+      "question_type": "single_select",
+      "options_variable": "shuffle(generateNumberOptions(link_to_restaurant.current_wines.filter(wine => wine.offering.by_the_glass).length, 3)).slice(0, 3)",
+      "correct_answer_variable": "link_to_restaurant.current_wines.filter(wine => wine.offering.by_the_glass).length",
+      "difficulty": "easy",
+      "hint": "Count the wines available by the glass and select the number closest to that count."
+    },
+    {
+      "question_text": "How many {wine_type} wines do you have by the glass?",
+      "question_type": "single_select",
+      "options_variable": "shuffle(generateNumberOptions(link_to_restaurant.current_wines.filter(wine => wine.offering.by_the_glass && wine.category === '{wine_type}').length, 3)).slice(0, 3)",
+      "correct_answer_variable": "link_to_restaurant.current_wines.filter(wine => wine.offering.by_the_glass && wine.category === '{wine_type}').length",
+      "placeholders": {
+        "wine_type": "config.wineCategories"
+      },
+      "repeat_for": {
+        "source": "config.wineCategories"
+      },
+      "difficulty": "medium",
+      "hint": "Filter your wines by the specified type that are available by the glass, count them, and select the number closest to that count."
+    },
+    {
+      "question_text": "How many wines do you have by the bottle?",
+      "question_type": "single_select",
+      "options_variable": "shuffle(generateNumberOptions(link_to_restaurant.current_wines.filter(wine => wine.offering.by_the_bottle).length, 3)).slice(0, 3)",
+      "correct_answer_variable": "link_to_restaurant.current_wines.filter(wine => wine.offering.by_the_bottle).length",
+      "difficulty": "easy",
+      "hint": "Count the wines offered by the bottle and select the number closest to that count."
+    },
+    {
+      "question_text": "How many {wine_type} wines do you have by the bottle?",
+      "question_type": "single_select",
+      "options_variable": "shuffle(generateNumberOptions(link_to_restaurant.current_wines.filter(wine => wine.offering.by_the_bottle && wine.category === '{wine_type}').length, 3)).slice(0, 3)",
+      "correct_answer_variable": "link_to_restaurant.current_wines.filter(wine => wine.offering.by_the_bottle && wine.category === '{wine_type}').length",
+      "placeholders": {
+        "wine_type": "config.wineCategories"
+      },
+      "repeat_for": {
+        "source": "config.wineCategories"
+      },
+      "difficulty": "medium",
+      "hint": "Filter wines by the specified type that are offered by the bottle, count them, and select the number closest to that count."
+    },
+    {
+      "question_text": "How many {wine_type} wines do you have by the bottle that aren’t offered by the glass?",
+      "question_type": "single_select",
+      "options_variable": "shuffle(generateNumberOptions(link_to_restaurant.current_wines.filter(wine => wine.category === '{wine_type}' && wine.offering.by_the_bottle && !wine.offering.by_the_glass).length, 3)).slice(0, 3)",
+      "correct_answer_variable": "link_to_restaurant.current_wines.filter(wine => wine.category === '{wine_type}' && wine.offering.by_the_bottle && !wine.offering.by_the_glass).length",
+      "placeholders": {
+        "wine_type": "$config.wineCategories"
+      },
+      "repeat_for": {
+        "source": "$config.wineCategories"
+      },
+      "difficulty": "medium",
+      "hint": "Count the wines of the specified type that are offered by the bottle only, then select the number closest to that count."
+    },
+    {
+      "question_text": "Is this wine {producer_name}, {product_name} offered by the glass, bottle, or both?",
+      "question_type": "single_select",
+      "options_variable": ["Glass", "Bottle", "Both"],
+      "correct_answer_variable": "link_to_restaurant.current_wines[{wine_id}].offering.by_the_bottle && link_to_restaurant.current_wines[{wine_id}].offering.by_the_glass ? 'Both' : link_to_restaurant.current_wines[{wine_id}].offering.by_the_bottle ? 'Bottle' : 'Glass'",
+      "placeholders": {
+        "producer_name": "link_to_restaurant.current_wines[{wine_id}].producer_name",
+        "product_name": "link_to_restaurant.current_wines[{wine_id}].product_name"
+      },
+      "repeat_for": {
+        "source": "link_to_restaurant.current_wines",
+        "key_variable": "wine_id"
+      },
+      "difficulty": "medium",
+      "hint": "Determine if the wine is available by the glass, by the bottle, or both based on its offering settings."
+    }
+  ]
+}

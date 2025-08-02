@@ -1,0 +1,158 @@
+{
+  "red": {
+    "00005": {
+      "name": "mild, mannered red",
+      "body": "light to medium",
+      "texture": "low tannin, gentle",
+      "flavor_intensity": "light to medium, subtle, refreshing",
+      "type": "red",
+      "body_rank": 1
+    },
+    "00006": {
+      "name": "soft, fruity red",
+      "body": "light to medium",
+      "texture": "low to medium tannin, soft",
+      "flavor_intensity": "medium to high, refreshing",
+      "type": "red",
+      "body_rank": 2
+    },
+    "00007": {
+      "name": "fresh, spicy red",
+      "body": "medium, some full",
+      "texture": "medium tannin, firm",
+      "flavor_intensity": "medium to high, vibrant",
+      "type": "red",
+      "body_rank": 3
+    },
+    "00008": {
+      "name": "powerful red",
+      "body": "full",
+      "texture": "high tannin, sturdy",
+      "flavor_intensity": "medium to high, concentrated",
+      "type": "red",
+      "body_rank": 4
+    }
+  },
+  "white": {
+    "00001": {
+      "name": "fresh, unoaked white",
+      "body": "light to medium",
+      "texture": "crisp, refreshing",
+      "flavor_intensity": "light to medium, mild",
+      "type": "white",
+      "body_rank": 1
+    },
+    "00002": {
+      "name": "minerally white",
+      "body": "medium to full",
+      "texture": "firm, substantial",
+      "flavor_intensity": "medium, minerality",
+      "type": "white",
+      "body_rank": 2
+    },
+    "00003": {
+      "name": "aromatic white",
+      "body": "light to medium, some full",
+      "texture": "crisp, some soft",
+      "flavor_intensity": "high, complex",
+      "type": "white",
+      "body_rank": 3
+    },
+    "00004": {
+      "name": "rich, oaky white",
+      "body": "full",
+      "texture": "soft, rich",
+      "flavor_intensity": "high, oaky",
+      "type": "white",
+      "body_rank": 4
+    }
+  },
+  "rose": {
+    "00009": {
+      "name": "blush rosé",
+      "body": "light to medium",
+      "texture": "light to medium, viscous",
+      "flavor_intensity": "medium to high, slightly sweet to sweet",
+      "type": "rose",
+      "body_rank": 1
+    },
+    "00010": {
+      "name": "dry rosé",
+      "body": "light",
+      "texture": "light, crisp",
+      "flavor_intensity": "light to medium, dry to slightly sweet",
+      "type": "rose",
+      "body_rank": 2
+    }
+  },
+  "sparkling": {
+    "00011": {
+      "name": "fruit-driven sparkling",
+      "body": "light to medium",
+      "texture": "light to medium, fresh",
+      "flavor_intensity": "light to medium, crisp and fruity",
+      "type": "sparkling",
+      "body_rank": 1
+    },
+    "00012": {
+      "name": "complex sparkling",
+      "body": "light to medium",
+      "texture": "light to medium, rich",
+      "flavor_intensity": "light to medium, minerality",
+      "type": "sparkling",
+      "body_rank": 2
+    }
+  },
+  "orange": {
+    "00013": {
+      "name": "aromatic orange",
+      "body": "light to medium",
+      "texture": "low tannin, crisp",
+      "flavor_intensity": "medium to high, refreshing",
+      "type": "orange",
+      "body_rank": 1
+    },
+    "00014": {
+      "name": "fruity orange",
+      "body": "medium to full",
+      "texture": "medium tannin, balanced",
+      "flavor_intensity": "medium to high, refined",
+      "type": "orange",
+      "body_rank": 2
+    },
+    "00015": {
+      "name": "rich orange",
+      "body": "full",
+      "texture": "high tannin, robust",
+      "flavor_intensity": "medium to high, extracted",
+      "type": "orange",
+      "body_rank": 3
+    }
+  },
+  "dessert": {
+    "00016": {
+      "name": "sparkling dessert",
+      "body": "light to medium",
+      "texture": "light to medium, fresh",
+      "flavor_intensity": "light to medium, luscious fruit",
+      "type": "dessert",
+      "body_rank": 1
+    },
+    "00017": {
+      "name": "subtle, aromatic dessert",
+      "body": "medium to full",
+      "texture": "medium to high, creamy",
+      "flavor_intensity": "medium to high, concentrated",
+      "type": "dessert",
+      "body_rank": 2
+    },
+    "00018": {
+      "name": "rich, fruity dessert",
+      "body": "full",
+      "texture": "high tannin, substantial",
+      "flavor_intensity": "medium to high, extracted",
+      "type": "dessert",
+      "body_rank": 3
+    }
+  }
+}

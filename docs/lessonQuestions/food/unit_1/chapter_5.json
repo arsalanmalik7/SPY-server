@@ -1,0 +1,45 @@
+{
+  "unit": 1,
+  "unit_name": "food basics",
+  "chapter": 5,
+  "chapter_name": "food images",
+  "category": "food",
+  "difficulty": "intermediate",
+  "content": {
+    "main_text": "Learn to recognize dishes based on their images.",
+    "section_1_title": "Introduction",
+    "section_1_content": "Visual recognition of dishes is essential in modern dining services.",
+    "section_2_title": "Dish Images",
+    "section_2_content": "Each dish typically has a unique visual presentation.",
+    "section_3_title": "Importance",
+    "section_3_content": "Recognizing dishes from images helps with quicker service and reduces errors."
+  },
+  "createdBy": "33333333-3333-3333-3333-333333333301",
+  "lastModifiedBy": "33333333-3333-3333-3333-333333333301",
+  "menu_items": [
+    "11111111-1111-1111-1111-111111111111"
+  ],
+  "questions": [
+    {
+      "question_text": "Choose the correct dish for this image: {dish_image}.",
+      "question_type": "single_select",
+      "options_variable": {
+        "source": "link_to_restaurant.current_dishes.filter(dish => dish._id !== dish_id).map(dish => dish.name)",
+        "limit": 3
+      },
+      "correct_answer_variable": {
+        "source": "current_dish.name"
+      },
+      "placeholders": {
+        "dish_image": "link_to_restaurant.current_dishes[{dish_id}].image_url"
+      },
+      "repeat_for": {
+        "source": "link_to_restaurant.current_dishes",
+        "key_variable": "dish_id",
+        "condition": "current_dish.image_url.length > 0"
+      },
+      "difficulty": "medium",
+      "hint": "Examine the image and select the dish name that best matches it from the choices provided."
+    }
+  ]
+}

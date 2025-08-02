@@ -1,0 +1,66 @@
+{
+  "Europe": [
+    "France",
+    "Italy",
+    "Spain",
+    "Germany",
+    "Portugal",
+    "Austria",
+    "Greece",
+    "Switzerland",
+    "Hungary",
+    "Romania",
+    "Bulgaria",
+    "Slovenia",
+    "Croatia",
+    "Georgia",
+    "Moldova",
+    "Serbia",
+    "Turkey",
+    "Armenia",
+    "North Macedonia",
+    "Czech Republic"
+  ],
+  "North America": [
+    "United States",
+    "Canada",
+    "Mexico"
+  ],
+  "South America": [
+    "Argentina",
+    "Chile",
+    "Brazil",
+    "Uruguay",
+    "Peru"
+  ],
+  "Asia": [
+    "China",
+    "Japan",
+    "India",
+    "Israel",
+    "Lebanon",
+    "Kazakhstan"
+  ],
+  "Africa": [
+    "South Africa",
+    "Morocco",
+    "Tunisia",
+    "Algeria"
+  ],
+  "Oceania": [
+    "Australia",
+    "New Zealand"
+  ],
+  "EmergingRegions": [
+    "Thailand",
+    "Vietnam",
+    "England (UK)",
+    "Wales (UK)",
+    "Belgium",
+    "Luxembourg",
+    "Poland",
+    "Sweden",
+    "Denmark",
+    "Cyprus"
+  ]
+}

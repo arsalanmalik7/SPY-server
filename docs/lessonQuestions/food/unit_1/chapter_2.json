@@ -1,0 +1,64 @@
+{
+  "unit": 1,
+  "unit_name": "food basics",
+  "chapter": 2,
+  "chapter_name": "food prices",
+  "category": "food",
+  "difficulty": "intermediate",
+  "content": {
+    "main_text": "Learn about pricing of dishes and price ranges within food courses.",
+    "section_1_title": "Introduction",
+    "section_1_content": "Understanding pricing helps in customer service and menu management.",
+    "section_2_title": "Price Variations",
+    "section_2_content": "Different dishes have different pricing strategies.",
+    "section_3_title": "Importance",
+    "section_3_content": "Accurate pricing ensures proper billing and profitability."
+  },
+  "createdBy": "33333333-3333-3333-3333-333333333301",
+  "lastModifiedBy": "33333333-3333-3333-3333-333333333301",
+  "menu_items": [
+    "11111111-1111-1111-1111-111111111111"
+  ],
+  "questions": [
+    {
+      "question_text": "What is the price of {dish_name}?",
+      "question_type": "single_select",
+      "options_variable": {
+        "source": "generatePriceOptions(current_dish.price, 15)",
+        "limit": 3
+      },
+      "correct_answer_variable": {
+        "source": "current_dish.price"
+      },
+      "placeholders": {
+        "dish_name": "link_to_restaurant.current_dishes[{dish_id}].name"
+      },
+      "repeat_for": {
+        "source": "link_to_restaurant.current_dishes",
+        "key_variable": "dish_id"
+      },
+      "difficulty": "easy",
+      "hint": "Select the price that is closest to the actual listed price for this dish."
+    },
+    {
+      "question_text": "What is the price range of your {food_course}?",
+      "question_type": "single_select",
+      "options_variable": {
+        "source": "generatePriceRangeOptions(link_to_restaurant.current_dishes.filter(dish => dish.type.includes(food_course)).map(dish => dish.price).reduce((a, b) => [Math.min(a, b), Math.max(a, b)]), 40)",
+        "limit": 3
+      },
+      "correct_answer_variable": {
+        "source": "link_to_restaurant.current_dishes.filter(dish => dish.type.includes(food_course)).map(dish => dish.price).reduce((a, b) => [Math.min(a, b), Math.max(a, b)])"
+      },
+      "placeholders": {
+        "food_course": "config.validDishTypes"
+      },
+      "repeat_for": {
+        "source": "config.validDishTypes",
+        "key_variable": "food_course"
+      },
+      "difficulty": "medium",
+      "hint": "Determine the minimum and maximum prices for dishes in this course, then choose the price range that most closely reflects these values (allowing for a variation of up to $40)."
+    }
+  ]
+}

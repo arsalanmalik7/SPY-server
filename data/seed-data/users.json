@@ -1,0 +1,761 @@
+[
+  {
+    "uuid": "33333333-3333-3333-3333-333333333301",
+    "first_name": "Alice",
+    "last_name": "Manager",
+    "email": "individual.manager@example.com",
+    "password": "password123",
+    "image_url": "https://via.placeholder.com/100",
+    "role": "manager",
+    "assigned_restaurants": [
+      "44444444-4444-4444-4444-444444444401"
+    ],
+    "permissions": [],
+    "lessons_required": {
+      "wine": true,
+      "food": true
+    },
+    "lesson_progress": [
+      {
+        "lesson_id": "lesson-food-1",
+        "status": "completed",
+        "last_completed": "2023-01-10T12:00:00Z",
+        "attempts": 1
+      },
+      {
+        "lesson_id": "lesson-wine-1",
+        "status": "in_progress",
+        "last_completed": "2023-02-15T15:30:00Z",
+        "attempts": 2
+      }
+    ]
+  },
+  {
+    "uuid": "33333333-3333-3333-3333-333333333302",
+    "first_name": "Bob",
+    "last_name": "Employee",
+    "email": "individual.employee1@example.com",
+    "password": "password123",
+    "image_url": "https://via.placeholder.com/100",
+    "role": "employee",
+    "assigned_restaurants": [
+      "44444444-4444-4444-4444-444444444401"
+    ],
+    "permissions": [],
+    "lessons_required": {
+      "wine": true,
+      "food": true
+    },
+    "lesson_progress": [
+      {
+        "lesson_id": "lesson-food-2",
+        "status": "not_started",
+        "last_completed": null,
+        "attempts": 0
+      }
+    ]
+  },
+  {
+    "uuid": "33333333-3333-3333-3333-333333333303",
+    "first_name": "Carol",
+    "last_name": "Employee",
+    "email": "individual.employee2@example.com",
+    "password": "password123",
+    "image_url": "https://via.placeholder.com/100",
+    "role": "employee",
+    "assigned_restaurants": [
+      "44444444-4444-4444-4444-444444444401"
+    ],
+    "permissions": [],
+    "lessons_required": {
+      "wine": true,
+      "food": true
+    },
+    "lesson_progress": [
+      {
+        "lesson_id": "lesson-food-1",
+        "status": "completed",
+        "last_completed": "2023-01-12T12:00:00Z",
+        "attempts": 1
+      }
+    ]
+  },
+  {
+    "uuid": "33333333-3333-3333-3333-333333333304",
+    "first_name": "Dave",
+    "last_name": "Employee",
+    "email": "individual.employee3@example.com",
+    "password": "password123",
+    "image_url": "https://via.placeholder.com/100",
+    "role": "employee",
+    "assigned_restaurants": [
+      "44444444-4444-4444-4444-444444444401"
+    ],
+    "permissions": [],
+    "lessons_required": {
+      "wine": true,
+      "food": true
+    },
+    "lesson_progress": [
+      {
+        "lesson_id": "lesson-wine-1",
+        "status": "in_progress",
+        "last_completed": "2023-02-16T14:00:00Z",
+        "attempts": 1
+      }
+    ]
+  },
+  {
+    "uuid": "33333333-3333-3333-3333-333333333305",
+    "first_name": "Fiona",
+    "last_name": "Employee",
+    "email": "individual.employee4@example.com",
+    "password": "password123",
+    "image_url": "https://via.placeholder.com/100",
+    "role": "employee",
+    "assigned_restaurants": [
+      "44444444-4444-4444-4444-444444444401"
+    ],
+    "permissions": [],
+    "lessons_required": {
+      "wine": true,
+      "food": true
+    },
+    "lesson_progress": [
+      {
+        "lesson_id": "lesson-food-2",
+        "status": "completed",
+        "last_completed": "2023-01-15T09:30:00Z",
+        "attempts": 1
+      }
+    ]
+  },
+  {
+    "uuid": "33333333-3333-3333-3333-333333333306",
+    "first_name": "George",
+    "last_name": "Employee",
+    "email": "individual.employee5@example.com",
+    "password": "password123",
+    "image_url": "https://via.placeholder.com/100",
+    "role": "employee",
+    "assigned_restaurants": [
+      "44444444-4444-4444-4444-444444444401"
+    ],
+    "permissions": [],
+    "lessons_required": {
+      "wine": true,
+      "food": true
+    },
+    "lesson_progress": [
+      {
+        "lesson_id": "lesson-wine-1",
+        "status": "completed",
+        "last_completed": "2023-02-10T11:00:00Z",
+        "attempts": 1
+      }
+    ]
+  },
+  {
+    "uuid": "33333333-3333-3333-3333-333333333307",
+    "first_name": "Hannah",
+    "last_name": "Employee",
+    "email": "individual.employee6@example.com",
+    "password": "password123",
+    "image_url": "https://via.placeholder.com/100",
+    "role": "employee",
+    "assigned_restaurants": [
+      "44444444-4444-4444-4444-444444444401"
+    ],
+    "permissions": [],
+    "lessons_required": {
+      "wine": true,
+      "food": true
+    },
+    "lesson_progress": [
+      {
+        "lesson_id": "lesson-food-1",
+        "status": "in_progress",
+        "last_completed": "2023-01-20T10:00:00Z",
+        "attempts": 2
+      }
+    ]
+  },
+  {
+    "uuid": "33333333-3333-3333-3333-333333333310",
+    "first_name": "Eve",
+    "last_name": "SuperAdmin",
+    "email": "enterprise.superadmin@example.com",
+    "password": "password123",
+    "image_url": "https://via.placeholder.com/100",
+    "role": "super_admin",
+    "assigned_restaurants": [],
+    "permissions": [],
+    "lessons_required": {
+      "wine": true,
+      "food": true
+    },
+    "lesson_progress": [
+      {
+        "lesson_id": "lesson-wine-2",
+        "status": "completed",
+        "last_completed": "2023-03-01T10:00:00Z",
+        "attempts": 1
+      }
+    ]
+  },
+  {
+    "uuid": "33333333-3333-3333-3333-333333333311",
+    "first_name": "Frank",
+    "last_name": "Director",
+    "email": "enterprise.director@example.com",
+    "password": "password123",
+    "image_url": "https://via.placeholder.com/100",
+    "role": "director",
+    "assigned_restaurants": [
+      "55555555-5555-5555-5555-555555555501",
+      "55555555-5555-5555-5555-555555555502",
+      "55555555-5555-5555-5555-555555555503",
+      "55555555-5555-5555-5555-555555555504",
+      "55555555-5555-5555-5555-555555555505",
+      "55555555-5555-5555-5555-555555555506"
+    ],
+    "permissions": [],
+    "lessons_required": {
+      "wine": true,
+      "food": true
+    },
+    "lesson_progress": [
+      {
+        "lesson_id": "lesson-food-3",
+        "status": "in_progress",
+        "last_completed": "2023-02-20T09:00:00Z",
+        "attempts": 2
+      }
+    ]
+  },
+  {
+    "uuid": "33333333-3333-3333-3333-333333333312",
+    "first_name": "Grace",
+    "last_name": "Manager",
+    "email": "enterprise.manager1@example.com",
+    "password": "password123",
+    "image_url": "https://via.placeholder.com/100",
+    "role": "manager",
+    "assigned_restaurants": [
+      "55555555-5555-5555-5555-555555555501"
+    ],
+    "permissions": [],
+    "lessons_required": {
+      "wine": true,
+      "food": true
+    },
+    "lesson_progress": [
+      {
+        "lesson_id": "lesson-wine-3",
+        "status": "completed",
+        "last_completed": "2023-03-05T11:00:00Z",
+        "attempts": 1
+      }
+    ]
+  },
+  {
+    "uuid": "33333333-3333-3333-3333-333333333316",
+    "first_name": "Ian",
+    "last_name": "Manager",
+    "email": "enterprise.manager2@example.com",
+    "password": "password123",
+    "image_url": "https://via.placeholder.com/100",
+    "role": "manager",
+    "assigned_restaurants": [
+      "55555555-5555-5555-5555-555555555502"
+    ],
+    "permissions": [],
+    "lessons_required": {
+      "wine": true,
+      "food": true
+    },
+    "lesson_progress": [
+      {
+        "lesson_id": "lesson-food-3",
+        "status": "completed",
+        "last_completed": "2023-03-02T12:00:00Z",
+        "attempts": 1
+      }
+    ]
+  },
+  {
+    "uuid": "33333333-3333-3333-3333-333333333320",
+    "first_name": "Judy",
+    "last_name": "Manager",
+    "email": "enterprise.manager3@example.com",
+    "password": "password123",
+    "image_url": "https://via.placeholder.com/100",
+    "role": "manager",
+    "assigned_restaurants": [
+      "55555555-5555-5555-5555-555555555503"
+    ],
+    "permissions": [],
+    "lessons_required": {
+      "wine": true,
+      "food": true
+    },
+    "lesson_progress": [
+      {
+        "lesson_id": "lesson-wine-3",
+        "status": "in_progress",
+        "last_completed": "2023-03-06T10:30:00Z",
+        "attempts": 2
+      }
+    ]
+  },
+  {
+    "uuid": "33333333-3333-3333-3333-333333333324",
+    "first_name": "Kevin",
+    "last_name": "Manager",
+    "email": "enterprise.manager4@example.com",
+    "password": "password123",
+    "image_url": "https://via.placeholder.com/100",
+    "role": "manager",
+    "assigned_restaurants": [
+      "55555555-5555-5555-5555-555555555504"
+    ],
+    "permissions": [],
+    "lessons_required": {
+      "wine": true,
+      "food": true
+    },
+    "lesson_progress": [
+      {
+        "lesson_id": "lesson-food-3",
+        "status": "completed",
+        "last_completed": "2023-03-03T14:00:00Z",
+        "attempts": 1
+      }
+    ]
+  },
+  {
+    "uuid": "33333333-3333-3333-3333-333333333328",
+    "first_name": "Laura",
+    "last_name": "Manager",
+    "email": "enterprise.manager5@example.com",
+    "password": "password123",
+    "image_url": "https://via.placeholder.com/100",
+    "role": "manager",
+    "assigned_restaurants": [
+      "55555555-5555-5555-5555-555555555505"
+    ],
+    "permissions": [],
+    "lessons_required": {
+      "wine": true,
+      "food": true
+    },
+    "lesson_progress": [
+      {
+        "lesson_id": "lesson-wine-3",
+        "status": "completed",
+        "last_completed": "2023-03-04T13:00:00Z",
+        "attempts": 1
+      }
+    ]
+  },
+  {
+    "uuid": "33333333-3333-3333-3333-333333333332",
+    "first_name": "Mike",
+    "last_name": "Manager",
+    "email": "enterprise.manager6@example.com",
+    "password": "password123",
+    "image_url": "https://via.placeholder.com/100",
+    "role": "manager",
+    "assigned_restaurants": [
+      "55555555-5555-5555-5555-555555555506"
+    ],
+    "permissions": [],
+    "lessons_required": {
+      "wine": true,
+      "food": true
+    },
+    "lesson_progress": [
+      {
+        "lesson_id": "lesson-food-3",
+        "status": "in_progress",
+        "last_completed": "2023-03-07T09:45:00Z",
+        "attempts": 2
+      }
+    ]
+  },
+  {
+    "uuid": "33333333-3333-3333-3333-333333333317",
+    "first_name": "Nancy",
+    "last_name": "Employee",
+    "email": "enterprise.employee1@example.com",
+    "password": "password123",
+    "image_url": "https://via.placeholder.com/100",
+    "role": "employee",
+    "assigned_restaurants": [
+      "55555555-5555-5555-5555-555555555502"
+    ],
+    "permissions": [],
+    "lessons_required": {
+      "wine": true,
+      "food": true
+    },
+    "lesson_progress": [
+      {
+        "lesson_id": "lesson-food-3",
+        "status": "not_started",
+        "last_completed": null,
+        "attempts": 0
+      }
+    ]
+  },
+  {
+    "uuid": "33333333-3333-3333-3333-333333333318",
+    "first_name": "Oliver",
+    "last_name": "Employee",
+    "email": "enterprise.employee2@example.com",
+    "password": "password123",
+    "image_url": "https://via.placeholder.com/100",
+    "role": "employee",
+    "assigned_restaurants": [
+      "55555555-5555-5555-5555-555555555502"
+    ],
+    "permissions": [],
+    "lessons_required": {
+      "wine": true,
+      "food": true
+    },
+    "lesson_progress": [
+      {
+        "lesson_id": "lesson-wine-3",
+        "status": "completed",
+        "last_completed": "2023-03-02T10:00:00Z",
+        "attempts": 1
+      }
+    ]
+  },
+  {
+    "uuid": "33333333-3333-3333-3333-333333333319",
+    "first_name": "Pat",
+    "last_name": "Employee",
+    "email": "enterprise.employee3@example.com",
+    "password": "password123",
+    "image_url": "https://via.placeholder.com/100",
+    "role": "employee",
+    "assigned_restaurants": [
+      "55555555-5555-5555-5555-555555555502"
+    ],
+    "permissions": [],
+    "lessons_required": {
+      "wine": true,
+      "food": true
+    },
+    "lesson_progress": [
+      {
+        "lesson_id": "lesson-food-3",
+        "status": "completed",
+        "last_completed": "2023-03-02T11:00:00Z",
+        "attempts": 1
+      }
+    ]
+  },
+  {
+    "uuid": "33333333-3333-3333-3333-333333333321",
+    "first_name": "Quinn",
+    "last_name": "Employee",
+    "email": "enterprise.employee4@example.com",
+    "password": "password123",
+    "image_url": "https://via.placeholder.com/100",
+    "role": "employee",
+    "assigned_restaurants": [
+      "55555555-5555-5555-5555-555555555503"
+    ],
+    "permissions": [],
+    "lessons_required": {
+      "wine": true,
+      "food": true
+    },
+    "lesson_progress": [
+      {
+        "lesson_id": "lesson-wine-3",
+        "status": "in_progress",
+        "last_completed": "2023-03-06T11:00:00Z",
+        "attempts": 2
+      }
+    ]
+  },
+  {
+    "uuid": "33333333-3333-3333-3333-333333333322",
+    "first_name": "Rita",
+    "last_name": "Employee",
+    "email": "enterprise.employee5@example.com",
+    "password": "password123",
+    "image_url": "https://via.placeholder.com/100",
+    "role": "employee",
+    "assigned_restaurants": [
+      "55555555-5555-5555-5555-555555555503"
+    ],
+    "permissions": [],
+    "lessons_required": {
+      "wine": true,
+      "food": true
+    },
+    "lesson_progress": [
+      {
+        "lesson_id": "lesson-food-3",
+        "status": "not_started",
+        "last_completed": null,
+        "attempts": 0
+      }
+    ]
+  },
+  {
+    "uuid": "33333333-3333-3333-3333-333333333323",
+    "first_name": "Steve",
+    "last_name": "Employee",
+    "email": "enterprise.employee6@example.com",
+    "password": "password123",
+    "image_url": "https://via.placeholder.com/100",
+    "role": "employee",
+    "assigned_restaurants": [
+      "55555555-5555-5555-5555-555555555503"
+    ],
+    "permissions": [],
+    "lessons_required": {
+      "wine": true,
+      "food": true
+    },
+    "lesson_progress": [
+      {
+        "lesson_id": "lesson-wine-3",
+        "status": "completed",
+        "last_completed": "2023-03-06T12:00:00Z",
+        "attempts": 1
+      }
+    ]
+  },
+  {
+    "uuid": "33333333-3333-3333-3333-333333333325",
+    "first_name": "Tracy",
+    "last_name": "Employee",
+    "email": "enterprise.employee7@example.com",
+    "password": "password123",
+    "image_url": "https://via.placeholder.com/100",
+    "role": "employee",
+    "assigned_restaurants": [
+      "55555555-5555-5555-5555-555555555504"
+    ],
+    "permissions": [],
+    "lessons_required": {
+      "wine": true,
+      "food": true
+    },
+    "lesson_progress": [
+      {
+        "lesson_id": "lesson-food-3",
+        "status": "in_progress",
+        "last_completed": "2023-03-03T15:00:00Z",
+        "attempts": 2
+      }
+    ]
+  },
+  {
+    "uuid": "33333333-3333-3333-3333-333333333326",
+    "first_name": "Uma",
+    "last_name": "Employee",
+    "email": "enterprise.employee8@example.com",
+    "password": "password123",
+    "image_url": "https://via.placeholder.com/100",
+    "role": "employee",
+    "assigned_restaurants": [
+      "55555555-5555-5555-5555-555555555504"
+    ],
+    "permissions": [],
+    "lessons_required": {
+      "wine": true,
+      "food": true
+    },
+    "lesson_progress": [
+      {
+        "lesson_id": "lesson-wine-3",
+        "status": "not_started",
+        "last_completed": null,
+        "attempts": 0
+      }
+    ]
+  },
+  {
+    "uuid": "33333333-3333-3333-3333-333333333327",
+    "first_name": "Victor",
+    "last_name": "Employee",
+    "email": "enterprise.employee9@example.com",
+    "password": "password123",
+    "image_url": "https://via.placeholder.com/100",
+    "role": "employee",
+    "assigned_restaurants": [
+      "55555555-5555-5555-5555-555555555504"
+    ],
+    "permissions": [],
+    "lessons_required": {
+      "wine": true,
+      "food": true
+    },
+    "lesson_progress": [
+      {
+        "lesson_id": "lesson-food-3",
+        "status": "completed",
+        "last_completed": "2023-03-03T16:00:00Z",
+        "attempts": 1
+      }
+    ]
+  },
+  {
+    "uuid": "33333333-3333-3333-3333-333333333329",
+    "first_name": "Wendy",
+    "last_name": "Employee",
+    "email": "enterprise.employee10@example.com",
+    "password": "password123",
+    "image_url": "https://via.placeholder.com/100",
+    "role": "employee",
+    "assigned_restaurants": [
+      "55555555-5555-5555-5555-555555555505"
+    ],
+    "permissions": [],
+    "lessons_required": {
+      "wine": true,
+      "food": true
+    },
+    "lesson_progress": [
+      {
+        "lesson_id": "lesson-wine-3",
+        "status": "completed",
+        "last_completed": "2023-03-04T10:30:00Z",
+        "attempts": 1
+      }
+    ]
+  },
+  {
+    "uuid": "33333333-3333-3333-3333-333333333330",
+    "first_name": "Xavier",
+    "last_name": "Employee",
+    "email": "enterprise.employee11@example.com",
+    "password": "password123",
+    "image_url": "https://via.placeholder.com/100",
+    "role": "employee",
+    "assigned_restaurants": [
+      "55555555-5555-5555-5555-555555555505"
+    ],
+    "permissions": [],
+    "lessons_required": {
+      "wine": true,
+      "food": true
+    },
+    "lesson_progress": [
+      {
+        "lesson_id": "lesson-food-3",
+        "status": "in_progress",
+        "last_completed": "2023-03-04T11:00:00Z",
+        "attempts": 2
+      }
+    ]
+  },
+  {
+    "uuid": "33333333-3333-3333-3333-333333333331",
+    "first_name": "Yvonne",
+    "last_name": "Employee",
+    "email": "enterprise.employee12@example.com",
+    "password": "password123",
+    "image_url": "https://via.placeholder.com/100",
+    "role": "employee",
+    "assigned_restaurants": [
+      "55555555-5555-5555-5555-555555555505"
+    ],
+    "permissions": [],
+    "lessons_required": {
+      "wine": true,
+      "food": true
+    },
+    "lesson_progress": [
+      {
+        "lesson_id": "lesson-wine-3",
+        "status": "completed",
+        "last_completed": "2023-03-04T12:00:00Z",
+        "attempts": 1
+      }
+    ]
+  },
+  {
+    "uuid": "33333333-3333-3333-3333-333333333333",
+    "first_name": "Zach",
+    "last_name": "Employee",
+    "email": "enterprise.employee13@example.com",
+    "password": "password123",
+    "image_url": "https://via.placeholder.com/100",
+    "role": "employee",
+    "assigned_restaurants": [
+      "55555555-5555-5555-5555-555555555506"
+    ],
+    "permissions": [],
+    "lessons_required": {
+      "wine": true,
+      "food": true
+    },
+    "lesson_progress": [
+      {
+        "lesson_id": "lesson-food-3",
+        "status": "not_started",
+        "last_completed": null,
+        "attempts": 0
+      }
+    ]
+  },
+  {
+    "uuid": "33333333-3333-3333-3333-333333333334",
+    "first_name": "Abby",
+    "last_name": "Employee",
+    "email": "enterprise.employee14@example.com",
+    "password": "password123",
+    "image_url": "https://via.placeholder.com/100",
+    "role": "employee",
+    "assigned_restaurants": [
+      "55555555-5555-5555-5555-555555555506"
+    ],
+    "permissions": [],
+    "lessons_required": {
+      "wine": true,
+      "food": true
+    },
+    "lesson_progress": [
+      {
+        "lesson_id": "lesson-wine-3",
+        "status": "in_progress",
+        "last_completed": "2023-03-07T10:15:00Z",
+        "attempts": 2
+      }
+    ]
+  },
+  {
+    "uuid": "33333333-3333-3333-3333-333333333335",
+    "first_name": "Brian",
+    "last_name": "Employee",
+    "email": "enterprise.employee15@example.com",
+    "password": "password123",
+    "image_url": "https://via.placeholder.com/100",
+    "role": "employee",
+    "assigned_restaurants": [
+      "55555555-5555-5555-5555-555555555506"
+    ],
+    "permissions": [],
+    "lessons_required": {
+      "wine": true,
+      "food": true
+    },
+    "lesson_progress": [
+      {
+        "lesson_id": "lesson-food-3",
+        "status": "completed",
+        "last_completed": "2023-03-07T11:00:00Z",
+        "attempts": 1
+      }
+    ]
+  }
+]

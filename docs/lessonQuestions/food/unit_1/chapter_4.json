@@ -1,0 +1,45 @@
+{
+  "unit": 1,
+  "unit_name": "food basics",
+  "chapter": 4,
+  "chapter_name": "food descriptions",
+  "category": "food",
+  "difficulty": "intermediate",
+  "content": {
+    "main_text": "Learn to match dish descriptions with the correct dishes.",
+    "section_1_title": "Introduction",
+    "section_1_content": "Understanding dish descriptions helps with better service and menu recommendations.",
+    "section_2_title": "Dish Details",
+    "section_2_content": "Each dish has unique descriptions based on ingredients and preparation.",
+    "section_3_title": "Importance",
+    "section_3_content": "Accurately identifying dishes ensures proper order management."
+  },
+  "createdBy": "33333333-3333-3333-3333-333333333301",
+  "lastModifiedBy": "33333333-3333-3333-3333-333333333301",
+  "menu_items": [
+    "11111111-1111-1111-1111-111111111111"
+  ],
+  "questions": [
+    {
+      "question_text": "Choose the correct dish for this description: {dish_description}.",
+      "question_type": "single_select",
+      "options_variable": {
+        "source": "link_to_restaurant.current_dishes.filter(dish => dish._id !== dish_id).map(dish => dish.name)",
+        "limit": 3
+      },
+      "correct_answer_variable": {
+        "source": "current_dish.name"
+      },
+      "placeholders": {
+        "dish_description": "link_to_restaurant.current_dishes[{dish_id}].description"
+      },
+      "repeat_for": {
+        "source": "link_to_restaurant.current_dishes",
+        "key_variable": "dish_id",
+        "condition": "current_dish.description.length > 0"
+      },
+      "difficulty": "medium",
+      "hint": "Review the dish descriptions on your menu and choose the dish that best matches the description provided."
+    }
+  ]
+}

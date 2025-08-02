@@ -1,0 +1,106 @@
+{
+  "unit": 2,
+  "unit_name": "wine Advanced",
+  "chapter": 1,
+  "chapter_name": "wine Styles",
+  "category":"wine",
+  "difficulty": "intermediate",
+  "questions": [
+    {
+      "question_text": "Which of these wines is a {style_name}?",
+      "question_type": "single_select",
+      "options_variable": "link_to_restaurant.current_wines.filter(wine => wine.category === 'white' && wine.style.name !== '{style_name}').map(wine => wine.style.name).slice(0, 3).concat('{style_name}')",
+      "correct_answer_variable": "link_to_restaurant.current_wines[{wine_id}].style.name",
+      "placeholders": {
+        "style_name": "config.wineTypes.white.styles[{style_id}].name"
+      },
+      "repeat_for": {
+        "source": "config.wineTypes.white.styles",
+        "condition": "link_to_restaurant.current_wines.some(wine => wine.style.name === config.wineTypes.white.styles[style_id].name)",
+        "key_variable": "style_id"
+      },
+      "difficulty": "medium",
+      "hint": "Look at your white wines on the menu and reference which wine style this wine belongs to."
+    },
+    {
+      "question_text": "Which of these wines is a {style_name}?",
+      "question_type": "single_select",
+      "options_variable": "link_to_restaurant.current_wines.filter(wine => wine.category === 'red' && wine.style.name !== '{style_name}').map(wine => wine.style.name).slice(0, 3).concat('{style_name}')",
+      "correct_answer_variable": "link_to_restaurant.current_wines[{wine_id}].style.name",
+      "placeholders": {
+        "style_name": "config.wineTypes.red.styles[{style_id}].name"
+      },
+      "repeat_for": {
+        "source": "config.wineTypes.red.styles",
+        "condition": "link_to_restaurant.current_wines.some(wine => wine.style.name === config.wineTypes.red.styles[style_id].name)",
+        "key_variable": "style_id"
+      },
+      "difficulty": "medium",
+      "hint": "Look at your red wines on the menu and reference which wine style this wine belongs to."
+    },
+    {
+      "question_text": "Which of these wines is a {style_name}?",
+      "question_type": "single_select",
+      "options_variable": "link_to_restaurant.current_wines.filter(wine => wine.category === 'rose' && wine.style.name !== '{style_name}').map(wine => wine.style.name).slice(0, 3).concat('{style_name}')",
+      "correct_answer_variable": "link_to_restaurant.current_wines[{wine_id}].style.name",
+      "placeholders": {
+        "style_name": "config.wineTypes.rose.styles[{style_id}].name"
+      },
+      "repeat_for": {
+        "source": "config.wineTypes.rose.styles",
+        "condition": "link_to_restaurant.current_wines.some(wine => wine.style.name === config.wineTypes.rose.styles[style_id].name)",
+        "key_variable": "style_id"
+      },
+      "difficulty": "easy",
+      "hint": "Look at your rosé wines on the menu and reference which wine style this wine belongs to."
+    },
+    {
+      "question_text": "Which of these wines is a {style_name}?",
+      "question_type": "single_select",
+      "options_variable": "link_to_restaurant.current_wines.filter(wine => wine.category === 'sparkling' && wine.style.name !== '{style_name}').map(wine => wine.style.name).slice(0, 3).concat('{style_name}')",
+      "correct_answer_variable": "link_to_restaurant.current_wines[{wine_id}].style.name",
+      "placeholders": {
+        "style_name": "config.wineTypes.sparkling.styles[{style_id}].name"
+      },
+      "repeat_for": {
+        "source": "config.wineTypes.sparkling.styles",
+        "condition": "link_to_restaurant.current_wines.some(wine => wine.style.name === config.wineTypes.sparkling.styles[style_id].name)",
+        "key_variable": "style_id"
+      },
+      "difficulty": "easy",
+      "hint": "Look at your sparkling wines on the menu and reference which wine style this wine belongs to."
+    },
+    {
+      "question_text": "Which of these wines is a {style_name}?",
+      "question_type": "single_select",
+      "options_variable": "link_to_restaurant.current_wines.filter(wine => wine.category === 'orange' && wine.style.name !== '{style_name}').map(wine => wine.style.name).slice(0, 3).concat('{style_name}')",
+      "correct_answer_variable": "link_to_restaurant.current_wines[{wine_id}].style.name",
+      "placeholders": {
+        "style_name": "config.wineTypes.orange.styles[{style_id}].name"
+      },
+      "repeat_for": {
+        "source": "config.wineTypes.orange.styles",
+        "condition": "link_to_restaurant.current_wines.some(wine => wine.style.name === config.wineTypes.orange.styles[style_id].name)",
+        "key_variable": "style_id"
+      },
+      "difficulty": "hard",
+      "hint": "Look at your orange wines on the menu and reference which wine style this wine belongs to."
+    },
+    {
+      "question_text": "Which of these wines is a {style_name}?",
+      "question_type": "single_select",
+      "options_variable": "link_to_restaurant.current_wines.filter(wine => wine.category === 'dessert' && wine.style.name !== '{style_name}').map(wine => wine.style.name).slice(0, 3).concat('{style_name}')",
+      "correct_answer_variable": "link_to_restaurant.current_wines[{wine_id}].style.name",
+      "placeholders": {
+        "style_name": "config.wineTypes.dessert.styles[{style_id}].name"
+      },
+      "repeat_for": {
+        "source": "config.wineTypes.dessert.styles",
+        "condition": "link_to_restaurant.current_wines.some(wine => wine.style.name === config.wineTypes.dessert.styles[style_id].name)",
+        "key_variable": "style_id"
+      },
+      "difficulty": "medium",
+      "hint": "Look at your dessert wines on the menu and reference which wine style this wine belongs to."
+    }
+  ]
+}

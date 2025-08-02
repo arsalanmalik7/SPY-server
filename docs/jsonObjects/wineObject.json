@@ -1,0 +1,22 @@
+{
+  "_id": "wine_001",
+  "producer_name": "Domaine de la Romanée-Conti",
+  "product_name": "La Tâche Grand Cru",
+  "varietals": ["Pinot Noir"],
+  "region": {
+    "country": "France",
+    "major_region": "Burgundy",
+    "sub_region": "Côte de Nuits",
+    "sub_appellation": "Vosne-Romanée"
+  },
+  "vintage": 2018,
+  "category": "red",
+  "is_filtered": true,
+  "has_residual_sugar": false,
+  "style": {
+    "wine_style_id": "00008",
+    "name": "powerful red",
+    "body_rank": 4
+  },
+  "image_url": "https://example.com/images/la_tache_2018.jpg"
+}

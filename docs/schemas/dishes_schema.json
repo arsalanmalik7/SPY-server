@@ -1,0 +1,18 @@
+{
+  "type": "object",
+  "properties": {
+    "_id": { "type": "string", "description": "Unique identifier for the dish" },
+    "dish_added_to_database": { "type": "string", "format": "date", "description": "Date dish was added to the system" },
+    "name": { "type": "string", "description": "Name of the dish" },
+    "description": { "type": "string", "description": "Short description of the dish" },
+    "type": { "type": "array", "items": { "type": "string" }, "description": "Dish categories (e.g., appetizer, main course)" },
+    "price": { "type": "number", "description": "Default price of the dish" },
+    "temperature": { "type": "string", "description": "Serving temperature (e.g., hot, cold)" },
+    "ingredients": { "type": "array", "items": { "type": "string" }, "description": "List of ingredients used" },
+    "allergens": { "type": "array", "items": { "type": "string" }, "description": "Allergens present in the dish" },
+    "dietary_restrictions": { "type": "array", "items": { "type": "string" }, "description": "Dietary accommodations (e.g., vegan, gluten-free)" },
+    "substitutions": { "type": "array", "items": { "type": "string" }, "description": "Available ingredient substitutions" },
+    "image_url": { "type": "string", "format": "uri", "description": "Image URL for the dish" },
+    "notes": { "type": "string", "description": "Additional notes for this dish" }
+  }
+}

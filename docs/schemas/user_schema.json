@@ -1,0 +1,95 @@
+{
+  "type": "object",
+  "properties": {
+    "_id": { "type": "string", "description": "Unique identifier for the user" },
+    "first_name": { "type": "string", "description": "First name of the user" },
+    "last_name": { "type": "string", "description": "Last name of the user" },
+    "email": { "type": "string", "format": "email", "description": "Email address" },
+    "password": { "type": "string", "description": "Encrypted password" },
+    "image_url": { "type": "string", "format": "uri", "description": "URL of the user's avatar" },
+
+    "role": {
+      "type": "string",
+      "enum": ["super_admin", "director", "manager", "employee"],
+      "description": "User role defining access level"
+    },
+
+    "assigned_restaurants": {
+      "type": "array",
+      "items": { "type": "string", "description": "Restaurant IDs the user is assigned to" }
+    },
+
+    "permissions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["edit_menu", "assign_lessons", "manage_employees", "manage_wine", "manage_subscriptions"]
+      },
+      "description": "List of permissions granted to the user"
+    },
+
+    "lessons_required": {
+      "type": "object",
+      "properties": {
+        "wine": { "type": "boolean", "description": "Does the user need to take wine lessons?" },
+        "food": { "type": "boolean", "description": "Does the user need to take food lessons?" }
+      }
+    },
+
+    "lesson_settings": {
+      "type": "object",
+      "properties": {
+        "custom_lesson_interval_days": { "type": "integer", "description": "Number of days between lesson assignments" },
+        "next_due_date": { "type": "string", "format": "date", "description": "Date of the next required lesson" },
+        "participate_in_lessons": { "type": "boolean", "default": false, "description": "Defines if user must complete lessons" },
+        "can_toggle_lessons": { "type": "boolean", "default": false, "description": "Defines if user can turn lessons on/off for others" },
+        "toggle_lesson_for_roles": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["employee", "manager"] },
+          "description": "Roles this user can enable/disable lessons for"
+        }
+      }
+    },
+
+    "lesson_progress": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "unit": { "type": "integer", "description": "Unit number of the lesson" },
+          "chapter": { "type": "integer", "description": "Chapter number of the lesson" },
+          "status": {
+            "type": "string",
+            "enum": ["completed", "in_progress", "not_started"],
+            "description": "Current lesson progress status"
+          },
+          "last_completed": { "type": "string", "format": "date", "description": "Date of last completed lesson" },
+          "next_due_date": { "type": "string", "format": "date", "description": "Scheduled date of the next lesson" },
+          "lessons_taken": { "type": "integer", "description": "Total lessons completed", "default": 0 },
+          "questions_progress": {
+            "type": "object",
+            "properties": {
+              "total_questions": { "type": "integer" },
+              "questions_completed": { "type": "integer" },
+              "questions_remaining": { "type": "integer" },
+              "incorrect_questions": { "type": "array", "items": { "type": "string" } },
+              "correct_questions": { "type": "array", "items": { "type": "string" } },
+              "current_lesson_questions": { "type": "array", "items": { "type": "string" } }
+            }
+          },
+          "grade": {
+            "type": "object",
+            "properties": {
+              "correct_answers": { "type": "integer" },
+              "total_questions": { "type": "integer" },
+              "minimum_passing_percentage": { "type": "integer" },
+              "percentage": { "type": "integer" }
+            }
+          },
+          "attempts": { "type": "integer", "description": "Number of attempts made on this lesson" }
+        }
+      }
+    }
+  },
+  "required": ["_id", "first_name", "last_name", "email", "password", "role"]
+}

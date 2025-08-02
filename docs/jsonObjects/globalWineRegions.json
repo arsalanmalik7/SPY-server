@@ -1,0 +1,4758 @@
+{
+  "Europe": {
+    "France": {
+      "major_regions": {
+        "Bordeaux": {
+          "sub_regions": {
+            "Médoc": {
+              "sub_appellations": [
+                "Pauillac",
+                "Margaux",
+                "Saint-Estèphe",
+                "Saint-Julien",
+                "Listrac-Médoc",
+                "Moulis-en-Médoc",
+                "Haut-Médoc",
+                "Château Margaux",
+                "Château Latour"
+              ]
+            },
+            "Graves": {
+              "sub_appellations": [
+                "Pessac-Léognan",
+                "Sauternes",
+                "Barsac",
+                "Cérons",
+                "Château Haut-Brion",
+                "Château d'Yquem"
+              ]
+            },
+            "Libournais": {
+              "sub_appellations": [
+                "Saint-Émilion",
+                "Pomerol",
+                "Fronsac",
+                "Canon-Fronsac",
+                "Lalande-de-Pomerol",
+                "Château Cheval Blanc",
+                "Château Petrus"
+              ]
+            },
+            "Blaye and Bourg": {
+              "sub_appellations": [
+                "Blaye Côtes de Bordeaux",
+                "Côtes de Bourg",
+                "Château de la Rivière"
+              ]
+            },
+            "Entre-Deux-Mers": {
+              "sub_appellations": [
+                "Entre-Deux-Mers",
+                "Cadillac",
+                "Loupiac",
+                "Sainte-Croix-du-Mont",
+                "Château Bonnet"
+              ]
+            }
+          }
+        },
+        "Burgundy": {
+          "sub_regions": {
+            "Chablis": {
+              "sub_appellations": [
+                "Petit Chablis",
+                "Chablis",
+                "Chablis Premier Cru",
+                "Chablis Grand Cru",
+                "Vaudesir",
+                "Les Clos",
+                "Blanchot"
+              ]
+            },
+            "Côte de Nuits": {
+              "sub_appellations": [
+                "Gevrey-Chambertin",
+                "Morey-Saint-Denis",
+                "Chambolle-Musigny",
+                "Vougeot",
+                "Vosne-Romanée",
+                "Nuits-Saint-Georges",
+                "Clos de Vougeot",
+                "Richebourg"
+              ]
+            },
+            "Côte de Beaune": {
+              "sub_appellations": [
+                "Aloxe-Corton",
+                "Beaune",
+                "Pommard",
+                "Volnay",
+                "Meursault",
+                "Puligny-Montrachet",
+                "Chassagne-Montrachet",
+                "Corton-Charlemagne"
+              ]
+            },
+            "Côte Chalonnaise": {
+              "sub_appellations": [
+                "Mercurey",
+                "Givry",
+                "Rully",
+                "Montagny",
+                "Bouzeron"
+              ]
+            },
+            "Mâconnais": {
+              "sub_appellations": [
+                "Mâcon",
+                "Pouilly-Fuissé",
+                "Saint-Véran",
+                "Viré-Clessé",
+                "Pouilly-Loché",
+                "Pouilly-Vinzelles"
+              ]
+            }
+          }
+        },
+        "Rhône Valley": {
+          "sub_regions": {
+            "Northern Rhône": {
+              "sub_appellations": [
+                "Côte-Rôtie",
+                "Condrieu",
+                "Saint-Joseph",
+                "Hermitage",
+                "Crozes-Hermitage",
+                "Cornas",
+                "Saint-Péray",
+                "Château-Grillet"
+              ]
+            },
+            "Southern Rhône": {
+              "sub_appellations": [
+                "Châteauneuf-du-Pape",
+                "Gigondas",
+                "Vacqueyras",
+                "Tavel",
+                "Lirac",
+                "Côtes du Rhône Villages",
+                "Beaumes-de-Venise",
+                "Rasteau"
+              ]
+            }
+          }
+        },
+        "Loire Valley": {
+          "sub_regions": {
+            "Pays Nantais": {
+              "sub_appellations": [
+                "Muscadet Sèvre et Maine",
+                "Muscadet Coteaux de la Loire",
+                "Muscadet Côtes de Grandlieu",
+                "Gros Plant du Pays Nantais"
+              ]
+            },
+            "Anjou-Saumur": {
+              "sub_appellations": [
+                "Anjou",
+                "Saumur",
+                "Coteaux du Layon",
+                "Savennières",
+                "Quarts de Chaume",
+                "Bonnezeaux"
+              ]
+            },
+            "Touraine": {
+              "sub_appellations": [
+                "Vouvray",
+                "Chinon",
+                "Bourgueil",
+                "Montlouis-sur-Loire",
+                "Saint-Nicolas-de-Bourgueil",
+                "Cheverny"
+              ]
+            },
+            "Upper Loire": {
+              "sub_appellations": [
+                "Sancerre",
+                "Pouilly-Fumé",
+                "Menetou-Salon",
+                "Quincy",
+                "Reuilly"
+              ]
+            }
+          }
+        },
+        "Champagne": {
+          "sub_regions": {
+            "Montagne de Reims": {
+              "sub_appellations": [
+                "Verzenay",
+                "Bouzy",
+                "Ambonnay",
+                "Mailly-Champagne"
+              ]
+            },
+            "Vallée de la Marne": {
+              "sub_appellations": [
+                "Épernay",
+                "Hautvillers",
+                "Mareuil-sur-Aÿ",
+                "Aÿ"
+              ]
+            },
+            "Côte des Blancs": {
+              "sub_appellations": [
+                "Le Mesnil-sur-Oger",
+                "Avize",
+                "Cramant",
+                "Oger"
+              ]
+            },
+            "Côte des Bar": {
+              "sub_appellations": [
+                "Bar-sur-Seine",
+                "Bar-sur-Aube",
+                "Les Riceys"
+              ]
+            }
+          }
+        },
+        "Alsace": {
+          "sub_regions": {
+            "Bas-Rhin": {
+              "sub_appellations": [
+                "Alsace AOC",
+                "Crémant d'Alsace AOC",
+                "Bas-Rhin Riesling"
+              ]
+            },
+            "Haut-Rhin": {
+              "sub_appellations": [
+                "Alsace Grand Cru AOC",
+                "Schlossberg",
+                "Kaefferkopf",
+                "Hengst"
+              ]
+            }
+          }
+        },
+        "Languedoc-Roussillon": {
+          "sub_regions": {
+            "Languedoc": {
+              "sub_appellations": [
+                "Pic Saint-Loup",
+                "La Clape",
+                "Faugères",
+                "Saint-Chinian",
+                "Minervois",
+                "Corbières"
+              ]
+            },
+            "Roussillon": {
+              "sub_appellations": [
+                "Côtes du Roussillon",
+                "Maury",
+                "Banyuls",
+                "Collioure"
+              ]
+            }
+          }
+        },
+        "Provence": {
+          "sub_regions": {
+            "Côtes de Provence": {
+              "sub_appellations": [
+                "Sainte-Victoire",
+                "Fréjus",
+                "La Londe",
+                "Pierrefeu",
+                "Saint-Tropez"
+              ]
+            },
+            "Bandol": {
+              "sub_appellations": ["La Cadière-d'Azur"]
+            },
+            "Cassis": {
+              "sub_appellations": ["Calanques"]
+            }
+          }
+        },
+        "Southwest France": {
+          "sub_regions": {
+            "Bergerac": {
+              "sub_appellations": [
+                "Monbazillac",
+                "Pécharmant",
+                "Saussignac"
+              ]
+            },
+            "Cahors": {
+              "sub_appellations": ["Malbec Reserve"]
+            },
+            "Madiran": {
+              "sub_appellations": ["Pacherenc du Vic-Bilh"]
+            },
+            "Gaillac": {
+              "sub_appellations": ["Gaillac Primeur"]
+            }
+          }
+        },
+        "Corsica": {
+          "sub_regions": {
+            "Ajaccio": {
+              "sub_appellations": ["Ajaccio Rouge"]
+            },
+            "Patrimonio": {
+              "sub_appellations": ["Muscat du Cap Corse"]
+            },
+            "Vin de Corse": {
+              "sub_appellations": [
+                "Calvi",
+                "Figari",
+                "Porto-Vecchio",
+                "Sartène",
+                "Vin de Corse Blanc"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "Italy": {
+      "major_regions": {
+        "Abruzzo": {
+          "sub_regions": {
+            "Colline Teramane": {
+              "sub_appellations": ["DOCG Montepulciano d'Abruzzo Colline Teramane"]
+            }
+          }
+        },
+        "Aosta Valley (Valle d'Aosta)": {
+          "sub_regions": {
+            "Donnas": {
+              "sub_appellations": []
+            },
+            "Arnad-Montjovet": {
+              "sub_appellations": []
+            }
+          }
+        },
+        "Apulia (Puglia)": {
+          "sub_regions": {
+            "Salento": {
+              "sub_appellations": ["DOC Salice Salentino"]
+            },
+            "Gioia del Colle": {
+              "sub_appellations": []
+            }
+          }
+        },
+        "Basilicata": {
+          "sub_regions": {
+            "Vulture": {
+              "sub_appellations": ["DOCG Aglianico del Vulture Superiore"]
+            }
+          }
+        },
+        "Calabria": {
+          "sub_regions": {
+            "Ciro": {
+              "sub_appellations": []
+            }
+          }
+        },
+        "Campania": {
+          "sub_regions": {
+            "Irpinia": {
+              "sub_appellations": ["DOCG Taurasi", "DOCG Fiano di Avellino", "DOCG Greco di Tufo"]
+            }
+          }
+        },
+        "Emilia-Romagna": {
+          "sub_regions": {
+            "Colli Bolognesi": {
+              "sub_appellations": []
+            },
+            "Lambrusco": {
+              "sub_appellations": ["DOC Lambrusco di Sorbara", "DOC Lambrusco Grasparossa di Castelvetro"]
+            }
+          }
+        },
+        "Friuli Venezia Giulia": {
+          "sub_regions": {
+            "Collio Goriziano": {
+              "sub_appellations": []
+            },
+            "Grave del Friuli": {
+              "sub_appellations": []
+            }
+          }
+        },
+        "Lazio": {
+          "sub_regions": {
+            "Castelli Romani": {
+              "sub_appellations": ["DOC Frascati"]
+            }
+          }
+        },
+        "Liguria": {
+          "sub_regions": {
+            "Cinque Terre": {
+              "sub_appellations": []
+            },
+            "Riviera Ligure di Ponente": {
+              "sub_appellations": []
+            }
+          }
+        },
+        "Lombardy (Lombardia)": {
+          "sub_regions": {
+            "Franciacorta": {
+              "sub_appellations": ["DOCG Franciacorta"]
+            },
+            "Valtellina": {
+              "sub_appellations": ["DOCG Valtellina Superiore"]
+            }
+          }
+        },
+        "Marche": {
+          "sub_regions": {
+            "Castelli di Jesi": {
+              "sub_appellations": ["DOCG Verdicchio dei Castelli di Jesi Riserva"]
+            },
+            "Conero": {
+              "sub_appellations": ["DOCG Conero Riserva"]
+            }
+          }
+        },
+        "Molise": {
+          "sub_regions": {
+            "Tintilia del Molise": {
+              "sub_appellations": []
+            }
+          }
+        },
+        "Piedmont (Piemonte)": {
+          "sub_regions": {
+            "Langhe": {
+              "sub_appellations": ["DOCG Barolo", "DOCG Barbaresco"]
+            },
+            "Monferrato": {
+              "sub_appellations": ["DOCG Nizza"]
+            }
+          }
+        },
+        "Sardinia (Sardegna)": {
+          "sub_regions": {
+            "Vermentino di Gallura": {
+              "sub_appellations": ["DOCG Vermentino di Gallura"]
+            }
+          }
+        },
+        "Sicily (Sicilia)": {
+          "sub_regions": {
+            "Etna": {
+              "sub_appellations": ["DOC Etna"]
+            }
+          }
+        },
+        "Trentino-Alto Adige/Südtirol": {
+          "sub_regions": {
+            "Alto Adige": {
+              "sub_appellations": ["DOC Alto Adige"]
+            },
+            "Trentino": {
+              "sub_appellations": []
+            }
+          }
+        },
+        "Tuscany (Toscana)": {
+          "sub_regions": {
+            "Chianti": {
+              "sub_appellations": ["DOCG Chianti Classico"]
+            },
+            "Montalcino": {
+              "sub_appellations": ["DOCG Brunello di Montalcino"]
+            }
+          }
+        },
+        "Umbria": {
+          "sub_regions": {
+            "Montefalco": {
+              "sub_appellations": ["DOCG Sagrantino di Montefalco"]
+            }
+          }
+        },
+        "Veneto": {
+          "sub_regions": {
+            "Valpolicella": {
+              "sub_appellations": ["DOCG Amarone della Valpolicella"]
+            },
+            "Soave": {
+              "sub_appellations": ["DOCG Soave Superiore"]
+            }
+          }
+        }
+      }
+    },
+    "Spain": {
+      "major_regions": {
+        "Andalusia (Andalucía)": {
+          "sub_regions": {
+            "Jerez": {
+              "sub_appellations": [
+                "DO Jerez-Xérès-Sherry",
+                "DO Manzanilla-Sanlúcar de Barrameda",
+                "DO Pago Balbaina",
+                "DO Pago Carrascal"
+              ]
+            },
+            "Montilla-Moriles": {
+              "sub_appellations": [
+                "DO Montilla-Moriles",
+                "DO Moriles Alto",
+                "DO Sierra de Montilla"
+              ]
+            }
+          }
+        },
+        "Aragon (Aragón)": {
+          "sub_regions": {
+            "Cariñena": {
+              "sub_appellations": ["DO Cariñena"]
+            },
+            "Somontano": {
+              "sub_appellations": ["DO Somontano"]
+            },
+            "Campo de Borja": {
+              "sub_appellations": ["DO Campo de Borja"]
+            }
+          }
+        },
+        "Asturias (Principado de Asturias)": {
+          "sub_regions": {
+            "Cangas": {
+              "sub_appellations": ["DO Cangas"]
+            }
+          }
+        },
+        "Balearic Islands (Islas Baleares / Illes Balears)": {
+          "sub_regions": {
+            "Mallorca": {
+              "sub_appellations": ["DO Binissalem", "DO Pla i Llevant"]
+            },
+            "Ibiza": {
+              "sub_appellations": ["Vino de la Tierra Ibiza"]
+            }
+          }
+        },
+        "Basque Country (País Vasco / Euskadi)": {
+          "sub_regions": {
+            "Getariako Txakolina": {
+              "sub_appellations": ["DO Getariako Txakolina"]
+            },
+            "Bizkaiko Txakolina": {
+              "sub_appellations": ["DO Bizkaiko Txakolina"]
+            },
+            "Arabako Txakolina": {
+              "sub_appellations": ["DO Arabako Txakolina"]
+            }
+          }
+        },
+        "Canary Islands (Islas Canarias)": {
+          "sub_regions": {
+            "La Palma": {
+              "sub_appellations": ["DO La Palma"]
+            },
+            "Tenerife": {
+              "sub_appellations": [
+                "DO Tacoronte-Acentejo",
+                "DO Valle de la Orotava",
+                "DO Valle de Güímar",
+                "DO Abona",
+                "DO Ycoden-Daute-Isora"
+              ]
+            },
+            "Lanzarote": {
+              "sub_appellations": ["DO Lanzarote"]
+            }
+          }
+        },
+        "Cantabria": {
+          "sub_regions": {
+            "Costa de Cantabria": {
+              "sub_appellations": ["Vino de la Tierra Costa de Cantabria"]
+            }
+          }
+        },
+        "Castile and León (Castilla y León)": {
+          "sub_regions": {
+            "Ribera del Duero": {
+              "sub_appellations": ["DO Ribera del Duero"]
+            },
+            "Rueda": {
+              "sub_appellations": ["DO Rueda"]
+            },
+            "Toro": {
+              "sub_appellations": ["DO Toro"]
+            },
+            "Bierzo": {
+              "sub_appellations": ["DO Bierzo"]
+            }
+          }
+        },
+        "Castilla-La Mancha": {
+          "sub_regions": {
+            "La Mancha": {
+              "sub_appellations": ["DO La Mancha"]
+            },
+            "Valdepeñas": {
+              "sub_appellations": ["DO Valdepeñas"]
+            },
+            "Manchuela": {
+              "sub_appellations": ["DO Manchuela"]
+            }
+          }
+        },
+        "Catalonia (Cataluña / Catalunya)": {
+          "sub_regions": {
+            "Priorat": {
+              "sub_appellations": ["DOQ Priorat"]
+            },
+            "Penedès": {
+              "sub_appellations": ["DO Penedès"]
+            },
+            "Cava": {
+              "sub_appellations": ["DO Cava"]
+            },
+            "Montsant": {
+              "sub_appellations": ["DO Montsant"]
+            }
+          }
+        },
+        "Extremadura": {
+          "sub_regions": {
+            "Ribera del Guadiana": {
+              "sub_appellations": ["DO Ribera del Guadiana"]
+            }
+          }
+        },
+        "Galicia": {
+          "sub_regions": {
+            "Rías Baixas": {
+              "sub_appellations": ["DO Rías Baixas"]
+            },
+            "Ribeiro": {
+              "sub_appellations": ["DO Ribeiro"]
+            },
+            "Valdeorras": {
+              "sub_appellations": ["DO Valdeorras"]
+            },
+            "Monterrei": {
+              "sub_appellations": ["DO Monterrei"]
+            }
+          }
+        },
+        "La Rioja": {
+          "sub_regions": {
+            "Rioja Alta": {
+              "sub_appellations": ["DOCa Rioja Alta"]
+            },
+            "Rioja Alavesa": {
+              "sub_appellations": ["DOCa Rioja Alavesa"]
+            },
+            "Rioja Oriental": {
+              "sub_appellations": ["DOCa Rioja Oriental"]
+            }
+          }
+        },
+        "Madrid (Comunidad de Madrid)": {
+          "sub_regions": {
+            "Vinos de Madrid": {
+              "sub_appellations": ["DO Vinos de Madrid"]
+            }
+          }
+        },
+        "Murcia (Región de Murcia)": {
+          "sub_regions": {
+            "Jumilla": {
+              "sub_appellations": ["DO Jumilla"]
+            },
+            "Yecla": {
+              "sub_appellations": ["DO Yecla"]
+            },
+            "Bullas": {
+              "sub_appellations": ["DO Bullas"]
+            }
+          }
+        },
+        "Navarre (Navarra / Nafarroa)": {
+          "sub_regions": {
+            "Navarra": {
+              "sub_appellations": ["DO Navarra"]
+            }
+          }
+        },
+        "Valencian Community (Comunidad Valenciana / Comunitat Valenciana)": {
+          "sub_regions": {
+            "Utiel-Requena": {
+              "sub_appellations": ["DO Utiel-Requena"]
+            },
+            "Alicante": {
+              "sub_appellations": ["DO Alicante"]
+            },
+            "Valencia": {
+              "sub_appellations": ["DO Valencia"]
+            }
+          }
+        }
+      }
+    },
+    "Germany": {
+      "major_regions": {
+        "Ahr": {
+          "sub_regions": {
+            "Bad Neuenahr-Ahrweiler": {
+              "sub_appellations": ["Ahrweiler Rosenthal", "Bad Neuenahr Silberberg"]
+            },
+            "Dernau": {
+              "sub_appellations": ["Dernauer Hardtberg", "Dernauer Pfarrwingert"]
+            }
+          }
+        },
+        "Baden": {
+          "sub_regions": {
+            "Kaiserstuhl": {
+              "sub_appellations": ["Ihringer Winklerberg", "Oberrotweiler Eichberg"]
+            },
+            "Markgräflerland": {
+              "sub_appellations": ["Schliengener Sonnenstück", "Auggener Schäf"]
+            },
+            "Ortenau": {
+              "sub_appellations": ["Durbacher Plauelrain", "Gengenbacher Schlauch"]
+            }
+          }
+        },
+        "Franken": {
+          "sub_regions": {
+            "Würzburg": {
+              "sub_appellations": ["Würzburger Stein", "Würzburger Leiste"]
+            },
+            "Steigerwald": {
+              "sub_appellations": ["Iphöfer Kronsberg", "Casteller Kirchberg"]
+            }
+          }
+        },
+        "Hessische Bergstraße": {
+          "sub_regions": {
+            "Heppenheim": {
+              "sub_appellations": ["Heppenheimer Stemmler", "Heppenheimer Steinkopf"]
+            },
+            "Bensheim": {
+              "sub_appellations": ["Bensheimer Kalkgasse"]
+            }
+          }
+        },
+        "Mittelrhein": {
+          "sub_regions": {
+            "Boppard": {
+              "sub_appellations": ["Bopparder Hamm Mandelstein", "Bopparder Hamm Feuerlay"]
+            },
+            "Bacharach": {
+              "sub_appellations": ["Bacharacher Hahn", "Bacharacher Wolfshöhle"]
+            }
+          }
+        },
+        "Mosel": {
+          "sub_regions": {
+            "Bernkastel": {
+              "sub_appellations": ["Wehlener Sonnenuhr", "Bernkasteler Doctor"]
+            },
+            "Saar": {
+              "sub_appellations": ["Scharzhofberger", "Wiltinger Braune Kupp"]
+            },
+            "Ruwertal": {
+              "sub_appellations": ["Eitelsbacher Karthäuserhofberg"]
+            }
+          }
+        },
+        "Nahe": {
+          "sub_regions": {
+            "Bad Kreuznach": {
+              "sub_appellations": ["Bad Kreuznacher Krötenpfuhl", "Bad Kreuznacher Paradies"]
+            },
+            "Schlossböckelheim": {
+              "sub_appellations": ["Schlossböckelheimer Kupfergrube", "Schlossböckelheimer Felsenberg"]
+            }
+          }
+        },
+        "Pfalz": {
+          "sub_regions": {
+            "Mittelhaardt": {
+              "sub_appellations": ["Forster Kirchenstück", "Deidesheimer Herrgottsacker"]
+            },
+            "Südliche Weinstraße": {
+              "sub_appellations": ["Schweigenheimer Kammerberg", "Birkweiler Kastanienbusch"]
+            }
+          }
+        },
+        "Rheingau": {
+          "sub_regions": {
+            "Johannisberg": {
+              "sub_appellations": ["Schloss Johannisberg", "Johannisberger Hölle"]
+            },
+            "Rüdesheim": {
+              "sub_appellations": ["Rüdesheimer Berg Schlossberg", "Rüdesheimer Berg Rottland"]
+            }
+          }
+        },
+        "Rheinhessen": {
+          "sub_regions": {
+            "Nierstein": {
+              "sub_appellations": ["Niersteiner Roter Hang", "Niersteiner Oelberg"]
+            },
+            "Wonnegau": {
+              "sub_appellations": ["Westhofener Morstein", "Dittelsheimer Geiersberg"]
+            }
+          }
+        },
+        "Saale-Unstrut": {
+          "sub_regions": {
+            "Freyburg": {
+              "sub_appellations": ["Freyburger Edelacker"]
+            },
+            "Naumburg": {
+              "sub_appellations": ["Naumburger Göttersitz"]
+            }
+          }
+        },
+        "Sachsen": {
+          "sub_regions": {
+            "Meissen": {
+              "sub_appellations": ["Meißner Kapitelberg"]
+            },
+            "Radebeul": {
+              "sub_appellations": ["Radebeuler Goldener Wagen"]
+            }
+          }
+        },
+        "Württemberg": {
+          "sub_regions": {
+            "Heilbronn": {
+              "sub_appellations": ["Heilbronner Stiftsberg"]
+            },
+            "Stuttgart": {
+              "sub_appellations": ["Stuttgarter Cannstatter Zuckerle"]
+            }
+          }
+        }
+      }
+    },
+    "Portugal": {
+      "major_regions": {
+        "Vinho Verde": {
+          "sub_regions": {
+            "Monção e Melgaço": {
+              "sub_appellations": ["DOC Alvarinho", "DOC Loureiro-Alvarinho Blend"]
+            },
+            "Lima": {
+              "sub_appellations": ["DOC Loureiro", "DOC Vinhão"]
+            },
+            "Basto": {
+              "sub_appellations": ["DOC Avesso", "DOC Espadeiro"]
+            }
+          }
+        },
+        "Douro": {
+          "sub_regions": {
+            "Baixo Corgo": {
+              "sub_appellations": ["DOC Baixo Corgo", "DOC Moscatel do Douro"]
+            },
+            "Cima Corgo": {
+              "sub_appellations": ["DOC Cima Corgo", "DOC Vintage Port"]
+            },
+            "Douro Superior": {
+              "sub_appellations": ["DOC Douro Superior", "DOC Reserva Douro"]
+            }
+          }
+        },
+        "Dão": {
+          "sub_regions": {
+            "Serra da Estrela": {
+              "sub_appellations": ["DOC Serra da Estrela", "DOC Encruzado"]
+            },
+            "Terras de Azurara": {
+              "sub_appellations": ["DOC Terras de Azurara", "DOC Touriga Nacional"]
+            },
+            "Terras de Senhorim": {
+              "sub_appellations": ["DOC Terras de Senhorim", "DOC Alfrocheiro"]
+            }
+          }
+        },
+        "Bairrada": {
+          "sub_regions": {
+            "Cantanhede": {
+              "sub_appellations": ["DOC Cantanhede", "DOC Baga"]
+            },
+            "Anadia": {
+              "sub_appellations": ["DOC Anadia", "DOC Sparkling Bairrada"]
+            }
+          }
+        },
+        "Beira Interior": {
+          "sub_regions": {
+            "Castelo Rodrigo": {
+              "sub_appellations": ["DOC Castelo Rodrigo", "DOC Síria"]
+            },
+            "Cova da Beira": {
+              "sub_appellations": ["DOC Cova da Beira", "DOC Rufete"]
+            }
+          }
+        },
+        "Lisboa": {
+          "sub_regions": {
+            "Alenquer": {
+              "sub_appellations": ["DOC Alenquer", "DOC Arinto"]
+            },
+            "Colares": {
+              "sub_appellations": ["DOC Colares", "DOC Ramisco"]
+            },
+            "Óbidos": {
+              "sub_appellations": ["DOC Óbidos", "DOC Sparkling Óbidos"]
+            }
+          }
+        },
+        "Tejo": {
+          "sub_regions": {
+            "Coruche": {
+              "sub_appellations": ["DOC Coruche", "DOC Castelão"]
+            },
+            "Tomar": {
+              "sub_appellations": ["DOC Tomar", "DOC Fernão Pires"]
+            }
+          }
+        },
+        "Setúbal": {
+          "sub_regions": {
+            "Palmela": {
+              "sub_appellations": ["DOC Palmela", "DOC Castelão Palmela"]
+            },
+            "Azeitão": {
+              "sub_appellations": ["DOC Azeitão", "DOC Moscatel de Setúbal"]
+            }
+          }
+        },
+        "Alentejo": {
+          "sub_regions": {
+            "Évora": {
+              "sub_appellations": ["DOC Évora", "DOC Trincadeira"]
+            },
+            "Borba": {
+              "sub_appellations": ["DOC Borba", "DOC Aragonez"]
+            },
+            "Reguengos": {
+              "sub_appellations": ["DOC Reguengos", "DOC Alicante Bouschet"]
+            }
+          }
+        },
+        "Algarve": {
+          "sub_regions": {
+            "Lagos": {
+              "sub_appellations": ["DOC Lagos", "DOC Negra Mole"]
+            },
+            "Portimão": {
+              "sub_appellations": ["DOC Portimão", "DOC Syrah"]
+            }
+          }
+        },
+        "Madeira": {
+          "sub_regions": {
+            "Funchal": {
+              "sub_appellations": ["DOC Funchal", "DOC Sercial"]
+            },
+            "Câmara de Lobos": {
+              "sub_appellations": ["DOC Câmara de Lobos", "DOC Verdelho"]
+            }
+          }
+        },
+        "Azores (Açores)": {
+          "sub_regions": {
+            "Pico": {
+              "sub_appellations": ["DOC Pico", "DOC Arinto dos Açores"]
+            },
+            "Graciosa": {
+              "sub_appellations": ["DOC Graciosa", "DOC Terrantez"]
+            }
+          }
+        },
+        "Távora-Varosa": {
+          "sub_regions": {
+            "Moimenta da Beira": {
+              "sub_appellations": ["DOC Moimenta da Beira", "DOC Sparkling Távora-Varosa"]
+            }
+          }
+        },
+        "Trás-os-Montes": {
+          "sub_regions": {
+            "Chaves": {
+              "sub_appellations": ["DOC Chaves", "DOC Bastardo"]
+            },
+            "Valpaços": {
+              "sub_appellations": ["DOC Valpaços", "DOC Gouveio"]
+            }
+          }
+        }
+      }
+    },
+    "Austria": {
+      "major_regions": {
+        "Lower Austria (Niederösterreich)": {
+          "sub_regions": {
+            "Wachau": {
+              "sub_appellations": ["Smaragd", "Federspiel", "Steinfeder", "Achleiten", "Kellerberg", "Loibenberg"]
+            },
+            "Kamptal": {
+              "sub_appellations": ["DAC Kamptal Reserve", "Heiligenstein", "Lamm", "Gaisberg"]
+            },
+            "Kremstal": {
+              "sub_appellations": ["DAC Kremstal", "Pfaffenberg", "Stein"]
+            },
+            "Traisental": {
+              "sub_appellations": ["DAC Traisental", "Nussdorf", "Inzersdorf"]
+            },
+            "Weinviertel": {
+              "sub_appellations": ["DAC Weinviertel", "Poysdorf", "Retz", "Falkenstein"]
+            },
+            "Wagram": {
+              "sub_appellations": ["Roter Veltliner Wagram", "Fels am Wagram", "Grossriedenthal"]
+            },
+            "Thermenregion": {
+              "sub_appellations": ["Gumpoldskirchen Zierfandler", "Rotgipfler DAC", "Theresienfeld"]
+            },
+            "Carnuntum": {
+              "sub_appellations": ["DAC Carnuntum Reserve", "Spitzerberg", "Petronell"]
+            }
+          }
+        },
+        "Burgenland": {
+          "sub_regions": {
+            "Neusiedlersee": {
+              "sub_appellations": ["DAC Neusiedlersee", "Trockenbeerenauslese", "Seewinkel"]
+            },
+            "Leithaberg": {
+              "sub_appellations": ["DAC Leithaberg Reserve", "Joiser Kirchberg", "Langenlois"]
+            },
+            "Mittelburgenland": {
+              "sub_appellations": ["DAC Mittelburgenland Blaufränkisch", "Deutschkreutz", "Horitschon"]
+            },
+            "Südburgenland": {
+              "sub_appellations": ["DAC Eisenberg", "Deutsch Schützen", "Rechnitz"]
+            }
+          }
+        },
+        "Styria (Steiermark)": {
+          "sub_regions": {
+            "Südsteiermark": {
+              "sub_appellations": ["DAC Südsteiermark Sauvignon Blanc", "Kitzeck-Sausal", "Ratsch"]
+            },
+            "Weststeiermark": {
+              "sub_appellations": ["DAC Weststeiermark Schilcher", "Stainz", "Deutschlandsberg"]
+            },
+            "Vulkanland Steiermark": {
+              "sub_appellations": ["DAC Vulkanland Traminer", "Kapfenstein", "Straden"]
+            }
+          }
+        },
+        "Vienna (Wien)": {
+          "sub_regions": {
+            "Wiener Gemischter Satz": {
+              "sub_appellations": ["DAC Wiener Gemischter Satz", "Nussberg", "Bisamberg"]
+            }
+          }
+        }
+      }
+    },
+    "Greece": {
+      "major_regions": {
+        "Macedonia": {
+          "sub_regions": {
+            "Naoussa": {
+              "sub_appellations": [
+                "PDO Naoussa",
+                "Xinomavro Reserve",
+                "Trifilias Vineyards",
+                "Gastras Oak-Aged"
+              ]
+            },
+            "Amyntaio": {
+              "sub_appellations": [
+                "PDO Amyntaio",
+                "Sparkling Xinomavro",
+                "Dry Xinomavro",
+                "Amyntaio Rosé"
+              ]
+            },
+            "Goumenissa": {
+              "sub_appellations": [
+                "PDO Goumenissa",
+                "Xinomavro-Blend",
+                "Negoska Reserve"
+              ]
+            },
+            "Epanomi": {
+              "sub_appellations": [
+                "PGI Epanomi",
+                "Malagousia",
+                "Assyrtiko Epanomi Reserve"
+              ]
+            }
+          }
+        },
+        "Peloponnese": {
+          "sub_regions": {
+            "Nemea": {
+              "sub_appellations": [
+                "PDO Nemea",
+                "Agiorgitiko Grand Reserve",
+                "Nemea Rosé",
+                "Ancient Nemea Vineyard"
+              ]
+            },
+            "Mantinia": {
+              "sub_appellations": [
+                "PDO Mantinia",
+                "Moschofilero",
+                "Mantinia Late Harvest"
+              ]
+            },
+            "Patras": {
+              "sub_appellations": [
+                "PDO Patras",
+                "Roditis",
+                "Sweet Muscat of Patras",
+                "Dry Patras Blend"
+              ]
+            },
+            "Monemvasia-Malvasia": {
+              "sub_appellations": [
+                "PDO Monemvasia-Malvasia",
+                "Sweet Malvasia",
+                "Monemvasia Vin Doux",
+                "Aged Malvasia Reserve"
+              ]
+            }
+          }
+        },
+        "Thessaly": {
+          "sub_regions": {
+            "Rapsani": {
+              "sub_appellations": [
+                "PDO Rapsani",
+                "Xinomavro Blend",
+                "Rapsani Mountain Reserve"
+              ]
+            },
+            "Anchialos": {
+              "sub_appellations": [
+                "PDO Anchialos",
+                "Roditis-Savatiano",
+                "Anchialos Oak-Aged"
+              ]
+            }
+          }
+        },
+        "Crete": {
+          "sub_regions": {
+            "Archanes": {
+              "sub_appellations": [
+                "PDO Archanes",
+                "Kotsifali-Mandilaria",
+                "Archanes Barrel-Fermented"
+              ]
+            },
+            "Peza": {
+              "sub_appellations": [
+                "PDO Peza",
+                "Vilana",
+                "Peza Sweet Reserve"
+              ]
+            },
+            "Sitia": {
+              "sub_appellations": [
+                "PDO Sitia",
+                "Liatiko",
+                "Sitia Vin Doux"
+              ]
+            },
+            "Dafnes": {
+              "sub_appellations": [
+                "PDO Dafnes",
+                "Liatiko Sweet",
+                "Dafnes Barrel-Aged Reserve"
+              ]
+            }
+          }
+        },
+        "Epirus": {
+          "sub_regions": {
+            "Zitsa": {
+              "sub_appellations": [
+                "PDO Zitsa",
+                "Debina Sparkling",
+                "Zitsa Traditional Method Brut"
+              ]
+            }
+          }
+        },
+        "Aegean Islands": {
+          "sub_regions": {
+            "Santorini": {
+              "sub_appellations": [
+                "PDO Santorini",
+                "Assyrtiko",
+                "Santorini Nykteri",
+                "Santorini Vinsanto"
+              ]
+            },
+            "Paros": {
+              "sub_appellations": [
+                "PDO Paros",
+                "Monemvasia-Mandilaria",
+                "Paros Vin Doux"
+              ]
+            },
+            "Rhodes": {
+              "sub_appellations": [
+                "PDO Rhodes",
+                "Athiri",
+                "Rhodes Sweet Muscat"
+              ]
+            },
+            "Samos": {
+              "sub_appellations": [
+                "PDO Samos",
+                "Muscat of Samos",
+                "Samos Anthemis",
+                "Samos Nectar"
+              ]
+            }
+          }
+        },
+        "Central Greece (Sterea Ellada)": {
+          "sub_regions": {
+            "Atalanti Valley": {
+              "sub_appellations": [
+                "PGI Atalanti",
+                "Savatiano-Assyrtiko",
+                "Atalanti Barrel-Aged"
+              ]
+            },
+            "Evoia": {
+              "sub_appellations": [
+                "PGI Evoia",
+                "Modern Retsina",
+                "Evoia Late Harvest"
+              ]
+            }
+          }
+        },
+        "Ionian Islands": {
+          "sub_regions": {
+            "Cephalonia": {
+              "sub_appellations": [
+                "PDO Cephalonia",
+                "Robola",
+                "Cephalonia Barrel-Fermented",
+                "Cephalonia Sweet Reserve"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "Switzerland": {
+      "major_regions": {
+        "Valais": {
+          "sub_regions": {
+            "Sion": {
+              "sub_appellations": ["Grand Cru Sion", "Clos de Géronde", "Clavien", "Les Bernunes"]
+            },
+            "Salgesch": {
+              "sub_appellations": ["Grand Cru Salgesch", "Salgesch Reserve"]
+            },
+            "Visperterminen": {
+              "sub_appellations": ["Heida Visperterminen", "Visperterminen Late Harvest"]
+            },
+            "Fully": {
+              "sub_appellations": ["Petite Arvine Fully", "Fully Syrah"]
+            },
+            "Vétroz": {
+              "sub_appellations": ["Amigne de Vétroz", "Grand Cru Amigne"]
+            }
+          }
+        },
+        "Vaud": {
+          "sub_regions": {
+            "Lavaux": {
+              "sub_appellations": ["Dézaley Grand Cru", "Calamin Grand Cru", "St-Saphorin"]
+            },
+            "La Côte": {
+              "sub_appellations": ["Morges", "Aubonne", "Perroy", "Féchy"]
+            },
+            "Chablais": {
+              "sub_appellations": ["Yvorne", "Aigle", "Ollon"]
+            },
+            "Vully": {
+              "sub_appellations": ["Grand Cru Vully", "Vully Rosé"]
+            }
+          }
+        },
+        "Geneva (Genève)": {
+          "sub_regions": {
+            "Satigny": {
+              "sub_appellations": ["Satigny Premier Cru", "Satigny Gamaret"]
+            },
+            "Dardagny": {
+              "sub_appellations": ["Dardagny Blanc", "Dardagny Pinot Noir"]
+            },
+            "Mandy": {
+              "sub_appellations": ["Mandy Chasselas"]
+            }
+          }
+        },
+        "Ticino": {
+          "sub_regions": {
+            "Lugano": {
+              "sub_appellations": ["Merlot di Lugano", "Lugano Bianco"]
+            },
+            "Mendrisio": {
+              "sub_appellations": ["Mendrisio Riserva", "Mendrisio Rosso"]
+            },
+            "Bellinzona": {
+              "sub_appellations": ["Bellinzona Classico"]
+            }
+          }
+        },
+        "Three Lakes (Trois Lacs)": {
+          "sub_regions": {
+            "Neuchâtel": {
+              "sub_appellations": ["Œil-de-Perdrix", "Neuchâtel Blanc"]
+            },
+            "Bielersee": {
+              "sub_appellations": ["Bielersee Pinot Noir", "Bielersee Chasselas"]
+            },
+            "Vully": {
+              "sub_appellations": ["Grand Cru Vully", "Vully Rouge"]
+            }
+          }
+        },
+        "Eastern Switzerland (Deutschschweiz)": {
+          "sub_regions": {
+            "Zürich": {
+              "sub_appellations": ["Zürcher Riesling-Silvaner", "Zürcher Pinot Noir"]
+            },
+            "Graubünden (Grisons)": {
+              "sub_appellations": ["Maienfeld Pinot Noir", "Fläsch Riesling"]
+            },
+            "Thurgau": {
+              "sub_appellations": ["Müller-Thurgau Thurgau", "Thurgau Pinot Gris"]
+            },
+            "Schaffhausen": {
+              "sub_appellations": ["Schaffhausen Blauburgunder", "Schaffhausen Late Harvest"]
+            }
+          }
+        }
+      }
+    },
+    "Hungary": {
+      "major_regions": {
+        "Tokaj": {
+          "sub_regions": {
+            "Mád": {
+              "sub_appellations": ["Tokaji Aszú", "Tokaji Essencia", "Dry Tokaji", "Szamorodni"]
+            },
+            "Tállya": {
+              "sub_appellations": ["Tokaji Late Harvest", "Tállya Furmint"]
+            },
+            "Tarcal": {
+              "sub_appellations": ["Tarcal Muscat Blanc"]
+            }
+          }
+        },
+        "Villány": {
+          "sub_regions": {
+            "Villány-Siklós": {
+              "sub_appellations": ["Villányi Franc", "Villány Cabernet Sauvignon", "Villány Merlot Reserve"]
+            },
+            "Nagyharsány": {
+              "sub_appellations": ["Nagyharsány Kékfrankos"]
+            }
+          }
+        },
+        "Eger": {
+          "sub_regions": {
+            "Egri Bikavér": {
+              "sub_appellations": ["Superior Bikavér", "Egri Csillag", "Egri Merlot"]
+            },
+            "Egerszalók": {
+              "sub_appellations": ["Egerszalók Furmint"]
+            }
+          }
+        },
+        "Szekszárd": {
+          "sub_regions": {
+            "Szekszárdi Bikavér": {
+              "sub_appellations": ["Kadarka Reserve", "Kékfrankos Selection", "Szekszárdi Rosé"]
+            },
+            "Decs": {
+              "sub_appellations": ["Decs Merlot"]
+            }
+          }
+        },
+        "Balaton": {
+          "sub_regions": {
+            "Badacsony": {
+              "sub_appellations": ["Badacsony Olaszrizling", "Kéknyelű Selection", "Badacsony Pinot Gris"]
+            },
+            "Balatonfüred-Csopak": {
+              "sub_appellations": ["Csopaki Olaszrizling", "Balatonfüred Rosé"]
+            },
+            "Somló": {
+              "sub_appellations": ["Somló Juhfark", "Somló Furmint"]
+            },
+            "Balatonboglár": {
+              "sub_appellations": ["Balaton Sauvignon Blanc", "Balaton Chardonnay"]
+            }
+          }
+        },
+        "Mátra": {
+          "sub_regions": {
+            "Mátraalja": {
+              "sub_appellations": ["Mátra Muskotály", "Mátra Kékfrankos", "Mátra Olaszrizling"]
+            }
+          }
+        },
+        "Sopron": {
+          "sub_regions": {
+            "Kékfrankos": {
+              "sub_appellations": ["Sopron Kékfrankos Reserve", "Sopron Zweigelt"]
+            },
+            "Fertőrákos": {
+              "sub_appellations": ["Fertőrákos Pinot Noir"]
+            }
+          }
+        },
+        "Badacsony": {
+          "sub_regions": {
+            "Kéknyelű": {
+              "sub_appellations": ["Badacsony Kéknyelű Premium", "Badacsony Furmint"]
+            }
+          }
+        },
+        "Somló": {
+          "sub_regions": {
+            "Somló Juhfark": {
+              "sub_appellations": ["Mineral-Driven Somló Juhfark", "Somló Hárslevelű"]
+            }
+          }
+        },
+        "Pannonhalma": {
+          "sub_regions": {
+            "Pannonhalma Wines": {
+              "sub_appellations": ["Pannonhalma Olaszrizling", "Pannonhalma Tramini"]
+            }
+          }
+        },
+        "Csopak": {
+          "sub_regions": {
+            "Csopaki Olaszrizling": {
+              "sub_appellations": ["Csopak Premium Selection", "Csopak Sauvignon Blanc"]
+            }
+          }
+        }
+      }
+    },
+    "Romania": {
+      "major_regions": {
+        "Transylvania (Transilvania)": {
+          "sub_regions": {
+            "Târnave": {
+              "sub_appellations": ["Târnave Riesling", "Târnave Fetească Regală", "Târnave Sauvignon Blanc", "Târnave Chardonnay"]
+            },
+            "Aiud": {
+              "sub_appellations": ["Aiud Sauvignon Blanc", "Aiud Pinot Gris", "Aiud Fetească Albă"]
+            }
+          }
+        },
+        "Moldavia (Moldova)": {
+          "sub_regions": {
+            "Cotnari": {
+              "sub_appellations": ["Grasă de Cotnari", "Tămâioasă Românească", "Frâncușă Cotnari", "Busuioacă de Cotnari"]
+            },
+            "Huși": {
+              "sub_appellations": ["Busuioacă de Bohotin", "Huși Riesling"]
+            }
+          }
+        },
+        "Muntenia and Oltenia": {
+          "sub_regions": {
+            "Dealu Mare": {
+              "sub_appellations": ["Fetească Neagră Dealu Mare", "Cabernet Sauvignon Dealu Mare", "Merlot Dealu Mare", "Chardonnay Dealu Mare"]
+            },
+            "Ștefănești": {
+              "sub_appellations": ["Ștefănești Chardonnay", "Ștefănești Merlot", "Ștefănești Sauvignon Blanc"]
+            }
+          }
+        },
+        "Dobruja (Dobrogea)": {
+          "sub_regions": {
+            "Murfatlar": {
+              "sub_appellations": ["Murfatlar Muscat Ottonel", "Murfatlar Cabernet Sauvignon", "Murfatlar Pinot Gris", "Murfatlar Merlot"]
+            },
+            "Babadag": {
+              "sub_appellations": ["Babadag Aligoté", "Babadag Chardonnay"]
+            }
+          }
+        },
+        "Banat": {
+          "sub_regions": {
+            "Recaș": {
+              "sub_appellations": ["Recaș Italian Riesling", "Recaș Pinot Noir", "Recaș Cabernet Sauvignon", "Recaș Fetească Neagră"]
+            },
+            "Silagiu": {
+              "sub_appellations": ["Silagiu Rosé", "Silagiu Sauvignon Blanc"]
+            }
+          }
+        },
+        "Crișana and Maramureș": {
+          "sub_regions": {
+            "Miniș": {
+              "sub_appellations": ["Miniș Fetească Neagră", "Miniș Cabernet Sauvignon", "Miniș Merlot"]
+            },
+            "Șiria": {
+              "sub_appellations": ["Șiria Chardonnay", "Șiria Pinot Gris"]
+            }
+          }
+        },
+        "Danube Terraces (Terasele Dunării)": {
+          "sub_regions": {
+            "Ostrov": {
+              "sub_appellations": ["Ostrov Fetească Albă", "Ostrov Riesling Italico", "Ostrov Sauvignon Blanc"]
+            },
+            "Greaca": {
+              "sub_appellations": ["Greaca Cabernet Sauvignon", "Greaca Merlot"]
+            }
+          }
+        },
+        "The Hills of Moldova (Dealurile Moldovei)": {
+          "sub_regions": {
+            "Nicorești": {
+              "sub_appellations": ["Nicorești Babească Neagră", "Nicorești Fetească Neagră"]
+            },
+            "Odobești": {
+              "sub_appellations": ["Odobești Aligoté", "Odobești Fetească Albă", "Odobești Muscat Ottonel"]
+            }
+          }
+        }
+      }
+    },
+    "Bulgaria": {
+      "major_regions": {
+        "Danubian Plain (Northern Region)": {
+          "sub_regions": {
+            "Vidin": {
+              "sub_appellations": ["Gamza Vidin Reserve", "Vidin Riesling", "Vidin Cabernet Sauvignon"]
+            },
+            "Pleven": {
+              "sub_appellations": ["Pleven Muscat Ottonel", "Pleven Chardonnay", "Pleven Sauvignon Blanc"]
+            }
+          }
+        },
+        "Thracian Valley (Southern Region)": {
+          "sub_regions": {
+            "Plovdiv": {
+              "sub_appellations": ["Mavrud Plovdiv", "Plovdiv Merlot", "Plovdiv Syrah"]
+            },
+            "Pazardzhik": {
+              "sub_appellations": ["Pazardzhik Cabernet Sauvignon", "Pazardzhik Chardonnay", "Pazardzhik Pinot Noir"]
+            },
+            "Stara Zagora": {
+              "sub_appellations": ["Stara Zagora Syrah", "Stara Zagora Rosé", "Stara Zagora Sauvignon Blanc"]
+            },
+            "Haskovo": {
+              "sub_appellations": ["Haskovo Mavrud", "Haskovo Viognier", "Haskovo Cabernet Franc"]
+            }
+          }
+        },
+        "Black Sea Coast (Eastern Region)": {
+          "sub_regions": {
+            "Varna": {
+              "sub_appellations": ["Varna Dimyat", "Varna Riesling", "Varna Muscat Blanc"]
+            },
+            "Burgas": {
+              "sub_appellations": ["Burgas Traminer", "Burgas Rosé", "Burgas Sauvignon Gris"]
+            }
+          }
+        },
+        "Struma Valley (Southwest Region)": {
+          "sub_regions": {
+            "Melnik": {
+              "sub_appellations": ["Shiroka Melnishka Loza Reserve", "Melnik Merlot", "Melnik Syrah"]
+            },
+            "Sandanski": {
+              "sub_appellations": ["Sandanski Cabernet Sauvignon", "Sandanski Rosé", "Sandanski Pinot Noir"]
+            }
+          }
+        },
+        "Rose Valley (Sub-Balkan Region)": {
+          "sub_regions": {
+            "Kazanlak": {
+              "sub_appellations": ["Kazanlak Red Misket", "Kazanlak Chardonnay", "Kazanlak Riesling"]
+            },
+            "Karlovo": {
+              "sub_appellations": ["Karlovo Riesling", "Karlovo Rosé", "Karlovo Muscat Ottonel"]
+            }
+          }
+        }
+      }
+    },
+    "Slovenia": {
+      "major_regions": {
+        "Podravje (Drava Region)": {
+          "sub_regions": {
+            "Štajerska Slovenija (Styria Slovenia)": {
+              "sub_appellations": [
+                "Sauvignon Blanc Štajerska", 
+                "Riesling Štajerska", 
+                "Furmint (Šipon) Štajerska", 
+                "Štajerska Chardonnay Reserve", 
+                "Gewürztraminer Štajerska"
+              ]
+            },
+            "Prekmurje": {
+              "sub_appellations": [
+                "Laski Rizling Prekmurje", 
+                "Traminer Prekmurje", 
+                "Prekmurje Muscat Ottonel"
+              ]
+            }
+          }
+        },
+        "Posavje (Sava Region)": {
+          "sub_regions": {
+            "Dolenjska": {
+              "sub_appellations": [
+                "Cviček", 
+                "Žametovka (Blauer Kölner)", 
+                "Dolenjska Blaufränkisch Reserve"
+              ]
+            },
+            "Bela Krajina": {
+              "sub_appellations": [
+                "Modra Frankinja (Blaufränkisch) Bela Krajina", 
+                "Bela Krajina Sauvignon Blanc"
+              ]
+            },
+            "Bizeljsko-Sremič": {
+              "sub_appellations": [
+                "Rumeni Muškat (Yellow Muscat) Bizeljsko", 
+                "Bizeljsko Pinot Gris Reserve"
+              ]
+            }
+          }
+        },
+        "Primorska (Littoral Region)": {
+          "sub_regions": {
+            "Goriška Brda (Brda)": {
+              "sub_appellations": [
+                "Rebula (Ribolla Gialla) Goriška Brda", 
+                "Merlot Goriška Brda", 
+                "Cabernet Sauvignon Goriška Brda", 
+                "Sivi Pinot (Pinot Gris) Brda"
+              ]
+            },
+            "Vipava Valley": {
+              "sub_appellations": [
+                "Pinela Vipava", 
+                "Zelen Vipava", 
+                "Vipava Chardonnay Selection"
+              ]
+            },
+            "Kras (Karst)": {
+              "sub_appellations": [
+                "Teran Kras", 
+                "Refošk Kras", 
+                "Kras Malvasia"
+              ]
+            },
+            "Slovenska Istra (Slovenian Istria)": {
+              "sub_appellations": [
+                "Malvazija (Malvasia) Istra", 
+                "Refosco Istra", 
+                "Slovenska Istra Shiraz Reserve"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "Croatia": {
+      "major_regions": {
+        "Slavonia and Croatian Danube (Slavonija i Hrvatsko Podunavlje)": {
+          "sub_regions": {
+            "Kutjevo": {
+              "sub_appellations": ["Kutjevo Graševina", "Kutjevo Chardonnay", "Kutjevo Pinot Noir", "Kutjevo Riesling"]
+            },
+            "Đakovo": {
+              "sub_appellations": ["Đakovo Traminer", "Đakovo Pinot Gris", "Đakovo Sauvignon Blanc"]
+            },
+            "Baranja": {
+              "sub_appellations": ["Baranja Cabernet Sauvignon", "Baranja Merlot", "Baranja Blaufränkisch"]
+            }
+          }
+        },
+        "Croatian Uplands (Središnja Hrvatska)": {
+          "sub_regions": {
+            "Zagorje": {
+              "sub_appellations": ["Zagorje Sauvignon Blanc", "Zagorje Riesling", "Zagorje Pinot Gris"]
+            },
+            "Plešivica": {
+              "sub_appellations": ["Plešivica Sparkling Wine", "Plešivica Chardonnay", "Plešivica Pinot Noir"]
+            },
+            "Moslavina": {
+              "sub_appellations": ["Moslavina Škrlet", "Moslavina Graševina"]
+            }
+          }
+        },
+        "Istria and Kvarner (Istra i Kvarner)": {
+          "sub_regions": {
+            "Istria (Istra)": {
+              "sub_appellations": ["Malvazija Istarska", "Teran Reserve", "Istrian Muscat"]
+            },
+            "Kvarner": {
+              "sub_appellations": ["Žlahtina Vrbnik", "Kvarner Sparkling Wine", "Kvarner Chardonnay"]
+            }
+          }
+        },
+        "Dalmatia (Dalmacija)": {
+          "sub_regions": {
+            "Central and Southern Dalmatia": {
+              "sub_appellations": ["Plavac Mali", "Babić Reserve", "Crljenak Kaštelanski", "Zinfandel Dalmatia"]
+            },
+            "Northern Dalmatia": {
+              "sub_appellations": ["Debit", "Maraština", "Northern Dalmatia Pošip"]
+            },
+            "Pelješac Peninsula": {
+              "sub_appellations": ["Dingač", "Postup", "Pelješac Cabernet Sauvignon"]
+            },
+            "Hvar Island": {
+              "sub_appellations": ["Bogdanuša", "Drnekuša", "Hvar Pošip"]
+            },
+            "Korčula Island": {
+              "sub_appellations": ["Pošip", "Grk", "Korčula Rukatac"]
+            }
+          }
+        }
+      }
+    },
+    "Georgia": {
+      "major_regions": {
+        "Kakheti": {
+          "sub_regions": {
+            "Tsinandali": {
+              "sub_appellations": ["Tsinandali Dry Whites", "Tsinandali Rkatsiteli", "Tsinandali Kisi"]
+            },
+            "Mukuzani": {
+              "sub_appellations": ["Mukuzani Saperavi", "Mukuzani Reserve"]
+            },
+            "Napareuli": {
+              "sub_appellations": ["Napareuli Reds", "Napareuli Whites", "Napareuli Rkatsiteli"]
+            },
+            "Kvareli": {
+              "sub_appellations": ["Kvareli Saperavi Reserve", "Kvareli Kindzmarauli"]
+            },
+            "Kindzmarauli": {
+              "sub_appellations": ["Kindzmarauli Semi-Sweet Saperavi", "Kindzmarauli Red Blend"]
+            }
+          }
+        },
+        "Kartli": {
+          "sub_regions": {
+            "Ateni": {
+              "sub_appellations": ["Ateni Chinuri", "Ateni Goruli Mtsvane", "Ateni Qvevri Wines"]
+            },
+            "Gori": {
+              "sub_appellations": ["Gori Tavkveri", "Gori Chinuri"]
+            }
+          }
+        },
+        "Imereti": {
+          "sub_regions": {
+            "Zestafoni": {
+              "sub_appellations": ["Zestafoni Tsolikouri", "Zestafoni Otskhanuri Sapere"]
+            },
+            "Bagdati": {
+              "sub_appellations": ["Bagdati Krakhuna", "Bagdati Aladasturi", "Bagdati Otskhanuri Sapere"]
+            }
+          }
+        },
+        "Racha-Lechkhumi": {
+          "sub_regions": {
+            "Khvanchkara": {
+              "sub_appellations": ["Khvanchkara Aleksandrouli", "Khvanchkara Mujuretuli", "Khvanchkara Qvevri"]
+            },
+            "Tvishi": {
+              "sub_appellations": ["Tvishi Tsolikouri", "Tvishi Semi-Sweet Whites"]
+            }
+          }
+        },
+        "Samegrelo": {
+          "sub_regions": {
+            "Ojaleshi": {
+              "sub_appellations": ["Ojaleshi Reds", "Ojaleshi Semi-Sweet"]
+            }
+          }
+        },
+        "Guria": {
+          "sub_regions": {
+            "Chkhaveri": {
+              "sub_appellations": ["Chkhaveri Rosé", "Chkhaveri Qvevri Wines"]
+            }
+          }
+        },
+        "Adjara": {
+          "sub_regions": {
+            "Keda": {
+              "sub_appellations": ["Keda Chkhaveri", "Keda White Blends"]
+            }
+          }
+        },
+        "Meskheti": {
+          "sub_regions": {
+            "Meskhuri Vineyards": {
+              "sub_appellations": ["Meskhuri Tskhenis Dzudzu", "Meskhuri Qvevri Wines"]
+            }
+          }
+        },
+        "Abkhazia": {
+          "sub_regions": {
+            "Lykhny": {
+              "sub_appellations": ["Lykhny Semi-Sweet Whites", "Lykhny Semi-Sweet Reds", "Lykhny Sparkling Wines"]
+            },
+            "Gudauta": {
+              "sub_appellations": ["Gudauta Ojaleshi", "Gudauta Aladasturi"]
+            }
+          }
+        },
+        "Svaneti": {
+          "sub_regions": {
+            "Svaneti Vineyards": {
+              "sub_appellations": ["Svaneti Indigenous Grapes", "Svaneti Qvevri Wines"]
+            }
+          }
+        }
+      }
+    },
+    "Moldova": {
+      "major_regions": {
+        "Codru": {
+          "sub_regions": {
+            "Strășeni": {
+              "sub_appellations": ["Strășeni Sparkling Wines", "Strășeni Dry Whites", "Strășeni Pinot Gris", "Strășeni Rosé"]
+            },
+            "Orhei": {
+              "sub_appellations": ["Orhei Chardonnay", "Orhei Cabernet Sauvignon", "Orhei Sauvignon Blanc", "Orhei Merlot Reserve"]
+            }
+          }
+        },
+        "Bălți (Northern Region)": {
+          "sub_regions": {
+            "Răut": {
+              "sub_appellations": ["Răut Aligoté", "Răut Sauvignon Blanc", "Răut Pinot Blanc"]
+            },
+            "Fălești": {
+              "sub_appellations": ["Fălești Muscat Ottonel", "Fălești Riesling", "Fălești Traminer"]
+            }
+          }
+        },
+        "Purcari (Stefan Voda Region)": {
+          "sub_regions": {
+            "Purcari": {
+              "sub_appellations": ["Negru de Purcari", "Purcari Chardonnay", "Purcari Rosé", "Purcari Rara Neagră"]
+            },
+            "Căușeni": {
+              "sub_appellations": ["Căușeni Fetească Neagră", "Căușeni Malbec", "Căușeni Cabernet Franc"]
+            }
+          }
+        },
+        "Cahul (Southern Region)": {
+          "sub_regions": {
+            "Comrat": {
+              "sub_appellations": ["Comrat Cabernet Sauvignon", "Comrat Merlot", "Comrat Saperavi"]
+            },
+            "Leova": {
+              "sub_appellations": ["Leova Muscat Blanc", "Leova Late Harvest Whites", "Leova Viognier"]
+            }
+          }
+        }
+      }
+    },
+    "Serbia": {
+      "major_regions": {
+        "Timok (Timočka Krajina)": {
+          "sub_regions": {
+            "Negotin": {
+              "sub_appellations": ["Negotin Prokupac", "Negotin Tamjanika", "Negotin Cabernet Sauvignon", "Negotin Merlot"]
+            },
+            "Knjaževac": {
+              "sub_appellations": ["Knjaževac Riesling", "Knjaževac Chardonnay", "Knjaževac Pinot Noir"]
+            }
+          }
+        },
+        "Šumadija": {
+          "sub_regions": {
+            "Topola": {
+              "sub_appellations": ["Topola Cabernet Sauvignon", "Topola Merlot", "Topola Syrah"]
+            },
+            "Aranđelovac": {
+              "sub_appellations": ["Aranđelovac Riesling", "Aranđelovac Tamjanika", "Aranđelovac Sauvignon Blanc"]
+            }
+          }
+        },
+        "Fruška Gora": {
+          "sub_regions": {
+            "Sremski Karlovci": {
+              "sub_appellations": ["Sremski Karlovci Bermet", "Sremski Karlovci Ausbruch", "Sremski Karlovci Prokupac"]
+            },
+            "Irig": {
+              "sub_appellations": ["Irig Graševina", "Irig Pinot Blanc", "Irig Traminac"]
+            }
+          }
+        },
+        "South Morava (Južna Morava)": {
+          "sub_regions": {
+            "Aleksandrovac": {
+              "sub_appellations": ["Aleksandrovac Prokupac", "Aleksandrovac Tamjanika", "Aleksandrovac Chardonnay"]
+            },
+            "Vranje": {
+              "sub_appellations": ["Vranje Vranac", "Vranje Cabernet Sauvignon", "Vranje Merlot"]
+            }
+          }
+        },
+        "West Morava (Zapadna Morava)": {
+          "sub_regions": {
+            "Trstenik": {
+              "sub_appellations": ["Trstenik Prokupac", "Trstenik Chardonnay", "Trstenik Sauvignon Blanc"]
+            },
+            "Kraljevo": {
+              "sub_appellations": ["Kraljevo Riesling", "Kraljevo Tamjanika", "Kraljevo Pinot Noir"]
+            }
+          }
+        },
+        "Negotin (Negotinska Krajina)": {
+          "sub_regions": {
+            "Rogljevo": {
+              "sub_appellations": ["Rogljevo Prokupac", "Rogljevo Negotinska Crna", "Rogljevo Rosé"]
+            },
+            "Rajac": {
+              "sub_appellations": ["Rajac Smederevka", "Rajac Tamjanika", "Rajac Sauvignon Blanc"]
+            }
+          }
+        },
+        "Subotica-Horgoš": {
+          "sub_regions": {
+            "Palić": {
+              "sub_appellations": ["Palić Chardonnay", "Palić Riesling", "Palić Kadarka", "Palić Traminer"]
+            }
+          }
+        },
+        "Župa": {
+          "sub_regions": {
+            "Aleksandrovac": {
+              "sub_appellations": ["Aleksandrovac Prokupac", "Aleksandrovac Tamjanika", "Aleksandrovac Graševina"]
+            }
+          }
+        },
+        "Kosovo and Metohija (Kosovo i Metohija)": {
+          "sub_regions": {
+            "Orahovac": {
+              "sub_appellations": ["Orahovac Vranac", "Orahovac Cabernet Sauvignon", "Orahovac Prokupac"]
+            }
+          }
+        }
+      }
+    },
+    "Turkey": {
+      "major_regions": {
+        "Thrace (Trakya)": {
+          "sub_regions": {
+            "Tekirdağ": {
+              "sub_appellations": ["Papazkarası Reserve", "Cabernet Sauvignon Tekirdağ", "Tekirdağ Merlot Selection"]
+            },
+            "Gelibolu (Gallipoli)": {
+              "sub_appellations": ["Gallipoli Merlot", "Gallipoli Chardonnay", "Gallipoli Syrah"]
+            },
+            "Şarköy": {
+              "sub_appellations": ["Sauvignon Blanc Şarköy", "Semillon Şarköy", "Şarköy Rosé"]
+            }
+          }
+        },
+        "Aegean (Ege)": {
+          "sub_regions": {
+            "Izmir": {
+              "sub_appellations": ["Bornova Misketi (Muscat)", "Cabernet Sauvignon Izmir", "Izmir Merlot Reserve"]
+            },
+            "Manisa": {
+              "sub_appellations": ["Alicante Bouschet", "Sultaniye Reserve", "Manisa Shiraz"]
+            },
+            "Denizli": {
+              "sub_appellations": ["Kalecik Karası Denizli", "Merlot Denizli", "Chardonnay Premium Denizli"]
+            }
+          }
+        },
+        "Marmara": {
+          "sub_regions": {
+            "Bursa": {
+              "sub_appellations": ["Pinot Noir Bursa", "Semillon Bursa", "Bursa Rosé Reserve"]
+            },
+            "Bozcaada (Tenedos Island)": {
+              "sub_appellations": ["Kuntra (Karasakız) Bozcaada", "Vasilaki Reserve", "Bozcaada Sauvignon Blanc"]
+            },
+            "Avşa Island": {
+              "sub_appellations": ["Adakarası", "Avşa Island Rosé"]
+            }
+          }
+        },
+        "Central Anatolia (Orta Anadolu)": {
+          "sub_regions": {
+            "Ankara": {
+              "sub_appellations": ["Kalecik Karası Ankara", "Narince Ankara", "Ankara Cabernet Sauvignon"]
+            },
+            "Cappadocia": {
+              "sub_appellations": ["Emir Cappadocia", "Hasandede Cappadocia", "Cappadocia Rosé"]
+            },
+            "Nevşehir": {
+              "sub_appellations": ["Öküzgözü Nevşehir", "Boğazkere Nevşehir", "Nevşehir Shiraz"]
+            }
+          }
+        },
+        "Southeastern Anatolia (Güneydoğu Anadolu)": {
+          "sub_regions": {
+            "Diyarbakır": {
+              "sub_appellations": ["Boğazkere Reserve", "Diyarbakır Cabernet Sauvignon"]
+            },
+            "Mardin": {
+              "sub_appellations": ["Öküzgözü Mardin", "Mardin Fortified Wines", "Mardin Shiraz"]
+            }
+          }
+        },
+        "Eastern Anatolia (Doğu Anadolu)": {
+          "sub_regions": {
+            "Elazığ": {
+              "sub_appellations": ["Öküzgözü Premium Elazığ", "Elazığ Rosé"]
+            },
+            "Malatya": {
+              "sub_appellations": ["Boğazkere Reserve Malatya", "Narince Malatya", "Malatya Chardonnay"]
+            }
+          }
+        },
+        "Black Sea (Karadeniz)": {
+          "sub_regions": {
+            "Trabzon": {
+              "sub_appellations": ["Foça Karası Reserve", "Trabzon Rosé"]
+            },
+            "Tokat": {
+              "sub_appellations": ["Narince Tokat", "Tokat Chardonnay"]
+            }
+          }
+        }
+      }
+    },
+    "Armenia": {
+      "major_regions": {
+        "Ararat Valley": {
+          "sub_regions": {
+            "Mount Ararat Foothills": {
+              "sub_appellations": ["Ararat Kangun", "Ararat Voskehat", "Ararat Areni", "Ararat Chardonnay", "Ararat Pinot Noir"]
+            },
+            "Yerevan": {
+              "sub_appellations": ["Yerevan Fortified Wines", "Yerevan Red Blends", "Yerevan Muscat Wines"]
+            }
+          }
+        },
+        "Vayots Dzor": {
+          "sub_regions": {
+            "Areni": {
+              "sub_appellations": ["Areni Noir Reserve", "Areni Red Blends", "Areni Rosé"]
+            },
+            "Eghegnadzor": {
+              "sub_appellations": ["Eghegnadzor Voskehat", "Eghegnadzor Areni Blanc", "Eghegnadzor Late Harvest Whites"]
+            }
+          }
+        },
+        "Armavir": {
+          "sub_regions": {
+            "Baghramyan": {
+              "sub_appellations": ["Baghramyan Haghtanak", "Baghramyan Kangun", "Baghramyan Cabernet Sauvignon", "Baghramyan Syrah"]
+            },
+            "Armavir Plains": {
+              "sub_appellations": ["Armavir Voskehat", "Armavir Red Blends", "Armavir Chardonnay"]
+            }
+          }
+        },
+        "Aragatsotn": {
+          "sub_regions": {
+            "Mount Aragats Foothills": {
+              "sub_appellations": ["Aragats Voskehat", "Aragats Areni", "Aragats Kangun", "Aragats Merlot"]
+            }
+          }
+        },
+        "Tavush": {
+          "sub_regions": {
+            "Dilijan Highlands": {
+              "sub_appellations": ["Tavush Kangun", "Tavush Rkatsiteli", "Tavush Muscat"]
+            },
+            "Idjevan": {
+              "sub_appellations": ["Idjevan Light Reds", "Idjevan Aromatic Whites", "Idjevan Sparkling Wines"]
+            }
+          }
+        },
+        "Syunik": {
+          "sub_regions": {
+            "Meghri": {
+              "sub_appellations": ["Meghri Voskehat", "Meghri Areni", "Meghri Syrah"]
+            },
+            "Goris": {
+              "sub_appellations": ["Goris Bold Reds", "Goris Indigenous Blends", "Goris Fortified Wines"]
+            }
+          }
+        },
+        "Nagorno-Karabakh (Artsakh)": {
+          "sub_regions": {
+            "Khndzoresk": {
+              "sub_appellations": ["Khndoghni Reserve", "Artsakh Bold Reds", "Khndzoresk Late Harvest Wines"]
+            },
+            "Shushi": {
+              "sub_appellations": ["Shushi Dessert Wines", "Shushi Voskehat", "Shushi Red Blends"]
+            }
+          }
+        }
+      }
+    },
+    "North Macedonia": {
+      "major_regions": {
+        "Povardarie (Vardar River Valley)": {
+          "sub_regions": {
+            "Tikveš": {
+              "sub_appellations": [
+                "Tikveš Vranec", 
+                "Tikveš Kratosija", 
+                "Tikveš Cabernet Sauvignon", 
+                "Tikveš Merlot", 
+                "Tikveš Vranec Reserve", 
+                "Tikveš Chardonnay"]
+            },
+            "Gevgelija-Valandovo": {
+              "sub_appellations": [
+                "Gevgelija-Valandovo Reds", 
+                "Gevgelija-Valandovo Whites", 
+                "Gevgelija-Valandovo Temjanika", 
+                "Gevgelija-Valandovo Sauvignon Blanc"]
+            },
+            "Negotino": {
+              "sub_appellations": [
+                "Negotino Vranec", 
+                "Negotino Temjanika", 
+                "Negotino Sauvignon Blanc", 
+                "Negotino Merlot", 
+                "Negotino Syrah"]
+            },
+            "Kavadarci": {
+              "sub_appellations": [
+                "Kavadarci Vranec", 
+                "Kavadarci Red Blends", 
+                "Kavadarci Syrah", 
+                "Kavadarci Cabernet Franc", 
+                "Kavadarci Chardonnay"]
+            }
+          }
+        },
+        "Pcinja-Osogovo (Eastern Region)": {
+          "sub_regions": {
+            "Kriva Palanka": {
+              "sub_appellations": [
+                "Kriva Palanka Žilavka", 
+                "Kriva Palanka Rkatsiteli", 
+                "Kriva Palanka Riesling", 
+                "Kriva Palanka Chardonnay"]
+            },
+            "Kochani": {
+              "sub_appellations": [
+                "Kochani Smederevka", 
+                "Kochani Chardonnay", 
+                "Kochani Riesling", 
+                "Kochani Sauvignon Blanc"]
+            }
+          }
+        },
+        "Pelagonia-Polog (Western Region)": {
+          "sub_regions": {
+            "Tetovo": {
+              "sub_appellations": [
+                "Tetovo Stanushina", 
+                "Tetovo Rosé Blends", 
+                "Tetovo Pinot Noir", 
+                "Tetovo Vranec"]
+            },
+            "Prilep": {
+              "sub_appellations": [
+                "Prilep Vranec", 
+                "Prilep Cabernet Sauvignon", 
+                "Prilep Red Blends", 
+                "Prilep Merlot Reserve", 
+                "Prilep Syrah"]
+            }
+          }
+        }
+      }
+    },
+    "Czech Republic": {
+      "major_regions": {
+        "Moravia (Morava)": {
+          "sub_regions": {
+            "Znojmo": {
+              "sub_appellations": [
+                "Znojmo Sauvignon Blanc", 
+                "Znojmo Riesling", 
+                "Znojmo Grüner Veltliner", 
+                "Znojmo Pinot Blanc", 
+                "Znojmo Sylvaner Reserve", 
+                "Znojmo Traminer Aromatico"]
+            },
+            "Mikulov": {
+              "sub_appellations": [
+                "Mikulov Welschriesling", 
+                "Mikulov Chardonnay", 
+                "Mikulov Pinot Gris", 
+                "Mikulov Riesling", 
+                "Mikulov Sauvignon Blanc", 
+                "Mikulov Neuburger"]
+            },
+            "Velké Pavlovice": {
+              "sub_appellations": [
+                "Velké Pavlovice Blaufränkisch (Frankovka)", 
+                "Velké Pavlovice St. Laurent", 
+                "Velké Pavlovice Pinot Noir", 
+                "Velké Pavlovice Müller-Thurgau", 
+                "Velké Pavlovice Zweigelt Reserve", 
+                "Velké Pavlovice Cabernet Sauvignon"]
+            },
+            "Slovácko": {
+              "sub_appellations": [
+                "Slovácko Riesling", 
+                "Slovácko Pinot Blanc", 
+                "Slovácko Neuburger", 
+                "Slovácko Grüner Veltliner", 
+                "Slovácko Traminer", 
+                "Slovácko Sylvaner"]
+            }
+          }
+        },
+        "Bohemia (Čechy)": {
+          "sub_regions": {
+            "Litoměřice": {
+              "sub_appellations": [
+                "Litoměřice Müller-Thurgau", 
+                "Litoměřice Pinot Gris", 
+                "Litoměřice Riesling", 
+                "Litoměřice Sylvaner", 
+                "Litoměřice Gewürztraminer", 
+                "Litoměřice Muscat"]
+            },
+            "Mělník": {
+              "sub_appellations": [
+                "Mělník Pinot Noir", 
+                "Mělník Chardonnay", 
+                "Mělník Pinot Blanc", 
+                "Mělník Riesling", 
+                "Mělník St. Laurent", 
+                "Mělník Blauer Portugieser"]
+            }
+          }
+        }
+      }
+    }
+  },
+  "North America": {
+    "United States": {
+      "major_regions": {
+        "California": {
+          "sub_regions": {
+            "Napa Valley": {
+              "sub_appellations": [
+                "St. Helena",
+                "Oakville",
+                "Rutherford",
+                "Stags Leap District",
+                "Yountville",
+                "Spring Mountain District",
+                "Atlas Peak",
+                "Howell Mountain",
+                "Calistoga",
+                "Los Carneros",
+                "Diamond Mountain District",
+                "Chiles Valley District",
+                "Wild Horse Valley",
+                "Coombsville"
+              ]
+            },
+            "Sonoma County": {
+              "sub_appellations": [
+                "Russian River Valley",
+                "Dry Creek Valley",
+                "Alexander Valley",
+                "Bennett Valley",
+                "Sonoma Coast",
+                "Chalk Hill",
+                "Knights Valley",
+                "Petaluma Gap",
+                "Fort Ross-Seaview",
+                "Green Valley of Russian River Valley",
+                "Moon Mountain District",
+                "Sonoma Valley",
+                "Rockpile"
+              ]
+            },
+            "Paso Robles": {
+              "sub_appellations": [
+                "Adelaida District",
+                "Templeton Gap",
+                "Willow Creek District",
+                "Estrella District",
+                "Geneseo District",
+                "El Pomar District",
+                "Creston District",
+                "San Juan Creek",
+                "Paso Robles Highlands",
+                "Santa Margarita Ranch"
+              ]
+            },
+            "Santa Barbara County": {
+              "sub_appellations": [
+                "Santa Maria Valley",
+                "Santa Ynez Valley",
+                "Sta. Rita Hills",
+                "Happy Canyon",
+                "Ballard Canyon",
+                "Los Olivos District",
+                "Alisos Canyon",
+                "Santa Barbara Highlands"
+              ]
+            }
+          }
+        },
+        "Oregon": {
+          "sub_regions": {
+            "Willamette Valley": {
+              "sub_appellations": [
+                "Dundee Hills",
+                "Eola-Amity Hills",
+                "McMinnville",
+                "Ribbon Ridge",
+                "Yamhill-Carlton",
+                "Chehalem Mountains",
+                "Van Duzer Corridor",
+                "Tualatin Hills",
+                "Laurelwood District"
+              ]
+            },
+            "Southern Oregon": {
+              "sub_appellations": [
+                "Rogue Valley",
+                "Umpqua Valley",
+                "Applegate Valley",
+                "Elkton Oregon",
+                "Red Hill Douglas County"
+              ]
+            }
+          }
+        },
+        "Washington": {
+          "sub_regions": {
+            "Columbia Valley": {
+              "sub_appellations": [
+                "Yakima Valley",
+                "Walla Walla Valley",
+                "Red Mountain",
+                "Horse Heaven Hills",
+                "Rattlesnake Hills",
+                "Snipes Mountain",
+                "Lake Chelan",
+                "Wahluke Slope",
+                "Ancient Lakes of Columbia Valley",
+                "Naches Heights"
+              ]
+            },
+            "Puget Sound": {
+              "sub_appellations": [
+                "Bainbridge Island",
+                "Seattle North",
+                "San Juan Islands",
+                "Whidbey Island",
+                "Hood Canal"
+              ]
+            }
+          }
+        },
+        "New York": {
+          "sub_regions": {
+            "Finger Lakes": {
+              "sub_appellations": [
+                "Seneca Lake",
+                "Cayuga Lake",
+                "Keuka Lake",
+                "Canandaigua Lake"
+              ]
+            },
+            "Long Island": {
+              "sub_appellations": [
+                "North Fork",
+                "The Hamptons",
+                "Long Island AVA",
+                "South Fork"
+              ]
+            },
+            "Hudson River Region": {
+              "sub_appellations": [
+                "Hudson Highlands",
+                "Upper Hudson Valley"
+              ]
+            },
+            "Lake Erie": {
+              "sub_appellations": [
+                "Chautauqua Lake"
+              ]
+            }
+          }
+        },
+        "Texas": {
+          "sub_regions": {
+            "Texas Hill Country": {
+              "sub_appellations": [
+                "Fredericksburg",
+                "Bell Mountain",
+                "Llano Uplift"
+              ]
+            },
+            "Texas High Plains": {
+              "sub_appellations": [
+                "Lubbock Plains",
+                "Crosbyton Hills"
+              ]
+            },
+            "Texas Gulf Coast": {
+              "sub_appellations": [
+                "Brazos Valley"
+              ]
+            }
+          }
+        },
+        "Virginia": {
+          "sub_regions": {
+            "Monticello": {
+              "sub_appellations": [
+                "Albemarle County"
+              ]
+            },
+            "Shenandoah Valley": {
+              "sub_appellations": [
+                "North Shenandoah",
+                "South Shenandoah"
+              ]
+            },
+            "Northern Virginia": {
+              "sub_appellations": [
+                "Loudoun County",
+                "Clarke County"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "Canada": {
+      "major_regions": {
+        "British Columbia": {
+          "sub_regions": {
+            "Okanagan Valley": {
+              "sub_appellations": [
+                "Kelowna",
+                "Naramata Bench",
+                "Summerland",
+                "Golden Mile Bench",
+                "Black Sage Bench",
+                "Osoyoos"
+              ]
+            },
+            "Similkameen Valley": {
+              "sub_appellations": [
+                "Cawston",
+                "Keremeos"
+              ]
+            },
+            "Fraser Valley": {
+              "sub_appellations": [
+                "Abbotsford",
+                "Chilliwack",
+                "Langley"
+              ]
+            },
+            "Vancouver Island": {
+              "sub_appellations": [
+                "Cowichan Valley",
+                "Saanich Peninsula"
+              ]
+            },
+            "Gulf Islands": {
+              "sub_appellations": [
+                "Salt Spring Island",
+                "Pender Island",
+                "Gabriola Island"
+              ]
+            }
+          }
+        },
+        "Ontario": {
+          "sub_regions": {
+            "Niagara Peninsula": {
+              "sub_appellations": [
+                "Niagara-on-the-Lake",
+                "Beamsville Bench",
+                "Twenty Mile Bench",
+                "Short Hills Bench",
+                "Creek Shores",
+                "Lincoln Lakeshore",
+                "St. David's Bench"
+              ]
+            },
+            "Prince Edward County": {
+              "sub_appellations": [
+                "Hillier",
+                "Wellington",
+                "Bloomfield"
+              ]
+            },
+            "Lake Erie North Shore": {
+              "sub_appellations": [
+                "Pelee Island",
+                "Colchester Ridge"
+              ]
+            },
+            "Niagara Escarpment": {
+              "sub_appellations": [
+                "Vineland",
+                "Jordan Village",
+                "Ball's Falls"
+              ]
+            }
+          }
+        },
+        "Quebec": {
+          "sub_regions": {
+            "Eastern Townships": {
+              "sub_appellations": [
+                "Dunham",
+                "Frelighsburg",
+                "Brome-Missisquoi"
+              ]
+            },
+            "Montérégie": {
+              "sub_appellations": [
+                "Rougemont",
+                "St-Hilaire",
+                "Hemmingford"
+              ]
+            },
+            "Île d’Orléans": {
+              "sub_appellations": [
+                "St-Pierre",
+                "Ste-Famille"
+              ]
+            }
+          }
+        },
+        "Nova Scotia": {
+          "sub_regions": {
+            "Annapolis Valley": {
+              "sub_appellations": [
+                "Wolfville",
+                "Grand Pré",
+                "Port Williams"
+              ]
+            },
+            "Gaspereau Valley": {
+              "sub_appellations": [
+                "Gaspereau Village"]
+            },
+            "Lunenburg County": {
+              "sub_appellations": [
+                "Mahone Bay",
+                "Lunenburg"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "Mexico": {
+      "major_regions": {
+        "Baja California": {
+          "sub_regions": {
+            "Valle de Guadalupe": {
+              "sub_appellations": [
+                "El Porvenir",
+                "Francisco Zarco",
+                "San Antonio de las Minas",
+                "Rancho El Mogor",
+                "La Grulla",
+                "Las Lomas",
+                "El Cielo",
+                "Valle de Las Palmas",
+                "El Sauzal",
+                "San José de la Zorra"
+              ]
+            },
+            "Valle de Ojos Negros": {
+              "sub_appellations": [
+                "San Rafael",
+                "Ojos Negros Central",
+                "Rancho San Luis",
+                "La Huerta"
+              ]
+            },
+            "Valle de San Vicente": {
+              "sub_appellations": [
+                "San Vicente Ferrer",
+                "Rancho San Marcos",
+                "El Descanso",
+                "Rancho Los Pinos"
+              ]
+            },
+            "Valle de Santo Tomás": {
+              "sub_appellations": [
+                "Santo Tomás Mission",
+                "San Antonio de las Minas South",
+                "Valle de San Vicente Norte",
+                "La Granja"
+              ]
+            }
+          }
+        },
+        "Sonora": {
+          "sub_regions": {
+            "Hermosillo": {
+              "sub_appellations": [
+                "Costa de Hermosillo",
+                "Mesa del Seri",
+                "San Pedro de la Cueva",
+                "La Victoria"
+              ]
+            },
+            "Caborca": {
+              "sub_appellations": [
+                "Valle de Caborca Norte",
+                "Costa de Caborca",
+                "El Altar",
+                "Santa Ana"
+              ]
+            }
+          }
+        },
+        "Coahuila": {
+          "sub_regions": {
+            "Valle de Parras": {
+              "sub_appellations": [
+                "Hacienda de San Lorenzo",
+                "Rancho de Santa Maria",
+                "Parras Central",
+                "El Vergel",
+                "Santa Isabel"
+              ]
+            }
+          }
+        },
+        "Querétaro": {
+          "sub_regions": {
+            "Ezequiel Montes": {
+              "sub_appellations": [
+                "Tequisquiapan North",
+                "Bernal Foothills",
+                "San Juan del Río",
+                "Los Cerritos"
+              ]
+            },
+            "Tequisquiapan": {
+              "sub_appellations": [
+                "Tequisquiapan Center",
+                "La Trinidad",
+                "San Nicolás",
+                "Rancho Los Olivos"
+              ]
+            }
+          }
+        },
+        "Zacatecas": {
+          "sub_regions": {
+            "Valle de Trancoso": {
+              "sub_appellations": [
+                "Trancoso West",
+                "Trancoso East",
+                "Rancho El Cedral",
+                "San Mateo"
+              ]
+            }
+          }
+        },
+        "Guanajuato": {
+          "sub_regions": {
+            "San Miguel de Allende": {
+              "sub_appellations": [
+                "Central San Miguel",
+                "Rancho Atongo",
+                "Los Frailes",
+                "Viñedo Los Remedios",
+                "Rancho Santa Rosa"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "South America": {
+    "major_regions": {
+      "Argentina": {
+        "Mendoza": {
+          "sub_regions": {
+            "Luján de Cuyo": {
+              "sub_appellations": [
+                "Vistalba",
+                "Las Compuertas",
+                "Perdriel",
+                "Agrelo",
+                "Ugarteche"
+              ]
+            },
+            "Maipú": {
+              "sub_appellations": [
+                "Cruz de Piedra",
+                "Russell",
+                "Coquimbito",
+                "Lunlunta"
+              ]
+            },
+            "Uco Valley": {
+              "sub_appellations": [
+                "Tupungato",
+                "Tunuyán",
+                "San Carlos",
+                "Vista Flores",
+                "Gualtallary",
+                "Altamira",
+                "Los Chacayes"
+              ]
+            }
+          }
+        },
+        "San Juan": {
+          "sub_regions": {
+            "Tulum Valley": {
+              "sub_appellations": [
+                "San Juan Centro",
+                "Pocito",
+                "Rawson"
+              ]
+            },
+            "Zonda Valley": {
+              "sub_appellations": [
+                "Zonda Norte",
+                "Barreal"
+              ]
+            },
+            "Pedernal Valley": {
+              "sub_appellations": [
+                "Pedernal Alto",
+                "Pedernal Central"
+              ]
+            }
+          }
+        },
+        "Salta": {
+          "sub_regions": {
+            "Cafayate Valley": {
+              "sub_appellations": [
+                "Cafayate Centro",
+                "San Carlos Norte",
+                "Tolombón"
+              ]
+            },
+            "Molinos": {
+              "sub_appellations": [
+                "Molinos Centro",
+                "Seclantás"]
+            }
+          }
+        },
+        "La Rioja": {
+          "sub_regions": {
+            "Famatina Valley": {
+              "sub_appellations": [
+                "Chilecito",
+                "Nonogasta",
+                "Anguinán"
+              ]
+            }
+          }
+        },
+        "Patagonia": {
+          "sub_regions": {
+            "Río Negro Valley": {
+              "sub_appellations": [
+                "General Roca",
+                "Ingeniero Huergo",
+                "Villa Regina"
+              ]
+            },
+            "Neuquén": {
+              "sub_appellations": [
+                "San Patricio del Chañar",
+                "Añelo"
+              ]
+            }
+          }
+        },
+        "Catamarca": {
+          "sub_regions": {
+            "Tinogasta": {
+              "sub_appellations": [
+                "Tinogasta Centro",
+                "Fiambalá"
+              ]
+            }
+          }
+        },
+        "Entre Ríos": {
+          "sub_regions": {
+            "Concordia": {
+              "sub_appellations": [
+                "Concordia Centro",
+                "Colonia Ayuí"
+              ]
+            }
+          }
+        },
+        "Córdoba": {
+          "sub_regions": {
+            "Calamuchita Valley": {
+              "sub_appellations": [
+                "Villa General Belgrano",
+                "Santa Rosa de Calamuchita"
+              ]
+            },
+            "Traslasierra Valley": {
+              "sub_appellations": [
+                "Nono",
+                "Mina Clavero"]
+            }
+          }
+        }
+      },
+      "Chile": {
+        "Atacama Region": {
+          "sub_regions": {
+            "Copiapó Valley": {
+              "sub_appellations": [
+                "Copiapó Norte",
+                "Copiapó Sur",
+                "Tierra Amarilla"
+              ]
+            },
+            "Huasco Valley": {
+              "sub_appellations": [
+                "Alto del Carmen",
+                "Vallenar",
+                "Freirina"
+              ]
+            }
+          }
+        },
+        "Coquimbo Region": {
+          "sub_regions": {
+            "Elqui Valley": {
+              "sub_appellations": [
+                "Vicuña",
+                "Paihuano",
+                "La Serena",
+                "Andacollo"
+              ]
+            },
+            "Limarí Valley": {
+              "sub_appellations": [
+                "Ovalle",
+                "Río Hurtado",
+                "Monte Patria",
+                "Carachilla",
+                "Limarí Norte"
+              ]
+            },
+            "Choapa Valley": {
+              "sub_appellations": [
+                "Illapel",
+                "Salamanca",
+                "Choapa Central"
+              ]
+            }
+          }
+        },
+        "Aconcagua Region": {
+          "sub_regions": {
+            "Aconcagua Valley": {
+              "sub_appellations": [
+                "Panquehue",
+                "Hijuelas",
+                "Catemu",
+                "San Felipe"
+              ]
+            },
+            "Casablanca Valley": {
+              "sub_appellations": [
+                "Las Dichas",
+                "Tapihue",
+                "Lo Ovalle",
+                "Valle Hermoso"
+              ]
+            },
+            "San Antonio Valley": {
+              "sub_appellations": [
+                "Leyda Valley",
+                "Lo Abarca",
+                "Malvilla"
+              ]
+            }
+          }
+        },
+        "Central Valley Region": {
+          "sub_regions": {
+            "Maipo Valley": {
+              "sub_appellations": [
+                "Alto Maipo",
+                "Central Maipo",
+                "Coastal Maipo",
+                "Isla de Maipo"
+              ]
+            },
+            "Rapel Valley": {
+              "sub_regions": {
+                "Cachapoal Valley": {
+                  "sub_appellations": [
+                    "Peumo",
+                    "Rengo",
+                    "Requínoa",
+                    "Las Cabras"
+                  ]
+                },
+                "Colchagua Valley": {
+                  "sub_appellations": [
+                    "Apalta",
+                    "Los Lingues",
+                    "Marchigüe",
+                    "Santa Cruz",
+                    "Palmilla",
+                    "Lolol"
+                  ]
+                }
+              }
+            },
+            "Curicó Valley": {
+              "sub_appellations": [
+                "Teno Valley",
+                "Lontué Valley",
+                "Sagrada Familia",
+                "Rauco"
+              ]
+            },
+            "Maule Valley": {
+              "sub_appellations": [
+                "Cauquenes",
+                "San Javier",
+                "Empedrado",
+                "Talca",
+                "Villa Alegre"
+              ]
+            }
+          }
+        },
+        "Southern Region": {
+          "sub_regions": {
+            "Itata Valley": {
+              "sub_appellations": [
+                "Coelemu",
+                "Portezuelo",
+                "Ranquil",
+                "Quillón"
+              ]
+            },
+            "Bío Bío Valley": {
+              "sub_appellations": [
+                "Mulchén",
+                "Nacimiento",
+                "Yumbel",
+                "Los Ángeles"
+              ]
+            },
+            "Malleco Valley": {
+              "sub_appellations": [
+                "Traiguén",
+                "Angol",
+                "Lumaco"
+              ]
+            }
+          }
+        },
+        "Austral Region": {
+          "sub_regions": {
+            "Cautín Valley": {
+              "sub_appellations": [
+                "Temuco",
+                "Nueva Imperial",
+                "Carahue"
+              ]
+            },
+            "Osorno Valley": {
+              "sub_appellations": [
+                "Puyehue",
+                "Río Bueno",
+                "San Pablo"
+              ]
+            }
+          }
+        }
+      },
+      "Brazil": {
+        "Serra Gaúcha": {
+          "sub_regions": {
+            "Bento Gonçalves": {
+              "sub_appellations": [
+                "Vale dos Vinhedos",
+                "Monte Belo do Sul",
+                "Tuiuty",
+                "Linha Eulália",
+                "Faria Lemos"
+              ]
+            },
+            "Garibaldi": {
+              "sub_appellations": [
+                "Garibaldi Centro",
+                "Marcorama",
+                "Linha Alegre",
+                "Tamandaré"
+              ]
+            },
+            "Caxias do Sul": {
+              "sub_appellations": [
+                "Galópolis",
+                "Criúva",
+                "Ana Rech",
+                "Santa Lúcia do Piaí"
+              ]
+            },
+            "Farroupilha": {
+              "sub_appellations": [
+                "Farroupilha Centro",
+                "Linha Palmeiro",
+                "Nova Milano",
+                "Vila Jansen"
+              ]
+            },
+            "Flores da Cunha": {
+              "sub_appellations": [
+                "Flores da Cunha Centro",
+                "Otávio Rocha",
+                "Mato Perso",
+                "São Gotardo"
+              ]
+            }
+          }
+        },
+        "Campanha Gaúcha": {
+          "sub_regions": {
+            "Bagé": {
+              "sub_appellations": [
+                "Bagé Sul",
+                "Bagé Norte",
+                "Hulha Negra"
+              ]
+            },
+            "Santana do Livramento": {
+              "sub_appellations": [
+                "Santana Central",
+                "Rivera Border",
+                "Palmas"
+              ]
+            },
+            "Dom Pedrito": {
+              "sub_appellations": [
+                "Dom Pedrito Centro",
+                "Santa Maria River Valley",
+                "Ponche Verde"
+              ]
+            },
+            "Uruguaiana": {
+              "sub_appellations": [
+                "Uruguaiana Oeste",
+                "Itapitanga",
+                "Itaqui"
+              ]
+            }
+          }
+        },
+        "Vale dos Vinhedos": {
+          "sub_regions": {
+            "Central Vale dos Vinhedos": {
+              "sub_appellations": [
+                "Vale Central",
+                "Linha Leopoldina",
+                "Santa Lúcia",
+                "Linha Buratti"
+              ]
+            }
+          }
+        },
+        "Serra do Sudeste": {
+          "sub_regions": {
+            "Encruzilhada do Sul": {
+              "sub_appellations": [
+                "Encruzilhada Central",
+                "Serra Norte",
+                "Campo das Hortênsias",
+                "Monte Bonito"
+              ]
+            }
+          }
+        },
+        "Vale do São Francisco": {
+          "sub_regions": {
+            "Petrolina": {
+              "sub_appellations": [
+                "Petrolina Centro",
+                "Nova Petrolina",
+                "Rajada"
+              ]
+            },
+            "Juazeiro": {
+              "sub_appellations": [
+                "Juazeiro Norte",
+                "Juazeiro Sul",
+                "Carnaíba do Sertão"
+              ]
+            }
+          }
+        },
+        "Planalto Catarinense": {
+          "sub_regions": {
+            "São Joaquim": {
+              "sub_appellations": [
+                "São Joaquim Centro",
+                "Pericó Valley",
+                "Urupema",
+                "Bom Jardim da Serra"
+              ]
+            },
+            "Campos de Cima da Serra": {
+              "sub_appellations": [
+                "Vacaria",
+                "Bom Jesus",
+                "São José dos Ausentes"
+              ]
+            }
+          }
+        },
+        "Paraná": {
+          "sub_regions": {
+            "Bituruna": {
+              "sub_appellations": [
+                "Bituruna Central",
+                "Rio Iguaçu",
+                "Guarapuava"
+              ]
+            }
+          }
+        },
+        "Espírito Santo": {
+          "sub_regions": {
+            "Vitória": {
+              "sub_appellations": [
+                "Vitória Norte",
+                "Vitória Sul",
+                "Cariacica"
+              ]
+            }
+          }
+        },
+        "São Paulo": {
+          "sub_regions": {
+            "Jundiaí Region": {
+              "sub_appellations": [
+                "Jundiaí Central",
+                "Caxambu",
+                "Itupeva",
+                "Jarinu"
+              ]
+            }
+          }
+        }
+      },
+      "Uruguay": {
+        "Metropolitan": {
+          "sub_regions": {
+            "Canelones": {
+              "sub_appellations": [
+                "Las Violetas",
+                "Progreso",
+                "Santa Lucía",
+                "La Paz"
+              ]
+            },
+            "Montevideo": {
+              "sub_appellations": [
+                "Manga",
+                "Melilla",
+                "Colón"
+              ]
+            },
+            "San José": {
+              "sub_appellations": [
+                "Libertad",
+                "Rodríguez",
+                "San José de Mayo"
+              ]
+            }
+          }
+        },
+        "Litoral Sur": {
+          "sub_regions": {
+            "Colonia": {
+              "sub_appellations": [
+                "Carmelo",
+                "Nueva Helvecia",
+                "Juan Lacaze"
+              ]
+            },
+            "Soriano": {
+              "sub_appellations": [
+                "Mercedes",
+                "Dolores",
+                "Cardona"
+              ]
+            }
+          }
+        },
+        "Litoral Norte": {
+          "sub_regions": {
+            "Paysandú": {
+              "sub_appellations": [
+                "Paysandú City",
+                "Guichón",
+                "Quebracho"
+              ]
+            },
+            "Salto": {
+              "sub_appellations": [
+                "Salto City",
+                "Constitución",
+                "Belén"
+              ]
+            },
+            "Artigas": {
+              "sub_appellations": [
+                "Artigas City",
+                "Bella Unión",
+                "Tomás Gomensoro"
+              ]
+            }
+          }
+        },
+        "North": {
+          "sub_regions": {
+            "Rivera": {
+              "sub_appellations": [
+                "Rivera City",
+                "Tranqueras",
+                "Minas de Corrales"
+              ]
+            },
+            "Tacuarembó": {
+              "sub_appellations": [
+                "Tacuarembó City",
+                "Paso de los Toros",
+                "San Gregorio de Polanco"
+              ]
+            }
+          }
+        },
+        "Oceanic": {
+          "sub_regions": {
+            "Maldonado": {
+              "sub_appellations": [
+                "Punta del Este",
+                "Garzón",
+                "José Ignacio"
+              ]
+            },
+            "Rocha": {
+              "sub_appellations": [
+                "La Paloma",
+                "Cabo Polonio",
+                "Chuy"
+              ]
+            }
+          }
+        },
+        "Center": {
+          "sub_regions": {
+            "Durazno": {
+              "sub_appellations": [
+                "Durazno City",
+                "Sarandí del Yí",
+                "Villa del Carmen"
+              ]
+            },
+            "Florida": {
+              "sub_appellations": [
+                "Florida City",
+                "Casupá",
+                "25 de Agosto"
+              ]
+            },
+            "Lavalleja": {
+              "sub_appellations": [
+                "Minas",
+                "José Pedro Varela",
+                "Solís de Mataojo"
+              ]
+            }
+          }
+        }
+      },
+      "Peru": {
+        "Lima": {
+          "sub_regions": {
+            "Cañete": {
+              "sub_appellations": [
+                "Lunahuaná",
+                "Pacarán",
+                "Zúñiga"
+              ]
+            },
+            "Huaral": {
+              "sub_appellations": [
+                "Aucallama",
+                "Chancay",
+                "Ihuari"
+              ]
+            }
+          }
+        },
+        "Ica": {
+          "sub_regions": {
+            "Chincha": {
+              "sub_appellations": [
+                "Sunampe",
+                "Grocio Prado",
+                "El Carmen"
+              ]
+            },
+            "Pisco": {
+              "sub_appellations": [
+                "San Andrés",
+                "Paracas",
+                "Independencia"
+              ]
+            },
+            "Ica Valley": {
+              "sub_appellations": [
+                "Subtanjalla",
+                "Yauca del Rosario",
+                "Los Aquijes"
+              ]
+            }
+          }
+        },
+        "Arequipa": {
+          "sub_regions": {
+            "Valle de Majes": {
+              "sub_appellations": [
+                "Aplao",
+                "Majes",
+                "Corire"
+              ]
+            },
+            "Caravelí": {
+              "sub_appellations": [
+                "Chala",
+                "Atico",
+                "Quicacha"
+              ]
+            }
+          }
+        },
+        "Moquegua": {
+          "sub_regions": {
+            "Omate": {
+              "sub_appellations": [
+                "Coalaque",
+                "Chojata",
+                "Matalaque"
+              ]
+            },
+            "Ilo": {
+              "sub_appellations": [
+                "El Algarrobal",
+                "Pacocha",
+                "Ilo City"
+              ]
+            }
+          }
+        },
+        "Tacna": {
+          "sub_regions": {
+            "Locumba": {
+              "sub_appellations": [
+                "Ilabaya",
+                "Ite",
+                "Locumba Town"
+              ]
+            },
+            "Sama": {
+              "sub_appellations": [
+                "Sama Grande",
+                "Sama Inclán",
+                "Sama Las Yaras"
+              ]
+            }
+          }
+        },
+        "Sierra del Perú": {
+          "sub_regions": {
+            "Apurímac": {
+              "sub_appellations": [
+                "Abancay",
+                "Andahuaylas",
+                "Curahuasi"
+              ]
+            },
+            "Cusco": {
+              "sub_appellations": [
+                "Santiago",
+                "San Jerónimo",
+                "Saylla"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "Asia": {
+    "China": {
+      "major_regions": {
+        "Shandong": {
+          "sub_regions": {
+            "Yantai-Penglai": {
+              "sub_appellations": [
+                "Penglai",
+                "Yantai",
+                "Qingdao"
+              ]
+            },
+            "Qingdao": {
+              "sub_appellations": [
+                "Laoshan",
+                "Jimo"
+              ]
+            }
+          }
+        },
+        "Ningxia": {
+          "sub_regions": {
+            "Helan Mountain East": {
+              "sub_appellations": [
+                "Yinchuan",
+                "Qingtongxia",
+                "Shizuishan",
+                "Hongsipu"
+              ]
+            }
+          }
+        },
+        "Hebei": {
+          "sub_regions": {
+            "Zhangjiakou": {
+              "sub_appellations": [
+                "Huailai",
+                "Changli"
+              ]
+            }
+          }
+        },
+        "Xinjiang": {
+          "sub_regions": {
+            "Turpan-Hami Basin": {
+              "sub_appellations": [
+                "Turpan",
+                "Hami"
+              ]
+            },
+            "Ili Valley": {
+              "sub_appellations": [
+                "Yining",
+                "Kuitun"
+              ]
+            }
+          }
+        },
+        "Yunnan": {
+          "sub_regions": {
+            "Deqin": {
+              "sub_appellations": [
+                "Shangri-La",
+                "Cizhong"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "Japan": {
+      "major_regions": {
+        "Yamanashi": {
+          "sub_regions": {
+            "Kofu Basin": {
+              "sub_appellations": [
+                "Koshu",
+                "Kai"
+              ]
+            }
+          }
+        },
+        "Hokkaido": {
+          "sub_regions": {
+            "Nanae": {
+              "sub_appellations": [
+                "Nanae",
+                "Matsumae"
+              ]
+            },
+            "Yoichi": {
+              "sub_appellations": [
+                "Yoichi",
+                "Niki"
+              ]
+            },
+            "Furano": {
+              "sub_appellations": [
+                "Furano",
+                "Kamifurano"
+              ]
+            }
+          }
+        },
+        "Nagano": {
+          "sub_regions": {
+            "Kikyogahara": {
+              "sub_appellations": [
+                "Shiojiri",
+                "Matsumoto"
+              ]
+            },
+            "Chikumagawa": {
+              "sub_appellations": [
+                "Ueda",
+                "Suzaka"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "India": {
+      "major_regions": {
+        "Maharashtra": {
+          "sub_regions": {
+            "Nashik": {
+              "sub_appellations": [
+                "Dindori",
+                "Sinnar"
+              ]
+            },
+            "Pune": {
+              "sub_appellations": [
+                "Baramati",
+                "Indapur"
+              ]
+            },
+            "Sangli": {
+              "sub_appellations": [
+                "Miraj",
+                "Tasgaon"
+              ]
+            }
+          }
+        },
+        "Karnataka": {
+          "sub_regions": {
+            "Bangalore": {
+              "sub_appellations": [
+                "Nandi Hills",
+                "Ramanagara"
+              ]
+            },
+            "Vijayapura": {
+              "sub_appellations": [
+                "Bijapur",
+                "Indi"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "Israel": {
+      "major_regions": {
+        "Galilee": {
+          "sub_regions": {
+            "Upper Galilee": {
+              "sub_appellations": [
+                "Kadesh Valley",
+                "Merom Hagalil"
+              ]
+            },
+            "Lower Galilee": {
+              "sub_appellations": [
+                "Tabor",
+                "Nazareth"
+              ]
+            },
+            "Golan Heights": {
+              "sub_appellations": [
+                "Katzrin",
+                "Geshur"
+              ]
+            }
+          }
+        },
+        "Judean Hills": {
+          "sub_regions": {
+            "Jerusalem Mountains": {
+              "sub_appellations": [
+                "Ein Kerem",
+                "Beit Zayit"
+              ]
+            },
+            "Bethlehem Hills": {
+              "sub_appellations": [
+                "Husan",
+                "Battir"
+              ]
+            }
+          }
+        },
+        "Samson": {
+          "sub_regions": {
+            "Central Coastal Plain": {
+              "sub_appellations": [
+                "Rehovot",
+                "Rishon LeZion"
+              ]
+            },
+            "Judean Foothills": {
+              "sub_appellations": [
+                "Lachish",
+                "Adullam"
+              ]
+            }
+          }
+        },
+        "Negev": {
+          "sub_regions": {
+            "Negev Highlands": {
+              "sub_appellations": [
+                "Mitzpe Ramon",
+                "Sde Boker"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "Lebanon": {
+      "major_regions": {
+        "Bekaa Valley": {
+          "sub_regions": {
+            "Central Bekaa": {
+              "sub_appellations": [
+                "Zahlé",
+                "Chtaura"
+              ]
+            },
+            "Northern Bekaa": {
+              "sub_appellations": [
+                "Baalbek",
+                "Hermel"
+              ]
+            },
+            "Southern Bekaa": {
+              "sub_appellations": [
+                "Rashaya",
+                "Kefraya"
+              ]
+            }
+          }
+        },
+        "Mount Lebanon": {
+          "sub_regions": {
+            "Keserwan": {
+              "sub_appellations": [
+                "Jounieh",
+                "Harissa"
+              ]
+            },
+            "Chouf": {
+              "sub_appellations": [
+                "Deir el Qamar",
+                "Beiteddine"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "Kazakhstan": {
+      "major_regions": {
+        "Almaty Region": {
+          "sub_regions": {
+            "Assa Valley": {
+              "sub_appellations": [
+                "Issyk",
+                "Turgen"
+              ]
+            },
+            "Zailiyskiy Alatau": {
+              "sub_appellations": [
+                "Talgar",
+                "Kaskelen"
+              ]
+            }
+          }
+        },
+        "Shymkent Region": {
+          "sub_regions": {
+            "Arys Valley": {
+              "sub_appellations": [
+                "Arys",
+                "Badam"
+              ]
+            },
+            "Kazygurt": {
+              "sub_appellations": [
+                "Kazygurt",
+                "Sairam"
+              ]
+            }
+          }
+        },
+        "East Kazakhstan": {
+          "sub_regions": {
+            "Altai Foothills": {
+              "sub_appellations": [
+                "Ust-Kamenogorsk",
+                "Ridder"
+              ]
+            },
+            "Bukhtarma Valley": {
+              "sub_appellations": [
+                "Zyryanovsk",
+                "Samarskoye"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "Africa": {
+    "South Africa": {
+      "major_regions": {
+        "Western Cape": {
+          "sub_regions": {
+            "Coastal Region": {
+              "sub_appellations": [
+                "Stellenbosch",
+                "Paarl",
+                "Swartland",
+                "Tygerberg",
+                "Franschhoek",
+                "Wellington",
+                "Darling",
+                "Constantia",
+                "Tulbagh"
+              ]
+            },
+            "Breede River Valley": {
+              "sub_appellations": [
+                "Robertson",
+                "Worcester",
+                "Breedekloof"
+              ]
+            },
+            "Cape South Coast": {
+              "sub_appellations": [
+                "Walker Bay",
+                "Elgin",
+                "Overberg",
+                "Cape Agulhas",
+                "Swellendam",
+                "Plettenberg Bay"
+              ]
+            },
+            "Klein Karoo": {
+              "sub_appellations": [
+                "Calitzdorp",
+                "Langeberg-Garcia"
+              ]
+            },
+            "Olifants River": {
+              "sub_appellations": [
+                "Citrusdal Mountain",
+                "Citrusdal Valley",
+                "Lutzville Valley"
+              ]
+            }
+          }
+        },
+        "Northern Cape": {
+          "sub_regions": {
+            "Douglas": {
+              "sub_appellations": [
+                "Douglas",
+                "Hartswater",
+                "Prieska"
+              ]
+            },
+            "Lower Orange River": {
+              "sub_appellations": [
+                "Groblershoop",
+                "Upington",
+                "Keimoes",
+                "Kakamas",
+                "Augrabies"
+              ]
+            }
+          }
+        },
+        "Eastern Cape": {
+          "sub_regions": {
+            "St Francis Bay": {
+              "sub_appellations": [
+                "St Francis Bay",
+                "Jeffreys Bay",
+                "Humansdorp"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "Morocco": {
+      "major_regions": {
+        "Eastern Region": {
+          "sub_regions": {
+            "Berkane": {
+              "sub_appellations": [
+                "Beni Znassen",
+                "Ahfir",
+                "Saidia"
+              ]
+            },
+            "Angad": {
+              "sub_appellations": [
+                "Oujda",
+                "Taourirt",
+                "Nador"
+              ]
+            },
+            "Beni Sadden": {
+              "sub_appellations": [
+                "Guercif",
+                "Taza",
+                "Debdou"
+              ]
+            }
+          }
+        },
+        "Meknès/Fès Region": {
+          "sub_regions": {
+            "Guerrouane": {
+              "sub_appellations": [
+                "Ain Taoujdate",
+                "Moulay Yacoub",
+                "Sidi Slimane"
+              ]
+            },
+            "Beni M'Tir": {
+              "sub_appellations": [
+                "El Hajeb",
+                "Azrou",
+                "Ifrane"
+              ]
+            },
+            "Saiss": {
+              "sub_appellations": [
+                "Fès",
+                "Meknès",
+                "Sefrou"
+              ]
+            },
+            "Zerhoune": {
+              "sub_appellations": [
+                "Moulay Idriss Zerhoun",
+                "Volubilis",
+                "Ain Karma"
+              ]
+            },
+            "Coteaux de l'Atlas 1er Cru": {
+              "sub_appellations": [
+                "Khenifra",
+                "Midelt",
+                "Azilal"
+              ]
+            }
+          }
+        },
+        "Northern Plain": {
+          "sub_regions": {
+            "Gharb": {
+              "sub_appellations": [
+                "Kenitra",
+                "Sidi Kacem",
+                "Sidi Slimane"
+              ]
+            }
+          }
+        },
+        "Rabat/Casablanca Region": {
+          "sub_regions": {
+            "Chellah": {
+              "sub_appellations": [
+                "Rabat",
+                "Salé",
+                "Temara"
+              ]
+            },
+            "Zemmour": {
+              "sub_appellations": [
+                "Khemisset",
+                "Tiflet",
+                "Sidi Allal El Bahraoui"
+              ]
+            },
+            "Zaër": {
+              "sub_appellations": [
+                "Oulmès",
+                "Ain Aouda",
+                "Tamesna"
+              ]
+            },
+            "Zenatta": {
+              "sub_appellations": [
+                "Mohammedia",
+                "Ben Slimane",
+                "Bouznika"
+              ]
+            },
+            "Sahel": {
+              "sub_appellations": [
+                "Skhirat",
+                "Harhoura",
+                "Ain Atiq"
+              ]
+            }
+          }
+        },
+        "El-Jadida Region": {
+          "sub_regions": {
+            "Doukkala": {
+              "sub_appellations": [
+                "El Jadida",
+                "Sidi Bennour",
+                "Azemmour"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "Tunisia": {
+      "major_regions": {
+        "Northern Tunisia": {
+          "sub_regions": {
+            "Cap Bon": {
+              "sub_appellations": [
+                "Mornag",
+                "Grombalia",
+                "Kelibia"
+              ]
+            },
+            "Bizerte": {
+              "sub_appellations": [
+                "Sejnane",
+                "Mateur",
+                "Ras Jebel"
+              ]
+            },
+            "Beja": {
+              "sub_appellations": [
+                "Testour",
+                "Nefza",
+                "Medjez el-Bab"
+              ]
+            }
+          }
+        },
+        "Central Tunisia": {
+          "sub_regions": {
+            "Kairouan": {
+              "sub_appellations": [
+                "Oueslatia",
+                "Haffouz",
+                "Sbikha"
+              ]
+            },
+            "Sousse": {
+              "sub_appellations": [
+                "Akouda",
+                "Hammam Sousse",
+                "Msaken"
+              ]
+            },
+            "Monastir": {
+              "sub_appellations": [
+                "Jemmal",
+                "Ksar Hellal",
+                "Sahline"
+              ]
+            }
+          }
+        },
+        "Southern Tunisia": {
+          "sub_regions": {
+            "Gabès": {
+              "sub_appellations": [
+                "Mareth",
+                "Matmata",
+                "Ghannouch"
+              ]
+            },
+            "Medenine": {
+              "sub_appellations": [
+                "Beni Khedache",
+                "Zarzis",
+                "Houmt Souk"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "Algeria": {
+      "major_regions": {
+        "Tell Atlas Region": {
+          "sub_regions":   {
+            "Coteaux de Tlemcen": {
+              "sub_appellations": [
+                "Sebdou",
+                "Mansoura",
+                "Tlemcen City"
+              ]
+            },
+            "Monts du Tessalah": {
+              "sub_appellations": [
+                "Hennaya",
+                "Ouled Mimoun",
+                "Bensekrane"
+              ]
+            },
+            "Coteaux de Mascara": {
+              "sub_appellations": [
+                "Ghriss",
+                "Mascara City",
+                "Froha"
+              ]
+            },
+            "Dahra Hills": {
+              "sub_appellations": [
+                "Mostaganem",
+                "Relizane",
+                "Tighennif"
+              ]
+            },
+            "Coteaux du Zaccar": {
+              "sub_appellations": [
+                "Miliana",
+                "Khemis Miliana",
+                "Sidi Slimane"
+              ]
+            },
+            "Médéa": {
+              "sub_appellations": [
+                "Berrouaghia",
+                "Chahbounia",
+                "Ouzera"
+              ]
+            },
+            "Aïn Bessem Bouira": {
+              "sub_appellations": [
+                "Bouira",
+                "Aïn Bessem",
+                "El Hachimia"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "Oceania": {
+    "Australia": {
+      "major_regions": {
+        "New South Wales": {
+          "sub_regions": {
+            "Hunter Valley": {
+              "sub_appellations": [
+                "Pokolbin",
+                "Broke Fordwich",
+                "Upper Hunter Valley"
+              ]
+            },
+            "Central Ranges": {
+              "sub_appellations": [
+                "Mudgee",
+                "Orange",
+                "Cowra"
+              ]
+            },
+            "Southern New South Wales": {
+              "sub_appellations": [
+                "Canberra District",
+                "Hilltops",
+                "Tumbarumba"
+              ]
+            },
+            "Riverina": {
+              "sub_appellations": [
+                "Griffith",
+                "Leeton",
+                "Narrandera"
+              ]
+            },
+            "South Coast": {
+              "sub_appellations": [
+                "Shoalhaven Coast",
+                "Southern Highlands"
+              ]
+            }
+          }
+        },
+        "Victoria": {
+          "sub_regions": {
+            "Yarra Valley": {
+              "sub_appellations": [
+                "Upper Yarra",
+                "Lower Yarra"
+              ]
+            },
+            "Mornington Peninsula": {
+              "sub_appellations": [
+                "Red Hill",
+                "Main Ridge",
+                "Moorooduc"
+              ]
+            },
+            "Heathcote": {
+              "sub_appellations": [
+                "Colbinabbin",
+                "Tooborac",
+                "Knowsley"
+              ]
+            },
+            "Goulburn Valley": {
+              "sub_appellations": [
+                "Nagambie Lakes",
+                "Shepparton",
+                "Mooroopna"
+              ]
+            },
+            "Rutherglen": {
+              "sub_appellations": [
+                "Wahgunyah",
+                "Great Southern",
+                "Chiltern"
+              ]
+            },
+            "Macedon Ranges": {
+              "sub_appellations": [
+                "Kyneton",
+                "Lancefield",
+                "Gisborne"
+              ]
+            }
+          }
+        },
+        "South Australia": {
+          "sub_regions": {
+            "Barossa Valley": {
+              "sub_appellations": [
+                "Tanunda",
+                "Nuriootpa",
+                "Lyndoch"
+              ]
+            },
+            "McLaren Vale": {
+              "sub_appellations": [
+                "Willunga",
+                "Clarendon",
+                "Blewitt Springs"
+              ]
+            },
+            "Adelaide Hills": {
+              "sub_appellations": [
+                "Lenswood",
+                "Piccadilly Valley",
+                "Mount Lofty Ranges"
+              ]
+            },
+            "Coonawarra": {
+              "sub_appellations": [
+                "Penola",
+                "Wynns",
+                "Katnook"
+              ]
+            },
+            "Clare Valley": {
+              "sub_appellations": [
+                "Watervale",
+                "Polish Hill River",
+                "Sevenhill"
+              ]
+            },
+            "Eden Valley": {
+              "sub_appellations": [
+                "High Eden",
+                "Flaxman Valley",
+                "Keyneton"
+              ]
+            }
+          }
+        },
+        "Western Australia": {
+          "sub_regions": {
+            "Margaret River": {
+              "sub_appellations": [
+                "Wilyabrup",
+                "Yallingup",
+                "Wallcliffe"
+              ]
+            },
+            "Great Southern": {
+              "sub_appellations": [
+                "Mount Barker",
+                "Frankland River",
+                "Albany",
+                "Denmark",
+                "Porongurup"
+              ]
+            },
+            "Swan District": {
+              "sub_appellations": [
+                "Swan Valley",
+                "Perth Hills",
+                "Chittering Valley"
+              ]
+            },
+            "Geographe": {
+              "sub_appellations": [
+                "Ferguson Valley",
+                "Donnybrook",
+                "Harvey"
+              ]
+            }
+          }
+        },
+        "Tasmania": {
+          "sub_regions": {
+            "Tamar Valley": {
+              "sub_appellations": [
+                "Launceston",
+                "Rosevears",
+                "Rowella"
+              ]
+            },
+            "East Coast": {
+              "sub_appellations": [
+                "Bicheno",
+                "Swansea",
+                "Cranbrook"
+              ]
+            },
+            "Coal River Valley": {
+              "sub_appellations": [
+                "Richmond",
+                "Cambridge",
+                "Campania"
+              ]
+            },
+            "Derwent Valley": {
+              "sub_appellations": [
+                "New Norfolk",
+                "Granton",
+                "Glenora"
+              ]
+            },
+            "Huon Valley": {
+              "sub_appellations": [
+                "Cygnet",
+                "Franklin",
+                "Geeveston"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "New Zealand": {
+      "major_regions": {
+        "North Island": {
+          "sub_regions": {
+            "Northland": {
+              "sub_appellations": [
+                "Kerikeri",
+                "Kaitaia",
+                "Whangarei"
+              ]
+            },
+            "Auckland": {
+              "sub_appellations": [
+                "Waiheke Island",
+                "Kumeu",
+                "Matakana",
+                "Clevedon"
+              ]
+            },
+            "Gisborne": {
+              "sub_appellations": [
+                "Ormond",
+                "Patutahi",
+                "Manutuke"
+              ]
+            },
+            "Hawke's Bay": {
+              "sub_appellations": [
+                "Gimblett Gravels",
+                "Esk Valley",
+                "Bridge Pa Triangle",
+                "Dartmoor Valley",
+                "Te Awanga"
+              ]
+            },
+            "Wairarapa": {
+              "sub_appellations": [
+                "Martinborough",
+                "Gladstone",
+                "Masterton"
+              ]
+            }
+          }
+        },
+        "South Island": {
+          "sub_regions": {
+            "Nelson": {
+              "sub_appellations": [
+                "Waimea Plains",
+                "Moutere Hills",
+                "Takaka",
+                "Upper Moutere"
+              ]
+            },
+            "Marlborough": {
+              "sub_appellations": [
+                "Wairau Valley",
+                "Awatere Valley",
+                "Southern Valleys",
+                "Rapaura",
+                "Renwick"
+              ]
+            },
+            "Canterbury": {
+              "sub_appellations": [
+                "Waipara Valley",
+                "Banks Peninsula",
+                "Waitaki Valley",
+                "Canterbury Plains"
+              ]
+            },
+            "Central Otago": {
+              "sub_appellations": [
+                "Bannockburn",
+                "Gibbston",
+                "Cromwell Basin",
+                "Bendigo",
+                "Wanaka",
+                "Alexandra"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "EmergingRegions": {
+    "Thailand": {
+      "major_regions": {
+        "Khao Yai": {
+          "sub_regions": {
+            "Asoke Valley": {
+              "sub_appellations": [
+                "GranMonte Vineyard and Winery",
+                "PB Valley Khao Yai Winery",
+                "Alcidini Winery"
+              ]
+            }
+          }
+        },
+        "Hua Hin": {
+          "sub_regions": {
+            "Hua Hin Hills": {
+              "sub_appellations": [
+                "Monsoon Valley Vineyard"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "Vietnam": {
+      "major_regions": {
+        "Ninh Thuan Province": {
+          "sub_regions": {
+            "Phan Rang": {
+              "sub_appellations": [
+                "Ba Moi Vineyard",
+                "Vinh Hy Vineyard"
+              ]
+            }
+          }
+        },
+        "Lam Dong Province": {
+          "sub_regions": {
+            "Da Lat": {
+              "sub_appellations": [
+                "Ladora Winery",
+                "Vinh Tien Winery"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "England (UK)": {
+      "major_regions": {
+        "South East England": {
+          "sub_regions": {
+            "Kent": {
+              "sub_appellations": [
+                "Chapel Down",
+                "Biddenden Vineyards",
+                "Gusbourne Estate"
+              ]
+            },
+            "Sussex": {
+              "sub_appellations": [
+                "Ridgeview Wine Estate",
+                "Nyetimber",
+                "Bolney Wine Estate"
+              ]
+            },
+            "Surrey": {
+              "sub_appellations": [
+                "Denbies Wine Estate",
+                "Albury Vineyard"
+              ]
+            }
+          }
+        },
+        "South West England": {
+          "sub_regions": {
+            "Cornwall": {
+              "sub_appellations": [
+                "Camel Valley Vineyard",
+                "Knightor Winery"
+              ]
+            },
+            "Devon": {
+              "sub_appellations": [
+                "Sharpham Vineyard",
+                "Sandridge Barton"
+              ]
+            }
+          }
+        },
+        "East Anglia": {
+          "sub_regions": {
+            "Norfolk": {
+              "sub_appellations": [
+                "Winbirri Vineyards",
+                "Chet Valley Vineyard"
+              ]
+            },
+            "Suffolk": {
+              "sub_appellations": [
+                "Giffords Hall Vineyard",
+                "Shawsgate Vineyard"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "Wales (UK)": {
+      "major_regions": {
+        "South Wales": {
+          "sub_regions": {
+            "Monmouthshire": {
+              "sub_appellations": [
+                "Ancre Hill Estates",
+                "White Castle Vineyard"
+              ]
+            },
+            "Glamorgan": {
+              "sub_appellations": [
+                "Llanerch Vineyard",
+                "Glyndwr Vineyard"
+              ]
+            }
+          }
+        },
+        "North Wales": {
+          "sub_regions": {
+            "Denbighshire": {
+              "sub_appellations": [
+                "Gwinllan Conwy Vineyard",
+                "Pant Du Vineyard"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "Belgium": {
+      "major_regions": {
+        "Flanders": {
+          "sub_regions": {
+            "Limburg": {
+              "sub_appellations": [
+                "Aldeneyck",
+                "Wijndomein Hoenshof"
+              ]
+            },
+            "East Flanders": {
+              "sub_appellations": [
+                "Wijndomein Waes",
+                "Château Bon Baron"
+              ]
+            }
+          }
+        },
+        "Wallonia": {
+          "sub_regions": {
+            "Namur": {
+              "sub_appellations": [
+                "Domaine du Chenoy",
+                "Domaine du Ry d'Argent"
+              ]
+            },
+            "Liège": {
+              "sub_appellations": [
+                "Vignoble des Agaises",
+                "Domaine Vin de Liège"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "Luxembourg": {
+      "major_regions": {
+        "Moselle Valley": {
+          "sub_regions": {
+            "Grevenmacher": {
+              "sub_appellations": [
+                "Domaine Mathis Bastian",
+                "Caves Bernard-Massard"
+              ]
+            },
+            "Remich": {
+              "sub_appellations": [
+                "Domaine Viticole Cep d'Or",
+                "Domaine Alice Hartmann"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "Poland": {
+      "major_regions": {
+        "Lesser Poland (Małopolska)": {
+          "sub_regions": {
+            "Wieliczka": {
+              "sub_appellations": [
+                "Winnica Wieliczka",
+                "Winnica Srebrna Góra"
+              ]
+            },
+            "Jasło": {
+              "sub_appellations": [
+                "Winnica Jasło",
+                "Winnica Golesz"
+              ]
+            }
+          }
+        },
+        "Lower Silesia (Dolny Śląsk)": {
+          "sub_regions": {
+            "Wrocław": {
+              "sub_appellations": [
+                "Winnica Adoria",
+                "Winnica Jaworek"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "Sweden": {
+      "major_regions": {
+        "Scania (Skåne)": {
+          "sub_regions": {
+            "Österlen": {
+              "sub_appellations": [
+                "Kivik Vineyard",
+                "Skepparps Vingård"
+              ]
+            },
+            "Bjäre Peninsula": {
+              "sub_appellations": [
+                "Vejby Vingård",
+                "Arilds Vingård"
+              ]
+            }
+          }
+        },
+        "Gotland": {
+          "sub_regions": {
+            "Gutevin": {
+              "sub_appellations": [
+                "Gutevin Vineyard"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "Denmark": {
+      "major_regions": {
+        "Zealand (Sjælland)": {
+          "sub_regions": {
+            "North Zealand": {
+              "sub_appellations": [
+                "Frederiksdal Kirsebærvin",
+                "Vejrhøj Vingård"
+              ]
+            },
+            "West Zealand": {
+              "sub_appellations": [
+                "Dyrehøj Vingaard",
+                "Skaersøgaard Vin"
+              ]
+            }
+          }
+        },
+        "Jutland (Jylland)": {
+          "sub_regions": {
+            "South Jutland": {
+              "sub_appellations": [
+                "Hedegaard Vingård",
+                "Kimesbjerggaard"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "Cyprus": {
+      "major_regions": {
+        "Troodos Mountains": {
+          "sub_regions": {
+            "Pitsilia": {
+              "sub_appellations": [
+                "Pelendri",
+                "Kyperounda",
+                "Agros",
+                "Potamitissa"
+              ]
+            },
+            "Krasochoria Lemesou (Wine Villages of Limassol)": {
+              "sub_appellations": [
+                "Omodos",
+                "Vouni",
+                "Koilani",
+                "Lofou",
+                "Arsos"
+              ]
+            },
+            "Commandaria Region": {
+              "sub_appellations": [
+                "Kalo Chorio",
+                "Zoopigi",
+                "Ayios Constantinos",
+                "Monagri"
+              ]
+            }
+          }
+        },
+        "Limassol Coast": {
+          "sub_regions": {
+            "Akrotiri": {
+              "sub_appellations": [
+                "Kolossi",
+                "Episkopi",
+                "Erimi"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

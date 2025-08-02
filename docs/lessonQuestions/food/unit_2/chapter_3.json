@@ -1,0 +1,50 @@
+{
+  "unit": 2,
+  "unit_name": "food advanced",
+  "chapter": 3,
+  "chapter_name": "food substitutions",
+  "category": "food", 
+  "difficulty": "intermediate",
+  "content": {
+    "main_text": "Understand how to accommodate dietary preferences and restrictions through food substitutions.",
+    "section_1_title": "Introduction",
+    "section_1_content": "Food substitutions, also called accommodations, involve modifying dishes to meet dietary needs or preferences.",
+    "section_2_title": "Common Substitutions",
+    "section_2_content": "Examples include replacing ingredients to make dishes vegan, gluten-free, dairy-free, nut-free, soy-free, or sesame-free.",
+    "section_3_title": "Accommodations in Practice",
+    "section_3_content": "Identifying available accommodations helps ensure meals are inclusive and safe for everyone."
+  },
+  "createdBy": "33333333-3333-3333-3333-333333333301",
+  "lastModifiedBy": "33333333-3333-3333-3333-333333333301",
+  "menu_items": [
+    "11111111-1111-1111-1111-111111111111"
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following accommodations can be made for {dish_name}?",
+      "question_type": "multiple_select",
+      "options_variable": [
+        "Vegan",
+        "Vegetarian",
+        "Gluten-Free",
+        "Dairy-Free",
+        "Nut-Free",
+        "Soy-Free",
+        "Sesame-Free"
+      ],
+      "correct_answer_variable": {
+        "source": "current_dish.ingredients.accommodations"
+      },
+      "placeholders": {
+        "dish_name": "link_to_restaurant.current_dishes[{dish_id}].name"
+      },
+      "repeat_for": {
+        "source": "menu_items",
+        "key_variable": "dish_id",
+        "condition": "Object.values(current_dish.ingredients.accommodations).includes(true)"
+      },
+      "difficulty": "medium",
+      "hint": "Review the modifications available for this dish. 'Accommodations' refer to the substitutions that can be made to meet dietary restrictions or preferences."
+    }
+  ]
+}

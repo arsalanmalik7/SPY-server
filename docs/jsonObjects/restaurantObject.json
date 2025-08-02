@@ -1,0 +1,70 @@
+{
+  "_id": "123456",
+  "name": "Lukes Lobster",
+  "address": {
+    "street": "34 2nd Ave",
+    "city": "Manhattan",
+    "state": "NY",
+    "zip": "01001"
+  },
+  "account_owner": [
+    "employee_id",
+    "employee_id"
+  ],
+  "directors": [],
+  "managers": [],
+  "employees": [
+    "123456789"
+  ],
+  "food_type": [
+    "american",
+    "japanese",
+    "indian"
+  ],
+  "current_wines": [
+    {
+      "global_id": "123456",
+      "source": "restaurant",
+      "customized_from_franchise": false,
+      "custom_version": {
+        "style": {
+          "wine_style_id": "00001"
+        },
+        "offering": {
+          "bottle_price": 53,
+          "glass_price": 8
+        },
+        "notes": {
+          "manager_comments": "These are manager notes",
+          "tasting_notes": "Rich and fruity with a bold finish."
+        }
+      },
+      "allow_manager_modifications": true
+    }
+  ],
+  "previous_wines": [
+    {
+      "global_id": "123456",
+      "added_date": "2024-02-04",
+      "removed_date": "2024-06-12"
+    }
+  ],
+  "current_dishes": [
+    {
+      "dish_id": "12345",
+      "source": "restaurant",
+      "customized_from_franchise": false,
+      "allow_manager_modifications": true
+    }
+  ],
+  "previous_dishes": [
+    {
+      "dish_id": "12345",
+      "added_date": "2024-02-04",
+      "removed_date": "2024-06-12"
+    }
+  ],
+  "subscription_status": "active",
+  "subscription_plan": "Single",
+  "subscription_history": []
+}

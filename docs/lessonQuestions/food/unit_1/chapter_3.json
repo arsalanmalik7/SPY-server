@@ -1,0 +1,45 @@
+{
+  "unit": 1,
+  "unit_name": "food basics",
+  "chapter": 3,
+  "chapter_name": "food temperatures",
+  "category": "food",
+  "difficulty": "intermediate",
+  "content": {
+    "main_text": "Learn about serving temperatures for different dishes.",
+    "section_1_title": "Introduction",
+    "section_1_content": "Proper serving temperatures ensure food safety and taste quality.",
+    "section_2_title": "Temperature Types",
+    "section_2_content": "Dishes can be served cold, at room temperature, warm, or very hot.",
+    "section_3_title": "Importance",
+    "section_3_content": "Correct temperatures enhance customer experience and comply with health standards."
+  },
+  "createdBy": "33333333-3333-3333-3333-333333333301",
+  "lastModifiedBy": "33333333-3333-3333-3333-333333333301",
+  "menu_items": [
+    "11111111-1111-1111-1111-111111111111"
+  ],
+  "questions": [
+    {
+      "question_text": "What is the serving temperature of {dish_name}?",
+      "question_type": "single_select",
+      "options_variable": {
+        "source": "config.tempratureOptions",
+        "filter": "temp => temp !== current_dish.temperature",
+        "limit": 3
+      },
+      "correct_answer_variable": {
+        "source": "current_dish.temperature"
+      },
+      "placeholders": {
+        "dish_name": "link_to_restaurant.current_dishes[{dish_id}].name"
+      },
+      "repeat_for": {
+        "source": "link_to_restaurant.current_dishes",
+        "key_variable": "dish_id"
+      },
+      "difficulty": "easy",
+      "hint": "Check your menu for the listed serving temperature of the dish."
+    }
+  ]
+}

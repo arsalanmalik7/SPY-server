@@ -1,0 +1,2946 @@
+{
+  "white_varietals": [
+    {
+      "name": "Abruzzo DOC",
+      "color": "white"
+    },
+    {
+      "name": "Addoraca",
+      "color": "white"
+    },
+    {
+      "name": "Agh Shani",
+      "color": "white"
+    },
+    {
+      "name": "Aidini",
+      "color": "white"
+    },
+    {
+      "name": "Airén",
+      "color": "white"
+    },
+    {
+      "name": "Alarije",
+      "color": "white"
+    },
+    {
+      "name": "Albalonga (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Albana (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Albanella (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Albanello bianco",
+      "color": "white"
+    },
+    {
+      "name": "Albaranzeuli bianco",
+      "color": "white"
+    },
+    {
+      "name": "Albariño",
+      "color": "white"
+    },
+    {
+      "name": "Albarola",
+      "color": "white"
+    },
+    {
+      "name": "Albillo",
+      "color": "white"
+    },
+    {
+      "name": "Alcañón",
+      "color": "white"
+    },
+    {
+      "name": "Aligoté",
+      "color": "white"
+    },
+    {
+      "name": "Alionza",
+      "color": "white"
+    },
+    {
+      "name": "Altesse",
+      "color": "white"
+    },
+    {
+      "name": "Amigne",
+      "color": "white"
+    },
+    {
+      "name": "Ansonica",
+      "color": "white"
+    },
+    {
+      "name": "Antão Vaz",
+      "color": "white"
+    },
+    {
+      "name": "Arbane",
+      "color": "white"
+    },
+    {
+      "name": "Arbois (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Arilla",
+      "color": "white"
+    },
+    {
+      "name": "Arinto",
+      "color": "white"
+    },
+    {
+      "name": "Arneis",
+      "color": "white"
+    },
+    {
+      "name": "Arnsburger",
+      "color": "white"
+    },
+    {
+      "name": "Arrufiac",
+      "color": "white"
+    },
+    {
+      "name": "Arvesiniadu",
+      "color": "white"
+    },
+    {
+      "name": "Asprinio bianco",
+      "color": "white"
+    },
+    {
+      "name": "Assyrtiko",
+      "color": "white"
+    },
+    {
+      "name": "Athiri",
+      "color": "white"
+    },
+    {
+      "name": "Aubin blanc",
+      "color": "white"
+    },
+    {
+      "name": "Aubin vert",
+      "color": "white"
+    },
+    {
+      "name": "Aurore (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Auxerrois blanc",
+      "color": "white"
+    },
+    {
+      "name": "Avesso",
+      "color": "white"
+    },
+    {
+      "name": "Azal branco",
+      "color": "white"
+    },
+    {
+      "name": "Bacchus (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Baco blanc",
+      "color": "white"
+    },
+    {
+      "name": "Balzac blanc",
+      "color": "white"
+    },
+    {
+      "name": "Baratuciat",
+      "color": "white"
+    },
+    {
+      "name": "Barbera bianca",
+      "color": "white"
+    },
+    {
+      "name": "Bariadorgia",
+      "color": "white"
+    },
+    {
+      "name": "Baroque (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Bayan Shirey",
+      "color": "white"
+    },
+    {
+      "name": "Beba (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Bellone",
+      "color": "white"
+    },
+    {
+      "name": "Besgano bianco",
+      "color": "white"
+    },
+    {
+      "name": "Bia blanc",
+      "color": "white"
+    },
+    {
+      "name": "Bianca (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Biancame",
+      "color": "white"
+    },
+    {
+      "name": "Bianchetta Trevigiana",
+      "color": "white"
+    },
+    {
+      "name": "Bianco d'Alessano",
+      "color": "white"
+    },
+    {
+      "name": "Biancolella",
+      "color": "white"
+    },
+    {
+      "name": "Biancone di Portoferraio",
+      "color": "white"
+    },
+    {
+      "name": "Bical (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Bigolona",
+      "color": "white"
+    },
+    {
+      "name": "Blatterle",
+      "color": "white"
+    },
+    {
+      "name": "Boal (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Bogdanuša",
+      "color": "white"
+    },
+    {
+      "name": "Bombino bianco",
+      "color": "white"
+    },
+    {
+      "name": "Borba blanca",
+      "color": "white"
+    },
+    {
+      "name": "Bosco (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Bourboulenc",
+      "color": "white"
+    },
+    {
+      "name": "Bouvier (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Breidecker",
+      "color": "white"
+    },
+    {
+      "name": "Bronner (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Brustiano bianco",
+      "color": "white"
+    },
+    {
+      "name": "Brustiano faux",
+      "color": "white"
+    },
+    {
+      "name": "Bukettraube",
+      "color": "white"
+    },
+    {
+      "name": "Burger (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Cabernet blanc",
+      "color": "white"
+    },
+    {
+      "name": "Caíño blanco",
+      "color": "white"
+    },
+    {
+      "name": "Camaralet",
+      "color": "white"
+    },
+    {
+      "name": "Caprettone",
+      "color": "white"
+    },
+    {
+      "name": "Carricante",
+      "color": "white"
+    },
+    {
+      "name": "Cascarolo bianco",
+      "color": "white"
+    },
+    {
+      "name": "Cassady (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Catarratto",
+      "color": "white"
+    },
+    {
+      "name": "Çavuş (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Cayetana blanca",
+      "color": "white"
+    },
+    {
+      "name": "Cayuga White",
+      "color": "white"
+    },
+    {
+      "name": "Cereza",
+      "color": "white"
+    },
+    {
+      "name": "Chambourcin",
+      "color": "white"
+    },
+    {
+      "name": "Chardonel",
+      "color": "white"
+    },
+    {
+      "name": "Chardonnay",
+      "color": "white"
+    },
+    {
+      "name": "Chasan (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Chasselas",
+      "color": "white"
+    },
+    {
+      "name": "Chelva (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Chenel",
+      "color": "white"
+    },
+    {
+      "name": "Chenin blanc",
+      "color": "white"
+    },
+    {
+      "name": "Chinuri",
+      "color": "white"
+    },
+    {
+      "name": "Clairette blanche",
+      "color": "white"
+    },
+    {
+      "name": "Claverie",
+      "color": "white"
+    },
+    {
+      "name": "Cococciola",
+      "color": "white"
+    },
+    {
+      "name": "Coda di Pecora",
+      "color": "white"
+    },
+    {
+      "name": "Coda di Volpe",
+      "color": "white"
+    },
+    {
+      "name": "Colombard",
+      "color": "white"
+    },
+    {
+      "name": "Completer",
+      "color": "white"
+    },
+    {
+      "name": "Cortese",
+      "color": "white"
+    },
+    {
+      "name": "Courbu",
+      "color": "white"
+    },
+    {
+      "name": "Crouchen",
+      "color": "white"
+    },
+    {
+      "name": "Cserszegi fűszeres",
+      "color": "white"
+    },
+    {
+      "name": "Debina (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Debit (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Diamond (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Dimiat",
+      "color": "white"
+    },
+    {
+      "name": "Dinka (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Doña Blanca",
+      "color": "white"
+    },
+    {
+      "name": "Donzelinho branco",
+      "color": "white"
+    },
+    {
+      "name": "Doradilla (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Doradillo",
+      "color": "white"
+    },
+    {
+      "name": "Drupeggio",
+      "color": "white"
+    },
+    {
+      "name": "Durella",
+      "color": "white"
+    },
+    {
+      "name": "Ehrenbreitsteiner",
+      "color": "white"
+    },
+    {
+      "name": "Ehrenfelser",
+      "color": "white"
+    },
+    {
+      "name": "Elbling",
+      "color": "white"
+    },
+    {
+      "name": "Emir (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Encruzado",
+      "color": "white"
+    },
+    {
+      "name": "Erbaluce",
+      "color": "white"
+    },
+    {
+      "name": "Escanyavella",
+      "color": "white"
+    },
+    {
+      "name": "Ezerjó",
+      "color": "white"
+    },
+    {
+      "name": "Faberrebe",
+      "color": "white"
+    },
+    {
+      "name": "Falanghina",
+      "color": "white"
+    },
+    {
+      "name": "Favorita (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Fernão Pires",
+      "color": "white"
+    },
+    {
+      "name": "Fetească albă",
+      "color": "white"
+    },
+    {
+      "name": "Fetească regală",
+      "color": "white"
+    },
+    {
+      "name": "Fiano (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Findling",
+      "color": "white"
+    },
+    {
+      "name": "Flora (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Folle blanche",
+      "color": "white"
+    },
+    {
+      "name": "Forastera",
+      "color": "white"
+    },
+    {
+      "name": "Forastera (Spanish grape)",
+      "color": "white"
+    },
+    {
+      "name": "Freisamer",
+      "color": "white"
+    },
+    {
+      "name": "Furmint",
+      "color": "white"
+    },
+    {
+      "name": "Gamay Blanc Gloriod",
+      "color": "white"
+    },
+    {
+      "name": "Garganega",
+      "color": "white"
+    },
+    {
+      "name": "Garrido Fino",
+      "color": "white"
+    },
+    {
+      "name": "Gewürztraminer",
+      "color": "white"
+    },
+    {
+      "name": "Girgentina",
+      "color": "white"
+    },
+    {
+      "name": "Giró blanc",
+      "color": "white"
+    },
+    {
+      "name": "Glera (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Godello",
+      "color": "white"
+    },
+    {
+      "name": "Goldburger",
+      "color": "white"
+    },
+    {
+      "name": "Goldriesling",
+      "color": "white"
+    },
+    {
+      "name": "Gouais blanc",
+      "color": "white"
+    },
+    {
+      "name": "Graisse",
+      "color": "white"
+    },
+    {
+      "name": "Grasă de Cotnari",
+      "color": "white"
+    },
+    {
+      "name": "Grechetto",
+      "color": "white"
+    },
+    {
+      "name": "Greco (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Green Hungarian",
+      "color": "white"
+    },
+    {
+      "name": "Grenache blanc",
+      "color": "white"
+    },
+    {
+      "name": "Grillo",
+      "color": "white"
+    },
+    {
+      "name": "Gringet",
+      "color": "white"
+    },
+    {
+      "name": "Grk Bijeli",
+      "color": "white"
+    },
+    {
+      "name": "Gros Manseng",
+      "color": "white"
+    },
+    {
+      "name": "Gros-plant-du-pays-nantais",
+      "color": "white"
+    },
+    {
+      "name": "Grüner Veltliner",
+      "color": "white"
+    },
+    {
+      "name": "Gutenborner",
+      "color": "white"
+    },
+    {
+      "name": "Hárslevelű",
+      "color": "white"
+    },
+    {
+      "name": "Hebén",
+      "color": "white"
+    },
+    {
+      "name": "Hibernal (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Hondarrabi Zuri",
+      "color": "white"
+    },
+    {
+      "name": "Humagne Blanche",
+      "color": "white"
+    },
+    {
+      "name": "Huxelrebe",
+      "color": "white"
+    },
+    {
+      "name": "Incrocio Manzoni 1.50",
+      "color": "white"
+    },
+    {
+      "name": "Irsai Olivér",
+      "color": "white"
+    },
+    {
+      "name": "Jacquère",
+      "color": "white"
+    },
+    {
+      "name": "Juhfark",
+      "color": "white"
+    },
+    {
+      "name": "Juwel (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Kabar (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Kanzler (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Kéknyelű",
+      "color": "white"
+    },
+    {
+      "name": "Kerner (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Khikhvi",
+      "color": "white"
+    },
+    {
+      "name": "Knipperlé",
+      "color": "white"
+    },
+    {
+      "name": "Koshu (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Krstač",
+      "color": "white"
+    },
+    {
+      "name": "L'Acadie blanc",
+      "color": "white"
+    },
+    {
+      "name": "La Crescent (grape)",
+      "color": "white"
+    },
+    {
+      "name": "La Crosse (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Lagarino bianco",
+      "color": "white"
+    },
+    {
+      "name": "Lagorthi",
+      "color": "white"
+    },
+    {
+      "name": "Lauzet",
+      "color": "white"
+    },
+    {
+      "name": "Len de l'El",
+      "color": "white"
+    },
+    {
+      "name": "Listán de Huelva",
+      "color": "white"
+    },
+    {
+      "name": "Loureiro (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Luglienga",
+      "color": "white"
+    },
+    {
+      "name": "Macabeo",
+      "color": "white"
+    },
+    {
+      "name": "Maceratino",
+      "color": "white"
+    },
+    {
+      "name": "Madeleine Angevine",
+      "color": "white"
+    },
+    {
+      "name": "Malagousia",
+      "color": "white"
+    },
+    {
+      "name": "Malvar (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Malvasia",
+      "color": "white"
+    },
+    {
+      "name": "Mantonico bianco",
+      "color": "white"
+    },
+    {
+      "name": "Manzoni Bianco",
+      "color": "white"
+    },
+    {
+      "name": "Maraština",
+      "color": "white"
+    },
+    {
+      "name": "Marawi (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Marsanne",
+      "color": "white"
+    },
+    {
+      "name": "Marzemina bianca",
+      "color": "white"
+    },
+    {
+      "name": "Mauzac (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Melody (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Melon de Bourgogne",
+      "color": "white"
+    },
+    {
+      "name": "Merlot blanc",
+      "color": "white"
+    },
+    {
+      "name": "Merseguera",
+      "color": "white"
+    },
+    {
+      "name": "Meslier-Saint-François",
+      "color": "white"
+    },
+    {
+      "name": "Minella bianca",
+      "color": "white"
+    },
+    {
+      "name": "Misket Cherven",
+      "color": "white"
+    },
+    {
+      "name": "Molette",
+      "color": "white"
+    },
+    {
+      "name": "Mondeuse blanche",
+      "color": "white"
+    },
+    {
+      "name": "Montepila",
+      "color": "white"
+    },
+    {
+      "name": "Montonico bianco",
+      "color": "white"
+    },
+    {
+      "name": "Montù",
+      "color": "white"
+    },
+    {
+      "name": "Morio Muscat",
+      "color": "white"
+    },
+    {
+      "name": "Moscato Giallo",
+      "color": "white"
+    },
+    {
+      "name": "Moschofilero",
+      "color": "white"
+    },
+    {
+      "name": "Mtsvane",
+      "color": "white"
+    },
+    {
+      "name": "Müller-Thurgau",
+      "color": "white"
+    },
+    {
+      "name": "Muscadelle",
+      "color": "white"
+    },
+    {
+      "name": "Muscat (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Muscat Blanc à Petits Grains",
+      "color": "white"
+    },
+    {
+      "name": "Muscat of Alexandria",
+      "color": "white"
+    },
+    {
+      "name": "Muscat Ottonel",
+      "color": "white"
+    },
+    {
+      "name": "Muscat d'Eisenstadt",
+      "color": "white"
+    },
+    {
+      "name": "Muscat Rose à Petits Grains",
+      "color": "white"
+    },
+    {
+      "name": "Muscat Rouge à Petits Grains",
+      "color": "white"
+    },
+    {
+      "name": "Narince (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Nasco (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Neuburger",
+      "color": "white"
+    },
+    {
+      "name": "Neyret",
+      "color": "white"
+    },
+    {
+      "name": "Noah (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Nobling",
+      "color": "white"
+    },
+    {
+      "name": "Nosiola",
+      "color": "white"
+    },
+    {
+      "name": "Nuragus (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Ondenc",
+      "color": "white"
+    },
+    {
+      "name": "Optima (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Orléans (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Ortega (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Ortrugo",
+      "color": "white"
+    },
+    {
+      "name": "Österreichisch-Weiß",
+      "color": "white"
+    },
+    {
+      "name": "Pálava (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Pallagrello bianco",
+      "color": "white"
+    },
+    {
+      "name": "Palomino (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Pampanuto",
+      "color": "white"
+    },
+    {
+      "name": "Pardillo",
+      "color": "white"
+    },
+    {
+      "name": "Parellada",
+      "color": "white"
+    },
+    {
+      "name": "Pascal blanc",
+      "color": "white"
+    },
+    {
+      "name": "Passerina (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Pearl of Csaba",
+      "color": "white"
+    },
+    {
+      "name": "Pecorino (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Pedro Giménez",
+      "color": "white"
+    },
+    {
+      "name": "Pedro Ximénez",
+      "color": "white"
+    },
+    {
+      "name": "Perle (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Petit Manseng",
+      "color": "white"
+    },
+    {
+      "name": "Petit Meslier",
+      "color": "white"
+    },
+    {
+      "name": "Petite Arvine",
+      "color": "white"
+    },
+    {
+      "name": "Peurion",
+      "color": "white"
+    },
+    {
+      "name": "Picardan",
+      "color": "white"
+    },
+    {
+      "name": "Picolit",
+      "color": "white"
+    },
+    {
+      "name": "Pigato",
+      "color": "white"
+    },
+    {
+      "name": "Pinot blanc",
+      "color": "white"
+    },
+    {
+      "name": "Pinot gris",
+      "color": "white"
+    },
+    {
+      "name": "Piquepoul",
+      "color": "white"
+    },
+    {
+      "name": "Plavay",
+      "color": "white"
+    },
+    {
+      "name": "Pošip",
+      "color": "white"
+    },
+    {
+      "name": "Prensal",
+      "color": "white"
+    },
+    {
+      "name": "Prié blanc",
+      "color": "white"
+    },
+    {
+      "name": "Prosecco",
+      "color": "white"
+    },
+    {
+      "name": "Rabo de Ovelha",
+      "color": "white"
+    },
+    {
+      "name": "Räuschling",
+      "color": "white"
+    },
+    {
+      "name": "Ravat blanc",
+      "color": "white"
+    },
+    {
+      "name": "Regner",
+      "color": "white"
+    },
+    {
+      "name": "Reichensteiner",
+      "color": "white"
+    },
+    {
+      "name": "Retagliado bianco",
+      "color": "white"
+    },
+    {
+      "name": "Rèze",
+      "color": "white"
+    },
+    {
+      "name": "Rhoditis",
+      "color": "white"
+    },
+    {
+      "name": "Ribolla Gialla",
+      "color": "white"
+    },
+    {
+      "name": "Rieslaner",
+      "color": "white"
+    },
+    {
+      "name": "Riesling",
+      "color": "white"
+    },
+    {
+      "name": "Rkatsiteli",
+      "color": "white"
+    },
+    {
+      "name": "Robola",
+      "color": "white"
+    },
+    {
+      "name": "Romorantin",
+      "color": "white"
+    },
+    {
+      "name": "Rossese bianco",
+      "color": "white"
+    },
+    {
+      "name": "Roter Veltliner",
+      "color": "white"
+    },
+    {
+      "name": "Rotgipfler",
+      "color": "white"
+    },
+    {
+      "name": "Roublot",
+      "color": "white"
+    },
+    {
+      "name": "Roupeiro",
+      "color": "white"
+    },
+    {
+      "name": "Roussanne",
+      "color": "white"
+    },
+    {
+      "name": "Rovello bianco",
+      "color": "white"
+    },
+    {
+      "name": "Sacy (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Saint-Pierre Doré",
+      "color": "white"
+    },
+    {
+      "name": "Sarfeher",
+      "color": "white"
+    },
+    {
+      "name": "Sauvignon blanc",
+      "color": "white"
+    },
+    {
+      "name": "Sauvignon gris",
+      "color": "white"
+    },
+    {
+      "name": "Sauvignonasse",
+      "color": "white"
+    },
+    {
+      "name": "Savagnin",
+      "color": "white"
+    },
+    {
+      "name": "Savagnin rose",
+      "color": "white"
+    },
+    {
+      "name": "Savatiano",
+      "color": "white"
+    },
+    {
+      "name": "Scheurebe",
+      "color": "white"
+    },
+    {
+      "name": "Sémillon",
+      "color": "white"
+    },
+    {
+      "name": "Sercial",
+      "color": "white"
+    },
+    {
+      "name": "Seyval blanc",
+      "color": "white"
+    },
+    {
+      "name": "Siegerrebe",
+      "color": "white"
+    },
+    {
+      "name": "Silvaner",
+      "color": "white"
+    },
+    {
+      "name": "Smederevka",
+      "color": "white"
+    },
+    {
+      "name": "Souvignier gris",
+      "color": "white"
+    },
+    {
+      "name": "St. Pepin (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Sumoll Blanc",
+      "color": "white"
+    },
+    {
+      "name": "Tămâioasă Românească",
+      "color": "white"
+    },
+    {
+      "name": "Tamarez",
+      "color": "white"
+    },
+    {
+      "name": "Taminga",
+      "color": "white"
+    },
+    {
+      "name": "Tamjanika",
+      "color": "white"
+    },
+    {
+      "name": "Tempranillo blanco",
+      "color": "white"
+    },
+    {
+      "name": "Terrantez",
+      "color": "white"
+    },
+    {
+      "name": "Terret blanc",
+      "color": "white"
+    },
+    {
+      "name": "Terret gris",
+      "color": "white"
+    },
+    {
+      "name": "Thrapsathiri",
+      "color": "white"
+    },
+    {
+      "name": "Timorasso",
+      "color": "white"
+    },
+    {
+      "name": "Torrontés",
+      "color": "white"
+    },
+    {
+      "name": "Tourbat",
+      "color": "white"
+    },
+    {
+      "name": "Traminette",
+      "color": "white"
+    },
+    {
+      "name": "Trebbiano",
+      "color": "white"
+    },
+    {
+      "name": "Trebbiano d'Abruzzo (wine)",
+      "color": "white"
+    },
+    {
+      "name": "Treixadura",
+      "color": "white"
+    },
+    {
+      "name": "Trousseau gris",
+      "color": "white"
+    },
+    {
+      "name": "Tsolikouri",
+      "color": "white"
+    },
+    {
+      "name": "Valvin muscat",
+      "color": "white"
+    },
+    {
+      "name": "Vega (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Verdea (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Verdeca",
+      "color": "white"
+    },
+    {
+      "name": "Verdejo",
+      "color": "white"
+    },
+    {
+      "name": "Verdelho",
+      "color": "white"
+    },
+    {
+      "name": "Verdello (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Verdesse",
+      "color": "white"
+    },
+    {
+      "name": "Verdicchio",
+      "color": "white"
+    },
+    {
+      "name": "Verdiso",
+      "color": "white"
+    },
+    {
+      "name": "Verduzzo",
+      "color": "white"
+    },
+    {
+      "name": "Verduzzo Trevigiano",
+      "color": "white"
+    },
+    {
+      "name": "Vermentino",
+      "color": "white"
+    },
+    {
+      "name": "Vernaccia",
+      "color": "white"
+    },
+    {
+      "name": "Vernaccia di Oristano",
+      "color": "white"
+    },
+    {
+      "name": "Versoaln",
+      "color": "white"
+    },
+    {
+      "name": "Vespaiola",
+      "color": "white"
+    },
+    {
+      "name": "Vidal blanc",
+      "color": "white"
+    },
+    {
+      "name": "Vidiano",
+      "color": "white"
+    },
+    {
+      "name": "Vigiriega",
+      "color": "white"
+    },
+    {
+      "name": "Vignoles (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Vilana",
+      "color": "white"
+    },
+    {
+      "name": "Viognier",
+      "color": "white"
+    },
+    {
+      "name": "Viosinho",
+      "color": "white"
+    },
+    {
+      "name": "Vital (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Vitovska",
+      "color": "white"
+    },
+    {
+      "name": "Vugava",
+      "color": "white"
+    },
+    {
+      "name": "Weldra",
+      "color": "white"
+    },
+    {
+      "name": "Welschriesling",
+      "color": "white"
+    },
+    {
+      "name": "Würzer (grape)",
+      "color": "white"
+    },
+    {
+      "name": "Xarel·lo",
+      "color": "white"
+    },
+    {
+      "name": "Xynisteri",
+      "color": "white"
+    },
+    {
+      "name": "Zalema",
+      "color": "white"
+    },
+    {
+      "name": "Zéta",
+      "color": "white"
+    },
+    {
+      "name": "Zierfandler",
+      "color": "white"
+    },
+    {
+      "name": "Žilavka",
+      "color": "white"
+    }
+  ],
+  "red_varietals": [
+    {
+      "name": "Abbuoto",
+      "color": "red"
+    },
+    {
+      "name": "Abouriou",
+      "color": "red"
+    },
+    {
+      "name": "Abrusco",
+      "color": "red"
+    },
+    {
+      "name": "Abruzzo DOC",
+      "color": "red"
+    },
+    {
+      "name": "Acitana",
+      "color": "red"
+    },
+    {
+      "name": "Acolon",
+      "color": "red"
+    },
+    {
+      "name": "Adakarası",
+      "color": "red"
+    },
+    {
+      "name": "Agiorgitiko",
+      "color": "red"
+    },
+    {
+      "name": "Aglianico",
+      "color": "red"
+    },
+    {
+      "name": "Aglianicone",
+      "color": "red"
+    },
+    {
+      "name": "Albaranzeuli nero",
+      "color": "red"
+    },
+    {
+      "name": "Albarossa",
+      "color": "red"
+    },
+    {
+      "name": "Aleatico",
+      "color": "red"
+    },
+    {
+      "name": "Aleksandrouli",
+      "color": "red"
+    },
+    {
+      "name": "Alfrocheiro Preto",
+      "color": "red"
+    },
+    {
+      "name": "Alicante Bouschet",
+      "color": "red"
+    },
+    {
+      "name": "Alicante Ganzin",
+      "color": "red"
+    },
+    {
+      "name": "Alvarelhão",
+      "color": "red"
+    },
+    {
+      "name": "Ancellotta",
+      "color": "red"
+    },
+    {
+      "name": "Aramon (grape)",
+      "color": "red"
+    },
+    {
+      "name": "Argaman (grape)",
+      "color": "red"
+    },
+    {
+      "name": "Argant",
+      "color": "red"
+    },
+    {
+      "name": "Arrouya noir",
+      "color": "red"
+    },
+    {
+      "name": "Aspiran (grape)",
+      "color": "red"
+    },
+    {
+      "name": "Aubun",
+      "color": "red"
+    },
+    {
+      "name": "Avanà",
+      "color": "red"
+    },
+    {
+      "name": "Avarengo",
+      "color": "red"
+    },
+    {
+      "name": "Azal tinto",
+      "color": "red"
+    },
+    {
+      "name": "Băbească neagră",
+      "color": "red"
+    },
+    {
+      "name": "Babić (grape)",
+      "color": "red"
+    },
+    {
+      "name": "Bachet noir",
+      "color": "red"
+    },
+    {
+      "name": "Baco noir",
+      "color": "red"
+    },
+    {
+      "name": "Baga (grape)",
+      "color": "red"
+    },
+    {
+      "name": "Barbarossa (grape)",
+      "color": "red"
+    },
+    {
+      "name": "Barbaroux",
+      "color": "red"
+    },
+    {
+      "name": "Barbera",
+      "color": "red"
+    },
+    {
+      "name": "Barbera del Sannio",
+      "color": "red"
+    },
+    {
+      "name": "Barbera Sarda",
+      "color": "red"
+    },
+    {
+      "name": "Barsaglina",
+      "color": "red"
+    },
+    {
+      "name": "Beaunoir",
+      "color": "red"
+    },
+    {
+      "name": "Béquignol noir",
+      "color": "red"
+    },
+    {
+      "name": "Black Muscat",
+      "color": "red"
+    },
+    {
+      "name": "Blatina",
+      "color": "red"
+    },
+    {
+      "name": "Blauburger",
+      "color": "red"
+    },
+    {
+      "name": "Blauer Portugieser",
+      "color": "red"
+    },
+    {
+      "name": "Blaufränkisch",
+      "color": "red"
+    },
+    {
+      "name": "Bobal",
+      "color": "red"
+    },
+    {
+      "name": "Boğazkere",
+      "color": "red"
+    },
+    {
+      "name": "Bombino nero",
+      "color": "red"
+    },
+    {
+      "name": "Bonamico (grape)",
+      "color": "red"
+    },
+    {
+      "name": "Bonarda Piemontese",
+      "color": "red"
+    },
+    {
+      "name": "Bonda (grape)",
+      "color": "red"
+    },
+    {
+      "name": "Bondola",
+      "color": "red"
+    },
+    {
+      "name": "Bouchalès",
+      "color": "red"
+    },
+    {
+      "name": "Bouteillan noir",
+      "color": "red"
+    },
+    {
+      "name": "Bovale",
+      "color": "red"
+    },
+    {
+      "name": "Bracciola nera",
+      "color": "red"
+    },
+    {
+      "name": "Brachetto",
+      "color": "red"
+    },
+    {
+      "name": "Braquet",
+      "color": "red"
+    },
+    {
+      "name": "Brugnola",
+      "color": "red"
+    },
+    {
+      "name": "Brun Argenté",
+      "color": "red"
+    },
+    {
+      "name": "Brun Fourca",
+      "color": "red"
+    },
+    {
+      "name": "Bubbierasco",
+      "color": "red"
+    },
+    {
+      "name": "Busuioacă de Bohotin",
+      "color": "red"
+    },
+    {
+      "name": "Cabernet Dorsa",
+      "color": "red"
+    },
+    {
+      "name": "Cabernet Franc",
+      "color": "red"
+    },
+    {
+      "name": "Cabernet Gernischt",
+      "color": "red"
+    },
+    {
+      "name": "Cabernet Mitos",
+      "color": "red"
+    },
+    {
+      "name": "Cabernet Sauvignon",
+      "color": "red"
+    },
+    {
+      "name": "Caiño tinto",
+      "color": "red"
+    },
+    {
+      "name": "Calabrese Montenuovo",
+      "color": "red"
+    },
+    {
+      "name": "Caladoc",
+      "color": "red"
+    },
+    {
+      "name": "Calitor",
+      "color": "red"
+    },
+    {
+      "name": "Çalkarası",
+      "color": "red"
+    },
+    {
+      "name": "Camaraou noir",
+      "color": "red"
+    },
+    {
+      "name": "Canaiolo",
+      "color": "red"
+    },
+    {
+      "name": "Canari noir",
+      "color": "red"
+    },
+    {
+      "name": "Carignan",
+      "color": "red"
+    },
+    {
+      "name": "Carménère",
+      "color": "red"
+    },
+    {
+      "name": "Cascade (grape)",
+      "color": "red"
+    },
+    {
+      "name": "Castelão (grape)",
+      "color": "red"
+    },
+    {
+      "name": "Castets (grape)",
+      "color": "red"
+    },
+    {
+      "name": "Catanese nero",
+      "color": "red"
+    },
+    {
+      "name": "Catawba (grape)",
+      "color": "red"
+    },
+    {
+      "name": "Cesanese Comune",
+      "color": "red"
+    },
+    {
+      "name": "César (grape)",
+      "color": "red"
+    },
+    {
+      "name": "Chancellor (grape)",
+      "color": "red"
+    },
+    {
+      "name": "Chatus (wine grape)",
+      "color": "red"
+    },
+    {
+      "name": "Chelois",
+      "color": "red"
+    },
+    {
+      "name": "Cienna",
+      "color": "red"
+    },
+    {
+      "name": "Ciliegiolo",
+      "color": "red"
+    },
+    {
+      "name": "Cinsaut",
+      "color": "red"
+    },
+    {
+      "name": "Clinton (grape)",
+      "color": "red"
+    },
+    {
+      "name": "Colombana nera",
+      "color": "red"
+    },
+    {
+      "name": "Colorino",
+      "color": "red"
+    },
+    {
+      "name": "Complexa",
+      "color": "red"
+    },
+    {
+      "name": "Concord grape",
+      "color": "red"
+    },
+    {
+      "name": "Cornalin d'Aoste",
+      "color": "red"
+    },
+    {
+      "name": "Cornifesto",
+      "color": "red"
+    },
+    {
+      "name": "Corot noir",
+      "color": "red"
+    },
+    {
+      "name": "Corvina",
+      "color": "red"
+    },
+    {
+      "name": "Corvinone",
+      "color": "red"
+    },
+    {
+      "name": "Couderc noir",
+      "color": "red"
+    },
+    {
+      "name": "Counoise",
+      "color": "red"
+    },
+    {
+      "name": "Criolla Grande",
+      "color": "red"
+    },
+    {
+      "name": "Croatina",
+      "color": "red"
+    },
+    {
+      "name": "Cygne blanc",
+      "color": "red"
+    },
+    {
+      "name": "Dameron",
+      "color": "red"
+    },
+    {
+      "name": "De Chaunac",
+      "color": "red"
+    },
+    {
+      "name": "Delaware (grape)",
+      "color": "red"
+    },
+    {
+      "name": "Diolinoir",
+      "color": "red"
+    },
+    {
+      "name": "Dobričić",
+      "color": "red"
+    },
+    {
+      "name": "Dolcetto",
+      "color": "red"
+    },
+    {
+      "name": "Domina (grape)",
+      "color": "red"
+    },
+    {
+      "name": "Dornfelder",
+      "color": "red"
+    },
+    {
+      "name": "Douce noir",
+      "color": "red"
+    },
+    {
+      "name": "Douce Noire grise",
+      "color": "red"
+    },
+    {
+      "name": "Drnekuša",
+      "color": "red"
+    },
+    {
+      "name": "Dunkelfelder",
+      "color": "red"
+    },
+    {
+      "name": "Duras (grape)",
+      "color": "red"
+    },
+    {
+      "name": "Dureza",
+      "color": "red"
+    },
+    {
+      "name": "Durif",
+      "color": "red"
+    },
+    {
+      "name": "Ederena",
+      "color": "red"
+    },
+    {
+      "name": "Emperor (grape)",
+      "color": "red"
+    },
+    {
+      "name": "Enfariné noir",
+      "color": "red"
+    },
+    {
+      "name": "Espadeiro",
+      "color": "red"
+    },
+    {
+      "name": "Étraire de la Dui",
+      "color": "red"
+    },
+    {
+      "name": "Fer",
+      "color": "red"
+    },
+    {
+      "name": "Fetească neagră",
+      "color": "red"
+    },
+    {
+      "name": "Flora (grape)",
+      "color": "red"
+    },
+    {
+      "name": "Flot rouge",
+      "color": "red"
+    },
+    {
+      "name": "Forcallat tinta",
+      "color": "red"
+    },
+    {
+      "name": "Fortana",
+      "color": "red"
+    },
+    {
+      "name": "Frappato",
+      "color": "red"
+    },
+    {
+      "name": "Freisa",
+      "color": "red"
+    },
+    {
+      "name": "Frontenac (grape)",
+      "color": "red"
+    },
+    {
+      "name": "Frühroter Veltliner",
+      "color": "red"
+    },
+    {
+      "name": "Fuella",
+      "color": "red"
+    },
+    {
+      "name": "Fumin (grape)",
+      "color": "red"
+    },
+    {
+      "name": "Gaglioppo",
+      "color": "red"
+    },
+    {
+      "name": "Gamaret",
+      "color": "red"
+    },
+    {
+      "name": "Gamay",
+      "color": "red"
+    },
+    {
+      "name": "Gamay Beaujolais",
+      "color": "red"
+    },
+    {
+      "name": "Garanoir",
+      "color": "red"
+    },
+    {
+      "name": "Garró",
+      "color": "red"
+    },
+    {
+      "name": "Ġellewża",
+      "color": "red"
+    },
+    {
+      "name": "Girò",
+      "color": "red"
+    },
+    {
+      "name": "Golubok",
+      "color": "red"
+    },
+    {
+      "name": "Gouget noir",
+      "color": "red"
+    },
+    {
+      "name": "Graciano",
+      "color": "red"
+    },
+    {
+      "name": "Grand Noir de la Calmette",
+      "color": "red"
+    },
+    {
+      "name": "Grenache",
+      "color": "red"
+    },
+    {
+      "name": "Grignolino",
+      "color": "red"
+    },
+    {
+      "name": "Grisa nera",
+      "color": "red"
+    },
+    {
+      "name": "Grolleau (grape)",
+      "color": "red"
+    },
+    {
+      "name": "Groppello",
+      "color": "red"
+    },
+    {
+      "name": "Gros Verdot",
+      "color": "red"
+    },
+    {
+      "name": "Gueuche noir",
+      "color": "red"
+    },
+    {
+      "name": "Helfensteiner",
+      "color": "red"
+    },
+    {
+      "name": "Heroldrebe",
+      "color": "red"
+    },
+    {
+      "name": "Hondarribi Beltza",
+      "color": "red"
+    },
+    {
+      "name": "Hron (grape)",
+      "color": "red"
+    },
+    {
+      "name": "Incrocio Manzoni 2.14",
+      "color": "red"
+    },
+    {
+      "name": "Incrocio Manzoni 2.15",
+      "color": "red"
+    },
+    {
+      "name": "Isabella (grape)",
+      "color": "red"
+    },
+    {
+      "name": "Isabella (grape)",
+      "color": "red"
+    },
+    {
+      "name": "Ives noir",
+      "color": "red"
+    },
+    {
+      "name": "Jaén tinto (grape)",
+      "color": "red"
+    },
+    {
+      "name": "Joubertin",
+      "color": "red"
+    },
+    {
+      "name": "Juan García (grape)",
+      "color": "red"
+    },
+    {
+      "name": "Kadarka",
+      "color": "red"
+    },
+    {
+      "name": "Kalecik Karası",
+      "color": "red"
+    },
+    {
+      "name": "Karalahna",
+      "color": "red"
+    },
+    {
+      "name": "Karasakız",
+      "color": "red"
+    },
+    {
+      "name": "Kotsifali",
+      "color": "red"
+    },
+    {
+      "name": "Krasnostop",
+      "color": "red"
+    },
+    {
+      "name": "Lacrima (grape)",
+      "color": "red"
+    },
+    {
+      "name": "Lagrein",
+      "color": "red"
+    },
+    {
+      "name": "Lambrusco",
+      "color": "red"
+    },
+    {
+      "name": "Landal noir",
+      "color": "red"
+    },
+    {
+      "name": "Landot noir",
+      "color": "red"
+    },
+    {
+      "name": "Léon Millot",
+      "color": "red"
+    },
+    {
+      "name": "Liatiko",
+      "color": "red"
+    },
+    {
+      "name": "Limnio",
+      "color": "red"
+    },
+    {
+      "name": "Listán negro",
+      "color": "red"
+    },
+    {
+      "name": "Listan Prieto",
+      "color": "red"
+    },
+    {
+      "name": "Loureira Tinta",
+      "color": "red"
+    },
+    {
+      "name": "Madrasa (grape)",
+      "color": "red"
+    },
+    {
+      "name": "Magarach Ruby",
+      "color": "red"
+    },
+    {
+      "name": "Magliocco Canino",
+      "color": "red"
+    },
+    {
+      "name": "Magliocco Dolce",
+      "color": "red"
+    },
+    {
+      "name": "Malbec",
+      "color": "red"
+    },
+    {
+      "name": "Mammolo",
+      "color": "red"
+    },
+    {
+      "name": "Mandilaria",
+      "color": "red"
+    },
+    {
+      "name": "Manseng noir",
+      "color": "red"
+    },
+    {
+      "name": "Manto negro",
+      "color": "red"
+    },
+    {
+      "name": "Maratheftiko",
+      "color": "red"
+    },
+    {
+      "name": "Marechal Foch (grape)",
+      "color": "red"
+    },
+    {
+      "name": "Marechal Joffre (grape)",
+      "color": "red"
+    },
+    {
+      "name": "Mars grape",
+      "color": "red"
+    },
+    {
+      "name": "Marselan",
+      "color": "red"
+    },
+    {
+      "name": "Marzemino",
+      "color": "red"
+    },
+    {
+      "name": "Mauzac noir",
+      "color": "red"
+    },
+    {
+      "name": "Mavro",
+      "color": "red"
+    },
+    {
+      "name": "Mavrodafni",
+      "color": "red"
+    },
+    {
+      "name": "Mavrud",
+      "color": "red"
+    },
+    {
+      "name": "Mencía (grape)",
+      "color": "red"
+    },
+    {
+      "name": "Merille",
+      "color": "red"
+    },
+    {
+      "name": "Merlot",
+      "color": "red"
+    },
+    {
+      "name": "Milgranet",
+      "color": "red"
+    },
+    {
+      "name": "Mission (grape)",
+      "color": "red"
+    },
+    {
+      "name": "Molinara (grape)",
+      "color": "red"
+    },
+    {
+      "name": "Mondeuse noire",
+      "color": "red"
+    },
+    {
+      "name": "Monica (grape)",
+      "color": "red"
+    },
+    {
+      "name": "Montepulciano (grape)",
+      "color": "red"
+    },
+    {
+      "name": "Montepulciano d'Abruzzo",
+      "color": "red"
+    },
+    {
+      "name": "Montù",
+      "color": "red"
+    },
+    {
+      "name": "Moreto",
+      "color": "red"
+    },
+    {
+      "name": "Moristel",
+      "color": "red"
+    },
+    {
+      "name": "Mornen noir",
+      "color": "red"
+    },
+    {
+      "name": "Morrastel Bouschet",
+      "color": "red"
+    },
+    {
+      "name": "Mourisco tinto",
+      "color": "red"
+    },
+    {
+      "name": "Mourvèdre",
+      "color": "red"
+    },
+    {
+      "name": "Mtevandidi",
+      "color": "red"
+    },
+    {
+      "name": "Mujuretuli",
+      "color": "red"
+    },
+    {
+      "name": "Mureto",
+      "color": "red"
+    },
+    {
+      "name": "Muscardin",
+      "color": "red"
+    },
+    {
+      "name": "Muscat bleu",
+      "color": "red"
+    },
+    {
+      "name": "Nebbiolo",
+      "color": "red"
+    },
+    {
+      "name": "Negoska",
+      "color": "red"
+    },
+    {
+      "name": "Negrara",
+      "color": "red"
+    },
+    {
+      "name": "Négrette",
+      "color": "red"
+    },
+    {
+      "name": "Negroamaro",
+      "color": "red"
+    },
+    {
+      "name": "Nerello",
+      "color": "red"
+    },
+    {
+      "name": "Nero d'Avola",
+      "color": "red"
+    },
+    {
+      "name": "Niabell",
+      "color": "red"
+    },
+    {
+      "name": "Nielluccio",
+      "color": "red"
+    },
+    {
+      "name": "Nocera (grape)",
+      "color": "red"
+    },
+    {
+      "name": "Noiret",
+      "color": "red"
+    },
+    {
+      "name": "Norton (grape)",
+      "color": "red"
+    },
+    {
+      "name": "Oeillade noire",
+      "color": "red"
+    },
+    {
+      "name": "Öküzgözü",
+      "color": "red"
+    },
+    {
+      "name": "Oseleta",
+      "color": "red"
+    },
+    {
+      "name": "Pais",
+      "color": "red"
+    },
+    {
+      "name": "Pallagrello nero",
+      "color": "red"
+    },
+    {
+      "name": "Pamid",
+      "color": "red"
+    },
+    {
+      "name": "Papazkarası",
+      "color": "red"
+    },
+    {
+      "name": "Parraleta",
+      "color": "red"
+    },
+    {
+      "name": "Pascale di Cagliari",
+      "color": "red"
+    },
+    {
+      "name": "Pelaverga",
+      "color": "red"
+    },
+    {
+      "name": "Peloursin",
+      "color": "red"
+    },
+    {
+      "name": "Perricone",
+      "color": "red"
+    },
+    {
+      "name": "Persan (grape)",
+      "color": "red"
+    },
+    {
+      "name": "Petit Bouschet",
+      "color": "red"
+    },
+    {
+      "name": "Petit Rouge",
+      "color": "red"
+    },
+    {
+      "name": "Petit Verdot",
+      "color": "red"
+    },
+    {
+      "name": "Piccola nera",
+      "color": "red"
+    },
+    {
+      "name": "Piedirosso",
+      "color": "red"
+    },
+    {
+      "name": "Pignolo (grape)",
+      "color": "red"
+    },
+    {
+      "name": "Pineau d'Aunis",
+      "color": "red"
+    },
+    {
+      "name": "Pinot Meunier",
+      "color": "red"
+    },
+    {
+      "name": "Pinot noir",
+      "color": "red"
+    },
+    {
+      "name": "Pinot Noir Précoce",
+      "color": "red"
+    },
+    {
+      "name": "Pinotage",
+      "color": "red"
+    },
+    {
+      "name": "Pione (grape)",
+      "color": "red"
+    },
+    {
+      "name": "Piquepoul",
+      "color": "red"
+    },
+    {
+      "name": "Plantet",
+      "color": "red"
+    },
+    {
+      "name": "Plassa",
+      "color": "red"
+    },
+    {
+      "name": "Plavac Mali",
+      "color": "red"
+    },
+    {
+      "name": "Pollera nera",
+      "color": "red"
+    },
+    {
+      "name": "Portan",
+      "color": "red"
+    },
+    {
+      "name": "Poulsard",
+      "color": "red"
+    },
+    {
+      "name": "Prieto Picudo",
+      "color": "red"
+    },
+    {
+      "name": "Prokupac",
+      "color": "red"
+    },
+    {
+      "name": "Prunesta",
+      "color": "red"
+    },
+    {
+      "name": "Raboso (grape)",
+      "color": "red"
+    },
+    {
+      "name": "Ramisco",
+      "color": "red"
+    },
+    {
+      "name": "Refosco",
+      "color": "red"
+    },
+    {
+      "name": "Refosco dal Peduncolo Rosso",
+      "color": "red"
+    },
+    {
+      "name": "Rimava (grape)",
+      "color": "red"
+    },
+    {
+      "name": "Roesler",
+      "color": "red"
+    },
+    {
+      "name": "Romé",
+      "color": "red"
+    },
+    {
+      "name": "Romeiko",
+      "color": "red"
+    },
+    {
+      "name": "Rondinella",
+      "color": "red"
+    },
+    {
+      "name": "Rosette (grape)",
+      "color": "red"
+    },
+    {
+      "name": "Rossignola",
+      "color": "red"
+    },
+    {
+      "name": "Rossola nera",
+      "color": "red"
+    },
+    {
+      "name": "Rossolino nero",
+      "color": "red"
+    },
+    {
+      "name": "Rotberger",
+      "color": "red"
+    },
+    {
+      "name": "Rouge du Pays",
+      "color": "red"
+    },
+    {
+      "name": "Roussin de Morgex",
+      "color": "red"
+    },
+    {
+      "name": "Royalty (grape)",
+      "color": "red"
+    },
+    {
+      "name": "Ruby Cabernet",
+      "color": "red"
+    },
+    {
+      "name": "Ruché",
+      "color": "red"
+    },
+    {
+      "name": "Rufete (grape)",
+      "color": "red"
+    },
+    {
+      "name": "Sagrantino",
+      "color": "red"
+    },
+    {
+      "name": "Salvador (grape)",
+      "color": "red"
+    },
+    {
+      "name": "San Giuseppe nero",
+      "color": "red"
+    },
+    {
+      "name": "Sangiovese",
+      "color": "red"
+    },
+    {
+      "name": "Saperavi",
+      "color": "red"
+    },
+    {
+      "name": "Schioppettino",
+      "color": "red"
+    },
+    {
+      "name": "Schönburger",
+      "color": "red"
+    },
+    {
+      "name": "Sciacarello",
+      "color": "red"
+    },
+    {
+      "name": "Sciascinoso",
+      "color": "red"
+    },
+    {
+      "name": "Ségalin",
+      "color": "red"
+    },
+    {
+      "name": "Servanin",
+      "color": "red"
+    },
+    {
+      "name": "Severny (grape)",
+      "color": "red"
+    },
+    {
+      "name": "Seyval noir",
+      "color": "red"
+    },
+    {
+      "name": "Siroka Melniska",
+      "color": "red"
+    },
+    {
+      "name": "Sjriak",
+      "color": "red"
+    },
+    {
+      "name": "Sousao",
+      "color": "red"
+    },
+    {
+      "name": "Sousão",
+      "color": "red"
+    },
+    {
+      "name": "Souson",
+      "color": "red"
+    },
+    {
+      "name": "Sousón",
+      "color": "red"
+    },
+    {
+      "name": "Sezão",
+      "color": "red"
+    },
+    {
+      "name": "Sparkling Shiraz",
+      "color": "red"
+    },
+    {
+      "name": "St. Laurent (grape)",
+      "color": "red"
+    },
+    {
+      "name": "St. Vincent grape",
+      "color": "red"
+    },
+    {
+      "name": "Stanušina Crna",
+      "color": "red"
+    },
+    {
+      "name": "Sumoll",
+      "color": "red"
+    },
+    {
+      "name": "Susac Crni",
+      "color": "red"
+    },
+    {
+      "name": "Susumaniello",
+      "color": "red"
+    },
+    {
+      "name": "Swenson Red",
+      "color": "red"
+    },
+    {
+      "name": "Syrah",
+      "color": "red"
+    },
+    {
+      "name": "Taferielt",
+      "color": "red"
+    },
+    {
+      "name": "Tannat",
+      "color": "red"
+    },
+    {
+      "name": "Tarrango",
+      "color": "red"
+    },
+    {
+      "name": "Tavkveri",
+      "color": "red"
+    },
+    {
+      "name": "Tazzelenghe",
+      "color": "red"
+    },
+    {
+      "name": "Teinturier grape",
+      "color": "red"
+    },
+    {
+      "name": "Tempranillo",
+      "color": "red"
+    },
+    {
+      "name": "Téoulier",
+      "color": "red"
+    },
+    {
+      "name": "Teran grape",
+      "color": "red"
+    },
+    {
+      "name": "Termarina rossa",
+      "color": "red"
+    },
+    {
+      "name": "Teroldego",
+      "color": "red"
+    },
+    {
+      "name": "Terrano (grape)",
+      "color": "red"
+    },
+    {
+      "name": "Terret noir",
+      "color": "red"
+    },
+    {
+      "name": "Tibouren",
+      "color": "red"
+    },
+    {
+      "name": "Tinta Amarela",
+      "color": "red"
+    },
+    {
+      "name": "Tinta Barroca",
+      "color": "red"
+    },
+    {
+      "name": "Tinta Cão",
+      "color": "red"
+    },
+    {
+      "name": "Tinta Carvalha",
+      "color": "red"
+    },
+    {
+      "name": "Tinta Francisca",
+      "color": "red"
+    },
+    {
+      "name": "Tinta Miuda",
+      "color": "red"
+    },
+    {
+      "name": "Tinta Negra Mole",
+      "color": "red"
+    },
+    {
+      "name": "Touriga Francesa",
+      "color": "red"
+    },
+    {
+      "name": "Touriga Nacional",
+      "color": "red"
+    },
+    {
+      "name": "Trepat",
+      "color": "red"
+    },
+    {
+      "name": "Tressot",
+      "color": "red"
+    },
+    {
+      "name": "Trevisana nera",
+      "color": "red"
+    },
+    {
+      "name": "Triomphe d'Alsace",
+      "color": "red"
+    },
+    {
+      "name": "Trollinger",
+      "color": "red"
+    },
+    {
+      "name": "Trousseau (grape)",
+      "color": "red"
+    },
+    {
+      "name": "Uva di Troia",
+      "color": "red"
+    },
+    {
+      "name": "Uva Rara",
+      "color": "red"
+    },
+    {
+      "name": "Uva Tosca",
+      "color": "red"
+    },
+    {
+      "name": "Uvalino",
+      "color": "red"
+    },
+    {
+      "name": "Valdiguié",
+      "color": "red"
+    },
+    {
+      "name": "Valentino nero",
+      "color": "red"
+    },
+    {
+      "name": "Vermentino nero",
+      "color": "red"
+    },
+    {
+      "name": "Vespolina",
+      "color": "red"
+    },
+    {
+      "name": "Vien de Nus",
+      "color": "red"
+    },
+    {
+      "name": "Vitis rotundifolia",
+      "color": "red"
+    },
+    {
+      "name": "Vranac",
+      "color": "red"
+    },
+    {
+      "name": "Vuillermin (grape)",
+      "color": "red"
+    },
+    {
+      "name": "Wildbacher",
+      "color": "red"
+    },
+    {
+      "name": "Xinomavro",
+      "color": "red"
+    },
+    {
+      "name": "Žametovka",
+      "color": "red"
+    },
+    {
+      "name": "Zarya severa",
+      "color": "red"
+    },
+    {
+      "name": "Zinfandel",
+      "color": "red"
+    },
+    {
+      "name": "Zweigelt",
+      "color": "red"
+    }
+  ]
+}

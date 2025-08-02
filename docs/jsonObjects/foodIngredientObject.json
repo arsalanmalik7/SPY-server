@@ -1,0 +1,788 @@
+{
+  "ingredients": {
+    "animal_product": {
+      "meat": {
+        "common_meats": [
+          "chicken", "beef", "pork", "lamb", "duck", "turkey", "goat", "veal"
+        ],
+        "game_meats": [
+          "venison", "elk", "bison", "rabbit", "hare", "wild boar", 
+          "pheasant", "quail", "guinea fowl", "partridge", "squab", 
+          "goose", "kangaroo", "ostrich", "emu"
+        ],
+        "exotic_meats": [
+          "camel", "llama", "yak", "horse", "crocodile", 
+          "alligator", "frog", "turtle", "iguana"
+        ],
+        "sea_based_meats": [
+          "fish (e.g., salmon, tuna, cod)", "shellfish (e.g., shrimp, lobster, crab)", 
+          "squid (calamari)", "octopus", "cuttlefish", 
+          "whale", "shark", "eel", "sea urchin (uni)"
+        ],
+        "specialty_meats": [
+          "snails (escargot)", "silkworm pupae", "capybara", 
+          "guinea pig (cuy)", "dog", "cat"
+        ],
+        "cultural_and_regional_meats": [
+          "capybara (South America, especially during Lent)", 
+          "guinea pig (Peru, Ecuador)", "dog (some parts of East Asia)", 
+          "cat (rare, certain regions)"
+        ],
+        "offal_and_organ_meats": [
+          "liver (e.g., beef, chicken, pork)", "kidney", 
+          "heart", "tongue", "sweetbreads (pancreas or thymus)", 
+          "tripe (stomach lining)", "blood sausage", 
+          "brain (e.g., calf, lamb)", "bone marrow"
+        ]
+      },
+      "seafood": {
+        "fish": {
+          "oily_fish": [
+            "salmon", "tuna", "mackerel", "sardines", "herring", "anchovies", "trout"
+          ],
+          "white_fish": [
+            "cod", "haddock", "halibut", "pollock", "flounder", "sole", "tilapia", "whiting", "snapper"
+          ],
+          "freshwater_fish": [
+            "catfish", "pike", "perch", "bass", "carp", "bluegill"
+          ],
+          "exotic_fish": [
+            "barramundi", "parrotfish", "mahi-mahi (dorado)", "wahoo"
+          ]
+        },
+        "shellfish": {
+          "crustaceans": [
+            "shrimp", "lobster", "crab", "prawns", "langoustines", "crawfish (crayfish)", "mantis shrimp"
+          ],
+          "mollusks": [
+            "scallops", "mussels", "clams", "oysters", "cockles", "razor clams", "periwinkles", "abalone"
+          ],
+          "cephalopods": [
+            "squid (calamari)", "octopus", "cuttlefish"
+          ]
+        },
+        "exotic_and_delicacy_seafood": [
+          "sea urchin (uni)", "geoduck", "sea cucumber", "jellyfish"
+        ],
+        "saltwater_species": [
+          "grouper", "snapper", "amberjack", "kingfish", "marlin", "swordfish", "barracuda"
+        ],
+        "freshwater_species": [
+          "tilapia", "carp", "catfish", "trout", "perch", "pike", "sturgeon"
+        ],
+        "cured_and_preserved_seafood": [
+          "smoked salmon", "salted cod (bacalhau)", "pickled herring", "caviar (fish roe)", "bottarga (salted cured fish roe)", "katsuobushi (dried fermented tuna)"
+        ]
+      },
+      "eggs": {
+        "poultry_eggs": [
+          "chicken eggs", "duck eggs", "quail eggs", "turkey eggs", "goose eggs", "emu eggs", "ostrich eggs", "guinea fowl eggs"
+        ],
+        "fish_eggs": [
+          "salmon roe", "trout roe", "sturgeon roe (caviar)", "herring roe", "flying fish roe (tobiko)", "capelin roe (masago)", "sea urchin roe (uni)"
+        ],
+        "reptile_eggs": [
+          "turtle eggs", "crocodile eggs", "alligator eggs", "iguana eggs"
+        ],
+        "insect_eggs": [
+          "ant eggs (escamoles)", "bee eggs (used in some cuisines)", "wasp larvae"
+        ],
+        "other_eggs": [
+          "frog eggs", "snail eggs (escargot pearls)"
+        ],
+        "processed_egg_products": [
+          "powdered eggs", "liquid eggs", "salted duck eggs", "century eggs (preserved)", "balut (fertilized developing egg)", "pickled eggs", "tea eggs"
+        ]
+      }
+    },
+    "vegetables": {
+      "cruciferous": {
+        "brassicas": [
+          "broccoli", "cauliflower", "cabbage", "brussels sprouts", "savoy cabbage", 
+          "red cabbage", "napa cabbage", "broccolini", "romanesco"
+        ],
+        "leafy_cruciferous": [
+          "watercress", "arugula", "mizuna", "tatsoi", "bok choy", "mustard greens", "kale"
+        ],
+        "root_cruciferous": [
+          "turnips", "rutabagas", "radishes", "daikon", "horseradish"
+        ]
+      },
+      "root": {
+        "starchy_roots": [
+          "potatoes", "sweet potatoes", "cassava (yuca)", "taro", "yams"
+        ],
+        "tuberous_roots": [
+          "carrots", "parsnips", "beets", "celeriac (celery root)"
+        ],
+        "spicy_roots": [
+          "ginger", "turmeric", "wasabi", "galangal"
+        ]
+      },
+      "nightshade": {
+        "peppers": [
+          "bell peppers", "poblanos", "chili peppers", "jalapeños", "serranos", 
+          "habaneros", "scotch bonnets", "ghost peppers", "carolina reapers"
+        ],
+        "tomato_varieties": [
+          "roma tomatoes", "cherry tomatoes", "grape tomatoes", "heirloom tomatoes", 
+          "beefsteak tomatoes", "green tomatoes"
+        ],
+        "eggplants": [
+          "classic eggplant", "Japanese eggplant", "Chinese eggplant", "Thai eggplant", "Indian eggplant"
+        ]
+      },
+      "leafy_greens": {
+        "lettuces": [
+          "romaine", "iceberg", "butterhead (bibb, Boston)", "loose leaf (oakleaf, green leaf)", 
+          "little gem", "frisée"
+        ],
+        "cooking_greens": [
+          "spinach", "collard greens", "mustard greens", "chard (Swiss chard, rainbow chard)", "turnip greens"
+        ],
+        "microgreens": [
+          "pea shoots", "radish greens", "broccoli microgreens", "sunflower shoots"
+        ],
+        "herbal_greens": [
+          "cilantro", "parsley", "dill", "mint", "basil"
+        ]
+      },
+      "alliums": {
+        "onions": [
+          "yellow onions", "red onions", "white onions", "pearl onions", "cipollini onions", 
+          "sweet onions (e.g., Vidalia, Walla Walla)"
+        ],
+        "garlic_varieties": [
+          "softneck garlic", "hardneck garlic", "black garlic (fermented)", "elephant garlic"
+        ],
+        "leek_family": [
+          "leeks", "scallions (green onions)", "ramps (wild leeks)", "chives", "shallots"
+        ]
+      }  
+    },
+    "grains": {
+      "whole_grains": {
+        "cereal_grains": [
+          "rice (white, brown, black, wild)", "quinoa (white, red, black)", "barley", 
+          "farro", "bulgur", "millet", "amaranth", "teff", "sorghum", "spelt", "kamut", "freekeh", "oats (steel-cut, rolled, whole grain)"
+        ],
+        "pseudo-cereal_grains": [
+          "buckwheat", "chia seeds", "wild rice (technically a grass but treated as a grain)"
+        ]
+      },
+      "processed_grains": {
+        "pasta_products": [
+          "spaghetti", "fettuccine", "penne", "macaroni", "lasagna sheets", "orzo", 
+          "rigatoni", "rotini", "shells", "angel hair", "gnocchi (potato-based but often includes wheat flour)"
+        ],
+        "breads_and_flatbreads": [
+          "sourdough", "whole wheat bread", "rye bread", "baguettes", "naan", "pita", 
+          "tortillas (corn, flour)", "chapati", "focaccia", "ciabatta", "lavash"
+        ],
+        "breakfast_grains": [
+          "cereal (bran flakes, corn flakes, granola)", "oatmeal", "grits (corn-based)", "cream of wheat"
+        ],
+        "snack_products": [
+          "crackers (saltines, whole grain, rye)", "pretzels", "rice cakes", "popcorn (lightly processed)"
+        ],
+        "other_processed_grains": [
+          "couscous (traditional, Israeli)", "flour tortillas", "panko breadcrumbs", 
+          "polenta (corn-based)", "semolina flour", "cornmeal", "tapioca (processed from cassava)"
+        ]
+      }
+    },
+    "fruits": {
+      "berries": {
+        "true_berries": [
+          "blueberries", "cranberries", "currants (red, black, white)", "gooseberries", "huckleberries", "lingonberries"
+        ],
+        "aggregate_fruits": [
+          "strawberries", "blackberries", "raspberries", "loganberries", "boysenberries", "dewberries", "tayberries", "marionberries"
+        ],
+        "exotic_berries": [
+          "acai berries", "elderberries", "mulberries", "goji berries", "cloudberries", "salmonberries"
+        ]
+      },
+      "tropical": {
+        "stone_fruits": [
+          "mango", "lychee", "longan", "rambutan", "sapodilla"
+        ],
+        "palm_fruits": [
+          "coconut", "dates (Medjool, Deglet Noor)", "açaí"
+        ],
+        "melons": [
+          "papaya", "cantaloupe", "honeydew", "watermelon", "muskmelon"
+        ],
+        "other_tropical_fruits": [
+          "pineapple", "banana", "jackfruit", "durian", "guava", "passion fruit", "dragon fruit (pitaya)", "starfruit (carambola)", "tamarind", "cherimoya", "soursop", "breadfruit"
+        ]
+      },
+      "citrus": {
+        "sweet_citrus": [
+          "oranges (navel, Valencia, blood)", "mandarins", "tangerines", "clementines", "satsumas"
+        ],
+        "sour_citrus": [
+          "lemons", "limes (key lime, Persian lime)", "grapefruits (ruby red, white, pink)", "pomelos"
+        ],
+        "unique_citrus_varieties": [
+          "kumquats", "yuzu", "calamansi", "Buddhas hand", "bergamot oranges", "citron"
+        ]
+      },
+      "stone_fruits": {
+        "common_stone_fruits": [
+          "peaches", "nectarines", "plums", "cherries (sweet and sour)", "apricots"
+        ],
+        "exotic_stone_fruits": [
+          "mangosteens", "mirabelle plums", "damson plums"
+        ]
+      },
+      "pomes": {
+        "common_pomes": [
+          "apples (Gala, Fuji, Granny Smith, Honeycrisp)", "pears (Bartlett, Anjou, Bosc)", "quinces"
+        ]
+      },
+      "melons": {
+        "true_melons": [
+          "cantaloupe", "honeydew", "watermelon", "muskmelon", "Santa Claus melon"
+        ]
+      },
+      "exotic_fruits": [
+        "durian", "rambutan", "dragon fruit (pitaya)", "jackfruit", "salak (snake fruit)", "buddha’s hand", "cherimoya", "soursop", "tamarillo"
+      ]
+    },
+    "dairy": {
+      "cheese": {
+        "hard_cheeses": [
+          "cheddar", "parmesan", "gruyere", "pecorino romano", "asiago", "manchego", 
+          "emmental", "comté", "beaufort", "idiazabal", "sbrinz"
+        ],
+        "semi_hard_cheeses": [
+          "gouda", "havarti", "fontina", "monterey jack", "provolone", "edam", "cantal", 
+          "colby", "mahón", "raclette"
+        ],
+        "soft_cheeses": [
+          "brie", "camembert", "boursin", "chèvre (goat cheese)", "ricotta", 
+          "cream cheese", "mascarpone", "crescenza", "robiola", "neufchâtel"
+        ],
+        "blue_veined_cheeses": [
+          "stilton", "gorgonzola", "roquefort", "danish blue", "maytag blue", 
+          "cabrales", "bleu d'Auvergne", "bergader"
+        ],
+        "fresh_cheeses": [
+          "mozzarella (fresh, buffalo)", "burrata", "feta", "paneer", "queso fresco", 
+          "cottage cheese", "quark", "fromage blanc", "halloumi", "ricotta salata", "tvorog"
+        ],
+        "washed_rind_cheeses": [
+          "epoisses", "munster", "taleggio", "livarot", "pont-l'évêque", 
+          "langres", "reblochon", "trappist cheese"
+        ],
+        "processed_cheeses": [
+          "American cheese", "cheese spread", "processed cheese slices", "Velveeta", 
+          "cheese singles", "spray cheese"
+        ],
+        "regional_and_exotic_cheeses": {
+          "italian_cheeses": [
+            "parmigiano-reggiano", "pecorino toscano", "gorgonzola dolce", 
+            "scamorza", "provola", "taleggio"
+          ],
+          "french_cheeses": [
+            "camembert de Normandie", "brie de Meaux", "roquefort", "chèvre", 
+            "reblochon", "bleu d'Auvergne", "tomme de Savoie"
+          ],
+          "spanish_cheeses": [
+            "manchego", "tetilla", "idiazabal", "mahon", "cabrales", "garrotxa"
+          ],
+          "swiss_cheeses": [
+            "emmentaler", "gruyere", "raclette", "sbrinz", "tête de moine"
+          ],
+          "british_cheeses": [
+            "stilton", "cheshire", "wensleydale", "red leicester", "caerphilly", 
+            "double gloucester", "yarg"
+          ],
+          "american_cheeses": [
+            "colby", "monterey jack", "pepper jack", "brick cheese", "dry jack", 
+            "hoop cheese", "baby swiss"
+          ],
+          "middle_eastern_cheeses": [
+            "labneh", "nabulsi", "akkawi", "halloumi", "kashkaval", "chhena"
+          ],
+          "asian_cheeses": [
+            "tofu cheese", "yuba (bean curd skin)", "kesong puti (Philippines)", "chenna"
+          ]
+        }
+      },
+      "milk": {
+        "cow_milk": [
+          "whole milk", "skim milk", "2% milk", "raw milk", "A2 milk"
+        ],
+        "specialty_milk": [
+          "evaporated milk", "condensed milk", "ultra-high temperature (UHT) milk"
+        ],
+        "plant_based_alternatives": [
+          "almond milk", "soy milk", "oat milk", "coconut milk", "rice milk", "pea protein milk", "hemp milk"
+        ]
+      },
+      "fermented": {
+        "yogurt": [
+          "plain yogurt", "Greek yogurt", "Icelandic yogurt (skyr)", "flavored yogurt", "probiotic yogurt"
+        ],
+        "cultured_dairy_products": [
+          "sour cream", "kefir", "buttermilk", "creme fraiche", "labneh"
+        ],
+        "cheese_based_products": [
+          "cream cheese", "mascarpone", "quark"
+        ]
+      },
+      "butter_and_cream": {
+        "butter": [
+          "salted butter", "unsalted butter", "cultured butter", "clarified butter (ghee)"
+        ],
+        "cream": [
+          "heavy cream", "light cream", "half-and-half", "whipped cream", "clotted cream"
+        ]
+      },
+      "powdered_and_dried_dairy": {
+        "powdered_milk": [
+          "nonfat dry milk", "whole dry milk", "instant powdered milk"
+        ],
+        "dried_dairy_ingredients": [
+          "buttermilk powder", "whey protein powder", "casein powder"
+        ]
+      }
+    },
+    "herbs_and_spices": {
+      "herbs": {
+        "culinary_herbs": [
+          "basil (sweet, Thai, holy)", "oregano (Greek, Mexican)", "parsley (curly, flat-leaf)",
+          "cilantro (coriander leaves)", "rosemary", "thyme (English, lemon, French)", 
+          "dill", "mint (spearmint, peppermint)", "sage", "tarragon (French, Russian)", 
+          "chervil", "marjoram", "bay leaves", "lemon balm", "lovage"
+        ],
+        "medicinal_herbs": [
+          "echinacea", "chamomile", "lavender", "peppermint", "lemongrass", 
+          "feverfew", "ginseng", "milk thistle", "ginger root", "turmeric root"
+        ],
+        "exotic_and_regional_herbs": [
+          "kaffir lime leaves", "galangal leaves", "curry leaves", 
+          "sorrel", "epazote", "culantro", "shiso (perilla)", "fenugreek leaves", 
+          "dandelion greens", "wood sorrel", "borage"
+        ]
+      },
+      "spices": {
+        "seed_spices": [
+          "cumin", "coriander", "fennel seeds", "caraway", "fenugreek seeds", 
+          "mustard seeds (yellow, brown, black)", "aniseed", "nigella seeds", "celery seeds"
+        ],
+        "bark_and_root_spices": [
+          "cinnamon (Ceylon, cassia)", "turmeric", "galangal", "sassafras", "licorice root"
+        ],
+        "pod_and_flower_spices": [
+          "cardamom (green, black)", "clove", "saffron", "vanilla pods", "mace", "allspice"
+        ],
+        "fruit_and_pepper_spices": [
+          "paprika (sweet, hot, smoked)", "chili powder", "cayenne pepper", 
+          "black pepper", "white pepper", "green peppercorns", "long pepper", "grains of paradise"
+        ],
+        "exotic_spices": [
+          "sumac", "amchur (dried mango powder)", "asafoetida (hing)", "ajwain", 
+          "kokum", "za'atar (spice blend)", "berbere (spice mix)"
+        ]
+      },
+      "seasoning": {
+        "salts_and_salt_blends": [
+          "table salt", "sea salt", "Himalayan pink salt", "kosher salt", 
+          "smoked salt", "flavored salts (truffle, garlic)"
+        ],
+        "pepper_and_chili": [
+          "black pepper", "chili flakes", "red chili powder", "chipotle powder"
+        ],
+        "aromatic_powders": [
+          "garlic powder", "onion powder", "celery salt", "ginger powder", "mustard powder"
+        ],
+        "mixed_and_blended_seasonings": [
+          "Italian seasoning", "herbes de Provence", "taco seasoning", 
+          "cajun seasoning", "jerk seasoning", "five-spice powder", "curry powder", 
+          "ras el hanout", "bouquet garni", "seasoned salt"
+        ]
+      }
+    },
+    "sauces_and_condiments": {
+      "sauces": {
+        "soy_based_sauces": [
+          "soy sauce (light, dark)", "tamari", "ponzu", "teriyaki sauce", "black bean sauce", "oyster sauce"
+        ],
+        "tomato_based_sauces": [
+          "tomato sauce", "marinara", "arrabbiata", "bolognese", "puttanesca", "vodka sauce", "salsa roja", "pizza sauce"
+        ],
+        "cream_based_sauces": [
+          "alfredo sauce", "bechamel", "carbonara", "cheese sauce", "white wine cream sauce", "mornay sauce"
+        ],
+        "oil_and_herb_based_sauces": [
+          "pesto", "chimichurri", "salsa verde (Italian, Mexican)", "gremolata", "aioli (traditional, flavored)"
+        ],
+        "barbecue_and_grill_sauces": [
+          "barbecue sauce (hickory, sweet, spicy, mustard-based)", "steak sauce", "bourbon glaze", "korean barbecue sauce (galbi)"
+        ],
+        "asian_sauces": [
+          "hoisin sauce", "sweet and sour sauce", "plum sauce", "szechuan sauce", "miso sauce", "peanut sauce", "curry sauce (Japanese, Thai)"
+        ],
+        "vinegar_and_citrus_based_sauces": [
+          "vinaigrette", "hollandaise", "bearnaise", "gastrique", "lemon butter sauce"
+        ]
+      },
+      "condiments": {
+        "ketchup_variants": [
+          "traditional ketchup", "spicy ketchup", "banana ketchup", "low-sugar ketchup"
+        ],
+        "mustard_variants": [
+          "yellow mustard", "Dijon mustard", "whole-grain mustard", "spicy brown mustard", "honey mustard", "English mustard"
+        ],
+        "mayonnaise_variants": [
+          "classic mayonnaise", "aioli", "sriracha mayo", "chipotle mayo", "vegan mayo"
+        ],
+        "salad_dressings": [
+          "ranch dressing", "Caesar dressing", "blue cheese dressing", "Italian dressing", "thousand island dressing", "vinaigrette (balsamic, citrus, raspberry)"
+        ],
+        "hot_sauces": [
+          "tabasco", "sriracha", "habanero sauce", "chipotle hot sauce", "peri-peri sauce", "Frank's RedHot", "Cholula"
+        ],
+        "seafood_condiments": [
+          "tartar sauce", "cocktail sauce", "remoulade", "mignonette (for oysters)", "wasabi", "soy sauce (for sushi)"
+        ]
+      }
+    },
+    "oils": {
+      "cooking_oils": {
+        "neutral_oils": [
+          "canola oil", "vegetable oil", "corn oil", "safflower oil", 
+          "rice bran oil", "soybean oil", "cottonseed oil", "grapeseed oil", "rapeseed oil"
+        ],
+        "high_heat_oils": [
+          "peanut oil", "avocado oil", "coconut oil (refined)", "palm oil", 
+          "sesame oil (untoasted)", "camelina oil"
+        ],
+        "low_to_medium_heat_oils": [
+          "extra virgin olive oil", "virgin olive oil", "walnut oil", 
+          "almond oil", "pumpkin seed oil", "hazelnut oil", "pistachio oil"
+        ],
+        "unrefined_oils": [
+          "cold-pressed olive oil", "cold-pressed coconut oil", "flaxseed oil", 
+          "hemp seed oil", "wheat germ oil", "chia seed oil", "perilla oil", "argan oil"
+        ]
+      },
+      "flavored_oils": {
+        "seed_based_flavored_oils": [
+          "toasted sesame oil", "mustard oil", "poppy seed oil", 
+          "sunflower seed oil (flavored variants)", "pumpkin seed oil (flavored variants)"
+        ],
+        "aromatic_flavored_oils": [
+          "truffle oil (white, black)", "chili oil", "garlic-infused oil", 
+          "rosemary-infused oil", "basil-infused oil", "lemon-infused olive oil", 
+          "lime-infused oil", "parsley-infused oil", "oregano-infused oil"
+        ],
+        "nut_based_flavored_oils": [
+          "macadamia nut oil", "hazelnut oil", "walnut oil (flavored variants)", 
+          "pecan oil"
+        ],
+        "fruit_based_flavored_oils": [
+          "grapefruit-infused olive oil", "orange-infused olive oil", "lime-infused olive oil"
+        ]
+      },
+      "specialty_and_exotic_oils": {
+        "gourmet_oils": [
+          "argan oil", "kukui nut oil", "camelina oil", "perilla oil", 
+          "pistachio oil", "apricot kernel oil", "black seed oil"
+        ],
+        "regional_oils": [
+          "rice bran oil (Asian cuisines)", "sesame oil (East Asian cuisines)", 
+          "palm oil (African and South American cuisines)", "mustard oil (Indian cuisines)", 
+          "olive oil (Mediterranean cuisines)", "peanut oil (Southern US and Asian cuisines)"
+        ],
+        "health_focused_oils": [
+          "chia seed oil", "flaxseed oil", "hemp seed oil", "wheat germ oil", 
+          "MCT oil (from coconut or palm)", "pumpkin seed oil", "evening primrose oil", 
+          "black currant seed oil", "borage oil"
+        ]
+      }
+    },
+    "nuts": {
+      "tree_nuts": {
+        "common_tree_nuts": [
+          "walnuts", "almonds", "cashews", "hazelnuts (filberts)", "pistachios", 
+          "macadamia nuts", "pecans", "brazil nuts", "chestnuts", "pine nuts (pignoli)", "butternuts"
+        ],
+        "regional_and_exotic_tree_nuts": [
+          "marcona almonds", "candlenuts", "baruka nuts", "bunya nuts", 
+          "karuka nuts", "mongongo nuts"
+        ]
+      },
+      "legume_nuts": {
+        "common_legume_nuts": [
+          "peanuts (raw, roasted, boiled)", "bambara groundnuts", "lupin beans (lupini nuts)"
+        ]
+      },
+      "palm_nuts": {
+        "common_palm_nuts": [
+          "coconut (fresh, dried, desiccated)", "betel nuts", "areca nuts", 
+          "oil palm kernels", "doum palm nuts"
+        ]
+      },
+      "seed_nuts": {
+        "culinary_seed_nuts": [
+          "sunflower seeds", "pumpkin seeds (pepitas)", "watermelon seeds"
+        ],
+        "exotic_seed_nuts": [
+          "hemp seeds", "chia seeds", "flax seeds", "sesame seeds", "poppy seeds", 
+          "nigella seeds", "sacha inchi seeds"
+        ]
+      },
+      "processed_and_specialty_nuts": {
+        "processed_nuts": [
+          "candied nuts", "smoked nuts", "honey-roasted nuts", "spiced nuts", 
+          "blanched almonds", "roasted cashews", "chocolate-covered nuts"
+        ],
+        "nut_butters_and_pastes": [
+          "peanut butter", "almond butter", "cashew butter", "hazelnut spread", 
+          "macadamia nut butter", "pistachio butter", "sunflower seed butter", 
+          "tahini (sesame paste)"
+        ],
+        "nut_flours_and_meals": [
+          "almond flour", "hazelnut meal", "coconut flour", "pecan meal", "chestnut flour"
+        ]
+      },
+      "culinary_and_miscellaneous_nuts": {
+        "culinary_uses": [
+          "water chestnuts (not a tree nut)", "tiger nuts (not a true nut but used similarly)", 
+          "lotus seeds", "acorns (processed for culinary uses)", "breadnut seeds"
+        ],
+        "regional_specialties": [
+          "karuka nuts (Papua New Guinea)", "malabar chestnuts", "ogbono seeds (African bush mango)"
+        ]
+      }
+    },
+    "cooking_method": {
+      "dry_heat_methods": {
+        "grilling": [
+          "charcoal grilling", "gas grilling", "indoor grilling", "open-flame grilling", 
+          "contact grilling (panini press)", "rotisserie grilling"
+        ],
+        "roasting": [
+          "oven roasting", "spit roasting", "pot roasting", "slow roasting"
+        ],
+        "baking": [
+          "dry baking", "moist baking (with water bath)", "en papillote (baking in parchment)", 
+          "blind baking", "convection baking"
+        ],
+        "broiling": [
+          "oven broiling", "salamander broiling", "infrared broiling"
+        ],
+        "smoking": [
+          "hot smoking", "cold smoking", "tea smoking", "liquid smoking (infused)", 
+          "pellet smoking", "wood chip smoking"
+        ]
+      },
+      "moist_heat_methods": {
+        "boiling": [
+          "full boil", "rolling boil", "parboiling", "blanching", "poaching"
+        ],
+        "steaming": [
+          "basket steaming", "pressure steaming", "enclosed steaming (bamboo steamer)", 
+          "water bath steaming", "flash steaming"
+        ],
+        "braising": [
+          "pot braising", "oven braising", "slow cooker braising", "pressure cooker braising"
+        ],
+        "sous_vide": [
+          "low-temperature sous vide", "high-temperature sous vide", "flash sous vide"
+        ]
+      },
+      "combination_methods": {
+        "stir_frying_and_sautéing": [
+          "stir frying", "pan sautéing", "dry sautéing (no oil)", "shallow frying"
+        ],
+        "frying": [
+          "deep frying", "shallow frying", "stir frying", "air frying", 
+          "pan frying", "tempura frying", "pressure frying"
+        ],
+        "griddle_and_plancha_cooking": [
+          "flat-top grilling", "griddle cooking", "plancha cooking (Spanish-style hot plate)"
+        ]
+      },
+      "specialized_methods": {
+        "low_and_slow_methods": [
+          "slow cooking", "barbecuing (low and slow)", "pit cooking", "overnight roasting"
+        ],
+        "direct_heat_methods": [
+          "searing", "toasting", "charring", "burning (intentional, for flavor)"
+        ],
+        "fermentation_and_curing": [
+          "pickling", "dry curing", "wet curing (brining)", "fermenting (kimchi, sauerkraut)"
+        ]
+      },
+      "modern_methods": {
+        "vacuum_cooking": [
+          "sous vide", "vacuum steaming", "vacuum frying"
+        ],
+        "microwave_cooking": [
+          "microwave steaming", "microwave baking", "microwave reheating"
+        ],
+        "molecular_methods": [
+          "spherification", "gelification", "emulsification", "foaming", "cryogenic freezing"
+        ]
+      }
+    },
+    "dietary_restrictions": {
+        "belief": ["kosher", "halal"],
+        "lifestyle": ["vegetarian", "vegan", "pescatarian"],
+        "health": ["gluten", "dairy", "eggs", "soy", "nut", "shellfish", "fish", "alcohol"]
+      },
+    "food_allergens": {
+      "milk": {
+        "common_ingredients": [
+          "Butter", "Cheese", "Cream", "Sour cream", "Custard", 
+          "Casein", "Caseinates (ammonium, calcium, magnesium, potassium, sodium)", 
+          "Ghee", "Lactalbumin", "Lactalbumin phosphate", 
+          "Lactose", "Lactoferrin", "Milk (whole, skim, reduced-fat, evaporated, condensed, powdered)", 
+          "Whey", "Whey protein", "Yogurt"
+        ],
+        "hidden_sources": [
+          "Baked goods (bread, muffins, crackers)", "Caramel coloring or flavoring", 
+          "Processed meats (hot dogs, sausages)", "Artificial butter or cheese flavoring", 
+          "Nougat", "Certain medications (with lactose as filler)"
+        ]
+      },
+      "eggs": {
+        "common_ingredients": [
+          "Albumin", "Egg (white, yolk, dried, powdered, whole)", 
+          "Eggnog", "Mayonnaise", "Meringue", "Meringue powder", 
+          "Lecithin (can be derived from egg)"
+        ],
+        "hidden_sources": [
+          "Baked goods (bread, cakes, cookies)", "Pasta (non-vegan varieties)", 
+          "Salad dressings and sauces", "Marshmallows", 
+          "Meat mixtures (meatballs, meatloaf)", "Foamy beverages (coffee drinks)"
+        ]
+      },
+      "fish": {
+        "common_ingredients": [
+          "Cod", "Haddock", "Pollock", "Salmon", "Trout", "Tuna", "Mackerel", 
+          "Halibut", "Anchovies", "Fish sauce", "Fish oil", "Gelatin (from fish bones)", 
+          "Imitation crab (contains fish protein)", "Worcestershire sauce (with anchovies)"
+        ],
+        "hidden_sources": [
+          "Caesar dressing", "Barbecue sauce", "Bouillabaisse (fish soup)", 
+          "Seafood broths or stocks"
+        ]
+      },
+      "crustacean_shellfish": {
+        "common_ingredients": [
+          "Shrimp", "Prawns", "Lobster", "Crab", "Shrimp paste", "Crustacean oil", 
+          "Glucosamine (derived from shellfish)"
+        ],
+        "hidden_sources": [
+          "Seafood soups or stocks", "Sushi rolls (with crab or shrimp)", 
+          "Fried foods (cross-contact from shared fryers)"
+        ]
+      },
+      "tree_nuts": {
+        "common_ingredients": [
+          "Almonds", "Cashews", "Walnuts", "Hazelnuts (filberts)", "Pistachios", 
+          "Macadamia nuts", "Brazil nuts", "Pecans", "Nut butters and oils", 
+          "Nut extracts (e.g., almond extract)", "Marzipan", "Nougat", "Frangipane"
+        ],
+        "hidden_sources": [
+          "Pesto (with pine nuts)", "Salads (with candied nuts)", 
+          "Baking mixes or granola", "Ice creams"
+        ]
+      },
+      "peanuts": {
+        "common_ingredients": [
+          "Peanut butter", "Peanut oil", "Peanut flour", "Peanut protein", 
+          "Peanut meal"
+        ],
+        "hidden_sources": [
+          "Baked goods (cookies, pastries)", "Sauces (e.g., satay, mole)", 
+          "Breakfast cereals", "Ice cream toppings", "Chocolate products"
+        ]
+      },
+      "wheat": {
+        "common_ingredients": [
+          "Flour (all-purpose, bread, cake, self-rising)", "Gluten", "Semolina", 
+          "Bulgur", "Farina", "Couscous", "Durum", 
+          "Einkorn", "Emmer", "Spelt", "Kamut (ancient wheat varieties)"
+        ],
+        "hidden_sources": [
+          "Soy sauce (unless gluten-free)", "Gravies and sauces", 
+          "Soup bases", "Beer (barley, often cross-contact)", 
+          "Breaded or fried foods"
+        ]
+      },
+      "soy": {
+        "common_ingredients": [
+          "Soybeans", "Soy flour", "Soy protein (isolate, concentrate, hydrolyzed)", 
+          "Soy lecithin", "Tofu", "Edamame", "Tempeh", 
+          "Miso", "Tamari", "Soy sauce"
+        ],
+        "hidden_sources": [
+          "Baked goods (bread, cookies)", "Processed meats", 
+          "Vegetarian meat substitutes", "Energy bars and drinks"
+        ]
+      },
+      "sesame": {
+        "common_ingredients": [
+          "Sesame seeds (whole, ground, or paste)", "Tahini", "Sesame oil", 
+          "Gomasio (sesame salt seasoning)"
+        ],
+        "hidden_sources": [
+          "Hummus", "Bread (hamburger buns with seeds)", "Crackers, chips, or baked goods", 
+          "Sushi rolls", "Snack bars"
+        ]
+      }
+    },
+    "alcohol": {
+      "fermented_beverages": {
+        "wine": [
+          "red_wine", "white_wine", "sparkling_wine", "fortified_wine", "rosé_wine"
+        ],
+        "beer": [
+          "lager", "ale", "specialty_beer"
+        ],
+        "cider_and_mead": [
+          "cider", "mead"
+        ]
+      },
+      "distilled_beverages": {
+        "whiskey": [
+          "bourbon", "scotch_whisky", "irish_whiskey", "rye_whiskey", "japanese_whisky"
+        ],
+        "vodka": [
+          "plain_vodka", "flavored_vodka", "potato_vodka", "wheat_vodka", "corn_vodka"
+        ],
+        "rum": [
+          "white_rum", "dark_rum", "spiced_rum", "overproof_rum", "gold_rum"
+        ],
+        "brandy": [
+          "cognac", "armagnac", "pisco", "calvados", "apple_brandy", "grape_brandy", "eau_de_vie"
+        ],
+        "gin": [
+          "london_dry_gin", "old_tom_gin", "plymouth_gin", "sloe_gin", "new_western_gin", "navy_strength_gin"
+        ],
+        "tequila_and_mezcal": [
+          "blanco_tequila", "reposado_tequila", "añejo_tequila", "mezcal", "espadín_mezcal"
+        ],
+        "liqueurs": [
+          "herbal_liqueurs", "citrus_liqueurs", "cream_liqueurs", "nut_and_chocolate_liqueurs", "fruit_liqueurs"
+        ]
+      }
+    }
+  },
+  "options": {
+    "side": ["fries", "side salad", "soup", "steamed vegetables", "mashed potatoes"],
+    "condiment": ["ketchup", "mustard", "aioli", "hot sauce"],
+    "sauce": ["tabasco", "garlic aioli", "soy sauce", "hollandaise"],
+    "add_ons": ["chicken", "tofu", "avocado", "bacon"],
+    "dressings": ["vinaigrette", "ranch", "blue cheese", "Italian"]
+  }
+}
+
+

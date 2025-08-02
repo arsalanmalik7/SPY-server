@@ -1,0 +1,96 @@
+{
+  "type": "object",
+  "properties": {
+    "red": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "body": { "type": "string" },
+          "texture": { "type": "string" },
+          "flavor_intensity": { "type": "string" },
+          "type": { "type": "string" },
+          "body_rank": { "type": "integer" }
+        },
+        "required": ["name", "body", "texture", "flavor_intensity", "type", "body_rank"]
+      }
+    },
+    "white": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "body": { "type": "string" },
+          "texture": { "type": "string" },
+          "flavor_intensity": { "type": "string" },
+          "type": { "type": "string" },
+          "body_rank": { "type": "integer" }
+        },
+        "required": ["name", "body", "texture", "flavor_intensity", "type", "body_rank"]
+      }
+    },
+    "rose": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "body": { "type": "string" },
+          "texture": { "type": "string" },
+          "flavor_intensity": { "type": "string" },
+          "type": { "type": "string" },
+          "body_rank": { "type": "integer" }
+        },
+        "required": ["name", "body", "texture", "flavor_intensity", "type", "body_rank"]
+      }
+    },
+    "sparkling": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "body": { "type": "string" },
+          "texture": { "type": "string" },
+          "flavor_intensity": { "type": "string" },
+          "type": { "type": "string" },
+          "body_rank": { "type": "integer" }
+        },
+        "required": ["name", "body", "texture", "flavor_intensity", "type", "body_rank"]
+      }
+    },
+    "orange": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "body": { "type": "string" },
+          "texture": { "type": "string" },
+          "flavor_intensity": { "type": "string" },
+          "type": { "type": "string" },
+          "body_rank": { "type": "integer" }
+        },
+        "required": ["name", "body", "texture", "flavor_intensity", "type", "body_rank"]
+      }
+    },
+    "dessert": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "body": { "type": "string" },
+          "texture": { "type": "string" },
+          "flavor_intensity": { "type": "string" },
+          "type": { "type": "string" },
+          "body_rank": { "type": "integer" }
+        },
+        "required": ["name", "body", "texture", "flavor_intensity", "type", "body_rank"]
+      }
+    }
+  },
+  "required": ["red", "white", "rose", "sparkling", "orange", "dessert"]
+}

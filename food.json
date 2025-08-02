@@ -1,0 +1,129 @@
+{
+    "dishes": [
+        {
+            "restaurant_uuid": "ce7f72b6-2dff-48ac-a2ef-d09f773368bd",
+            "name": "Mediterranean Quinoa Bowl",
+            "description": "A healthy bowl with quinoa, roasted vegetables, feta cheese, and tahini dressing.",
+            "type": [
+                "appetizer"
+            ],
+            "price": 14.99,
+            "ingredients": [
+                "Quinoa",
+                "Roasted bell peppers",
+                "Zucchini",
+                "Feta cheese",
+                "Tahini",
+                "Olive oil",
+                "Lemon juice",
+                "Chickpeas"
+            ],
+            "accommodations": [
+                "Vegetarian",
+                "Gluten-Free"
+            ],
+            "allergens": [
+                "Sesame"
+            ],
+            "temperature": "Hot",
+            "dietary_restrictions": {
+                "health": [
+                    "Dairy"
+                ],
+                "belief": [
+                    "Halal",
+                    "Kosher"
+                ],
+                "lifestyle": [
+                    "Vegetarian"
+                ]
+            },
+            "can_substitute": true,
+            "substitutions": "Feta can be replaced with vegan cheese or omitted entirely.",
+            "substitution_notes": "Tahini can be substituted with hummus for those with sesame allergies.",
+            "notes": "Packed with protein and fiber. Great for health-conscious diners.",
+            "status": true
+        },
+        {
+            "restaurant_uuid": "ce7f72b6-2dff-48ac-a2ef-d09f773368bd",
+            "name": "Spicy Korean Beef Bulgogi",
+            "description": "Tender marinated beef with Korean spices, served with steamed rice and kimchi.",
+            "type": [
+                "salad"
+            ],
+            "price": 18.99,
+            "ingredients": [
+                "Beef sirloin",
+                "Soy sauce",
+                "Sesame oil",
+                "Garlic",
+                "Ginger",
+                "Korean chili paste",
+                "Steamed rice",
+                "Kimchi",
+                "Green onions"
+            ],
+            "accommodations": [
+                "Gluten-Free"
+            ],
+            "allergens": [
+                "Soy",
+                "Sesame"
+            ],
+            "temperature": "Hot",
+            "dietary_restrictions": {
+                "health": [
+                    "Soy"
+                ],
+                "belief": [
+                    "Halal"
+                ],
+                "lifestyle": [
+                    "Vegan"
+                ]
+            },
+            "can_substitute": true,
+            "substitutions": "Beef can be replaced with marinated tofu or mushrooms for vegetarian option.",
+            "substitution_notes": "Gluten-free soy sauce available. Spice level can be adjusted upon request.",
+            "notes": "Authentic Korean flavors. Specify spice preference when ordering.",
+            "status": true
+        },
+        {
+            "restaurant_uuid": "ce7f72b6-2dff-48ac-a2ef-d09f773368bd",
+            "name": "Classic Fish and Chips",
+            "description": "Beer-battered cod served with golden fries and mushy peas.",
+            "type": [
+                "appetizer"
+            ],
+            "price": 16.49,
+            "ingredients": [
+                "Fresh cod",
+                "Beer batter",
+                "Potatoes",
+                "Mushy peas",
+                "Malt vinegar",
+                "Tartar sauce",
+                "Lemon wedge",
+                "Vegetable oil"
+            ],
+            "accommodations": ["Gluten-Free"],
+            "allergens": [
+                "Fish"
+            ],
+            "temperature": "Hot",
+            "dietary_restrictions": {
+                "health": [
+                    "Gluten",
+                    "Fish"
+                ],
+                "belief": ["Kosher"],
+                "lifestyle": ["Vegetarian"]
+            },
+            "can_substitute": true,
+            "substitutions": "Cod can be replaced with halloumi cheese or cauliflower for vegetarian option.",
+            "substitution_notes": "Gluten-free batter available with advance notice. Comes with house-made tartar sauce.",
+            "notes": "Traditional British pub favorite. Served with newspaper-style wrapping.",
+            "status": true
+        }
+    ]
+}

@@ -1,0 +1,673 @@
+{
+  "type": "object",
+  "properties": {
+    "ingredients": {
+      "type": "object",
+      "properties": {
+        "animal_product": {
+          "type": "object",
+          "properties": {
+            "meat": {
+              "type": "object",
+              "properties": {
+                "common_meats": { "type": "array", "items": { "type": "string" } },
+                "game_meats": { "type": "array", "items": { "type": "string" } },
+                "exotic_meats": { "type": "array", "items": { "type": "string" } },
+                "sea_based_meats": { "type": "array", "items": { "type": "string" } },
+                "specialty_meats": { "type": "array", "items": { "type": "string" } },
+                "cultural_and_regional_meats": { "type": "array", "items": { "type": "string" } },
+                "offal_and_organ_meats": { "type": "array", "items": { "type": "string" } }
+              },
+              "required": []
+            },
+            "seafood": {
+              "type": "object",
+              "properties": {
+                "fish": {
+                  "type": "object",
+                  "properties": {
+                    "oily_fish": { "type": "array", "items": { "type": "string" } },
+                    "white_fish": { "type": "array", "items": { "type": "string" } },
+                    "freshwater_fish": { "type": "array", "items": { "type": "string" } },
+                    "exotic_fish": { "type": "array", "items": { "type": "string" } }
+                  },
+                  "required": []
+                },
+                "shellfish": {
+                  "type": "object",
+                  "properties": {
+                    "crustaceans": { "type": "array", "items": { "type": "string" } },
+                    "mollusks": { "type": "array", "items": { "type": "string" } },
+                    "cephalopods": { "type": "array", "items": { "type": "string" } }
+                  },
+                  "required": []
+                },
+                "exotic_and_delicacy_seafood": { "type": "array", "items": { "type": "string" } },
+                "saltwater_species": { "type": "array", "items": { "type": "string" } },
+                "freshwater_species": { "type": "array", "items": { "type": "string" } },
+                "cured_and_preserved_seafood": { "type": "array", "items": { "type": "string" } }
+              },
+              "required": []
+            },
+            "eggs": {
+              "type": "object",
+              "properties": {
+                "poultry_eggs": { "type": "array", "items": { "type": "string" } },
+                "fish_eggs": { "type": "array", "items": { "type": "string" } },
+                "reptile_eggs": { "type": "array", "items": { "type": "string" } },
+                "insect_eggs": { "type": "array", "items": { "type": "string" } },
+                "other_eggs": { "type": "array", "items": { "type": "string" } },
+                "processed_egg_products": { "type": "array", "items": { "type": "string" } }
+              },
+              "required": []
+            }
+          },
+          "required": []
+        },
+        "vegetables": {
+          "type": "object",
+          "properties": {
+            "cruciferous": {
+              "type": "object",
+              "properties": {
+                "brassicas": {
+                  "type": "array",
+                  "items": { "type": "string" },
+                  "default": []
+                },
+                "leafy_cruciferous": {
+                  "type": "array",
+                  "items": { "type": "string" },
+                  "default": []
+                },
+                "root_cruciferous": {
+                  "type": "array",
+                  "items": { "type": "string" },
+                  "default": []
+                }
+              },
+              "required": ["brassicas", "leafy_cruciferous", "root_cruciferous"]
+            },
+            "root": {
+              "type": "object",
+              "properties": {
+                "starchy_roots": {
+                  "type": "array",
+                  "items": { "type": "string" },
+                  "default": []
+                },
+                "tuberous_roots": {
+                  "type": "array",
+                  "items": { "type": "string" },
+                  "default": []
+                },
+                "spicy_roots": {
+                  "type": "array",
+                  "items": { "type": "string" },
+                  "default": []
+                }
+              },
+              "required": ["starchy_roots", "tuberous_roots", "spicy_roots"]
+            },
+            "nightshade": {
+              "type": "object",
+              "properties": {
+                "peppers": {
+                  "type": "array",
+                  "items": { "type": "string" },
+                  "default": []
+                },
+                "tomato_varieties": {
+                  "type": "array",
+                  "items": { "type": "string" },
+                  "default": []
+                },
+                "eggplants": {
+                  "type": "array",
+                  "items": { "type": "string" },
+                  "default": []
+                }
+              },
+              "required": ["peppers", "tomato_varieties", "eggplants"]
+            },
+            "leafy_greens": {
+              "type": "object",
+              "properties": {
+                "lettuces": {
+                  "type": "array",
+                  "items": { "type": "string" },
+                  "default": []
+                },
+                "cooking_greens": {
+                  "type": "array",
+                  "items": { "type": "string" },
+                  "default": []
+                },
+                "microgreens": {
+                  "type": "array",
+                  "items": { "type": "string" },
+                  "default": []
+                },
+                "herbal_greens": {
+                  "type": "array",
+                  "items": { "type": "string" },
+                  "default": []
+                }
+              },
+              "required": ["lettuces", "cooking_greens", "microgreens", "herbal_greens"]
+            },
+            "alliums": {
+              "type": "object",
+              "properties": {
+                "onions": {
+                  "type": "array",
+                  "items": { "type": "string" },
+                  "default": []
+                },
+                "garlic_varieties": {
+                  "type": "array",
+                  "items": { "type": "string" },
+                  "default": []
+                },
+                "leek_family": {
+                  "type": "array",
+                  "items": { "type": "string" },
+                  "default": []
+                }
+              },
+              "required": ["onions", "garlic_varieties", "leek_family"]
+            }
+          },
+          "required": ["cruciferous", "root", "nightshade", "leafy_greens", "alliums"]
+        },
+        "grains": {
+          "type": "object",
+          "properties": {
+            "whole_grains": {
+              "type": "object",
+              "properties": {
+                "cereal_grains": { "type": "array", "items": { "type": "string" }, "default": [] },
+                "pseudo-cereal_grains": { "type": "array", "items": { "type": "string" }, "default": [] }
+              },
+              "required": ["cereal_grains", "pseudo-cereal_grains"]
+            },
+            "processed_grains": {
+              "type": "object",
+              "properties": {
+                "pasta_products": { "type": "array", "items": { "type": "string" }, "default": [] },
+                "breads_and_flatbreads": { "type": "array", "items": { "type": "string" }, "default": [] },
+                "breakfast_grains": { "type": "array", "items": { "type": "string" }, "default": [] },
+                "snack_products": { "type": "array", "items": { "type": "string" }, "default": [] },
+                "other_processed_grains": { "type": "array", "items": { "type": "string" }, "default": [] }
+              },
+              "required": [
+                "pasta_products",
+                "breads_and_flatbreads",
+                "breakfast_grains",
+                "snack_products",
+                "other_processed_grains"
+              ]
+            }
+          },
+          "required": ["whole_grains", "processed_grains"]
+        },
+        "fruits": {
+          "type": "object",
+          "properties": {
+            "berries": {
+              "type": "object",
+              "properties": {
+                "true_berries": { "type": "array", "items": { "type": "string" }, "default": [] },
+                "aggregate_fruits": { "type": "array", "items": { "type": "string" }, "default": [] },
+                "exotic_berries": { "type": "array", "items": { "type": "string" }, "default": [] }
+              },
+              "required": ["true_berries", "aggregate_fruits", "exotic_berries"]
+            },
+            "tropical": {
+              "type": "object",
+              "properties": {
+                "stone_fruits": { "type": "array", "items": { "type": "string" }, "default": [] },
+                "palm_fruits": { "type": "array", "items": { "type": "string" }, "default": [] },
+                "melons": { "type": "array", "items": { "type": "string" }, "default": [] },
+                "other_tropical_fruits": { "type": "array", "items": { "type": "string" }, "default": [] }
+              },
+              "required": ["stone_fruits", "palm_fruits", "melons", "other_tropical_fruits"]
+            },
+            "citrus": {
+              "type": "object",
+              "properties": {
+                "sweet_citrus": { "type": "array", "items": { "type": "string" }, "default": [] },
+                "sour_citrus": { "type": "array", "items": { "type": "string" }, "default": [] },
+                "unique_citrus_varieties": { "type": "array", "items": { "type": "string" }, "default": [] }
+              },
+              "required": ["sweet_citrus", "sour_citrus", "unique_citrus_varieties"]
+            },
+            "stone_fruits": {
+              "type": "object",
+              "properties": {
+                "common_stone_fruits": { "type": "array", "items": { "type": "string" }, "default": [] },
+                "exotic_stone_fruits": { "type": "array", "items": { "type": "string" }, "default": [] }
+              },
+              "required": ["common_stone_fruits", "exotic_stone_fruits"]
+            },
+            "pomes": {
+              "type": "object",
+              "properties": {
+                "common_pomes": { "type": "array", "items": { "type": "string" }, "default": [] }
+              },
+              "required": ["common_pomes"]
+            },
+            "melons": {
+              "type": "object",
+              "properties": {
+                "true_melons": { "type": "array", "items": { "type": "string" }, "default": [] }
+              },
+              "required": ["true_melons"]
+            },
+            "exotic_fruits": {
+              "type": "array",
+              "items": { "type": "string" },
+              "default": []
+            }
+          },
+          "required": ["berries", "tropical", "citrus", "stone_fruits", "pomes", "melons", "exotic_fruits"]
+        },
+        "dairy": {
+          "type": "object",
+          "properties": {
+            "cheese": {
+              "type": "object",
+              "properties": {
+                "hard_cheeses": { "type": "array", "items": { "type": "string" }, "default": [] },
+                "semi_hard_cheeses": { "type": "array", "items": { "type": "string" }, "default": [] },
+                "soft_cheeses": { "type": "array", "items": { "type": "string" }, "default": [] },
+                "blue_veined_cheeses": { "type": "array", "items": { "type": "string" }, "default": [] },
+                "fresh_cheeses": { "type": "array", "items": { "type": "string" }, "default": [] },
+                "washed_rind_cheeses": { "type": "array", "items": { "type": "string" }, "default": [] },
+                "processed_cheeses": { "type": "array", "items": { "type": "string" }, "default": [] },
+                "regional_and_exotic_cheeses": {
+                  "type": "object",
+                  "properties": {
+                    "italian_cheeses": { "type": "array", "items": { "type": "string" }, "default": [] },
+                    "french_cheeses": { "type": "array", "items": { "type": "string" }, "default": [] },
+                    "spanish_cheeses": { "type": "array", "items": { "type": "string" }, "default": [] },
+                    "swiss_cheeses": { "type": "array", "items": { "type": "string" }, "default": [] },
+                    "british_cheeses": { "type": "array", "items": { "type": "string" }, "default": [] },
+                    "american_cheeses": { "type": "array", "items": { "type": "string" }, "default": [] },
+                    "middle_eastern_cheeses": { "type": "array", "items": { "type": "string" }, "default": [] },
+                    "asian_cheeses": { "type": "array", "items": { "type": "string" }, "default": [] }
+                  },
+                  "required": [
+                    "italian_cheeses",
+                    "french_cheeses",
+                    "spanish_cheeses",
+                    "swiss_cheeses",
+                    "british_cheeses",
+                    "american_cheeses",
+                    "middle_eastern_cheeses",
+                    "asian_cheeses"
+                  ]
+                }
+              },
+              "required": [
+                "hard_cheeses",
+                "semi_hard_cheeses",
+                "soft_cheeses",
+                "blue_veined_cheeses",
+                "fresh_cheeses",
+                "washed_rind_cheeses",
+                "processed_cheeses",
+                "regional_and_exotic_cheeses"
+              ]
+            },
+            "milk": {
+              "type": "object",
+              "properties": {
+                "cow_milk": { "type": "array", "items": { "type": "string" }, "default": [] },
+                "specialty_milk": { "type": "array", "items": { "type": "string" }, "default": [] },
+                "plant_based_alternatives": { "type": "array", "items": { "type": "string" }, "default": [] }
+              },
+              "required": ["cow_milk", "specialty_milk", "plant_based_alternatives"]
+            },
+            "fermented": {
+              "type": "object",
+              "properties": {
+                "yogurt": { "type": "array", "items": { "type": "string" }, "default": [] },
+                "cultured_dairy_products": { "type": "array", "items": { "type": "string" }, "default": [] },
+                "cheese_based_products": { "type": "array", "items": { "type": "string" }, "default": [] }
+              },
+              "required": ["yogurt", "cultured_dairy_products", "cheese_based_products"]
+            },
+            "butter_and_cream": {
+              "type": "object",
+              "properties": {
+                "butter": { "type": "array", "items": { "type": "string" }, "default": [] },
+                "cream": { "type": "array", "items": { "type": "string" }, "default": [] }
+              },
+              "required": ["butter", "cream"]
+            },
+            "powdered_and_dried_dairy": {
+              "type": "object",
+              "properties": {
+                "powdered_milk": { "type": "array", "items": { "type": "string" }, "default": [] },
+                "dried_dairy_ingredients": { "type": "array", "items": { "type": "string" }, "default": [] }
+              },
+              "required": ["powdered_milk", "dried_dairy_ingredients"]
+            }
+          },
+          "required": ["cheese", "milk", "fermented", "butter_and_cream", "powdered_and_dried_dairy"]
+        },
+        "herbs_and_spices": {
+          "type": "object",
+          "properties": {
+            "herbs": {
+              "type": "object",
+              "properties": {
+                "culinary_herbs": { "type": "array", "items": { "type": "string" }, "default": [] },
+                "medicinal_herbs": { "type": "array", "items": { "type": "string" }, "default": [] },
+                "exotic_and_regional_herbs": { "type": "array", "items": { "type": "string" }, "default": [] }
+              },
+              "required": ["culinary_herbs", "medicinal_herbs", "exotic_and_regional_herbs"]
+            },
+            "spices": {
+              "type": "object",
+              "properties": {
+                "seed_spices": { "type": "array", "items": { "type": "string" }, "default": [] },
+                "bark_and_root_spices": { "type": "array", "items": { "type": "string" }, "default": [] },
+                "pod_and_flower_spices": { "type": "array", "items": { "type": "string" }, "default": [] },
+                "fruit_and_pepper_spices": { "type": "array", "items": { "type": "string" }, "default": [] },
+                "exotic_spices": { "type": "array", "items": { "type": "string" }, "default": [] }
+              },
+              "required": ["seed_spices", "bark_and_root_spices", "pod_and_flower_spices", "fruit_and_pepper_spices", "exotic_spices"]
+            },
+            "seasoning": {
+              "type": "object",
+              "properties": {
+                "salts_and_salt_blends": { "type": "array", "items": { "type": "string" }, "default": [] },
+                "pepper_and_chili": { "type": "array", "items": { "type": "string" }, "default": [] },
+                "aromatic_powders": { "type": "array", "items": { "type": "string" }, "default": [] },
+                "mixed_and_blended_seasonings": { "type": "array", "items": { "type": "string" }, "default": [] }
+              },
+              "required": ["salts_and_salt_blends", "pepper_and_chili", "aromatic_powders", "mixed_and_blended_seasonings"]
+            }
+          },
+          "required": ["herbs", "spices", "seasoning"]
+        },
+        "sauces_and_condiments": {
+          "type": "object",
+          "properties": {
+            "sauces": {
+              "type": "object",
+              "properties": {
+                "soy_based_sauces": { "type": "array", "items": { "type": "string" }, "default": [] },
+                "tomato_based_sauces": { "type": "array", "items": { "type": "string" }, "default": [] },
+                "cream_based_sauces": { "type": "array", "items": { "type": "string" }, "default": [] },
+                "oil_and_herb_based_sauces": { "type": "array", "items": { "type": "string" }, "default": [] },
+                "barbecue_and_grill_sauces": { "type": "array", "items": { "type": "string" }, "default": [] },
+                "asian_sauces": { "type": "array", "items": { "type": "string" }, "default": [] },
+                "vinegar_and_citrus_based_sauces": { "type": "array", "items": { "type": "string" }, "default": [] }
+              },
+              "required": ["soy_based_sauces", "tomato_based_sauces", "cream_based_sauces", "oil_and_herb_based_sauces", "barbecue_and_grill_sauces", "asian_sauces", "vinegar_and_citrus_based_sauces"]
+            },
+            "condiments": {
+              "type": "object",
+              "properties": {
+                "ketchup_variants": { "type": "array", "items": { "type": "string" }, "default": [] },
+                "mustard_variants": { "type": "array", "items": { "type": "string" }, "default": [] },
+                "mayonnaise_variants": { "type": "array", "items": { "type": "string" }, "default": [] },
+                "salad_dressings": { "type": "array", "items": { "type": "string" }, "default": [] },
+                "hot_sauces": { "type": "array", "items": { "type": "string" }, "default": [] },
+                "seafood_condiments": { "type": "array", "items": { "type": "string" }, "default": [] }
+              },
+              "required": ["ketchup_variants", "mustard_variants", "mayonnaise_variants", "salad_dressings", "hot_sauces", "seafood_condiments"]
+            }
+          },
+          "required": ["sauces", "condiments"]
+        },
+        "oils": {
+          "type": "object",
+          "properties": {
+            "cooking_oils": {
+              "type": "object",
+              "properties": {
+                "neutral_oils": { "type": "array", "items": { "type": "string" }, "default": [] },
+                "high_heat_oils": { "type": "array", "items": { "type": "string" }, "default": [] },
+                "low_to_medium_heat_oils": { "type": "array", "items": { "type": "string" }, "default": [] },
+                "unrefined_oils": { "type": "array", "items": { "type": "string" }, "default": [] }
+              },
+              "required": ["neutral_oils", "high_heat_oils", "low_to_medium_heat_oils", "unrefined_oils"]
+            },
+            "flavored_oils": {
+              "type": "object",
+              "properties": {
+                "seed_based_flavored_oils": { "type": "array", "items": { "type": "string" }, "default": [] },
+                "aromatic_flavored_oils": { "type": "array", "items": { "type": "string" }, "default": [] },
+                "nut_based_flavored_oils": { "type": "array", "items": { "type": "string" }, "default": [] },
+                "fruit_based_flavored_oils": { "type": "array", "items": { "type": "string" }, "default": [] }
+              },
+              "required": ["seed_based_flavored_oils", "aromatic_flavored_oils", "nut_based_flavored_oils", "fruit_based_flavored_oils"]
+            },
+            "specialty_and_exotic_oils": {
+              "type": "object",
+              "properties": {
+                "gourmet_oils": { "type": "array", "items": { "type": "string" }, "default": [] },
+                "regional_oils": { "type": "array", "items": { "type": "string" }, "default": [] },
+                "health_focused_oils": { "type": "array", "items": { "type": "string" }, "default": [] }
+              },
+              "required": ["gourmet_oils", "regional_oils", "health_focused_oils"]
+            }
+          },
+          "required": ["cooking_oils", "flavored_oils", "specialty_and_exotic_oils"]
+        },
+        "nuts": {
+          "type": "object",
+          "properties": {
+            "tree_nuts": {
+              "type": "object",
+              "properties": {
+                "common_tree_nuts": { "type": "array", "items": { "type": "string" } },
+                "regional_and_exotic_tree_nuts": { "type": "array", "items": { "type": "string" } }
+              }
+            },
+            "legume_nuts": {
+              "type": "object",
+              "properties": {
+                "common_legume_nuts": { "type": "array", "items": { "type": "string" } }
+              }
+            },
+            "palm_nuts": {
+              "type": "object",
+              "properties": {
+                "common_palm_nuts": { "type": "array", "items": { "type": "string" } }
+              }
+            },
+            "seed_nuts": {
+              "type": "object",
+              "properties": {
+                "culinary_seed_nuts": { "type": "array", "items": { "type": "string" } },
+                "exotic_seed_nuts": { "type": "array", "items": { "type": "string" } }
+              }
+            },
+            "processed_and_specialty_nuts": {
+              "type": "object",
+              "properties": {
+                "processed_nuts": { "type": "array", "items": { "type": "string" } },
+                "nut_butters_and_pastes": { "type": "array", "items": { "type": "string" } },
+                "nut_flours_and_meals": { "type": "array", "items": { "type": "string" } }
+              }
+            },
+            "culinary_and_miscellaneous_nuts": {
+              "type": "object",
+              "properties": {
+                "culinary_uses": { "type": "array", "items": { "type": "string" } },
+                "regional_specialties": { "type": "array", "items": { "type": "string" } }
+              }
+            }
+          }
+        },
+        "cooking_method": {
+          "type": "object",
+          "properties": {
+            "dry_heat_methods": {
+              "type": "object",
+              "properties": {
+                "grilling": { "type": "array", "items": { "type": "string" } },
+                "roasting": { "type": "array", "items": { "type": "string" } },
+                "baking": { "type": "array", "items": { "type": "string" } },
+                "broiling": { "type": "array", "items": { "type": "string" } },
+                "smoking": { "type": "array", "items": { "type": "string" } }
+              }
+            },
+            "moist_heat_methods": {
+              "type": "object",
+              "properties": {
+                "boiling": { "type": "array", "items": { "type": "string" } },
+                "steaming": { "type": "array", "items": { "type": "string" } },
+                "braising": { "type": "array", "items": { "type": "string" } },
+                "sous_vide": { "type": "array", "items": { "type": "string" } }
+              }
+            },
+            "combination_methods": {
+              "type": "object",
+              "properties": {
+                "stir_frying_and_sautéing": { "type": "array", "items": { "type": "string" } },
+                "frying": { "type": "array", "items": { "type": "string" } },
+                "griddle_and_plancha_cooking": { "type": "array", "items": { "type": "string" } }
+              }
+            },
+            "specialized_methods": {
+              "type": "object",
+              "properties": {
+                "low_and_slow_methods": { "type": "array", "items": { "type": "string" } },
+                "direct_heat_methods": { "type": "array", "items": { "type": "string" } },
+                "fermentation_and_curing": { "type": "array", "items": { "type": "string" } }
+              }
+            },
+            "modern_methods": {
+              "type": "object",
+              "properties": {
+                "vacuum_cooking": { "type": "array", "items": { "type": "string" } },
+                "microwave_cooking": { "type": "array", "items": { "type": "string" } },
+                "molecular_methods": { "type": "array", "items": { "type": "string" } }
+              }
+            }
+          }
+        },
+        "dietary_restrictions": {
+          "type": "object",
+          "properties": {
+            "belief": { "type": "array", "items": { "type": "string" } },
+            "lifestyle": { "type": "array", "items": { "type": "string" } },
+            "health": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        "food_allergens": {
+          "type": "object",
+          "properties": {
+            "milk": {
+              "type": "object",
+              "properties": {
+                "common_ingredients": { "type": "array", "items": { "type": "string" } },
+                "hidden_sources": { "type": "array", "items": { "type": "string" } }
+              }
+            },
+            "eggs": {
+              "type": "object",
+              "properties": {
+                "common_ingredients": { "type": "array", "items": { "type": "string" } },
+                "hidden_sources": { "type": "array", "items": { "type": "string" } }
+              }
+            },
+            "fish": {
+              "type": "object",
+              "properties": {
+                "common_ingredients": { "type": "array", "items": { "type": "string" } },
+                "hidden_sources": { "type": "array", "items": { "type": "string" } }
+              }
+            },
+            "crustacean_shellfish": {
+              "type": "object",
+              "properties": {
+                "common_ingredients": { "type": "array", "items": { "type": "string" } },
+                "hidden_sources": { "type": "array", "items": { "type": "string" } }
+              }
+            },
+            "tree_nuts": {
+              "type": "object",
+              "properties": {
+                "common_ingredients": { "type": "array", "items": { "type": "string" } },
+                "hidden_sources": { "type": "array", "items": { "type": "string" } }
+              }
+            },
+            "peanuts": {
+              "type": "object",
+              "properties": {
+                "common_ingredients": { "type": "array", "items": { "type": "string" } },
+                "hidden_sources": { "type": "array", "items": { "type": "string" } }
+              }
+            },
+            "wheat": {
+              "type": "object",
+              "properties": {
+                "common_ingredients": { "type": "array", "items": { "type": "string" } },
+                "hidden_sources": { "type": "array", "items": { "type": "string" } }
+              }
+            },
+            "soy": {
+              "type": "object",
+              "properties": {
+                "common_ingredients": { "type": "array", "items": { "type": "string" } },
+                "hidden_sources": { "type": "array", "items": { "type": "string" } }
+              }
+            },
+            "sesame": {
+              "type": "object",
+              "properties": {
+                "common_ingredients": { "type": "array", "items": { "type": "string" } },
+                "hidden_sources": { "type": "array", "items": { "type": "string" } }
+              }
+            }
+          }
+        },
+        "alcohol": {
+          "type": "object",
+          "properties": {
+            "fermented_beverages": {
+              "type": "object",
+              "properties": {
+                "wine": { "type": "array", "items": { "type": "string" } },
+                "beer": { "type": "array", "items": { "type": "string" } },
+                "cider_and_mead": { "type": "array", "items": { "type": "string" } }
+              }
+            },
+            "distilled_beverages": {
+              "type": "object",
+              "properties": {
+                "whiskey": { "type": "array", "items": { "type": "string" } },
+                "vodka": { "type": "array", "items": { "type": "string" } },
+                "rum": { "type": "array", "items": { "type": "string" } },
+                "brandy": { "type": "array", "items": { "type": "string" } },
+                "gin": { "type": "array", "items": { "type": "string" } },
+                "tequila_and_mezcal": { "type": "array", "items": { "type": "string" } },
+                "liqueurs": { "type": "array", "items": { "type": "string" } }
+              }
+            }
+          }
+        }
+      },
+      "required": []
+    },
+    "options": {
+      "type": "object",
+      "properties": {
+        "side": { "type": "array", "items": { "type": "string" } },
+        "condiment": { "type": "array", "items": { "type": "string" } },
+        "sauce": { "type": "array", "items": { "type": "string" } },
+        "add_ons": { "type": "array", "items": { "type": "string" } },
+        "dressings": { "type": "array", "items": { "type": "string" } }
+      },
+      "required": []
+    }
+  },
+  "required": ["ingredients", "options"]
+}

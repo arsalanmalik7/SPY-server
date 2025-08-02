@@ -1,0 +1,46 @@
+{
+  "unit": 1,
+  "unit_name": "wine Basics",
+  "chapter": 3,
+  "chapter_name": "wine Prices",
+  "category":"wine",
+  "difficulty": "beginner",
+  "questions": [
+    {
+      "question_text": "What is the BTB price of {producer_name}, {product_name}, {label_image}?",
+      "question_type": "single_select",
+      "options_variable": "shuffle(generateNumberOptions(link_to_restaurant.current_wines[{wine_id}].offering.bottle_price, 3)).slice(0, 3)",
+      "correct_answer_variable": "link_to_restaurant.current_wines[{wine_id}].offering.bottle_price",
+      "placeholders": {
+        "producer_name": "link_to_restaurant.current_wines[{wine_id}].producer_name",
+        "product_name": "link_to_restaurant.current_wines[{wine_id}].product_name",
+        "label_image": "link_to_restaurant.current_wines[{wine_id}].image_url"
+      },
+      "repeat_for": {
+        "source": "link_to_restaurant.current_wines",
+        "key_variable": "wine_id",
+        "filter_condition": "link_to_restaurant.current_wines[{wine_id}].offering.by_the_bottle === true"
+      },
+      "difficulty": "easy",
+      "hint": "Count the wines available by the bottle and select the price closest to the actual BTB price."
+    },
+    {
+      "question_text": "What is the BTG price of {producer_name}, {product_name}, {label_image}?",
+      "question_type": "single_select",
+      "options_variable": "shuffle(generateNumberOptions(link_to_restaurant.current_wines[{wine_id}].offering.glass_price, 3)).slice(0, 3)",
+      "correct_answer_variable": "link_to_restaurant.current_wines[{wine_id}].offering.glass_price",
+      "placeholders": {
+        "producer_name": "link_to_restaurant.current_wines[{wine_id}].producer_name",
+        "product_name": "link_to_restaurant.current_wines[{wine_id}].product_name",
+        "label_image": "link_to_restaurant.current_wines[{wine_id}].image_url"
+      },
+      "repeat_for": {
+        "source": "link_to_restaurant.current_wines",
+        "key_variable": "wine_id",
+        "filter_condition": "link_to_restaurant.current_wines[{wine_id}].offering.by_the_glass === true"
+      },
+      "difficulty": "easy",
+      "hint": "Count the wines available by the glass and select the price closest to the actual BTG price."
+    }
+  ]
+}

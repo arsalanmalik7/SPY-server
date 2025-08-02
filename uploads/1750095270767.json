@@ -1,0 +1,49 @@
+{
+    "lessons": [
+        {
+            "uuid": "55555555-5555-5555-5555-999999991901",
+            "unit": 1,
+            "unit_name": "foodbasics",
+            "chapter": 1,
+            "chapter_name": "foodbycourse",
+            "category": "food",
+            "difficulty": "intermediate",
+            "content": {
+                "main_text": "Learn about different food courses and their characteristics.",
+                "section_1_title": "Introduction",
+                "section_1_content": "Understanding food courses is essential for proper menu organization and service.",
+                "section_2_title": "Course Types",
+                "section_2_content": "Common course types include appetizers, entrees, desserts, and more.",
+                "section_3_title": "Importance",
+                "section_3_content": "Knowing course types helps with menu organization and customer service."
+            },
+            "restaurant_uuid": "44444444-4444-4444-4444-444444444401",
+            "createdBy": "33333333-3333-3333-3333-333333333301",
+            "lastModifiedBy": "33333333-3333-3333-3333-333333333301",
+            "menu_items": [
+                "11111111-1111-1111-1111-111111111111"
+            ],
+            "questions": [
+                {
+                    "uuid": "55555555-5555-5555-5555-999999999901",
+                    "question_text": "What food course does {dish_name} belong to?",
+                    "question_type": "single_select",
+                    "options_variable": {
+                        "source": "config.validDishTypes",
+                        "filter": "course => course !== current_dish.type",
+                        "limit": 3
+                    },
+                    "correct_answer_variable": {
+                        "source": "current_dish.type"
+                    },
+                    "repeat_for": {
+                        "source": "",
+                        "key_variable": ""
+                    },
+                    "difficulty": "easy",
+                    "hint": "Review your menu to determine which course this dish belongs to, then select the correct option from the choices provided."
+                }
+            ]
+        }
+    ]
+}
