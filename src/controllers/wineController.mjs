@@ -1,7 +1,7 @@
 import { GlobalWine } from "../schema/wineschema.mjs";
 import { Restaurant } from "../schema/restaurantschema.mjs";
 import { Menu } from "../schema/menuschema.mjs";
-import { generateLessonsForRestaurant, deleteLessons } from "../services/lessonCreate.mjs";
+import { generateLessonsForRestaurant, archiveLessons } from "../services/lessonCreate.mjs";
 import wineCategories from "../config/wineCategories.mjs";
 import { v4 as uuidv4 } from "uuid";
 import path from "path";
@@ -190,13 +190,13 @@ export const getAllWines = async (req, res) => {
       })
     );
 
-    res.status(200).json({winesWithRestaurant, wineCategories});
+    res.status(200).json({ winesWithRestaurant, wineCategories });
   } catch (error) {
     res.status(500).json({ message: "Server error", error: error.message });
   }
 };
 
-export const getDeletedWinesOfRestarant = async (req, res) => {
+export const getArchivedWinesOfRestarant = async (req, res) => {
   try {
     const { user } = req;
     let wines;
@@ -222,7 +222,7 @@ export const getDeletedWinesOfRestarant = async (req, res) => {
       })
     );
 
-    res.status(200).json({winesWithRestaurant, wineCategories});
+    res.status(200).json({ winesWithRestaurant, wineCategories });
   } catch (error) {
     console.log(error, "error");
     res.status(500).json({ message: "Server error", error: error.message });
@@ -337,7 +337,7 @@ export const updateWine = async (req, res) => {
 
 
 // Delete a Wine
-export const deleteWine = async (req, res) => {
+export const archiveWine = async (req, res) => {
   try {
     const { uuid } = req.params;
 
@@ -360,21 +360,21 @@ export const deleteWine = async (req, res) => {
     await restaurant.save();
 
 
-    const result = await deleteLessons(uuid);
-    if (!result) return res.status(200).json({ message: "Lessons are not deleted, Wine deleted successfully" });
+    const result = await archiveLessons(uuid);
+    if (!result) return res.status(200).json({ message: "Lessons are not archived, Wine archived successfully" });
 
     // Log wine deletion
     await Log.create({
       user_uuid: req.user.uuid,
-      action: "wine_deleted",
+      action: "wine_archived",
       details: {
-        description: `Wine ${wine.product_name} deleted`,
+        description: `Wine ${wine.product_name} archived`,
         wine_uuid: wine.uuid,
       },
       role: req.user.role,
     });
 
-    res.status(200).json({ message: "Wine deleted successfully" });
+    res.status(200).json({ message: "Wine archived successfully" });
   } catch (error) {
     console.log(error, "error");
     res.status(500).json({ message: "Server error", error: error.message });
@@ -432,28 +432,15 @@ export const getWineAnalytics = async (req, res) => {
     let wines;
     let removedWines;
     let recentWineUpdates;
-    // if (req?.user?.role === "super_admin") {
-    //   wines = await GlobalWine.find({ isDeleted: false, }).sort({ createdAt: -1 });
-    //   removedWines = await GlobalWine.find({ isDeleted: true, }).sort({ createdAt: -1 });
-    //   recentWineUpdates = await Log.find({
-    //     action: { $in: ["wine_created", "wine_updated", "wine_deleted", "wine_restored"] }
-    //   }).sort({ createdAt: -1 }).populate({
-    //     path: "user_uuid",
-    //     model: "User",
-    //     match: { uuid: { $exists: true } },
-    //     localField: "user_uuid",
-    //     foreignField: "uuid",
-    //     select: "name"
-    //   });
-    // } else {
+
     const assignedRestaurantUUIDs = req.user.assigned_restaurants.map(r => r.uuid);
     const ownerRestaurants = await Restaurant.find({ account_owner: user.uuid });
     const ownerRestaurantUUIDs = ownerRestaurants.map(r => r.uuid);
     const allRestaurantUUIDs = Array.from(new Set([...assignedRestaurantUUIDs, ...ownerRestaurantUUIDs]));
-    wines = await GlobalWine.find({ isDeleted: false, restaurant_uuid: restaurant_uuid }).sort({ createdAt: -1 });
+    wines = await GlobalWine.find({ restaurant_uuid: restaurant_uuid }).sort({ createdAt: -1 });
     removedWines = await GlobalWine.find({ isDeleted: true, restaurant_uuid: restaurant_uuid }).sort({ createdAt: -1 });
     recentWineUpdates = await Log.find({
-      action: { $in: ["wine_created", "wine_updated", "wine_deleted", "wine_restored"] },
+      action: { $in: ["wine_created", "wine_updated", "wine_archived", "wine_restored"] },
       "details.wine_uuid": { $in: wines.map(w => w.uuid) }
     }).sort({ createdAt: -1 }).populate({
       path: "user_uuid",
@@ -463,7 +450,8 @@ export const getWineAnalytics = async (req, res) => {
       foreignField: "uuid",
       select: "first_name last_name"
     });
-    // }
+    console.log(recentWineUpdates.length, "recentWineUpdates.length");
+
     const winesWithRestaurant = await Promise.all(
       wines.map(async (wine) => {
         if (wine.restaurant_uuid) {

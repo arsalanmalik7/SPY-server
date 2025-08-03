@@ -1,7 +1,7 @@
 import { Dish } from "../schema/dishschema.mjs";
 import { Menu } from "../schema/menuschema.mjs";
 import { Restaurant } from "../schema/restaurantschema.mjs";
-import { generateLessonsForRestaurant, deleteLessons, restoreLessons, permenantDeleteLessons } from "../services/lessonCreate.mjs";
+import { generateLessonsForRestaurant, archiveLessons, restoreLessons, permenantDeleteLessons } from "../services/lessonCreate.mjs";
 import validDishTypes from "../config/dishTypes.mjs";
 import { v4 as uuidv4 } from "uuid";
 import path from "path";
@@ -145,7 +145,7 @@ export const getAllDishes = async (req, res) => {
   }
 };
 
-export const getAllDeletedDishes = async (req, res) => {
+export const getAllDArchivedDishes = async (req, res) => {
   try {
     const { user } = req;
     let dishes;
@@ -171,7 +171,7 @@ export const getAllDeletedDishes = async (req, res) => {
       })
     );
 
-    res.status(200).json({dishesWithRestaurant, validDishTypes});
+    res.status(200).json({ dishesWithRestaurant, validDishTypes });
   } catch (error) {
     res.status(500).json({ message: "Server error", error: error.message });
   }
@@ -262,8 +262,8 @@ export const updateDish = async (req, res) => {
 
     const deleteLessons = permenantDeleteLessons(updatedDish.uuid);
 
-    if(deleteLessons){
-      await generateLessonsForRestaurant("food", updatedDish.restaurant_uuid, updatedDish);      
+    if (deleteLessons) {
+      await generateLessonsForRestaurant("food", updatedDish.restaurant_uuid, updatedDish);
     }
 
 
@@ -285,7 +285,7 @@ export const updateDish = async (req, res) => {
 };
 
 // Delete a Dish
-export const deleteDish = async (req, res) => {
+export const archiveDish = async (req, res) => {
   try {
     const { uuid } = req.params;
 
@@ -308,21 +308,22 @@ export const deleteDish = async (req, res) => {
     await restaurant.save();
 
 
-    const result = await deleteLessons(uuid);
-    if (!result) return res.status(200).json({ message: "Lessons are not deleted, dish deleted successfully" });
+    const result = await archiveLessons(uuid);
+    if (!result) return res.status(200).json({ message: "Lessons are not archived, dish archived successfully" });
+
 
     await Log.create({
       user_uuid: req.user.uuid,
-      action: "dish_deleted",
+      action: "dish_archived",
       details: {
-        description: `Dish ${dish.name} deleted`,
+        description: `Dish ${dish.name} archived`,
         dish_uuid: dish.uuid,
       },
       role: req.user.role,
 
     });
 
-    res.status(200).json({ message: "dish deleted successfully" });
+    res.status(200).json({ message: "dish archived successfully" });
   } catch (error) {
     console.log(error, "error");
     res.status(500).json({ message: "Server error", error: error.message });
@@ -378,29 +379,16 @@ export const getDishAnalytics = async (req, res) => {
     let dishes;
     let removedDishes;
     let recentDishUpdates;
-    // if (req?.user?.role === "super_admin") {
-    //   dishes = await Dish.find({ isDeleted: false, }).sort({ createdAt: -1 });
-    //   removedDishes = await Dish.find({ isDeleted: true, }).sort({ createdAt: -1 });
-    //   recentDishUpdates = await Log.find({
-    //     action: { $in: ["dish_created", "dish_updated", "dish_deleted", "dish_restored"] }
-    //   }).sort({ createdAt: -1 }).populate({
-    //     path: "user_uuid",
-    //     model: "User",
-    //     match: { uuid: { $exists: true } },
-    //     localField: "user_uuid",
-    //     foreignField: "uuid",
-    //     select: "name"
-    //   });
-    // } else {
+
     const assignedRestaurantUUIDs = req.user.assigned_restaurants.map(r => r.uuid);
     const ownerRestaurants = await Restaurant.find({ account_owner: user.uuid });
     const ownerRestaurantUUIDs = ownerRestaurants.map(r => r.uuid);
     const allRestaurantUUIDs = Array.from(new Set([...assignedRestaurantUUIDs, ...ownerRestaurantUUIDs]));
-    dishes = await Dish.find({ isDeleted: false, restaurant_uuid: restaurant_uuid }).sort({ createdAt: -1 });
+    dishes = await Dish.find({ restaurant_uuid: restaurant_uuid }).sort({ createdAt: -1 });
     removedDishes = await Dish.find({ isDeleted: true, restaurant_uuid: restaurant_uuid }).sort({ createdAt: -1 });
     const allDishes = [...dishes, ...removedDishes]
     recentDishUpdates = await Log.find({
-      action: { $in: ["dish_created", "dish_updated", "dish_deleted", "dish_restored"] },
+      action: { $in: ["dish_created", "dish_updated", "dish_archived", "dish_restored"] },
       "details.dish_uuid": { $in: allDishes.map(d => d.uuid) }
     }).sort({ createdAt: -1 }).populate({
       path: "user_uuid",
@@ -410,7 +398,7 @@ export const getDishAnalytics = async (req, res) => {
       foreignField: "uuid",
       select: "first_name last_name"
     });
-    // }
+
     const dishesWithRestaurant = await Promise.all(
       dishes.map(async (dish) => {
         if (dish.restaurant_uuid) {

@@ -237,7 +237,7 @@ const generateQuestionOptions = (question, dish, config, restaurant, allDishes, 
 
             case 'config.foodAllergens':
                 options = shuffle([...config.foodAllergens]);
-                correctAnswer = dish?.allergens?.[0] || options[0];
+                correctAnswer = dish?.allergens || options[0];
                 break;
 
             case 'config.tempratureOptions':
@@ -1542,9 +1542,9 @@ const generateLessonForNewTemplate = async (newTemplate) => {
     }
 };
 
-const deleteLessons = async (menu_item) => {
+const archiveLessons = async (menu_item) => {
     try {
-        const deleteLessons = await Lesson.updateMany(
+        const archiveLessons = await Lesson.updateMany(
             {
                 isDeleted: false,
                 "questions.menu_item": menu_item
@@ -1560,7 +1560,7 @@ const deleteLessons = async (menu_item) => {
         );
 
 
-        if (!deleteLessons) return false
+        if (!archiveLessons) return false
 
         return true
     } catch (error) {
@@ -1609,4 +1609,4 @@ const restoreLessons = async (menu_item) => {
     }
 };
 
-export { generateLessonsForRestaurant, deleteLessons, restoreLessons, permenantDeleteLessons, generateLessonForNewTemplate };
+export { generateLessonsForRestaurant, archiveLessons, restoreLessons, permenantDeleteLessons, generateLessonForNewTemplate };
