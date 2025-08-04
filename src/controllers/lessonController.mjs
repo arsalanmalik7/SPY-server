@@ -627,8 +627,8 @@ export const updateLessonProgress = async (req, res) => {
             lessonProgress.completedAt = now;
 
             // Check for badge awards
-            await checkChapterCompletion(userId, lesson.category, lesson.unit, lesson.chapter, attempt.score, lesson.restaurant_uuid, lesson.menu_items);
-            await checkUnitCompletion(userId, lesson.category, lesson.unit, attempt.score, lesson.restaurant_uuid, lesson.menu_items);
+            await checkChapterCompletion(userId, lesson.category, lesson.unit, lesson.unit_name, lesson.chapter, lesson.chapter_name, attempt.score, lesson.restaurant_uuid, lesson.menu_items);
+            await checkUnitCompletion(userId, lesson.category, lesson.unit, lesson.unit_name, attempt.score, lesson.restaurant_uuid, lesson.menu_items);
 
         }
 

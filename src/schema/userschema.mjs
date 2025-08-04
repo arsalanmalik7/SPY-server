@@ -82,7 +82,9 @@ const UserSchema = new mongoose.Schema(
         badge_image: { type: String, required: true },
         category: { type: String, required: true }, // "food" or "wine"
         unit: { type: Number, required: true },
+        unit_name: { type: String },
         chapter: { type: Number },
+        chapter_name: { type: String },
         earned_at: { type: Date, default: Date.now },
         score: { type: Number, min: 0, max: 100 }
       }

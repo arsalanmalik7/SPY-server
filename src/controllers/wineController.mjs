@@ -1,7 +1,7 @@
 import { GlobalWine } from "../schema/wineschema.mjs";
 import { Restaurant } from "../schema/restaurantschema.mjs";
 import { Menu } from "../schema/menuschema.mjs";
-import { generateLessonsForRestaurant, archiveLessons } from "../services/lessonCreate.mjs";
+import { generateLessonsForRestaurant, archiveLessons, permenantDeleteLessons } from "../services/lessonCreate.mjs";
 import wineCategories from "../config/wineCategories.mjs";
 import { v4 as uuidv4 } from "uuid";
 import path from "path";
@@ -315,6 +315,12 @@ export const updateWine = async (req, res) => {
     wine.updatedAt = new Date();
 
     const updatedWine = await wine.save();
+
+    // const deleteLessons = permenantDeleteLessons(updatedWine.uuid);
+
+    // if (deleteLessons) {
+      await generateLessonsForRestaurant("wine", updatedWine.restaurant_uuid, updatedWine);
+    // }
 
     // Log wine update
     await Log.create({

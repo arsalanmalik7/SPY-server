@@ -108,7 +108,9 @@ const awardBadge = async (userId, badgeData) => {
       badge_name: badgeData.name,
       category: badgeData.category,
       unit: badgeData.unit,
+      unit_name: badgeData?.unit_name,
       chapter: badgeData.chapter,
+      chapter_name: badgeData?.chapter_name,
       score: badgeData.score || 100,
       earned_at: new Date(),
       badge_image: getBadgeImage(badgeData.category, badgeData.unit, badgeData.chapter)
@@ -145,7 +147,7 @@ const awardBadge = async (userId, badgeData) => {
 };
 
 // Check and award chapter completion badge
-export const checkChapterCompletion = async (userId, category, unit, chapter, score, restaurant_uuid, menu_items) => {
+export const checkChapterCompletion = async (userId, category, unit, unit_name, chapter, chapter_name, score, restaurant_uuid, menu_items) => {
   try {
     const completed = await hasCompletedChapter(userId, category, unit, chapter, restaurant_uuid, menu_items);
     console.log(completed, 'completed');
@@ -153,13 +155,15 @@ export const checkChapterCompletion = async (userId, category, unit, chapter, sc
 
     // Get image based on category, unit, and chapter
     const badgeImage = badgeImages[category]?.chapters?.[`${unit}-${chapter}`] || '';
-    
+
 
     const badgeData = {
       name: `${category.charAt(0).toUpperCase() + category.slice(1)} Chapter ${chapter} Expert`,
       category,
       unit,
+      unit_name,
       chapter,
+      chapter_name,
       score: score,
       badge_image: badgeImage // <-- pass image here
     };
@@ -173,7 +177,7 @@ export const checkChapterCompletion = async (userId, category, unit, chapter, sc
 
 
 // Check and award unit completion badge
-export const checkUnitCompletion = async (userId, category, unit, score, restaurant_uuid, menu_items) => {
+export const checkUnitCompletion = async (userId, category, unit, unit_name, score, restaurant_uuid, menu_items) => {
   try {
     const completed = await hasCompletedUnit(userId, category, unit, restaurant_uuid, menu_items);
     console.log(completed, 'completed');
@@ -186,6 +190,7 @@ export const checkUnitCompletion = async (userId, category, unit, score, restaur
       name: `${category.charAt(0).toUpperCase() + category.slice(1)} Unit ${unit} Complete`,
       category,
       unit,
+      unit_name,
       score: score,
       badge_image: badgeImage // <-- pass image here
     };

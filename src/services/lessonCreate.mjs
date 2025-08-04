@@ -401,6 +401,7 @@ const generateQuestionOptions = (question, dish, config, restaurant, allDishes, 
 // Wine-specific question options generator
 const generateWineQuestionOptions = (question, wine, config, restaurant, allWines, index) => {
 
+
     let options = [];
     let correctAnswer = "";
 
@@ -421,6 +422,11 @@ const generateWineQuestionOptions = (question, wine, config, restaurant, allWine
         const wantCurrency = isCurrencyString(num);
         const baseNum = wantCurrency ? parseCurrency(num) : Number(num);
         const opts = new Set([wantCurrency ? usdFormatter.format(baseNum) : baseNum]);
+
+        // Add 0 as an option if it's not currency and baseNum is not 0
+        if (!wantCurrency && baseNum !== 0) {
+            opts.add(0);
+        }
 
         let i = 1;
         while (opts.size < 4) {
@@ -591,13 +597,13 @@ const generateWineQuestionOptions = (question, wine, config, restaurant, allWine
                     num = new Intl.NumberFormat('en-US', {
                         style: 'currency',
                         currency: 'USD'
-                    }).format(wine?.offering?.bottle_price) || 0;
+                    }).format(wine?.offering?.bottle_price) || formatter.format(0);
                     console.log(num, "num bottle")
                 } else if (question.correct_answer_variable.includes('glass_price')) {
                     num = new Intl.NumberFormat('en-US', {
                         style: 'currency',
                         currency: 'USD'
-                    }).format(wine?.offering?.glass_price) || 0;
+                    }).format(wine?.offering?.glass_price) || formatter.format(0);
                     console.log(num, "num glass")
                 }
             }
@@ -611,8 +617,9 @@ const generateWineQuestionOptions = (question, wine, config, restaurant, allWine
                 // Q2: all wines from region/country
                 if (question.correct_answer_variable.includes('wine.region.major_region ===') && question.correct_answer_variable.includes('wine.region.country ===') && !question.correct_answer_variable.includes('wine.category ===')) {
                     const wine_major_region = wine.region.region;
-                    const wine_country = question.placeholders?.wine_country;
+                    const wine_country = question.region?.country;
                     correct = allWines.filter(w => w.region?.region === wine_major_region && w.region?.country === wine_country).length;
+                    console.log(correct, "region length correct answer");
                 }
                 // Q3: by type
                 else if (question.correct_answer_variable.includes('wine.category ===') && question.correct_answer_variable.includes('wine.region.major_region ===') && question.correct_answer_variable.includes('wine.region.country ===')) {
@@ -764,6 +771,15 @@ const generateWineQuestionOptions = (question, wine, config, restaurant, allWine
             options = shuffle(options);
         }
         // Wine styles (for a category)
+        // else if(ov.includes("wine => wine.category === 'white'")){
+        //     const whiteWinesExists = allWines.filter(wine=> wine.category === 'White');
+
+        //     if(whiteWinesExists.length > 0 ){
+        //         options.push(whiteWinesExists[0]);
+
+        //     }
+
+        // }
         else if (ov.includes('wine.style.name')) {
             // Extract style_name from placeholder
             const styleName = wine.style.name;
@@ -940,6 +956,7 @@ const generateWineQuestionOptions = (question, wine, config, restaurant, allWine
                 : wine.offering?.by_the_bottle
                     ? 'Bottle'
                     : 'Glass';
+            console.log(correctAnswer, 'correctAnswer');
         } else if (cav.includes('offering.by_the_glass') && !question.question_text.includes('{number}')) {
             correctAnswer = allWines.filter(w => w.offering?.by_the_glass).length || 0;
         }
@@ -960,7 +977,7 @@ const generateWineQuestionOptions = (question, wine, config, restaurant, allWine
             correctAnswer = allWines.filter(w => w.varietals && w.varietals.includes(match)).length;
         } else if (cav.includes('find(wine => wine.varietals.includes')) {
             // Find the wine with the matching varietal and price
-            const matchVarietal = wine.varietals || '';
+            const matchVarietal = wine.varietals[0] || '';
             const matchPrice = question.placeholders?.wine_price || '';
             const found = allWines.find(w => w.varietals && w.varietals.includes(matchVarietal) && (w.offering?.glass_price?.toString() === matchPrice || w.offering?.bottle_price?.toString() === matchPrice));
             correctAnswer = found ? `${found.producer_name}, ${found.product_name}` : '';
@@ -975,7 +992,9 @@ const generateWineQuestionOptions = (question, wine, config, restaurant, allWine
             correctAnswer = allWines.filter(w => w.category === matchType && w.offering?.by_the_glass).length;
         } else if (cav.includes('filter(wine => wine.region.major_region ===')) {
             const matchRegion = wine.region.region || '';
-            correctAnswer = allWines.filter(w => w.region?.region === matchRegion).length;
+            const wine_country = wine.region?.country;
+            correctAnswer = allWines.filter(w => w.region?.region === matchRegion && w.region.country === wine_country).length;
+            console.log(correctAnswer, "region length answer");
         } else if (cav.includes('filter(wine => wine.category ===') && cav.includes('region.major_region ===')) {
             const matchType = question.placeholders?.wine_type || '';
             const matchRegion = wine.region.region || '';
@@ -998,8 +1017,34 @@ const generateWineQuestionOptions = (question, wine, config, restaurant, allWine
         else if (qText.includes('sugar')) correctAnswer = wine.has_residual_sugar ? 'Yes' : 'No';
     }
 
+
     // Replace placeholders in question text
     const question_text = question.question_text.replace(/{(.*?)}/g, (_, key) => {
+        switch (key) {
+
+            case 'wine_name': return wine.product_name || '';
+            case 'wine_category': return wine.category || '';
+            case 'wine_vintage': return wine.vintage?.toString() || '';
+            case 'wine_style': return wine.style?.body || '';
+            case 'wine_variable': return wine.producer_name || '';
+            case 'wine_label': return wine.image_url || '';
+            case 'wine_type': return wine.category || '';
+            case 'producer_name': return wine.producer_name || '';
+            case 'product_name': return wine.product_name || '';
+            case 'label_image': return wine.image_url || '';
+            case 'wine_varietal': return wine.varietals[0] || '';
+            case 'wine_price': return formatter.format(question.placeholders?.wine_price) || '';
+            case 'wine_country': return wine.region.country || '';
+            case 'wine_major_region': return wine.region.region || '';
+            case 'number': return question.placeholders?.number || '';
+            case 'style_name': return wine.style.name || '';
+            case 'noun_quantity':
+                return question.placeholders?.number == 1 ? 'wine' : 'wines';
+            default: return '';
+        }
+    });
+
+    const hint = question?.hint.replace(/{(.*?)}/g, (_, key) => {
         switch (key) {
             case 'wine_name': return wine.product_name || '';
             case 'wine_category': return wine.category || '';
@@ -1011,8 +1056,8 @@ const generateWineQuestionOptions = (question, wine, config, restaurant, allWine
             case 'producer_name': return wine.producer_name || '';
             case 'product_name': return wine.product_name || '';
             case 'label_image': return wine.image_url || '';
-            case 'wine_varietal': return wine.varietals || '';
-            case 'wine_price': return question.placeholders?.wine_price || '';
+            case 'wine_varietal': return wine.varietals[0] || '';
+            case 'wine_price': return formatter.format(question.placeholders?.wine_price) || '';
             case 'wine_country': return wine.region.country || '';
             case 'wine_major_region': return wine.region.region || '';
             case 'number': return question.placeholders?.number || '';
@@ -1028,6 +1073,7 @@ const generateWineQuestionOptions = (question, wine, config, restaurant, allWine
         question_number: index + 1,
         options_variable: options,
         correct_answer_variable: Array.isArray(correctAnswer) ? correctAnswer : [correctAnswer],
+        hint: hint,
         placeholders: {
             ...question.placeholders,
             wine_name: wine.product_name,
@@ -1238,19 +1284,19 @@ const generateLessonsForRestaurant = async (category, restaurant_uuid, newEntry)
                                 if (question.repeat_for && question.repeat_for.key_variable === "wine_varietal") {
                                     // Get all unique varietals
                                     const allVarietals = Array.from(new Set(wines.flatMap(w => w.varietals)));
-                                    return allVarietals.flatMap(varietal => {
+                                    // return allVarietals.flatMap(varietal => {
                                         // BTG question
-                                        if (question.question_text.includes("BTG")) {
+                                        if (question.question_text.includes("by the glass") || question.question_text.includes("BTG")) {
                                             // Find a wine with this varietal and by_the_glass
-                                            const wineForVarietal = wines.find(w => w.varietals.includes(varietal) && w.offering?.by_the_glass);
+                                            const wineForVarietal = wines.find(w => w.varietals.includes(newEntry.varietals[0]) && w.offering?.by_the_glass);
                                             if (!wineForVarietal) return [];
                                             const wine_price = wineForVarietal.offering?.glass_price?.toString() || "";
-                                            const number = wines.filter(w => w.varietals.includes(varietal) && w.offering?.by_the_glass).length;
+                                            const number = wines.filter(w => w.varietals.includes(newEntry.varietals[0]) && w.offering?.by_the_glass).length;
                                             const questionForVarietal = {
                                                 ...question,
                                                 placeholders: {
                                                     ...question.placeholders,
-                                                    wine_varietal: varietal,
+                                                    wine_varietal: newEntry.varietals[0],
                                                     wine_price,
                                                     number
                                                 }
@@ -1270,16 +1316,16 @@ const generateLessonsForRestaurant = async (category, restaurant_uuid, newEntry)
                                             }
                                         }
                                         // BTB question
-                                        if (question.question_text.includes("BTB")) {
-                                            const wineForVarietal = wines.find(w => w.varietals.includes(varietal) && w.offering?.by_the_bottle);
+                                        if (question.question_text.includes("by the bottle") || question.question_text.includes("BTB")) {
+                                            const wineForVarietal = wines.find(w => w.varietals.includes(newEntry.varietals[0]) && w.offering?.by_the_bottle);
                                             if (!wineForVarietal) return [];
                                             const wine_price = wineForVarietal.offering?.bottle_price?.toString() || "";
-                                            const number = wines.filter(w => w.varietals.includes(varietal) && w.offering?.by_the_bottle).length;
+                                            const number = wines.filter(w => w.varietals.includes(newEntry.varietals[0]) && w.offering?.by_the_bottle).length;
                                             const questionForVarietal = {
                                                 ...question,
                                                 placeholders: {
                                                     ...question.placeholders,
-                                                    wine_varietal: varietal,
+                                                    wine_varietal: newEntry.varietals[0],
                                                     wine_price,
                                                     number
                                                 }
@@ -1299,8 +1345,8 @@ const generateLessonsForRestaurant = async (category, restaurant_uuid, newEntry)
                                             }
                                         }
                                         // For other question types, fallback to default
-                                        return [];
-                                    });
+                                        // return [];
+                                    // });
                                 }
                                 // Fallback to default for non-repeat_for questions
                                 const result = generateWineQuestionOptions(
@@ -1359,6 +1405,8 @@ const generateLessonsForRestaurant = async (category, restaurant_uuid, newEntry)
                             });
                         }
 
+
+
                         const existingRestaurantLesson = await Lesson.findOne({
                             restaurant_uuid: restaurant_uuid,
                             category: "wine",
@@ -1372,12 +1420,13 @@ const generateLessonsForRestaurant = async (category, restaurant_uuid, newEntry)
                                 { uuid: existingRestaurantLesson.uuid },
                                 {
                                     $addToSet: { menu_items: newEntry.uuid }, // add only if not present
-                                    $push: { questions: { $each: processedQuestions } }, // append all new questions
+                                    $set: { questions: processedQuestions }, // replace all questions with new ones
                                     menu_items_model: "GlobalWine",
                                 },
                                 { new: true }
                             );
-                            console.log(`Successfully updated lesson for ${newEntry.name} from template ${template.unit_name} - ${template.chapter_name}`);
+                            console.log(`Successfully updated lesson for ${newEntry.product_name} from template ${template.unit_name} - ${template.chapter_name}`);
+
                         } else {
 
                             const userProgresses = restaurantUsers.map((ru) => {
