@@ -7,6 +7,7 @@ import { v4 as uuidv4 } from "uuid";
 import path from "path";
 import fs from "fs";
 import { Log } from "../schema/logschema.mjs";
+import { User } from "../schema/userschema.mjs";
 
 export const createDish = async (req, res) => {
   try {
@@ -297,6 +298,27 @@ export const archiveDish = async (req, res) => {
 
     const restaurant = await Restaurant.findOne({ uuid: dish.restaurant_uuid });
 
+    const restaurantUsers = [...restaurant.directors, ...restaurant.managers, ...restaurant.employees, ""];
+
+    // const getAllUsers = await User.find({
+    //   $or: [
+    //     { uuid: { $in: restaurantUsers } },
+    //     { role: 'super_admin' }
+    //   ]
+    // }).select('-password');
+
+    // console.log(getAllUsers.length, "getAlLusers");
+
+    // const archivePreviousAnswers = getAllUsers.map((user) => {
+    //   user.attemptedQuestions.map((aq) => aq.menu_item === uuid ? aq.isDeleted = true : aq.isDeleted = false);
+    //   user.save();
+    // });
+
+
+
+
+
+
     // Delete the dish
     await Dish.findOneAndUpdate({ uuid }, { isDeleted: true });
 
@@ -309,6 +331,9 @@ export const archiveDish = async (req, res) => {
 
 
     const result = await archiveLessons(uuid);
+
+
+
     if (!result) return res.status(200).json({ message: "Lessons are not archived, dish archived successfully" });
 
 

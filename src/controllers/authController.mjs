@@ -1363,8 +1363,8 @@ export const viewEmployees = async (req, res) => {
 
 
         const totalEmployees = employees.length;
-        const activeEmployees = employees?.filter(employee => employee.active).length;
-        const inactiveEmployees = employees?.filter(employee => employee.active).length;
+        const activeEmployees = employees?.filter(employee => employee.active === true).length;
+        const inactiveEmployees = employees?.filter(employee => employee.active === false).length;
 
         const completedTrainingByEmployees = allLessons?.filter(lesson => lesson.progress.every(progress => progress.status === 'completed')).length;
         const inProgresTrainingByEmployees = allLessons?.filter(lesson => lesson.progress.some(progress => progress.status === 'in_progress')).length;

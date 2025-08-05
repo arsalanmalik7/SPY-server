@@ -69,9 +69,11 @@ const UserSchema = new mongoose.Schema(
     attemptedQuestions: [
       {
         lesson_uuid: { type: String, ref: "Lesson", required: true },
+        menu_item: { type: String },
         answer: { type: [String], required: true },
         questionId: { type: String, ref: "Question" },
         isCorrect: { type: Boolean },
+        isDeleted: { type: Boolean, default: false },
         attemptedAt: { type: Date, default: Date.now },
       },
     ],
