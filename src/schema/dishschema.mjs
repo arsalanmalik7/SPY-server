@@ -38,6 +38,7 @@ const DishSchema = new mongoose.Schema(
     },
     can_substitute: { type: Boolean, default: false },
     substitutions: { type: [String], trim: true, default: "" },
+    is_cross_contact: { type: Boolean, default: false },
     substitution_notes: { type: String, maxlength: 500, trim: true, default: "" },
     image_url: { type: String, trim: true },
     notes: { type: String, maxlength: 500, trim: true },

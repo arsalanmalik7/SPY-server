@@ -27,6 +27,7 @@ export const createDish = async (req, res) => {
       notes,
       status,
       restaurant_uuid,
+      is_cross_contact,
     } = req.body;
 
     // Check if a dish with the same name already exists
@@ -67,6 +68,7 @@ export const createDish = async (req, res) => {
       notes,
       status,
       restaurant_uuid,
+      is_cross_contact: is_cross_contact || false, // Default to false if not provided
     });
     await newDish.save();
 
@@ -210,6 +212,7 @@ export const updateDish = async (req, res) => {
       status,
       notes,
       restaurant_uuid,
+      is_cross_contact,
     } = req.body;
 
     const dish = await Dish.findOne({ isDeleted: false, uuid });
@@ -241,6 +244,7 @@ export const updateDish = async (req, res) => {
     if (notes) dish.notes = notes;
     if (substitution_notes) dish.substitution_notes = can_substitute ? substitution_notes : "";
     if (accommodations) dish.accommodations = parsedAccommodations;
+    if (is_cross_contact !== undefined) dish.is_cross_contact = is_cross_contact;
     if (status) dish.status = status;
     if (dishImageUrl) {
       // Delete the old image if it exists

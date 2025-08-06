@@ -384,6 +384,7 @@ export const getEmployeeLessons = async (req, res) => {
         let menuItems;
 
 
+
         lessonsWithStatus = await Promise.all(lessonsWithFilteredQuestions.map(async (lesson) => {
             const userId = req.user.uuid;
 
@@ -405,15 +406,14 @@ export const getEmployeeLessons = async (req, res) => {
                 }));
 
             }
-            const attempted = lesson.questions.filter(q =>
+            const attempted = lesson?.questions?.filter(q =>
                 req.user.attemptedQuestions.some(aq =>
-                    aq.lesson_uuid && aq.lesson_uuid.uuid === lesson.uuid && aq.questionId === q.uuid
+                    aq.lesson_uuid && aq?.lesson_uuid?.uuid === lesson?.uuid && aq?.questionId === q?.uuid
                 )
             );
 
-            const QnALength = lesson?.questions?.length === userAnswers?.length;
 
-            console.log(userProgress?.status, "userProgress");
+            const QnALength = lesson?.questions?.length === userAnswers?.length;
 
             return {
                 ...lesson,
@@ -962,7 +962,9 @@ export const getUserProgress = async (req, res) => {
             $or: [
                 { assignedEmployees: userId },
                 { restaurant_uuid: { $in: restaurant_uuids } }
-            ]
+            ],
+            questions: { $type: "array" },
+            "questions": { $elemMatch: { isDeleted: false } }
         });
 
         const user_lesson_progress = allLessons.map(lesson =>
@@ -1600,8 +1602,6 @@ export const lessonUserDetails = async (req, res) => {
             lesson.category === "food" &&
             lesson.assignedEmployees.some(employee => employee.active) // Filter lessons with active employees            
         ));
-
-
 
         const winelessons = lessons.filter(lesson => (
             lesson.category === "wine" &&

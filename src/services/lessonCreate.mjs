@@ -334,7 +334,10 @@ const generateQuestionOptions = (question, dish, config, restaurant, allDishes, 
                 answer = (dish.dietary_restrictions.belief[0] !== 'None') ? 'Yes' : 'No';
             } else if (qText.includes('lifestyle accommodations')) {
                 answer = (dish.dietary_restrictions.lifestyle[0] !== 'None') ? 'Yes' : 'No';
-            } else if (qText.includes('allergens')) {
+            } else if (qText.includes('cross-contact')) {
+                answer = dish?.is_cross_contact ? 'Yes' : 'No';
+            }
+            else if (qText.includes('allergens')) {
                 answer = (dish.allergens && dish.allergens.length > 0 && dish.allergens[0] !== 'None') ? 'Yes' : 'No';
             }
         } else if (qText.includes('be prerpared without')) {
@@ -780,6 +783,31 @@ const generateWineQuestionOptions = (question, wine, config, restaurant, allWine
         //     }
 
         // }
+
+        else if (ov.includes('wine.product_name')) {
+            // Q1: What is the name of this wine?
+            options = allWines
+                .filter(w => w.category === wine.category && w.product_name !== wine.product_name)
+                .map(w => w.product_name)
+                .slice(0, 3);
+            if (wine.product_name) options.push(wine.product_name);
+            // Fill with dummy product names if less than 4
+            const dummyProductNames = [
+                'Chateau Margaux, Grand Vin',
+                'Penfolds, Grange',
+                'Duckhorn, Merlot',
+                'Torres, Sangre de Toro'
+            ];
+            let i = 0;
+            while (options.length < 4) {
+                let candidate = dummyProductNames[i % dummyProductNames.length];
+                if (!options.includes(candidate) && candidate !== wine.product_name) {
+                    options.push(candidate);
+                }
+                i++;
+            }
+            options = shuffle(options);
+        }
         else if (ov.includes('wine.style.name')) {
             // Extract style_name from placeholder
             const styleName = wine.style.name;
@@ -792,16 +820,16 @@ const generateWineQuestionOptions = (question, wine, config, restaurant, allWine
             if (styleName) options.push(styleName);
             // Fill with dummy wine style names if less than 4
             const dummyWineStyles = [
-                'crisp White',
-                'bold Red',
-                'fruity Rosé',
-                'classic Sparkling',
-                'rich Dessert',
-                'aromatic Orange',
-                'earthy Red',
-                'mineral White',
-                'sweet Moscato',
-                'dry Champagne'
+                'Crisp White',
+                'Bold Red',
+                'Fruity Rosé',
+                'Classic Sparkling',
+                'Rich Dessert',
+                'Aromatic Orange',
+                'Earthy Red',
+                'Mineral White',
+                'Sweet Moscato',
+                'Dry Champagne'
             ];
             let i = 0;
             while (options.length < 4) {
@@ -926,10 +954,13 @@ const generateWineQuestionOptions = (question, wine, config, restaurant, allWine
 
         else if (cav.includes('style.name')) {
             correctAnswer = wine.style?.name;
-        } else if (cav.includes('offering.bottle_price') && !question.question_text.includes('{number}')) {
-            correctAnswer = usdFormatter.format(wine.offering?.bottle_price?.toString());
+        } else if (cav.includes('product_name')) {
+            correctAnswer = wine.product_name;
+        }
+        else if (cav.includes('offering.bottle_price') && !question.question_text.includes('{number}')) {
+            correctAnswer = usdFormatter.format(wine.offering?.bottle_price || formatter.format(0));
         } else if (cav.includes('offering.glass_price') && !question.question_text.includes('{number}')) {
-            correctAnswer = usdFormatter.format(wine.offering?.glass_price?.toString());
+            correctAnswer = usdFormatter.format(wine.offering?.glass_price || formatter.format(0));
         } else if (cav.includes('varietals.length > 1')) {
             correctAnswer = (wine.varietals && wine.varietals.length > 1) ? 'Blend' : 'Single Grape';
         }
@@ -1285,67 +1316,67 @@ const generateLessonsForRestaurant = async (category, restaurant_uuid, newEntry)
                                     // Get all unique varietals
                                     const allVarietals = Array.from(new Set(wines.flatMap(w => w.varietals)));
                                     // return allVarietals.flatMap(varietal => {
-                                        // BTG question
-                                        if (question.question_text.includes("by the glass") || question.question_text.includes("BTG")) {
-                                            // Find a wine with this varietal and by_the_glass
-                                            const wineForVarietal = wines.find(w => w.varietals.includes(newEntry.varietals[0]) && w.offering?.by_the_glass);
-                                            if (!wineForVarietal) return [];
-                                            const wine_price = wineForVarietal.offering?.glass_price?.toString() || "";
-                                            const number = wines.filter(w => w.varietals.includes(newEntry.varietals[0]) && w.offering?.by_the_glass).length;
-                                            const questionForVarietal = {
-                                                ...question,
-                                                placeholders: {
-                                                    ...question.placeholders,
-                                                    wine_varietal: newEntry.varietals[0],
-                                                    wine_price,
-                                                    number
-                                                }
-                                            };
-                                            const result = generateWineQuestionOptions(
-                                                questionForVarietal,
-                                                wineForVarietal,
-                                                config,
-                                                restaurant,
-                                                wines,
-                                                questionCounter
-                                            );
-                                            if (Array.isArray(result)) {
-                                                return result.map(q => ({ ...q, question_number: questionCounter++ }));
-                                            } else {
-                                                return { ...result, question_number: questionCounter++ };
+                                    // BTG question
+                                    if (question.question_text.includes("by the glass") || question.question_text.includes("BTG")) {
+                                        // Find a wine with this varietal and by_the_glass
+                                        const wineForVarietal = wines.find(w => w.varietals.includes(newEntry.varietals[0]) && w.offering?.by_the_glass);
+                                        if (!wineForVarietal) return [];
+                                        const wine_price = wineForVarietal.offering?.glass_price?.toString() || "";
+                                        const number = wines.filter(w => w.varietals.includes(newEntry.varietals[0]) && w.offering?.by_the_glass).length;
+                                        const questionForVarietal = {
+                                            ...question,
+                                            placeholders: {
+                                                ...question.placeholders,
+                                                wine_varietal: newEntry.varietals[0],
+                                                wine_price,
+                                                number
                                             }
+                                        };
+                                        const result = generateWineQuestionOptions(
+                                            questionForVarietal,
+                                            wineForVarietal,
+                                            config,
+                                            restaurant,
+                                            wines,
+                                            questionCounter
+                                        );
+                                        if (Array.isArray(result)) {
+                                            return result.map(q => ({ ...q, question_number: questionCounter++ }));
+                                        } else {
+                                            return { ...result, question_number: questionCounter++ };
                                         }
-                                        // BTB question
-                                        if (question.question_text.includes("by the bottle") || question.question_text.includes("BTB")) {
-                                            const wineForVarietal = wines.find(w => w.varietals.includes(newEntry.varietals[0]) && w.offering?.by_the_bottle);
-                                            if (!wineForVarietal) return [];
-                                            const wine_price = wineForVarietal.offering?.bottle_price?.toString() || "";
-                                            const number = wines.filter(w => w.varietals.includes(newEntry.varietals[0]) && w.offering?.by_the_bottle).length;
-                                            const questionForVarietal = {
-                                                ...question,
-                                                placeholders: {
-                                                    ...question.placeholders,
-                                                    wine_varietal: newEntry.varietals[0],
-                                                    wine_price,
-                                                    number
-                                                }
-                                            };
-                                            const result = generateWineQuestionOptions(
-                                                questionForVarietal,
-                                                wineForVarietal,
-                                                config,
-                                                restaurant,
-                                                wines,
-                                                questionCounter
-                                            );
-                                            if (Array.isArray(result)) {
-                                                return result.map(q => ({ ...q, question_number: questionCounter++ }));
-                                            } else {
-                                                return { ...result, question_number: questionCounter++ };
+                                    }
+                                    // BTB question
+                                    if (question.question_text.includes("by the bottle") || question.question_text.includes("BTB")) {
+                                        const wineForVarietal = wines.find(w => w.varietals.includes(newEntry.varietals[0]) && w.offering?.by_the_bottle);
+                                        if (!wineForVarietal) return [];
+                                        const wine_price = wineForVarietal.offering?.bottle_price?.toString() || "";
+                                        const number = wines.filter(w => w.varietals.includes(newEntry.varietals[0]) && w.offering?.by_the_bottle).length;
+                                        const questionForVarietal = {
+                                            ...question,
+                                            placeholders: {
+                                                ...question.placeholders,
+                                                wine_varietal: newEntry.varietals[0],
+                                                wine_price,
+                                                number
                                             }
+                                        };
+                                        const result = generateWineQuestionOptions(
+                                            questionForVarietal,
+                                            wineForVarietal,
+                                            config,
+                                            restaurant,
+                                            wines,
+                                            questionCounter
+                                        );
+                                        if (Array.isArray(result)) {
+                                            return result.map(q => ({ ...q, question_number: questionCounter++ }));
+                                        } else {
+                                            return { ...result, question_number: questionCounter++ };
                                         }
-                                        // For other question types, fallback to default
-                                        // return [];
+                                    }
+                                    // For other question types, fallback to default
+                                    // return [];
                                     // });
                                 }
                                 // Fallback to default for non-repeat_for questions
@@ -1420,7 +1451,7 @@ const generateLessonsForRestaurant = async (category, restaurant_uuid, newEntry)
                                 { uuid: existingRestaurantLesson.uuid },
                                 {
                                     $addToSet: { menu_items: newEntry.uuid }, // add only if not present
-                                    $set: { questions: processedQuestions }, // replace all questions with new ones
+                                    $push: { questions: { $each: processedQuestions } }, // append all new questions
                                     menu_items_model: "GlobalWine",
                                 },
                                 { new: true }
