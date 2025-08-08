@@ -232,6 +232,16 @@ const insertDataDynamically = async (data) => {
 
         } else if (bulkUploadType === "restaurant") {
 
+            const restaurantsNames = data.restaurants.map(r => r.name);
+            const restaurantsAddresses = data.restaurants.map(r => r.address);
+            const existingRestaurants = await Restaurant.find({
+                $or: [
+                    { name: { $in: restaurantsNames } },
+                    { address: { $in: restaurantsAddresses } }
+                ]
+            });
+            
+
             const restaurants = await Restaurant.insertMany(data.restaurants);
             const restaurantUUIDMap = Object.fromEntries(restaurants.map(restaurant => [restaurant.uuid, restaurant.uuid]));
 
@@ -640,7 +650,7 @@ export const importToDatabase = async (req, res) => {
         // Read the file as a buffer
         const fileBuffer = await fs.readFile(filePath);
         let dataFile;
-        if (filePath.endsWith('.xlsx') || filePath.endsWith('.xls')) {
+        if (filePath.endsWith('.xlsx') || filePath.endsWith('.xls') || filePath.endsWith('.csv')) {
             // Parse Excel file
             const workbook = XLSX.read(fileBuffer, { type: 'buffer' });
             const sheetName = workbook.SheetNames[0];

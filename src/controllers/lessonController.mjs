@@ -512,6 +512,9 @@ export const updateLessonProgress = async (req, res) => {
         const { score, timeSpent, answers } = req.body;
         const userId = req.user.uuid;
 
+        console.log(answers, "answers in updateLessonProgress");
+        console.log(answers?.length, "answers length in updateLessonProgress");
+
         // Find the lesson
         const lesson = await Lesson.findOne({ isDeleted: false, uuid: lesson_uuid, });
         if (!lesson) {

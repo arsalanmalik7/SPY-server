@@ -247,7 +247,7 @@ export const loginUser = async (req, res) => {
 
         if (restaurant_uuids.length !== 0) {
             const restaurants = await Restaurant.find({ uuid: { $in: restaurant_uuids } });
-            
+
             userObject.assigned_restaurants = restaurants
 
         } else {
@@ -293,7 +293,7 @@ export const updateUser = async (req, res) => {
     try {
         const { userId } = req.params;
         const { first_name, last_name, email, assigned_restaurants, lesson_progress, role, next_lesson_due, newPassword, active, } = req.body;
-        
+
         const token = req.headers.authorization?.split(" ")[1];
 
         if (!token) return res.status(401).json({ message: "Unauthorized" });
@@ -1131,7 +1131,7 @@ export const getLogs = async (req, res) => {
 
         } else if (user.role === "director") {
             // Directors can see logs for their assigned restaurants, excluding admin and super_admin logs
-            const assignedRestaurants = await Restaurant.find({ uuid: { $in: user.assigned_restaurants } });
+            const assignedRestaurants = await Restaurant.find({ uuid: { $in: user.assigned_restaurants?.map(r => r.uuid) } });
             const ownerRestaurants = await Restaurant.find({ account_owner: req.user.uuid });
             // Merge and remove duplicates by uuid
             const allRestaurantsMap = new Map();
@@ -1139,11 +1139,13 @@ export const getLogs = async (req, res) => {
                 allRestaurantsMap.set(r.uuid, r);
             });
             const restaurants = Array.from(allRestaurantsMap.values()).sort((a, b) => b.createdAt - a.createdAt);
+            const restaurantUUIDs = restaurants.map(r => r.uuid);
             logs = await Log.find({
-                restaurant_uuid: { $in: restaurants },
+                restaurant_uuid: { $in: restaurantUUIDs },
                 "details.role": { $nin: ["super_admin", "admin"] }
             }).sort({ timestamp: -1 });
             const emailSet = new Set();
+            console.log("logs: ", logs);
             for (let log of logs) {
                 if (log.details && log.details.email) {
                     emailSet.add(log.details.email);
@@ -1166,7 +1168,7 @@ export const getLogs = async (req, res) => {
 
         } else if (user.role === "manager") {
             // Managers can only see logs for their specific restaurant, and only manager/employee logs
-            const assignedRestaurants = await Restaurant.find({ uuid: { $in: user.assigned_restaurants } });
+            const assignedRestaurants = await Restaurant.find({ uuid: { $in: user.assigned_restaurants?.map(r => r.uuid) } });
             const ownerRestaurants = await Restaurant.find({ account_owner: req.user.uuid });
             // Merge and remove duplicates by uuid
             const allRestaurantsMap = new Map();
@@ -1174,10 +1176,11 @@ export const getLogs = async (req, res) => {
                 allRestaurantsMap.set(r.uuid, r);
             });
             const restaurants = Array.from(allRestaurantsMap.values()).sort((a, b) => b.createdAt - a.createdAt);
+            const restaurantUUIDs = restaurants.map(r => r.uuid);
 
 
             logs = await Log.find({
-                restaurant_uuid: { $in: restaurants },
+                restaurant_uuid: { $in: restaurantUUIDs },
                 "details.role": { $in: ["manager", "employee"] }
             }).sort({ timestamp: -1 });
             const emailSet = new Set();
@@ -1366,9 +1369,34 @@ export const viewEmployees = async (req, res) => {
         const activeEmployees = employees?.filter(employee => employee.active === true).length;
         const inactiveEmployees = employees?.filter(employee => employee.active === false).length;
 
-        const completedTrainingByEmployees = allLessons?.filter(lesson => lesson.progress.every(progress => progress.status === 'completed')).length;
-        const inProgresTrainingByEmployees = allLessons?.filter(lesson => lesson.progress.some(progress => progress.status === 'in_progress')).length;
-        const notStartedTrainingByEmployees = allLessons?.filter(lesson => lesson.progress.every(progress => progress.status === 'not_started')).length;
+       
+        const completedTrainingByEmployees = [];
+        const inProgresTrainingByEmployees = [];
+        const notStartedTrainingByEmployees = [];
+
+        for (const employee of employees) {
+            // Get all lessons assigned to this employee
+            const employeeLessons = allLessons.filter(lesson =>
+                lesson.assignedEmployees?.includes(employee.uuid)
+            );
+        
+            if (employeeLessons.length === 0) continue; // Skip if no lessons assigned
+        
+            // Get progress for each lesson for this employee
+            const progressStatuses = employeeLessons.map(lesson => {
+                const progress = lesson.progress.find(p => p.employeeId === employee.uuid);
+                return progress ? progress.status : 'not_started';
+            });
+        
+            if (progressStatuses.every(status => status === 'completed')) {
+                completedTrainingByEmployees.push(employee);
+            } else if (progressStatuses.every(status => status === 'not_started')) {
+                notStartedTrainingByEmployees.push(employee);
+            } else if (progressStatuses.some(status => status === 'in_progress')) {
+                inProgresTrainingByEmployees.push(employee);
+            }
+        }
+
 
         const mostActiveEmployeesInLastThirtyDays = employees?.filter(employee => {
             const thirtyDaysAgo = new Date();
@@ -1394,9 +1422,9 @@ export const viewEmployees = async (req, res) => {
             totalEmployees,
             activeEmployees,
             inactiveEmployees,
-            completedTrainingByEmployees,
-            inProgresTrainingByEmployees,
-            notStartedTrainingByEmployees,
+            completedTrainingByEmployees: completedTrainingByEmployees.length,
+            inProgresTrainingByEmployees: inProgresTrainingByEmployees.length,
+            notStartedTrainingByEmployees: notStartedTrainingByEmployees.length,
             mostActiveEmployeesInLastThirtyDays,
             lessonOverDueEmployees
         });

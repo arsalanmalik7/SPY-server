@@ -10,6 +10,8 @@ export const createRestaurant = async (req, res) => {
         const { name, address, directors, managers, employees, subscription_status, subscription_plan, menu, allow_manager_modifications, phone, status, cuisine_type } = req.body;
         const account_owner = req.user.uuid;
 
+        console.log("Creating restaurant with data:", address);
+
 
         const user = await User.findOne({ uuid: account_owner });
 
@@ -135,7 +137,7 @@ export const getAllRestaurants = async (req, res) => {
         const role = req.user.role;
         let restaurants;
         if (role === "super_admin") {
-            restaurants = await Restaurant.find({});
+            restaurants = await Restaurant.find({}).sort({ createdAt: -1 });
         } else {
 
             // Get restaurants where user is assigned or is the account owner
