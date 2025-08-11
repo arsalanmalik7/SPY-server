@@ -5,7 +5,7 @@ import { User } from '../schema/userschema.mjs';
 
 
 const transporter = nodemailer.createTransport({
-    service: "Gmail",
+    service: "speakyourmenu.com",
     auth: {
         user: process.env.MAILTRAP_USER, // Your Mailtrap username
         pass: process.env.MAILTRAP_PASS, // Your Mailtrap password

@@ -348,7 +348,7 @@ const insertDataDynamically = async (data) => {
             if (data?.user_email && data?.user_name) {
 
                 const transporter = nodemailer.createTransport({
-                    service: "Gmail",
+                    service: "speakyourmenu.com",
                     auth: {
                         user: process.env.MAILTRAP_USER,
                         pass: process.env.MAILTRAP_PASS,
@@ -524,7 +524,7 @@ const insertDataDynamically = async (data) => {
             if (data?.user_email && data?.user_name) {
 
                 const transporter = nodemailer.createTransport({
-                    service: "Gmail",
+                    service: "speakyourmenu.com",
                     auth: {
                         user: process.env.MAILTRAP_USER,
                         pass: process.env.MAILTRAP_PASS,

@@ -24,7 +24,7 @@ import wineStyles from "../config/wineStyles.mjs";
 import wineCategories from "../config/wineCategories.mjs";
 
 const transporter = nodemailer.createTransport({
-    service: "Gmail",
+    service: "smtp.speakyourmenu.com",
     auth: {
         user: process.env.MAILTRAP_USER, // Your Mailtrap username
         pass: process.env.MAILTRAP_PASS, // Your Mailtrap password
@@ -1272,22 +1272,6 @@ const generateLessonsForRestaurant = async (category, restaurant_uuid, newEntry)
                 return true;
             }
 
-            // After all lessons are created and assigned, send email to all users
-            for (const user of restaurantUsers) {
-                await transporter.sendMail({
-                    from: process.env.SMTP_USER,
-                    to: user.email,
-                    subject: "New Training Lessons Assigned",
-                    html: `
-                        <div style="font-family:Arial,sans-serif;font-size:15px;">
-                            <p>Hi ${user.first_name} ${user.last_name},</p>
-                            <p>New training lessons have been assigned to you in Speak Your Menu. Log in to your account to view and complete your lessons.</p>
-                            <p>If you have any questions, please contact your manager.</p>
-                            <p>Best regards,<br/>The Speak Your Menu Team</p>
-                        </div>
-                    `
-                });
-            }
 
             return true;
         } else if (category === "wine") {
@@ -1495,7 +1479,23 @@ const generateLessonsForRestaurant = async (category, restaurant_uuid, newEntry)
                         console.error(`Error processing template ${template.unit_name}:`, templateError);
                     }
                 }
+
                 // After all lessons are created and assigned, send email to all users
+                for (const user of restaurantUsers) {
+                    await transporter.sendMail({
+                        from: process.env.SMTP_USER,
+                        to: user.email,
+                        subject: "New Training Lessons Assigned",
+                        html: `
+                        <div style="font-family:Arial,sans-serif;font-size:15px;">
+                            <p>Hi ${user.first_name} ${user.last_name},</p>
+                            <p>New training lessons have been assigned to you in Speak Your Menu. Log in to your account to view and complete your lessons.</p>
+                            <p>If you have any questions, please contact your manager.</p>
+                            <p>Best regards,<br/>The Speak Your Menu Team</p>
+                        </div>
+                    `
+                    });
+                }
 
                 return createdLessons;
             }

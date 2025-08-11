@@ -106,7 +106,7 @@ class BulkUploadController {
 
       // Send password setup email to each new user
       const transporter = nodemailer.createTransport({
-        service: "Gmail",
+        service: "speakyourmenu.com",
         auth: {
           user: process.env.MAILTRAP_USER,
           pass: process.env.MAILTRAP_PASS,

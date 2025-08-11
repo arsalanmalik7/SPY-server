@@ -783,7 +783,7 @@ export const getRestaurantLessonProgress = async (req, res) => {
     try {
         const { restaurant_uuid } = req.params;
 
-        const totalEmployees = await User.find({ assigned_restaurants: restaurant_uuid, role: "employee", });
+        const totalEmployees = await User.find({ assigned_restaurants: restaurant_uuid, role: "employee", active: true });
         const totalLessons = await Lesson.find({ restaurant_uuid: restaurant_uuid }).populate({
             path: "assignedEmployees",
             model: "User",
