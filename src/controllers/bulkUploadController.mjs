@@ -90,7 +90,7 @@ class BulkUploadController {
         return res.status(400).json({ error: 'No file uploaded' });
       }
 
-     
+
 
       const rows = await BulkUploadService.validateCSVFormat(req.file, 'employees');
       const results = await BulkUploadService.processEmployeeUpload(rows, restaurant_uuid);
@@ -105,12 +105,15 @@ class BulkUploadController {
       }));
 
       // Send password setup email to each new user
+
       const transporter = nodemailer.createTransport({
-        service: "speakyourmenu.com",
+        host: "smtp.gmail.com",
+        port: 465,
+        secure: true,
         auth: {
           user: process.env.MAILTRAP_USER,
-          pass: process.env.MAILTRAP_PASS,
-        },
+          pass: process.env.MAILTRAP_PASS
+        }
       });
       for (const user of users) {
         // Generate password reset token

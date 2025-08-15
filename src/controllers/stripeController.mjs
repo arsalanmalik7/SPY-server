@@ -5,11 +5,13 @@ import { User } from '../schema/userschema.mjs';
 
 
 const transporter = nodemailer.createTransport({
-    service: "speakyourmenu.com",
+    host: "smtp.gmail.com",
+    port: 465,
+    secure: true,
     auth: {
-        user: process.env.MAILTRAP_USER, // Your Mailtrap username
-        pass: process.env.MAILTRAP_PASS, // Your Mailtrap password
-    },
+        user: process.env.MAILTRAP_USER,
+        pass: process.env.MAILTRAP_PASS
+    }
 });
 
 // Create a payment intent
@@ -128,7 +130,7 @@ export const getAllTransactions = async (req, res) => {
         const emails = transactions.data.map((tr) => tr.billing_details.email);
 
         const users = await User.find({ email: { $in: emails }, role: { $ne: "super_admin" } }).select('role email current_subscription');
-        
+
 
         const transactionWithDetails = users.map((user) => {
             const userTransactions = transactions.data.find((tr) => tr?.billing_details?.email === user?.email);
@@ -184,7 +186,7 @@ export const stripeWebhook = async (req, res) => {
             let stripeSubscription = null;
             if (subscriptionId) {
                 const planName = item.price.product.name;
-                
+
                 if (planName) planType = planName;
 
             }

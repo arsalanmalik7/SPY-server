@@ -17,12 +17,15 @@ dotenv.config();
 const SALT_ROUNDS = 10;
 
 // Nodemailer Transporter with Mailtrap
+
 const transporter = nodemailer.createTransport({
-    service: "speakyourmenu.com",
+    host: "smtp.gmail.com",
+    port: 465,
+    secure: true,
     auth: {
-        user: process.env.MAILTRAP_USER, // Your Mailtrap username
-        pass: process.env.MAILTRAP_PASS, // Your Mailtrap password
-    },
+        user: process.env.MAILTRAP_USER,
+        pass: process.env.MAILTRAP_PASS
+    }
 });
 
 // Middleware to check user role

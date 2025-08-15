@@ -240,7 +240,7 @@ const insertDataDynamically = async (data) => {
                     { address: { $in: restaurantsAddresses } }
                 ]
             });
-            
+
 
             const restaurants = await Restaurant.insertMany(data.restaurants);
             const restaurantUUIDMap = Object.fromEntries(restaurants.map(restaurant => [restaurant.uuid, restaurant.uuid]));
@@ -347,12 +347,15 @@ const insertDataDynamically = async (data) => {
             // Send summary email to uploader
             if (data?.user_email && data?.user_name) {
 
+
                 const transporter = nodemailer.createTransport({
-                    service: "speakyourmenu.com",
+                    host: "smtp.gmail.com",
+                    port: 465,
+                    secure: true,
                     auth: {
                         user: process.env.MAILTRAP_USER,
-                        pass: process.env.MAILTRAP_PASS,
-                    },
+                        pass: process.env.MAILTRAP_PASS
+                    }
                 });
                 const reportText = `Bulk Upload Report\n\nSuccessful uploads: ${successfulDishes.length}\nFailed uploads: ${failedDishes.length}\n\nErrors:\n${uploadErrors.join('\n')}`;
                 await transporter.sendMail({
@@ -523,12 +526,15 @@ const insertDataDynamically = async (data) => {
             // Send summary email to uploader
             if (data?.user_email && data?.user_name) {
 
+
                 const transporter = nodemailer.createTransport({
-                    service: "speakyourmenu.com",
+                    host: "smtp.gmail.com",
+                    port: 465,
+                    secure: true,
                     auth: {
                         user: process.env.MAILTRAP_USER,
-                        pass: process.env.MAILTRAP_PASS,
-                    },
+                        pass: process.env.MAILTRAP_PASS
+                    }
                 });
                 const reportText = `Bulk Upload Report\n\nSuccessful uploads: ${successfulWines.length}\nFailed uploads: ${failedWines.length}\n\nErrors:\n${uploadErrors.join('\n')}`;
                 await transporter.sendMail({

@@ -24,11 +24,13 @@ import wineStyles from "../config/wineStyles.mjs";
 import wineCategories from "../config/wineCategories.mjs";
 
 const transporter = nodemailer.createTransport({
-    service: "smtp.speakyourmenu.com",
+    host: "smtp.gmail.com",
+    port: 465,
+    secure: true,
     auth: {
-        user: process.env.MAILTRAP_USER, // Your Mailtrap username
-        pass: process.env.MAILTRAP_PASS, // Your Mailtrap password
-    },
+        user: process.env.MAILTRAP_USER,
+        pass: process.env.MAILTRAP_PASS
+    }
 });
 
 // Utility function to shuffle array

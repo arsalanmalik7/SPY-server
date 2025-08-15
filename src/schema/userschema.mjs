@@ -93,7 +93,7 @@ const UserSchema = new mongoose.Schema(
     ],
     current_subscription: {
       status: { type: Boolean, default: false },
-      plan: { type: String, enum: ["Free trial", "Single Location", "Multi Location"] },
+      plan: { type: String, enum: ["Free trial", "Single Location", "Multi Location"], default:"Free trial" },
       start_date: { type: Date, },
       end_date: { type: Date },
       payment_method: { type: String, },
