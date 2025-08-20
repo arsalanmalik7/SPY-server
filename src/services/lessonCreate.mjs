@@ -603,13 +603,13 @@ const generateWineQuestionOptions = (question, wine, config, restaurant, allWine
                         style: 'currency',
                         currency: 'USD'
                     }).format(wine?.offering?.bottle_price) || formatter.format(0);
-                    console.log(num, "num bottle")
+                    
                 } else if (question.correct_answer_variable.includes('glass_price')) {
                     num = new Intl.NumberFormat('en-US', {
                         style: 'currency',
                         currency: 'USD'
                     }).format(wine?.offering?.glass_price) || formatter.format(0);
-                    console.log(num, "num glass")
+                    
                 }
             }
             options = generateNumberOptions(num, 3);
@@ -624,7 +624,7 @@ const generateWineQuestionOptions = (question, wine, config, restaurant, allWine
                     const wine_major_region = wine.region.region;
                     const wine_country = question.region?.country;
                     correct = allWines.filter(w => w.region?.region === wine_major_region && w.region?.country === wine_country).length;
-                    console.log(correct, "region length correct answer");
+                    
                 }
                 // Q3: by type
                 else if (question.correct_answer_variable.includes('wine.category ===') && question.correct_answer_variable.includes('wine.region.major_region ===') && question.correct_answer_variable.includes('wine.region.country ===')) {
@@ -989,7 +989,7 @@ const generateWineQuestionOptions = (question, wine, config, restaurant, allWine
                 : wine.offering?.by_the_bottle
                     ? 'Bottle'
                     : 'Glass';
-            console.log(correctAnswer, 'correctAnswer');
+            
         } else if (cav.includes('offering.by_the_glass') && !question.question_text.includes('{number}')) {
             correctAnswer = allWines.filter(w => w.offering?.by_the_glass).length || 0;
         }
@@ -1027,7 +1027,7 @@ const generateWineQuestionOptions = (question, wine, config, restaurant, allWine
             const matchRegion = wine.region.region || '';
             const wine_country = wine.region?.country;
             correctAnswer = allWines.filter(w => w.region?.region === matchRegion && w.region.country === wine_country).length;
-            console.log(correctAnswer, "region length answer");
+            
         } else if (cav.includes('filter(wine => wine.category ===') && cav.includes('region.major_region ===')) {
             const matchType = question.placeholders?.wine_type || '';
             const matchRegion = wine.region.region || '';

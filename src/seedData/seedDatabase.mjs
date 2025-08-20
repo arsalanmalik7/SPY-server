@@ -331,18 +331,15 @@ const insertDataDynamically = async (data) => {
                         },
                     });
                     successfulDishes.push(dish);
+
+                    await generateLessonsForRestaurant("food", dish.restaurant_uuid, dish);
+
                 } catch (err) {
                     failedDishes.push(dish);
                     uploadErrors.push(`Dish: ${dish.name} - ${err.message}`);
                 }
             }
 
-            await Promise.all(
-                newDishes.map(async (dish) => {
-                    const generateLessons = await generateLessonsForRestaurant("food", dish.restaurant_uuid, dish);
-
-                })
-            );
 
             // Send summary email to uploader
             if (data?.user_email && data?.user_name) {
@@ -449,8 +446,8 @@ const insertDataDynamically = async (data) => {
                 const offering = {
                     by_the_glass: (typeof row.by_the_glass === 'string' ? row.by_the_glass.toLowerCase() === 'yes' : !!row.by_the_glass),
                     by_the_bottle: (typeof row.by_the_bottle === 'string' ? row.by_the_bottle.toLowerCase() === 'yes' : !!row.by_the_bottle),
-                    glass_price: row.glass_price && !isNaN(Number(row.glass_price)) ? Number(row.glass_price) : undefined,
-                    bottle_price: row.bottle_price && !isNaN(Number(row.bottle_price)) ? Number(row.bottle_price) : undefined
+                    glass_price: row.glass_price && !isNaN(Number(row.glass_price)) ? Number(row.glass_price) : 0,
+                    bottle_price: row.bottle_price && !isNaN(Number(row.bottle_price)) ? Number(row.bottle_price) : 0
                 };
                 return {
                     producer_name: row.producer_name,
@@ -508,20 +505,14 @@ const insertDataDynamically = async (data) => {
                         },
                     });
                     successfulWines.push(wine);
+
+                    await generateLessonsForRestaurant("wine", wine.restaurant_uuid, wine);
+
                 } catch (err) {
                     failedWines.push(wine);
                     uploadErrors.push(`Wine: ${wine.product_name} - ${err.message}`);
                 }
             }
-
-            // Generate wine lessons
-            await Promise.all(
-                insertedWines.map(async (wine) => {
-                    const generateLessons = await generateLessonsForRestaurant("wine", wine.restaurant_uuid, wine);
-                    console.log(generateLessons, "generatedLessons");
-
-                })
-            );
 
             // Send summary email to uploader
             if (data?.user_email && data?.user_name) {
@@ -625,7 +616,6 @@ const insertDataDynamically = async (data) => {
             });
 
             const generateLessons = await generateLessonForNewTemplate(newLessonTemplate);
-            console.log(generateLessons, "generatedLessons");
             return newLessonTemplate;
 
 

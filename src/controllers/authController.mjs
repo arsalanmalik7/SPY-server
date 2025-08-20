@@ -153,16 +153,6 @@ export const registerUser = async (req, res) => {
         res.status(201).json({ message: "User registered successfully", user: newUser });
     } catch (error) {
         console.error("Registration Error:", error);
-        await Log.create({
-            uuid: uuidv4(),
-            user_uuid: null,
-            action: "user_registration_failed",
-            details: { error: error.message },
-            role: "unknown",
-            restaurant_uuid: null, // No restaurant associated
-            timestamp: new Date(),
-        });
-
         res.status(500).json({ message: "Server error", error: error.message });
     }
 };
@@ -1105,7 +1095,14 @@ export const getLogs = async (req, res) => {
         if (user.role === "super_admin") {
             // Super Admins can see all logs
             // 1. Get all logs
-            logs = await Log.find().sort({ timestamp: -1 });
+            logs = await Log.find().sort({ timestamp: -1 }).populate({
+                path: "user_uuid",
+                model: "User",
+                match: { uuid: { $exists: true } }, // Ensures only valid references are populated
+                localField: "user_uuid",
+                foreignField: "uuid",
+                select: 'email first_name last_name'
+            });
 
             const emailSet = new Set();
             for (let log of logs) {
@@ -1146,7 +1143,14 @@ export const getLogs = async (req, res) => {
             logs = await Log.find({
                 restaurant_uuid: { $in: restaurantUUIDs },
                 "details.role": { $nin: ["super_admin", "admin"] }
-            }).sort({ timestamp: -1 });
+            }).sort({ timestamp: -1 }).populate({
+                path: "user_uuid",
+                model: "User",
+                match: { uuid: { $exists: true } }, // Ensures only valid references are populated
+                localField: "user_uuid",
+                foreignField: "uuid",
+                select: 'email first_name last_name'
+            });
             const emailSet = new Set();
             console.log("logs: ", logs);
             for (let log of logs) {
@@ -1185,7 +1189,14 @@ export const getLogs = async (req, res) => {
             logs = await Log.find({
                 restaurant_uuid: { $in: restaurantUUIDs },
                 "details.role": { $in: ["manager", "employee"] }
-            }).sort({ timestamp: -1 });
+            }).sort({ timestamp: -1 }).populate({
+                path: "user_uuid",
+                model: "User",
+                match: { uuid: { $exists: true } }, // Ensures only valid references are populated
+                localField: "user_uuid",
+                foreignField: "uuid",
+                select: 'email first_name last_name'
+            });
             const emailSet = new Set();
             for (let log of logs) {
                 if (log.details && log.details.email) {
@@ -1372,7 +1383,7 @@ export const viewEmployees = async (req, res) => {
         const activeEmployees = employees?.filter(employee => employee.active === true).length;
         const inactiveEmployees = employees?.filter(employee => employee.active === false).length;
 
-       
+
         const completedTrainingByEmployees = [];
         const inProgresTrainingByEmployees = [];
         const notStartedTrainingByEmployees = [];
@@ -1382,15 +1393,15 @@ export const viewEmployees = async (req, res) => {
             const employeeLessons = allLessons.filter(lesson =>
                 lesson.assignedEmployees?.includes(employee.uuid)
             );
-        
+
             if (employeeLessons.length === 0) continue; // Skip if no lessons assigned
-        
+
             // Get progress for each lesson for this employee
             const progressStatuses = employeeLessons.map(lesson => {
                 const progress = lesson.progress.find(p => p.employeeId === employee.uuid);
                 return progress ? progress.status : 'not_started';
             });
-        
+
             if (progressStatuses.every(status => status === 'completed')) {
                 completedTrainingByEmployees.push(employee);
             } else if (progressStatuses.every(status => status === 'not_started')) {

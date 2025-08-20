@@ -419,7 +419,7 @@ class BulkUploadService {
           continue;
         }
 
-       console.log(row, "row");
+        console.log(row, "row");
 
 
         const user = await User.create({
@@ -432,8 +432,25 @@ class BulkUploadService {
         });
 
         console.log(user, "user");
-        
 
+        const role = row.role.toLowerCase();
+
+        if (role === 'employee') {
+          await Restaurant.updateOne(
+            { uuid: restaurantId },
+            { $addToSet: { employees: user.uuid } }
+          );
+        } else if (role === 'manager') {
+          await Restaurant.updateOne(
+            { uuid: restaurantId },
+            { $addToSet: { managers: user.uuid } }
+          );
+        } else if (role === 'director') {
+          await Restaurant.updateOne(
+            { uuid: restaurantId },
+            { $addToSet: { directors: user.uuid } }
+          );
+        }
 
         results.success.push(user);
       } catch (error) {
