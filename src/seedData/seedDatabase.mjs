@@ -432,6 +432,7 @@ const insertDataDynamically = async (data) => {
             const rawWines = Array.isArray(data.wines) ? data.wines : Object.values(data).filter(row => row.producer_name && row.product_name);
             const splitAndTrim = val => typeof val === 'string' ? val.split(',').map(s => s.trim()).filter(Boolean) : Array.isArray(val) ? val : [];
             const wines = rawWines.map(row => {
+                const isVintageNaN = Number(row.vintage) !== Number(row.vintage);
                 // Region object
                 const region = {
                     country: row.country || '',
@@ -454,7 +455,7 @@ const insertDataDynamically = async (data) => {
                     product_name: row.product_name,
                     varietals: splitAndTrim(row.varietals),
                     region,
-                    vintage: Number(row.vintage),
+                    vintage: isVintageNaN ? row.vintage : Number(row.vintage),
                     category: row.category ? row.category : '',
                     sub_category: row.sub_category || '',
                     is_filtered: (typeof row.is_filtered === 'string' ? row.is_filtered.toLowerCase() === 'yes' : !!row.is_filtered),
@@ -471,6 +472,7 @@ const insertDataDynamically = async (data) => {
                 };
             });
 
+            console.log(wines, "wines");
 
 
             // Filter out wines that already exist by product_name, producer_name, and vintage

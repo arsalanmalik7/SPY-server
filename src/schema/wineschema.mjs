@@ -21,7 +21,19 @@ const GlobalWineSchema = new mongoose.Schema({
     commune_appellation: { type: String, trim: true, maxlength: 100 }, // Legal & historic precision
     vineyard: { type: String, trim: true, maxlength: 100 }, // Terroir-specific site
   },
-  vintage: { type: Number, min: 1800, max: new Date().getFullYear(), index: true },
+  vintage: {
+    type: mongoose.Schema.Types.Mixed,  // allows either Number or String
+    index: true,
+    validate: {
+      validator: function (v) {
+        if (typeof v === "number") {
+          return v >= 1800 && v <= new Date().getFullYear();
+        }
+        return true; // allow any string
+      },
+      message: props => `${props.value} is not a valid vintage year`
+    }
+  },
   category: { type: String, enum: ["Red", "White", "Sparkling", "Rose", "Dessert", "Orange"], required: true, index: true },
   sub_category: { type: String, trim: true, maxlength: 100 },
   is_filtered: { type: Boolean, default: false },
