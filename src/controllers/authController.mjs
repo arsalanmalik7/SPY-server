@@ -99,10 +99,22 @@ export const registerUser = async (req, res) => {
 
         await newUser.save();
 
+        await Lesson.updateMany(
+            { restaurant_uuid: restaurant_uuid },
+            { $addToSet: { assignedEmployees: newUser.uuid } }
+        );
+
+
         if (restaurant_uuid) {
             const restaurant = await Restaurant.findOne({ uuid: restaurant_uuid });
-            if (restaurant) {
+            if (restaurant && role === "employee") {
                 restaurant.employees.push(newUser.uuid);
+                await restaurant.save();
+            } else if (restaurant && role === "manager") {
+                restaurant.managers.push(newUser.uuid);
+                await restaurant.save();
+            } else if (restaurant && role === "director") {
+                restaurant.directors.push(newUser.uuid);
                 await restaurant.save();
             }
         }
@@ -149,7 +161,8 @@ export const registerUser = async (req, res) => {
                 </div>
             `
             });
-        }
+        };
+
         res.status(201).json({ message: "User registered successfully", user: newUser });
     } catch (error) {
         console.error("Registration Error:", error);
@@ -285,7 +298,7 @@ export const loginUser = async (req, res) => {
 export const updateUser = async (req, res) => {
     try {
         const { userId } = req.params;
-        const { first_name, last_name, email, assigned_restaurants, lesson_progress, role, next_lesson_due, newPassword, active, } = req.body;
+        const { first_name, last_name, email, assigned_restaurants, lesson_progress, role, next_lesson_due, newPassword, active, current_subscription, lesson_frequency } = req.body;
 
         const token = req.headers.authorization?.split(" ")[1];
 
@@ -312,6 +325,13 @@ export const updateUser = async (req, res) => {
         if (email) targetUser.email = email;
         if (typeof active === "boolean") targetUser.active = active;
 
+        if (current_subscription && Object.keys(current_subscription)?.length > 0) {
+            targetUser.current_subscription = current_subscription;
+        }
+
+        if (lesson_frequency) {
+            targetUser.lesson_frequency = lesson_frequency;
+        }
 
         if (assigned_restaurants) targetUser.assigned_restaurants = assigned_restaurants;
         if (lesson_progress?.length > 0) {

@@ -320,14 +320,17 @@ export const getEmployeeLessons = async (req, res) => {
                 const userProgress = lesson?.progress?.find(pr => pr.employeeId === userId);
 
                 if (lesson.menu_items_model === "Dish") {
-                    const dishes = await Dish.find({ isDeleted: false, restaurant_uuid: { $in: req.user.assigned_restaurants.map(r => r.uuid) } });
+                    const dishes = await Dish.find({ isDeleted: false, restaurant_uuid: { $in: req.user.assigned_restaurants.map(r => r.uuid) } })
+                        .sort({ name: 1 });
+
                     menuItems = dishes.map(dish => ({
                         ...dish.toObject(),
                         type: dish.type
                     }));
 
                 } else if (lesson.menu_items_model === "GlobalWine") {
-                    const wines = await GlobalWine.find({ isDeleted: false, restaurant_uuid: { $in: req.user.assigned_restaurants.map(r => r.uuid) } });
+                    const wines = await GlobalWine.find({ isDeleted: false, restaurant_uuid: { $in: req.user.assigned_restaurants.map(r => r.uuid) } })
+                        .sort({ product_name: 1 });
                     menuItems = wines.map(wine => ({
                         ...wine.toObject(),
                         type: "wine"
@@ -393,13 +396,17 @@ export const getEmployeeLessons = async (req, res) => {
             const userProgress = lesson?.progress?.find(pr => pr.employeeId === userId);
 
             if (lesson.menu_items_model === "Dish") {
-                const dishes = await Dish.find({ isDeleted: false, restaurant_uuid: restaurant_uuid });
+                const dishes = await Dish.find({ isDeleted: false, restaurant_uuid })
+                    .collation({ locale: "en", strength: 1 })
+                    .sort({ type: 1, name: 1 });
+
+
                 menuItems = dishes.map(dish => ({
                     ...dish.toObject(),
                     type: dish.type
                 }));
             } else if (lesson.menu_items_model === "GlobalWine") {
-                const wines = await GlobalWine.find({ isDeleted: false, restaurant_uuid: restaurant_uuid });
+                const wines = await GlobalWine.find({ isDeleted: false, restaurant_uuid: restaurant_uuid }).sort({ product_name: 1 });
                 menuItems = wines.map(wine => ({
                     ...wine.toObject(),
                     type: "wine"
@@ -653,10 +660,16 @@ export const updateLessonProgress = async (req, res) => {
         });
         const userProgress = lesson.progress.find(pr => pr.employeeId === userId);
 
-        const accuracyInPercentage =
-            (userProgress.attempts.filter((attempt) => attempt.score >= 70).length /
-                userProgress.attempts.length) *
-            100;
+        const totalScore = userProgress.attempts.reduce(
+            (sum, a) => sum + (a.score || 0),
+            0
+        );
+
+        const totalAttempts = userProgress.attempts.length;
+
+        const accuracyInPercentage = totalAttempts > 0
+            ? totalScore / totalAttempts   // average score out of 100
+            : 0;
 
 
         const attempts = userProgress ? userProgress.attempts.length : 0;
@@ -724,9 +737,6 @@ export const updateLessonProgress = async (req, res) => {
             }
             return acc;
         }, []);
-
-
-        console.log(isCompleted, equalQnA, "isCompleted and equalQnA");
 
 
         // Save attempted questions to user.attemptedQuestions
@@ -806,7 +816,7 @@ export const getRestaurantLessonProgress = async (req, res) => {
             (completedLessons / totalLessons.length) * 100 || 0;
 
         const lessonsEngagementRateLastThirtyDays =
-            (completedLessons / totalEmployees.length) * 100 || 0;
+            (totalEmployees.length / completedLessons) * 100 || 0;
 
         const overDueEmployeesInLessons = [];
         const seenEmployeeUuids = new Set(
@@ -1389,6 +1399,8 @@ export const getAllLessonProgress = async (req, res) => {
             foodUnitsCompletionPercentage[unitKey].chapterStats[chapterKey].total += totalCount;
         });
 
+
+
         // Final structure with completed and total chapters
         for (const unitKey in foodUnitsCompletionPercentage) {
             const chapterStats = foodUnitsCompletionPercentage[unitKey].chapterStats;
@@ -1397,6 +1409,7 @@ export const getAllLessonProgress = async (req, res) => {
 
             for (const chapter in chapterStats) {
                 const { completed, total } = chapterStats[chapter];
+                console.log(total, completed);
                 if (total > 0 && completed === total) {
                     completedChapters++;
                 }
@@ -1439,6 +1452,8 @@ export const getAllLessonProgress = async (req, res) => {
             wineUnitsCompletionPercentage[unitKey].chapterStats[chapterKey].total += totalCount;
         });
 
+
+
         // Final structure with completed and total chapters
         for (const unitKey in wineUnitsCompletionPercentage) {
             const chapterStats = wineUnitsCompletionPercentage[unitKey].chapterStats;
@@ -1447,6 +1462,7 @@ export const getAllLessonProgress = async (req, res) => {
 
             for (const chapter in chapterStats) {
                 const { completed, total } = chapterStats[chapter];
+                console.log(total, completed);
                 if (total > 0 && completed === total) {
                     completedChapters++;
                 }
@@ -1550,7 +1566,8 @@ export const lessonUserDetails = async (req, res) => {
         const assigned_restaurants = user?.assigned_restaurants.map((r) => r.uuid);
 
         if (user?.role === "super_admin") {
-            getAllUsers = await User.find({}).select("uuid first_name last_name email role assigned_restaurants active").populate({
+
+            getAllUsers = await User.find({ role: { $ne: "super_admin" } }).select("uuid first_name last_name email role assigned_restaurants active lesson_frequency").populate({
                 path: 'assigned_restaurants',
                 model: "Restaurant",
                 match: { uuid: { $exists: true } },
@@ -1558,6 +1575,7 @@ export const lessonUserDetails = async (req, res) => {
                 foreignField: "uuid",
                 select: 'name uuid'
             });
+
             lessons = await Lesson.find({ isDeleted: false }).populate({
                 path: 'assignedEmployees',
                 model: "User",
@@ -1565,24 +1583,10 @@ export const lessonUserDetails = async (req, res) => {
                 localField: "assignedEmployees",
                 foreignField: "uuid", // Match on uuid instead of _id
             }).sort({ createdAt: -1 }).lean();
+
         } else if (user?.role === "director") {
-            getAllUsers = await User.find({ role: ["employee", "manager"], assigned_restaurants: { $in: assigned_restaurants } }).select("uuid first_name last_name email role assigned_restaurants active").populate({
-                path: 'assigned_restaurants',
-                model: "Restaurant",
-                match: { uuid: { $exists: true } },
-                localField: "assigned_restaurants",
-                foreignField: "uuid",
-                select: 'name uuid'
-            });
-            lessons = await Lesson.find({ isDeleted: false, restaurant_uuid: { $in: assigned_restaurants } }).populate({
-                path: 'assignedEmployees',
-                model: "User",
-                match: { uuid: { $exists: true } }, // Ensures only valid references are populated
-                localField: "assignedEmployees",
-                foreignField: "uuid", // Match on uuid instead of _id
-            }).sort({ createdAt: -1 }).lean();
-        } else if (user?.role === "manager") {
-            getAllUsers = await User.find({ role: "employee", assigned_restaurants: { $in: assigned_restaurants } }).select("uuid first_name last_name email role assigned_restaurants active").populate({
+
+            getAllUsers = await User.find({ role: ["employee", "manager"], assigned_restaurants: { $in: assigned_restaurants } }).select("uuid first_name last_name email role assigned_restaurants active lesson_frequency").populate({
                 path: 'assigned_restaurants',
                 model: "Restaurant",
                 match: { uuid: { $exists: true } },
@@ -1598,6 +1602,26 @@ export const lessonUserDetails = async (req, res) => {
                 localField: "assignedEmployees",
                 foreignField: "uuid", // Match on uuid instead of _id
             }).sort({ createdAt: -1 }).lean();
+
+        } else if (user?.role === "manager") {
+
+            getAllUsers = await User.find({ role: "employee", assigned_restaurants: { $in: assigned_restaurants } }).select("uuid first_name last_name email role assigned_restaurants active lesson_frequency").populate({
+                path: 'assigned_restaurants',
+                model: "Restaurant",
+                match: { uuid: { $exists: true } },
+                localField: "assigned_restaurants",
+                foreignField: "uuid",
+                select: 'name uuid'
+            });
+
+            lessons = await Lesson.find({ isDeleted: false, restaurant_uuid: { $in: assigned_restaurants } }).populate({
+                path: 'assignedEmployees',
+                model: "User",
+                match: { uuid: { $exists: true } }, // Ensures only valid references are populated
+                localField: "assignedEmployees",
+                foreignField: "uuid", // Match on uuid instead of _id
+            }).sort({ createdAt: -1 }).lean();
+
         }
 
 
@@ -1613,25 +1637,52 @@ export const lessonUserDetails = async (req, res) => {
 
 
         const usersWithDetails = getAllUsers?.map((user) => {
+
             const userId = user.uuid;
             const assigned_restaurants = user.assigned_restaurants.map(restaurant => ({
                 uuid: restaurant.uuid,
                 name: restaurant.name
             }));
+
             const myFoodLessons = foodLessons?.filter(lesson => lesson.assignedEmployees.some(employee => employee.uuid === userId));
             const myWineLessons = winelessons?.filter(lesson => lesson.assignedEmployees.some(employee => employee.uuid === userId));
-            const myFoodKnowledege = myFoodLessons.reduce((acc, lesson) => {
-                const completedCount = lesson?.progress?.filter(p => p.status === 'completed').length;
-                const totalCount = lesson.progress?.length;
-                return acc + (totalCount > 0 ? (completedCount / totalCount) * 100 : 0);
-            }, 0) / myFoodLessons?.length || 0;
-            const myWineKnowledege = myWineLessons?.reduce((acc, lesson) => {
-                const completedCount = lesson?.progress?.filter(p => p.status === 'completed').length;
-                const totalCount = lesson?.progress?.length;
-                return acc + (totalCount > 0 ? (completedCount / totalCount) * 100 : 0);
-            }, 0) / myWineLessons?.length || 0;
 
-            const avarageLessonTraining = (myFoodKnowledege + myWineKnowledege) / 2;
+            if (user?.first_name === "Olympia") {
+                console.log(myFoodLessons.length, "myFoodLessons");
+                console.log(myWineLessons.length, "myWineLessons");
+            };
+
+            const myFoodKnowledge = (() => {
+                if (!myFoodLessons || myFoodLessons.length === 0) return 0;
+
+                // count how many lessons this user has completed
+                const completedLessons = myFoodLessons.filter(lesson =>
+                    lesson?.progress?.some(p => p.employeeId === userId && p.status === "completed")
+                ).length;
+
+                // total lessons assigned
+                const totalLessons = myFoodLessons.length;
+
+                return (completedLessons / totalLessons) * 100;
+            })();
+
+
+            const myWineKnowledge = (() => {
+                if (!myWineLessons || myWineLessons.length === 0) return 0;
+
+                // count how many lessons this user has completed
+                const completedLessons = myWineLessons.filter(lesson =>
+                    lesson?.progress?.some(p => p.employeeId === userId && p.status === "completed")
+                ).length;
+
+                // total lessons assigned
+                const totalLessons = myWineLessons.length;
+
+                return (completedLessons / totalLessons) * 100;
+            })();
+
+
+            const avarageLessonTraining = (myFoodKnowledge + myWineKnowledge) / 2;
 
 
             const allLessons = myFoodLessons?.concat(myWineLessons);
@@ -1669,9 +1720,10 @@ export const lessonUserDetails = async (req, res) => {
 
             const myLessonHistory = allLessons
                 .map(lesson => {
-                    const userProgress = lesson.progress?.find(
-                        p => p.status === 'completed'
+                    const userProgress = lesson?.progress?.find(
+                        p => p.employeeId == userId && p.status === 'completed'
                     );
+
 
                     if (userProgress) {
                         delete lesson.progress;
@@ -1691,12 +1743,12 @@ export const lessonUserDetails = async (req, res) => {
                 first_name: user.first_name,
                 last_name: user.last_name,
                 restaurants: assigned_restaurants,
-                foodKnowledge: myFoodKnowledege,
-                wineKnowledge: myWineKnowledege,
+                foodKnowledge: myFoodKnowledge,
+                wineKnowledge: myWineKnowledge,
                 lastLesson: myLastLesson || null,
                 status: trackStatus ? "On Track" : "Overdue",
                 training: avarageLessonTraining,
-                frequency: 1,
+                frequency: user?.lesson_frequency ,
                 lessonHistory: myLessonHistory,
             }
         });

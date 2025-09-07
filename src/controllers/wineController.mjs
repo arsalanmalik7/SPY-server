@@ -316,11 +316,9 @@ export const updateWine = async (req, res) => {
 
     const updatedWine = await wine.save();
 
-    // const deleteLessons = permenantDeleteLessons(updatedWine.uuid);
-
-    // if (deleteLessons) {
-      await generateLessonsForRestaurant("wine", updatedWine.restaurant_uuid, updatedWine);
-    // }
+  
+      await generateLessonsForRestaurant("wine", updatedWine.restaurant_uuid, updatedWine, true);
+    
 
     // Log wine update
     await Log.create({

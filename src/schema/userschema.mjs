@@ -93,7 +93,7 @@ const UserSchema = new mongoose.Schema(
     ],
     current_subscription: {
       status: { type: Boolean, default: false },
-      plan: { type: String, enum: ["Free trial", "Single Location", "Multi Location"], default:"Free trial" },
+      plan: { type: String, enum: ["Free trial", "Single Location", "Multi Location"], default: "Free trial" },
       start_date: { type: Date, },
       end_date: { type: Date },
       payment_method: { type: String, },
@@ -103,7 +103,7 @@ const UserSchema = new mongoose.Schema(
       // subscription_id: { type: String },
       sub_employee: { type: Boolean, default: false },
       amount: { type: Number },
-      locations: { type: Number },
+      locations: { type: Number, default: 1 },
       currency: { type: String, default: "USD" },
 
     },
@@ -121,6 +121,7 @@ const UserSchema = new mongoose.Schema(
     ],
     active: { type: Boolean, default: true },
     last_login: { type: Date, default: null },
+    lesson_frequency: { type: Number, default: 3 },
   },
   { timestamps: true }
 );

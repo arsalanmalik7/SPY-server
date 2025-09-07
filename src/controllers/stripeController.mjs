@@ -53,9 +53,12 @@ export const createCheckoutSession = async (req, res) => {
     try {
         const { planId, successUrl, cancelUrl, amountDollars, isFreeTrial } = req.body;
 
+        console.log(planId, "plainId");
+
 
         // Convert amount to cents (integer)
         const unitAmount = parseInt(String(amountDollars).replace('.', ''), 10);
+        console.log(unitAmount);
 
         let session;
 
@@ -114,6 +117,9 @@ export const createCheckoutSession = async (req, res) => {
                 mode: 'subscription',
             });
         }
+
+        await User.updateOne()
+
         res.status(200).json(session);
     } catch (error) {
         console.error('Stripe error:', error);

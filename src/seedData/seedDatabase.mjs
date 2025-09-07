@@ -296,7 +296,8 @@ const insertDataDynamically = async (data) => {
                     substitution_notes: row?.substitution_notes || '',
                     image_url: row?.image_url && row?.image_url.trim() !== '' ? row?.image_url : '/uploads/default_image_food.jpg',
                     notes: row.notes || '',
-                    status: true
+                    status: true,
+                    is_cross_contact: (typeof row?.cross_contact === 'string' ? row?.cross_contact.toLocaleLowerCase() === 'yes' : !!row?.cross_contact)
                 };
             });
             // Filter out dishes that already exist by name (case-insensitive)
@@ -387,45 +388,111 @@ const insertDataDynamically = async (data) => {
             const wineStyles = [
                 {
                     name: "Fruit Driven Sparkling",
-                    category: "Sparkling",
                     body: "Light - Medium",
                     texture: "Light - Medium, Fresh",
-                    flavorIntensity: "Light - Medium, Crisp & Fruity",
+                    flavor_intensity: "Light - Medium, Crisp & Fruity",
+                },
+                {
+                    name: "Complex Sparkling",
+                    body: "Light - Medium",
+                    texture: "Light - Medium, Rich",
+                    flavor_intensity: "Light - Medium, Minerality",
                 },
                 {
                     name: "Fresh, Unoaked White",
-                    category: "White",
                     body: "Light - Medium",
                     texture: "Crisp, Refreshing",
-                    flavorIntensity: "Light - Medium, Mild",
+                    flavor_intensity: "Light - Medium, Mild",
+                },
+                {
+                    name: "Earthy White",
+                    body: "Medium - Full",
+                    texture: "Firm, Substantial",
+                    flavor_intensity: "Medium, Minerality",
+                },
+                {
+                    name: "Aromatic White",
+                    body: "Light - Medium, some Full",
+                    texture: "Crisp, some Soft",
+                    flavor_intensity: "High, Complex",
+                },
+                {
+                    name: "Rich, Oaky White",
+                    body: "Full",
+                    texture: "Soft, Rich",
+                    flavor_intensity: "High, Oaky",
                 },
                 {
                     name: "Mild, Mannered Red",
-                    category: "Red",
                     body: "Light - Medium",
                     texture: "Low Tannin, Gentle",
-                    flavorIntensity: "Light - Medium, Subtle, Refreshing",
+                    flavor_intensity: "Light - Medium, Subtle, Refreshing",
+                },
+                {
+                    name: "Soft, Fruity Red",
+                    body: "Light - Medium",
+                    texture: "Low-Medium Tannin, Soft",
+                    flavor_intensity: "Medium - High, Refreshing",
+                },
+                {
+                    name: "Fresh, Spicy Red",
+                    body: "Medium, some Full",
+                    texture: "Medium Tannin, Firm",
+                    flavor_intensity: "Medium - High, Vibrant",
+                },
+                {
+                    name: "Powerful Red",
+                    body: "Full",
+                    texture: "High Tannin, Sturdy",
+                    flavor_intensity: "Medium - High, Concentrated",
                 },
                 {
                     name: "Aromatic Orange",
-                    category: "Orange",
                     body: "Light - Medium",
                     texture: "Low Tannin, Crisp",
-                    flavorIntensity: "Medium - High, Refreshing",
+                    flavor_intensity: "Medium - High, Refreshing",
+                },
+                {
+                    name: "Fruity Orange",
+                    body: "Medium - Full",
+                    texture: "Medium Tannin, Balanced",
+                    flavor_intensity: "Medium - High, Refined",
+                },
+                {
+                    name: "Rich Orange",
+                    body: "Full",
+                    texture: "High Tannin, Robust",
+                    flavor_intensity: "Medium - High, Extracted",
                 },
                 {
                     name: "Blush Rose",
-                    category: "Rose",
                     body: "Light - Medium",
                     texture: "Light - Medium, Viscous",
-                    flavorIntensity: "Medium - High, Slightly Sweet to Sweet",
+                    flavor_intensity: "Medium - High, Slightly Sweet to Sweet",
+                },
+                {
+                    name: "Dry Rose",
+                    body: "Light",
+                    texture: "Light, Crisp",
+                    flavor_intensity: "Light - Medium, Dry to Slightly Sweet",
                 },
                 {
                     name: "Sparkling Dessert",
-                    category: "Dessert",
                     body: "Light - Medium",
                     texture: "Light - Medium, Fresh",
-                    flavorIntensity: "Light - Medium, Luscious Fruit",
+                    flavor_intensity: "Light - Medium, Luscious Fruit",
+                },
+                {
+                    name: "Subtle, Aromatic Dessert",
+                    body: "Medium - Full",
+                    texture: "Medium - High, Creamy",
+                    flavor_intensity: "Medium - High, Concentrated",
+                },
+                {
+                    name: "Rich, Fruity Dessert",
+                    body: "Full",
+                    texture: "High Tannin, Substantial",
+                    flavor_intensity: "Medium - High, Extracted",
                 },
             ];
 
@@ -442,7 +509,7 @@ const insertDataDynamically = async (data) => {
                     vineyard: row.vineyard || ''
                 };
                 // Style object
-                const style = wineStyles.find((ws) => (ws.category === row.category))
+                const style = wineStyles.find((ws) => (ws?.name?.toLocaleLowerCase() === row?.style_name?.toLocaleLowerCase()));
                 // Offering object
                 const offering = {
                     by_the_glass: (typeof row.by_the_glass === 'string' ? row.by_the_glass.toLowerCase() === 'yes' : !!row.by_the_glass),
@@ -457,7 +524,7 @@ const insertDataDynamically = async (data) => {
                     region,
                     vintage: isVintageNaN ? row.vintage : Number(row.vintage),
                     category: row.category ? row.category : '',
-                    sub_category: row.sub_category || '',
+                    sub_category: row?.style_name || '',
                     is_filtered: (typeof row.is_filtered === 'string' ? row.is_filtered.toLowerCase() === 'yes' : !!row.is_filtered),
                     has_residual_sugar: (typeof row.has_residual_sugar === 'string' ? row.has_residual_sugar.toLowerCase() === 'yes' : !!row.has_residual_sugar),
                     is_organic: (typeof row.is_organic === 'string' ? row.is_organic.toLowerCase() === 'yes' : !!row.is_organic),

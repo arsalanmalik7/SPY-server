@@ -265,11 +265,9 @@ export const updateDish = async (req, res) => {
       return res.status(400).json({ message: "Failed to update dish" });
     }
 
-    const deleteLessons = permenantDeleteLessons(updatedDish.uuid);
 
-    if (deleteLessons) {
-      await generateLessonsForRestaurant("food", updatedDish.restaurant_uuid, updatedDish);
-    }
+
+    await generateLessonsForRestaurant("food", updatedDish.restaurant_uuid, updatedDish, true);
 
 
     await Log.create({
@@ -409,13 +407,23 @@ export const getDishAnalytics = async (req, res) => {
     let removedDishes;
     let recentDishUpdates;
 
-    const assignedRestaurantUUIDs = req.user.assigned_restaurants.map(r => r.uuid);
-    const ownerRestaurants = await Restaurant.find({ account_owner: user.uuid });
-    const ownerRestaurantUUIDs = ownerRestaurants.map(r => r.uuid);
-    const allRestaurantUUIDs = Array.from(new Set([...assignedRestaurantUUIDs, ...ownerRestaurantUUIDs]));
-    dishes = await Dish.find({ restaurant_uuid: restaurant_uuid }).sort({ createdAt: -1 });
-    removedDishes = await Dish.find({ isDeleted: true, restaurant_uuid: restaurant_uuid }).sort({ createdAt: -1 });
-    const allDishes = [...dishes, ...removedDishes]
+    // if (req?.user?.role === "super_admin") {
+    //   dishes = await Dish.find({ restaurant_uuid: restaurant_uuid }).sort({ createdAt: -1 });
+    //   removedDishes = await Dish.find({ isDeleted: true, restaurant_uuid: restaurant_uuid }).sort({ createdAt: -1 });
+    // }
+
+    // if (req?.user?.role !== "super_admin") {
+      const assignedRestaurantUUIDs = req.user.assigned_restaurants.map(r => r.uuid);
+      const ownerRestaurants = await Restaurant.find({ account_owner: user.uuid });
+      const ownerRestaurantUUIDs = ownerRestaurants.map(r => r.uuid);
+      const allRestaurantUUIDs = Array.from(new Set([...assignedRestaurantUUIDs, ...ownerRestaurantUUIDs]));
+
+      dishes = await Dish.find({ restaurant_uuid: restaurant_uuid }).sort({ createdAt: -1 });
+      removedDishes = await Dish.find({ isDeleted: true, restaurant_uuid: restaurant_uuid }).sort({ createdAt: -1 });
+    // }
+
+    const allDishes = [...dishes, ...removedDishes];
+
     recentDishUpdates = await Log.find({
       action: { $in: ["dish_created", "dish_updated", "dish_archived", "dish_restored"] },
       "details.dish_uuid": { $in: allDishes.map(d => d.uuid) }
@@ -457,28 +465,23 @@ export const getDishAnalytics = async (req, res) => {
       return new Date(current.updatedAt) > new Date(latest.updatedAt) ? current : latest;
     }, dishesWithRestaurant[0]);
 
-    const mainCourseDishPercentage = dishesWithRestaurant.filter((dish) => (
-      dish.type[0].toLowerCase() === "main course"
-    )).length / totalDishes * 100 || 0;
+    const dishTypesWithPercentages = validDishTypes.map((type) => {
+      return {
+        type,
+        percentage: dishesWithRestaurant.filter((dish) => (
+          dish.type[0].toLowerCase() === type.toLowerCase()
+        )).length / totalDishes * 100 || 0
 
-    const appetizerDishPercentage = dishesWithRestaurant.filter((dish) => (
-      dish.type[0].toLowerCase() === "appetizer"
-    )).length / totalDishes * 100 || 0;
+      };
+    });
 
-    const dessertDishPercentage = dishesWithRestaurant.filter((dish) => (
-      dish.type[0].toLowerCase() === "dessert"
-    )).length / totalDishes * 100 || 0;
-
-    const specialDishPercentage = dishesWithRestaurant.filter((dish) => (
-      dish.type[0].toLowerCase() === "special"
-    )).length / totalDishes * 100 || 0;
 
     const vegetarianDishes = dishesWithRestaurant.filter((dish) => (
-      dish.dietary_restrictions.lifestyle.includes("vegetarian")
+      dish.dietary_restrictions.lifestyle.includes("Vegetarian")
     ));
 
     const veganDishes = dishesWithRestaurant.filter((dish) => (
-      dish.dietary_restrictions.lifestyle.includes("vegan")
+      dish.dietary_restrictions.lifestyle.includes("Vegan")
     ));
 
     const gluttenFreeDishes = dishesWithRestaurant.filter((dish) => (
@@ -498,14 +501,11 @@ export const getDishAnalytics = async (req, res) => {
 
 
     res.status(200).json({
+      dishTypesWithPercentages,
       totalDishes,
       newDishesInThirtyDays,
       removedDishesInThirtyDays,
       lastUpdatedDish: lastUpdatedDish?.name || "",
-      mainCourseDishPercentage,
-      appetizerDishPercentage,
-      dessertDishPercentage,
-      specialDishPercentage,
       vegetarianDishes: vegetarianDishes?.length,
       veganDishes: veganDishes?.length,
       gluttenFreeDishes: gluttenFreeDishes?.length,
